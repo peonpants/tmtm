@@ -1,0 +1,1317 @@
+body {
+	background: url("/image/bg.jpg") no-repeat top rgb(0, 0, 0); margin: 0px; padding: 0px; font-family: "µ¸¿ò", dotum; font-size: 12px;
+}
+body {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+td {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+th {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+a:link {
+	color: rgb(222, 222, 222); font-size: 12px; text-decoration: none;
+}
+a:hover {
+	color: rgb(222, 222, 222); font-size: 12px; text-decoration: none;
+}
+a:active {
+	color: rgb(222, 222, 222); font-size: 12px; text-decoration: none;
+}
+a:visited {
+	color: rgb(222, 222, 222); font-size: 12px; text-decoration: none;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+table {
+	border: 0px currentColor; border-image: none;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+dl {
+	list-style: none; margin: 0px; padding: 0px;
+}
+ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+li {
+	list-style: none; margin: 0px; padding: 0px;
+}
+input {
+	font-size: 12px; vertical-align: middle;
+}
+img {
+	vertical-align: middle;
+}
+textarea {
+	background: rgb(0, 0, 0); border: 1px solid rgb(50, 45, 45); border-image: none; color: rgb(255, 255, 255);
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.alpha30 {
+	opacity: 0.6; -moz-opacity: 0.6;
+}
+.select1 {
+	background: rgb(0, 0, 0); border: 1px solid rgb(42, 68, 118); border-image: none; width: 100px; color: rgb(174, 200, 235); vertical-align: middle;
+}
+.input1 {
+	background: rgb(0, 0, 0); border: 1px solid rgb(42, 68, 118); border-image: none; width: 98%; height: 16px; color: rgb(174, 200, 235);
+}
+.input2 {
+	background: rgb(0, 0, 0); border: 1px solid rgb(42, 68, 118); border-image: none; width: 140px; height: 16px; color: rgb(174, 200, 235);
+}
+.input3 {
+	vertical-align: middle;
+}
+.input4 {
+	border: 1px solid rgb(83, 17, 29); border-image: none; width: 93px; height: 14px; text-align: right; color: rgb(218, 3, 3); font-weight: bold; background-color: rgb(203, 203, 203);
+}
+.input5 {
+	border: 0px currentColor; border-image: none; width: 58px; height: 14px; text-align: right; color: rgb(255, 222, 0); font-weight: bold; background-color: transparent;
+}
+.input7 {
+	border: 0px currentColor; border-image: none; width: 58px; height: 14px; text-align: right; color: rgb(255, 222, 0); font-weight: bold; background-color: transparent;
+}
+.input8 {
+	border: currentColor; border-image: none; width: 100px; height: 20px; text-align: right; color: rgb(255, 222, 0); background-color: rgb(0, 0, 0);
+}
+.input9 {
+	background: rgb(27, 27, 27); border: 1px solid rgb(0, 0, 0); border-image: none; height: 26px; color: rgb(255, 255, 255); padding-left: 17px;
+}
+.upStr {
+	padding: 1px 2px 0px 0px; color: red; font-size: 12px;
+}
+.downStr {
+	padding: 1px 0px 0px 2px; color: rgb(0, 191, 255); font-size: 12px;
+}
+.btn1 {
+	background: rgb(102, 102, 102); border: currentColor; border-image: none; color: rgb(255, 255, 255); font-size: 12px;
+}
+.white {
+	color: rgb(255, 255, 255);
+}
+.slipTeam {
+	color: rgb(255, 255, 255);
+}
+.cartPoint {
+	color: rgb(255, 242, 0); font-weight: bold;
+}
+.login_page {
+	background: rgb(32, 32, 32);
+}
+#wrap {
+	height: 800px; margin-top: 12px; position: relative;
+}
+#betBar {
+	top: 0px; width: 260px; text-align: center; right: 0px; position: absolute; z-index: 999;
+}
+#betBar .bet_tab {
+	background: url("/image/cart_repeat_bg.png") repeat-y; width: 260px; border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+#betBar .bet_cart_con {
+	margin: 0px auto; height: 112px; text-align: center; border-right-color: rgb(58, 58, 58); border-left-color: rgb(58, 58, 58); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+#betBar .bet_cart_con table {
+	background: rgb(1, 1, 1); width: 240px;
+}
+#betBar .bet_cart_con table tr td {
+	background: rgb(47, 47, 47); color: rgb(205, 205, 205); padding-left: 10px; border-top-color: rgb(59, 59, 59); border-bottom-color: rgb(0, 0, 0); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+#betBar .bet_cart_con table tr td.tab_right {
+	padding-right: 10px;
+}
+.betForm td {
+	padding-right: 5px; padding-left: 5px;
+}
+.leftMenu td {
+	height: 0px; line-height: 0px;
+}
+.ListTitle {
+	background: rgb(52, 19, 28); width: 100%; height: 28px; color: rgb(255, 255, 255);
+}
+.ListTitle td {
+	color: rgb(178, 178, 178); font-weight: bold;
+}
+.ListTitle th {
+	color: rgb(178, 178, 178); font-weight: bold;
+}
+.GameList {
+	width: 100%;
+}
+.GameList td {
+	text-align: center; font-weight: bold;
+}
+.GameList td div li {
+	line-height: 27px;
+}
+.GameList td.League {
+	background: rgb(21, 21, 21); border: 1px solid rgb(36, 36, 36); border-image: none; height: 34px; text-align: left; color: rgb(158, 171, 178); padding-right: 10px; padding-left: 10px; font-weight: bold;
+}
+.GameList td.date {
+	width: 124px; height: 27px; color: rgb(183, 183, 183); font-size: 11px; font-weight: bold;
+}
+.GameList tr {
+	background: rgb(25, 25, 25); border-right-color: rgb(35, 35, 35); border-left-color: rgb(35, 35, 35); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+.GameList td.date span {
+	color: rgb(255, 153, 0);
+}
+.GameList td.notice span {
+	color: rgb(0, 0, 0);
+}
+.GameList td.homeTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 328px;
+}
+.GameList td.homeTeam div {
+	width: 328px; height: 27px; line-height: 27px;
+}
+.GameList td.homeTeam div li.teamName {
+	width: 216px; text-align: left; overflow: hidden; font-weight: bold; margin-left: 6px; float: left; white-space: nowrap;
+}
+.GameList td.homeTeam div li.beDang {
+	width: 78px; text-align: right; font-weight: bold; margin-right: 6px; float: right;
+}
+.GameList td.nonTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 40px; font-weight: bold;
+}
+.GameList td.nonTeam div {
+	width: 40px; height: 27px; line-height: 27px; font-weight: bold;
+}
+.GameList td.awayTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 328px;
+}
+.GameList td.awayTeam div {
+	width: 328px; height: 27px; line-height: 27px;
+}
+.GameList td.awayTeam div li.teamName {
+	width: 216px; text-align: right; overflow: hidden; font-weight: bold; margin-right: 6px; float: right; white-space: nowrap;
+}
+.GameList td.awayTeam div li.beDang {
+	width: 78px; text-align: left; font-weight: bold; margin-left: 6px; float: left;
+}
+.GameList td.Selected {
+	background: url("/image/end_ganme_bg_on.png") repeat-x; color: rgb(24, 15, 7);
+}
+.GameList td.SelectedN {
+	background: url("/image/end_ganme_bg_on.png") repeat-x; color: rgb(0, 0, 0);
+}
+.GameList td.MouseOn {
+	background: url("/image/end_ganme_bg_on.png") repeat-x; color: rgb(24, 15, 7);
+}
+.GameList td.MouseOnN {
+	background: url("/image/end_ganme_bg_on.png") repeat-x; color: rgb(0, 0, 0);
+}
+.GameList td.info {
+	width: 46px; color: rgb(104, 131, 151);
+}
+.GameList td.notice {
+	width: 40px; color: rgb(104, 131, 151);
+}
+.GameList td.notice span {
+	cursor: pointer;
+}
+.GameList td.baner {
+	width: 6px;
+}
+.GameList span {
+	font-weight: bold;
+}
+.GameList span.time {
+	color: rgb(237, 28, 36);
+}
+.GameList span.upIcon {
+	padding: 1px 2px 0px 0px; color: red; font-size: 12px;
+}
+.GameList span.downIcon {
+	padding: 1px 0px 0px 2px; color: rgb(0, 191, 255); font-size: 12px;
+}
+.GameList span.upIcon img {
+	vertical-align: middle;
+}
+.GameList span.downIcon img {
+	vertical-align: middle;
+}
+.GameList span.time {
+	color: rgb(237, 28, 36);
+}
+.GameList span.end {
+	color: rgb(255, 0, 0);
+}
+.GameList span.cancel {
+	color: rgb(255, 0, 0);
+}
+.GameList span.wait {
+	color: rgb(255, 242, 0);
+}
+.GameList span.bet {
+	color: rgb(0, 174, 239);
+}
+.GameResultList {
+	background: rgb(25, 25, 25); border: 1px solid rgb(35, 35, 35); border-image: none; width: 100%;
+}
+.GameResultList td {
+	text-align: center;
+}
+.GameResultList td div li {
+	line-height: 27px;
+}
+.GameResultList td.League {
+	border: 1px solid rgb(36, 36, 36); border-image: none; height: 35px; text-align: left; color: rgb(207, 215, 231); padding-right: 10px; padding-left: 10px; font-weight: bold; background-color: rgb(21, 21, 21);
+}
+.GameResultList td.date {
+	width: 108px; color: rgb(183, 183, 183); font-size: 11px;
+}
+.GameResultList td.notice span {
+	color: rgb(0, 0, 0);
+}
+.GameResultList td.homeTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 324px;
+}
+.GameResultList td.homeTeam div {
+	width: 100%;
+}
+.GameResultList td.homeTeam div li.teamName {
+	width: 200px; text-align: left; overflow: hidden; margin-left: 6px; float: left; white-space: nowrap;
+}
+.GameResultList td.homeTeam div li.beDang {
+	width: 78px; text-align: right; margin-right: 6px; float: right;
+}
+.GameResultList td.nonTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 51px;
+}
+.GameResultList td.nonTeam div {
+	width: 100%; color: rgb(255, 255, 255);
+}
+.GameResultList td.awayTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 324px;
+}
+.GameResultList td.awayTeam div {
+	width: 100%;
+}
+.GameResultList td.awayTeam div li.teamName {
+	width: 200px; text-align: right; overflow: hidden; margin-right: 6px; float: right; white-space: nowrap;
+}
+.GameResultList td.awayTeam div li.beDang {
+	width: 78px; text-align: left; margin-left: 6px; float: left;
+}
+.GameResultList td.Selected {
+	background: url("/image/end_ganme_bg_on.png") repeat-x; border: 1px solid rgb(189, 189, 189); border-image: none; color: rgb(0, 0, 0);
+}
+.GameResultList td.SelectedN {
+	background: url("/image/end_ganme_bg_on.png") repeat-x; border: 1px solid rgb(189, 189, 189); border-image: none;
+}
+.GameResultList td.info1 {
+	width: 66px; color: rgb(255, 204, 0);
+}
+.GameResultList td.info2 {
+	width: 54px; color: rgb(255, 204, 0);
+}
+.GameResultList td.notice {
+	width: 42px;
+}
+.GameResultList td.notice span {
+	cursor: pointer;
+}
+.GameResultList td.notice span.none {
+	color: rgb(104, 131, 151);
+}
+.GameResultList span.time {
+	color: rgb(237, 28, 36);
+}
+.GameResultList span.upIcon {
+	padding: 1px 2px 0px 0px; color: red; font-size: 12px;
+}
+.GameResultList span.downIcon {
+	padding: 1px 0px 0px 2px; color: rgb(0, 191, 255); font-size: 12px;
+}
+.GameResultList span.upIcon img {
+	vertical-align: middle;
+}
+.GameResultList span.downIcon img {
+	vertical-align: middle;
+}
+.GameResultList span.time {
+	color: rgb(237, 28, 36);
+}
+.GameResultList span.end {
+	color: rgb(0, 0, 0);
+}
+.GameResultList span.cancel {
+	color: rgb(0, 0, 0);
+}
+.GameResultList span.wait {
+	color: rgb(0, 0, 0);
+}
+.GameResultList span.bet {
+	color: rgb(0, 0, 0);
+}
+.betInfo {
+	width: 100%;
+}
+.betInfo th {
+	height: 29px; text-align: center; color: rgb(207, 215, 231);
+}
+.betInfo td {
+	text-align: center;
+}
+.betInfo td div li {
+	line-height: 27px;
+}
+.betInfo td.gameType {
+	width: 68px; text-align: center;
+}
+.betInfo td.date {
+	width: 108px; height: 27px; color: rgb(183, 183, 183); font-size: 11px;
+}
+.betInfo td.League {
+	width: 87px; text-align: center; color: rgb(207, 215, 231); font-weight: bold;
+}
+.betInfo td.notice span {
+	color: rgb(0, 0, 0);
+}
+.betInfo td.homeTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 312px;
+}
+.betInfo td.homeTeam div {
+	width: 100%; float: left;
+}
+.betInfo td.homeTeam div li.teamName {
+	width: 190px; text-align: left; overflow: hidden; margin-left: 5px; float: left; white-space: nowrap;
+}
+.betInfo td.homeTeam div li.beDang {
+	width: 78px; text-align: right; margin-right: 5px; float: right;
+}
+.betInfo td.nonTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 75px;
+}
+.betInfo td.nonTeam div {
+	width: 100%; height: 26px; line-height: 26px;
+}
+.betInfo td.awayTeam {
+	background: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64); border-image: none; width: 312px;
+}
+.betInfo td.awayTeam div {
+	width: 100%; float: left;
+}
+.betInfo td.awayTeam div li.teamName {
+	width: 190px; text-align: right; overflow: hidden; margin-right: 5px; float: right; white-space: nowrap;
+}
+.betInfo td.awayTeam div li.beDang {
+	width: 78px; text-align: left; margin-left: 5px; float: left;
+}
+.betInfo td.Selected {
+	background: url("/image/end_ganme_bg_on.png") repeat-x; border: 1px solid rgb(189, 189, 189); border-image: none; color: rgb(0, 0, 0);
+}
+.betInfo td.SelectedN {
+	background: url("/image/end_ganme_bg_on.png") repeat-x; border: 1px solid rgb(189, 189, 189); border-image: none;
+}
+.betInfo td.info1 {
+	width: 52px; color: rgb(255, 204, 0);
+}
+.betInfo td.info2 {
+	width: 60px; color: rgb(255, 204, 0);
+}
+.betInfo td.info3 {
+	width: 50px;
+}
+.betInfo td.notice {
+	width: 45px;
+}
+.betInfo td.notice span {
+	cursor: pointer;
+}
+.betInfo td.notice span.none {
+	color: rgb(128, 128, 128);
+}
+.betInfo td.status {
+	background: rgb(44, 38, 40); border: 1px solid rgb(57, 49, 51); border-image: none; height: 24px; text-align: left;
+}
+.betInfo td.status td {
+	text-align: left;
+}
+.betInfo td.btns {
+	height: 42px; text-align: right;
+}
+.betInfo span.time {
+	color: rgb(237, 28, 36);
+}
+.betInfo span.upIcon {
+	padding: 1px 2px 0px 0px; color: red; font-size: 12px;
+}
+.betInfo span.downIcon {
+	padding: 1px 0px 0px 2px; color: rgb(19, 203, 184); font-size: 12px;
+}
+.betInfo span.upIcon img {
+	vertical-align: middle;
+}
+.betInfo span.downIcon img {
+	vertical-align: middle;
+}
+.betInfo span.time {
+	color: rgb(237, 28, 36);
+}
+.betInfo span.end {
+	color: rgb(255, 255, 255);
+}
+.betInfo span.cancel {
+	color: rgb(255, 0, 0);
+}
+.betInfo span.wait {
+	color: rgb(255, 255, 255);
+}
+.betInfo span.bet {
+	color: rgb(255, 255, 255);
+}
+.betInfo span.fail {
+	color: rgb(255, 0, 0);
+}
+.betInfo span.winner {
+	color: rgb(0, 153, 255);
+}
+.board {
+	width: 100%; border-collapse: collapse; border-spacing: 0;
+}
+.board th {
+	height: 27px; text-align: center; color: rgb(255, 255, 255); line-height: 27px;
+}
+.board td {
+	background: url("/image/board_line.png") repeat-x bottom rgb(21, 21, 21); border: 1px solid rgb(48, 42, 42); border-image: none; height: 32px; text-align: center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.board td.baner {
+	height: 4px; line-height: 4px;
+}
+.board td.no {
+	
+}
+.board td.subject {
+	text-align: left; color: rgb(255, 255, 255); padding-right: 4px; padding-left: 4px;
+}
+.board td.subject a:link {
+	color: rgb(139, 139, 139);
+}
+.board td.subject a:hover {
+	color: rgb(139, 139, 139);
+}
+.board td.subject a:active {
+	color: rgb(139, 139, 139);
+}
+.board td.subject a:visited {
+	color: rgb(139, 139, 139);
+}
+.board td.subjectL {
+	text-align: left; color: rgb(255, 255, 255); padding-right: 4px; padding-left: 4px;
+}
+.board td.subjectL a:link {
+	color: rgb(255, 255, 255);
+}
+.board td.subjectL a:hover {
+	color: rgb(255, 255, 255);
+}
+.board td.subjectL a:active {
+	color: rgb(255, 255, 255);
+}
+.board td.subjectL a:visited {
+	color: rgb(255, 255, 255);
+}
+.board td.subjectA {
+	text-align: left; color: rgb(0, 191, 255); padding-right: 4px; padding-left: 4px;
+}
+.board td.subjectA a:link {
+	color: rgb(0, 191, 255);
+}
+.board td.subjectA a:hover {
+	color: rgb(0, 191, 255);
+}
+.board td.subjectA a:active {
+	color: rgb(0, 191, 255);
+}
+.board td.subjectA a:visited {
+	color: rgb(0, 191, 255);
+}
+.board td.write {
+	text-align: left; color: rgb(255, 255, 255); padding-left: 6px;
+}
+.board td.regdate {
+	color: rgb(255, 255, 255);
+}
+.board td.hit {
+	color: rgb(139, 139, 139);
+}
+.board tr.notice td {
+	background: rgb(94, 94, 94);
+}
+.board tr.notice td.no {
+	color: rgb(255, 255, 255); font-weight: normal;
+}
+.board tr.notice td.subject a {
+	color: rgb(0, 191, 255);
+}
+.board tr.notice td.subjectL a {
+	color: rgb(0, 191, 255);
+}
+.board tr.notice td.write {
+	text-align: left; color: rgb(255, 255, 255);
+}
+.board tr.notice td.regdate {
+	color: rgb(255, 255, 255);
+}
+.viewTop {
+	height: 27px; line-height: 27px;
+}
+.viewTop th {
+	background: rgb(175, 175, 175); padding: 5px; border: 1px solid rgb(74, 74, 74); border-image: none; color: rgb(0, 0, 0);
+}
+.viewTop td {
+	background: rgb(21, 21, 21); padding: 5px; border: 1px solid rgb(42, 42, 42); border-image: none; color: rgb(255, 255, 255);
+}
+.viewContent {
+	background: rgb(21, 21, 21); border: 1px solid rgb(36, 36, 36); border-image: none; height: 400px;
+}
+.viewContent td {
+	padding: 15px 25px; line-height: 18px;
+}
+.commentForm {
+	background: rgb(175, 175, 175); width: 100%; height: 72px;
+}
+.commentForm td {
+	text-align: center; color: rgb(0, 0, 0);
+}
+.commentForm .title {
+	font-size: 14px; font-weight: bold;
+}
+.commentForm .conntent {
+	
+}
+.commentView {
+	background: rgb(21, 21, 21); border: 1px solid rgb(36, 36, 36); border-image: none;
+}
+.commentView td {
+	height: 30px; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.commentView .write {
+	height: 27px; color: rgb(206, 202, 128); line-height: 27px;
+}
+.commentView .content {
+	height: 27px; line-height: 27px;
+}
+.commentView .regdate {
+	height: 27px; text-align: center; line-height: 27px;
+}
+.boardWrite {
+	border: 1px solid rgb(42, 42, 42); border-image: none; width: 100%;
+}
+.boardWrite th {
+	background: rgb(175, 175, 175); padding: 5px; color: rgb(0, 0, 0); border-bottom-color: rgb(42, 42, 42); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.boardWrite td {
+	background: rgb(21, 21, 21); padding: 5px 5px 5px 15px; text-align: left; color: rgb(226, 226, 226); border-bottom-color: rgb(42, 42, 42); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.boardWrite td.title .input6 {
+	background: rgb(191, 191, 191); border: 1px solid rgb(184, 184, 184); border-image: none; width: 234px; height: 24px; color: rgb(21, 21, 21);
+}
+.boardWrite td.title .input61 {
+	background: rgb(104, 131, 151); border: 1px solid rgb(31, 72, 101); border-image: none; width: 400px; height: 24px; color: rgb(163, 181, 224);
+}
+.boardWrite td.content {
+	
+}
+.boardWrite td.content textarea {
+	background: rgb(191, 191, 191); border: 1px solid rgb(184, 184, 184); border-image: none; width: 679px; height: 139px; color: rgb(21, 21, 21);
+}
+.boardWrite td.blank {
+	background: none; height: 10px;
+}
+.my_info {
+	border: 1px solid rgb(42, 42, 42); border-image: none; width: 100%; margin-bottom: 15px;
+}
+.my_info th {
+	background: rgb(56, 56, 56); height: 29px; color: rgb(219, 219, 219); border-bottom-color: rgb(42, 42, 42); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.my_info td {
+	background: rgb(21, 21, 21); padding: 5px 5px 5px 15px; text-align: left; color: rgb(168, 168, 168); border-bottom-color: rgb(42, 42, 42); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.my_info td.title .input6 {
+	background: rgb(104, 131, 151); border: 1px solid rgb(31, 72, 101); border-image: none; width: 148px; height: 23px; color: rgb(163, 181, 224);
+}
+.my_info td.content {
+	background: url("/image/boardWriteBg02.gif") no-repeat center; height: 174px; padding-left: 8px;
+}
+.my_info td.content textarea {
+	width: 890px; height: 160px;
+}
+.my_info td.blank {
+	background: none; height: 10px;
+}
+.moneyList {
+	width: 100%; border-collapse: collapse; border-spacing: 0;
+}
+.moneyList th {
+	height: 31px; text-align: center;
+}
+.moneyList td {
+	border: 1px solid rgb(48, 42, 42); border-image: none; height: 30px; text-align: center; color: rgb(139, 139, 139);
+}
+.guide {
+	color: rgb(70, 160, 160);
+}
+.guide th {
+	height: 33px; text-align: left; color: rgb(70, 160, 160); padding-left: 8px;
+}
+.guide td.content {
+	height: 200px; color: rgb(70, 160, 160);
+}
+.bettingruleTable td {
+	line-height: 18px;
+}
+.bettingruleTable2 {
+	border-collapse: separate; border-spacing: 1;
+}
+.bettingruleTable2 td {
+	color: rgb(255, 255, 255);
+}
+.msg {
+	width: 100%; border-collapse: collapse; border-spacing: 0;
+}
+.msg th {
+	height: 21px; text-align: center; color: rgb(255, 255, 255); line-height: 21px;
+}
+.msg th.no {
+	background: url("/image/msgTitleBg01.gif") no-repeat center;
+}
+.msg th.subject {
+	background: url("/image/msgTitleBg02.gif") no-repeat center;
+}
+.msg th.send {
+	background: url("/image/msgTitleBg03.gif") no-repeat center;
+}
+.msg th.views {
+	background: url("/image/msgTitleBg04.gif") no-repeat center;
+}
+.msg th.delete {
+	background: url("/image/msgTitleBg05.gif") no-repeat center;
+}
+.msg td {
+	text-align: center; color: rgb(11, 11, 11); line-height: 21px;
+}
+.msg td.no {
+	background: url("/image/msgConBg01.gif") no-repeat center; height: 21px;
+}
+.msg td.subject {
+	background: url("/image/msgConBg02.gif") no-repeat center; text-align: left; padding-right: 8px; padding-left: 8px;
+}
+.msg td.send {
+	background: url("/image/msgConBg03.gif") no-repeat center;
+}
+.msg td.views {
+	background: url("/image/msgConBg04.gif") no-repeat center;
+}
+.msg td.delete {
+	
+}
+.join {
+	margin: 39px auto; width: 624px;
+}
+.join img {
+	vertical-align: middle;
+}
+.join th {
+	height: 40px; text-align: right; color: rgb(237, 237, 237);
+}
+.join tr {
+	
+}
+.join td.title {
+	text-align: left;
+}
+.join td.title input {
+	background: rgb(237, 237, 237); border: 1px solid rgb(237, 237, 237); border-image: none; width: 177px; height: 26px; color: rgb(0, 0, 0); padding-left: 14px;
+}
+.join td.blank {
+	background: url("/image/line_dot.png") repeat-x center; height: 10px;
+}
+.noticeTb {
+	background: rgb(4, 47, 76); border: 1px solid rgb(31, 72, 101); border-image: none; color: rgb(255, 255, 255);
+}
+.mgpageList td {
+	background: rgb(0, 0, 0); padding: 5px; border: 1px solid rgb(183, 182, 182); border-image: none; height: 26px; text-align: center;
+}
+.mgpageList th {
+	background: rgb(25, 106, 214); padding: 5px; border: 1px solid rgb(183, 182, 182); border-image: none; height: 26px; color: rgb(255, 255, 255);
+}
+.mgpageList .betInfo th {
+	background: rgb(55, 60, 64); padding: 0px; border: 0px currentColor; border-image: none;
+}
+.mgpageList .betInfo td {
+	padding: 0px; border: 0px currentColor; border-image: none;
+}
+.mgpageBtn {
+	background: rgb(224, 224, 224); padding: 3px; border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(0, 0, 0);
+}
+.charge {
+	border: 1px solid rgb(45, 45, 45); border-image: none; width: 100%;
+}
+.charge th {
+	background: rgb(21, 21, 21); padding: 5px; height: 32px; text-align: center; color: rgb(195, 195, 195); border-bottom-color: rgb(45, 45, 45); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.charge td {
+	text-align: left; color: rgb(168, 168, 168); padding-left: 10px; border-bottom-color: rgb(45, 45, 45); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.charge td.title .input6 {
+	background: rgb(14, 14, 14); border: 1px solid rgb(98, 98, 98); border-image: none; width: 122px; height: 23px; color: rgb(208, 208, 208);
+}
+.charge td.content {
+	background: url("/image/boardWriteBg02.gif") no-repeat center; height: 174px; padding-left: 8px;
+}
+.charge td.content textarea {
+	width: 890px; height: 160px;
+}
+.charge td.blank {
+	background: none; height: 10px;
+}
+.moneyInfo {
+	background: url("/image/moneyInfo_bg.png") no-repeat top rgb(21, 21, 21); border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(36, 36, 36) rgb(36, 36, 36); border-image: none;
+}
+.moneyInfo th {
+	width: 100px; height: 67px; text-align: center;
+}
+.moneyInfo td {
+	color: rgb(176, 189, 196); line-height: 26px;
+}
+.exchange {
+	background: url("/image/exchange_bg.gif") no-repeat; width: 922px; height: 245px;
+}
+.exchange th {
+	background: url("/image/boardWriteTitleBg.gif") no-repeat top; height: 29px; color: rgb(212, 211, 211);
+}
+.exchange td.title {
+	
+}
+.exchange td.title .input6 {
+	background: rgb(104, 131, 151); border: 1px solid rgb(31, 72, 101); border-image: none; width: 122px; height: 23px; color: rgb(163, 181, 224);
+}
+.exchange td.content {
+	background: url("/image/boardWriteBg02.gif") no-repeat center; height: 174px; padding-left: 8px;
+}
+.exchange td.content textarea {
+	width: 890px; height: 160px;
+}
+.exchange td.blank {
+	background: none; height: 10px;
+}
+.color1 a:link {
+	color: rgb(64, 110, 163); font-size: 12px; text-decoration: none;
+}
+.color1 a:hover {
+	color: rgb(64, 110, 163); font-size: 12px; text-decoration: none;
+}
+.color1 a:active {
+	color: rgb(64, 110, 163); font-size: 12px; text-decoration: none;
+}
+.color1 a:visited {
+	color: rgb(64, 110, 163); font-size: 12px; text-decoration: none;
+}
+.color2 {
+	color: rgb(51, 51, 51);
+}
+.color3 {
+	color: rgb(176, 176, 176);
+}
+.color4 {
+	color: rgb(255, 148, 32);
+}
+.color5 {
+	color: rgb(255, 255, 255);
+}
+.color6 {
+	color: rgb(205, 205, 205);
+}
+.ml12 {
+	margin-left: 12px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.titstyle {
+	padding-top: 12px;
+}
+.handyGuide td {
+	padding: 5px; text-align: center;
+}
+.mainGame td {
+	height: 30px; color: rgb(95, 85, 76); border-bottom-color: rgb(41, 41, 41); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mainGame td.date {
+	text-align: center; color: rgb(183, 183, 183); font-weight: bold;
+}
+.mainGame td.league {
+	text-align: left; color: rgb(255, 255, 255);
+}
+.mainGame td.homeTeam {
+	background: url("/image/main_rate_01.png") no-repeat center; text-align: center; color: rgb(255, 255, 255); padding-right: 5px; padding-left: 5px; font-weight: bold;
+}
+.mainGame td.homeTeam div.left {
+	width: 150px; height: 23px; text-align: left; line-height: 25px; overflow: hidden; padding-left: 4px; white-space: nowrap;
+}
+.mainGame td.homeTeam div.right {
+	width: 38px; height: 23px; text-align: right; color: rgb(255, 255, 255); line-height: 25px; padding-right: 4px;
+}
+.mainGame td.nonTeam {
+	background: url("/image/main_rate_02.png") no-repeat center; text-align: center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mainGame td.awayTeam {
+	background: url("/image/main_rate_01.png") no-repeat center; text-align: center; color: rgb(255, 255, 255); padding-right: 5px; padding-left: 5px; font-weight: bold;
+}
+.mainGame td.awayTeam div.right {
+	width: 150px; height: 23px; text-align: right; line-height: 25px; overflow: hidden; padding-right: 4px; white-space: nowrap;
+}
+.mainGame td.awayTeam div.left {
+	width: 38px; height: 23px; text-align: left; color: rgb(255, 255, 255); line-height: 25px; overflow: hidden; padding-left: 4px;
+}
+.mainGame td.state {
+	text-align: center; color: rgb(218, 144, 15);
+}
+.mainBoard {
+	margin-top: 40px; margin-right: 8px; margin-left: 8px;
+}
+.mainBoard td {
+	color: rgb(255, 255, 255); border-bottom-color: rgb(96, 90, 104); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mainBoard td a {
+	color: rgb(255, 255, 255);
+}
+.mainBoard td.date {
+	color: rgb(255, 255, 255);
+}
+.BankTitle {
+	background: url("/image/BankTitle_bg.png"); width: 100%; height: 28px; margin-top: 10px;
+}
+.BankTitle th {
+	color: rgb(178, 178, 178);
+}
+.main_img_div {
+	border: 2px solid rgb(98, 45, 119); border-image: none; width: 1196px;
+}
+#focus ul {
+	margin: 0px; padding: 0px;
+}
+.clearfix::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+.clearfix {
+	-ms-zoom: 1;
+}
+ul {
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+.wrapper {
+	margin: 0px auto; padding: 0px; width: 1196px;
+}
+#focus {
+	width: 1196px; height: 356px; overflow: hidden; position: relative;
+}
+#focus ul {
+	height: 356px; position: absolute;
+}
+#focus ul li {
+	width: 1196px; height: 356px; overflow: hidden; float: left; position: relative;
+}
+#focus ul li div {
+	overflow: hidden; position: absolute;
+}
+#focus .btnBg {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 1196px; height: 20px; position: absolute;
+}
+#focus .btn {
+	padding: 5px 10px; top: 0px; width: 1196px; height: 10px; text-align: right; right: 0px; position: absolute;
+}
+#focus .btn span {
+	background: rgb(255, 255, 255); width: 25px; height: 10px; margin-left: 5px; display: inline-block; cursor: pointer; _display: inline; _zoom: 1; _font-size: 0;
+}
+#focus .btn span.on {
+	background: rgb(255, 255, 255);
+}
+#focus .preNext {
+	background: url("./skin/hanqing_mall/images/sprite.png") no-repeat 0px 0px; top: 90px; width: 45px; height: 100px; position: absolute; cursor: pointer;
+}
+#focus .pre {
+	left: 0px;
+}
+#focus .next {
+	background-position: right top; right: 0px;
+}
+.top_info {
+	margin-top: 80px;
+}
+.top_info span {
+	color: rgb(121, 121, 121);
+}
+.top_info td {
+	color: rgb(196, 170, 134);
+}
+.top_info a {
+	color: rgb(196, 170, 134); font-weight: bold;
+}
+.top_info span a {
+	color: rgb(196, 170, 134); font-weight: bold;
+}
+.top_info span font {
+	color: rgb(196, 170, 134); font-weight: bold;
+}
+.mini_list {
+	background: url("/image/mini_list_bg.png") no-repeat top; width: 100%;
+}
+.mini_list th {
+	height: 55px; text-align: center; color: rgb(167, 167, 167);
+}
+.mini_list td {
+	padding: 5px; border: 1px solid rgb(150, 150, 150); border-image: none; text-align: center;
+}
+.mini_list td.homeTeamLadder1 {
+	background: url("/image/mini_ladder_bg_01_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLadder1 {
+	background: url("/image/mini_ladder_bg_01_right.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLadder2 {
+	background: url("/image/mini_ladder_bg_02_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLadder2 {
+	background: url("/image/mini_ladder_bg_02_right.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLadder3 {
+	background: url("/image/mini_ladder_bg_03_left.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLadder3 {
+	background: url("/image/mini_ladder_bg_03_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLadder4 {
+	background: url("/image/mini_ladder_bg_04_left.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLadder4 {
+	background: url("/image/mini_ladder_bg_04_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLadder5 {
+	background: url("/image/mini_ladder_bg_05_left.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLadder5 {
+	background: url("/image/mini_ladder_bg_05_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLadder6 {
+	background: url("/image/mini_ladder_bg_06_left.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLadder6 {
+	background: url("/image/mini_ladder_bg_06_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLadder7 {
+	background: url("/image/mini_ladder_bg_07_left.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLadder7 {
+	background: url("/image/mini_ladder_bg_07_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLadder8 {
+	background: url("/image/mini_ladder_bg_08_left.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLadder8 {
+	background: url("/image/mini_ladder_bg_08_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamSnail1 {
+	background: url("/image/mini_snail_bg_01_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.nonTeamSnail1 {
+	background: url("/image/mini_snail_bg_01_center.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamSnail1 {
+	background: url("/image/mini_snail_bg_01_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLowhigh1 {
+	background: url("/image/mini_list_04_01_on.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLowhigh1 {
+	background: url("/image/mini_list_04_03_on.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamLowhigh2 {
+	background: url("/image/mini_blue_bg_03_on.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamLowhigh2 {
+	background: url("/image/mini_red_bg_03_on.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamPower1 {
+	background: url("/image/mini_power_bg_01_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamPower1 {
+	background: url("/image/mini_power_bg_01_right.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamPower2 {
+	background: url("/image/mini_power_bg_02_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamPower2 {
+	background: url("/image/mini_power_bg_02_right.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamPower3 {
+	background: url("/image/mini_power_bg_03_left.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamPower3 {
+	background: url("/image/mini_power_bg_03_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamPower4 {
+	background: url("/image/mini_power_bg_04_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.nonTeamPower4 {
+	background: url("/image/mini_power_bg_04_center.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamPower4 {
+	background: url("/image/mini_power_bg_04_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamPower5 {
+	background: url("/image/mini_ladder_bg_01_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamPower5 {
+	background: url("/image/mini_ladder_bg_01_right.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamAladin1 {
+	background: url("/image/mini_aladin_bg_01_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamAladin1 {
+	background: url("/image/mini_aladin_bg_01_right.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamAladin2 {
+	background: url("/image/mini_aladin_bg_02_left.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamAladin2 {
+	background: url("/image/mini_aladin_bg_02_right.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.homeTeamAladin3 {
+	background: url("/image/mini_aladin_bg_03_left.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.awayTeamAladin3 {
+	background: url("/image/mini_aladin_bg_03_right.png?") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_list td.nonTeam {
+	background: url("/image/betInfo_bg.png") no-repeat; color: rgb(255, 255, 255);
+}
+.mini_list td.Selected {
+	opacity: 0.5; -moz-opacity: 0.5;
+}
+.mini_list td.SelectedN {
+	opacity: 0.5; -moz-opacity: 0.5;
+}
+.mini_list td.MouseOn {
+	opacity: 0.5; -moz-opacity: 0.5;
+}
+.mini_list td.MouseOnN {
+	opacity: 0.5; -moz-opacity: 0.5;
+}
+.mini_list .displayNone {
+	display: none;
+}
+.mini_list td div.info1 {
+	height: 86px;
+}
+.mini_list td div.ratio1 {
+	height: 42px; line-height: 42px;
+}
+.mini_list td div.info2 {
+	height: 40px;
+}
+.mini_list td div.ratio2 {
+	height: 24px; line-height: 24px;
+}
+.mini_list td div.ratio3 {
+	background: url("/image/mini_snail_ratio_bg.png") no-repeat center; margin: 0px auto; width: 75px; height: 34px; line-height: 34px;
+}
+.mini_list td div.ratio4 {
+	margin-right: 20px; float: right;
+}
+.mini_list td table td {
+	padding: 0px; border: 0px currentColor; border-image: none;
+}
+.mini_new_list {
+	background: url("/image/mini_list_bg.png") no-repeat top; height: 178px;
+}
+.mini_new_list th {
+	height: 58px; text-align: center; color: rgb(167, 167, 167);
+}
+.mini_new_list td {
+	text-align: center;
+}
+.mini_new_list td.homeTeamLadder1 {
+	background: url("/image/mini_ladder_bg_01.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamLadder1 {
+	background: url("/image/mini_ladder_bg_02.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamLadder2 {
+	background: url("/image/mini_ladder_bg_03.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamLadder2 {
+	background: url("/image/mini_ladder_bg_04.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamLadder3 {
+	background: url("/image/mini_ladder_bg_05.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamLadder3 {
+	background: url("/image/mini_ladder_bg_06.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamLadder4 {
+	background: url("/image/mini_ladder_bg_07.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.nonTeamLadder4 {
+	background: url("/image/mini_ladder_bg_07.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamLadder4 {
+	background: url("/image/mini_ladder_bg_07.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamLadder5 {
+	background: url("/image/mini_ladder_bg_07.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.nonTeamLadder5 {
+	background: url("/image/mini_ladder_bg_07.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamLadder5 {
+	background: url("/image/mini_ladder_bg_07.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamSnail1 {
+	background: url("/image/mini_snail_bg_01.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.nonTeamSnail1 {
+	background: url("/image/mini_snail_bg_02.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamSnail1 {
+	background: url("/image/mini_snail_bg_03.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamLowhigh1 {
+	background: url("/image/mini_lowhigh_bg_01.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamLowhigh1 {
+	background: url("/image/mini_lowhigh_bg_02.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamLowhigh2 {
+	background: url("/image/mini_lowhigh_bg_03.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamLowhigh2 {
+	background: url("/image/mini_lowhigh_bg_04.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamPower1 {
+	background: url("/image/mini_power_bg_01.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamPower1 {
+	background: url("/image/mini_power_bg_02.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamPower2 {
+	background: url("/image/mini_power_bg_03.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamPower2 {
+	background: url("/image/mini_power_bg_04.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamPower3 {
+	background: url("/image/mini_power_bg_05.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.nonTeamPower3 {
+	background: url("/image/mini_power_bg_06.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamPower3 {
+	background: url("/image/mini_power_bg_07.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamPower4 {
+	background: url("/image/mini_power_bg_08.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamPower4 {
+	background: url("/image/mini_power_bg_09.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.homeTeamPower5 {
+	background: url("/image/mini_power_bg_10.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.awayTeamPower5 {
+	background: url("/image/mini_power_bg_11.png") no-repeat center; color: rgb(255, 255, 255); font-weight: bold;
+}
+.mini_new_list td.nonTeam {
+	background: url("/image/betInfo_bg.png") no-repeat; color: rgb(255, 255, 255);
+}
+.mini_new_list td p {
+	padding-top: 16px;
+}
+.mini_new_list td.homeTeamLadder5 p {
+	padding-top: 0px;
+}
+.mini_new_list td.nonTeamLadder5 p {
+	padding-top: 0px;
+}
+.mini_new_list td.awayTeamLadder5 p {
+	padding-top: 0px;
+}
+.mini_new_list td.Selected {
+	opacity: 0.5; -moz-opacity: 0.5;
+}
+.mini_new_list td.SelectedN {
+	opacity: 0.5; -moz-opacity: 0.5;
+}
+.mini_new_list td.MouseOn {
+	opacity: 0.5; -moz-opacity: 0.5;
+}
+.mini_new_list td.MouseOnN {
+	opacity: 0.5; -moz-opacity: 0.5;
+}
+.main_list {
+	margin-top: 3px; margin-bottom: 15px;
+}
+.main_list td {
+	height: 31px; border-bottom-color: rgb(38, 38, 38); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.main_list td.subject {
+	padding-left: 7px;
+}
+.main_list td.subject a {
+	color: rgb(180, 180, 180);
+}
+.main_list td.date {
+	color: rgb(122, 122, 122); padding-right: 2px;
+}
+.main_ico {
+	margin-top: 25px;
+}
+.main_ico td {
+	padding-right: 9px;
+}
+.main_ico td a:hover img {
+	box-shadow: 0px 0px 8px #fff;
+}
+.sub_right01 {
+	background: url("/image/sub_right_bg_01.png") no-repeat;
+}
+.sub_right01 td {
+	color: rgb(26, 25, 25);
+}
+.sub_right01 td span {
+	color: rgb(125, 125, 125); font-weight: bold;
+}
+.sub_right01 td font.color01 {
+	color: rgb(255, 213, 45); font-weight: bold;
+}
+.sub_right01 td font.color02 {
+	color: rgb(205, 127, 24); font-weight: bold;
+}
+.sub_right01 td font.color03 {
+	color: rgb(193, 1, 34); font-weight: bold;
+}
+.foot_link {
+	background: rgb(0, 0, 0); border: 1px solid rgb(41, 41, 41); border-image: none; margin-bottom: 20px;
+}
+.foot_link td {
+	color: rgb(122, 122, 122);
+}
+.foot_link a {
+	color: rgb(255, 255, 255);
+}

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0042)http://wd-82.com/View.aspx -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+         <TITLE>개체 참조가 개체의 인스턴스로 설정되지 않았습니다.</TITLE>         
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<STYLE>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </STYLE>
+     
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>     
+<BODY bgcolor="white"><SPAN>
+<H1>'/' 응용 프로그램에 서버 오류가 있습니다.
+<HR width="100%" size="1" color="silver">
+</H1>
+<H2><I>개체 참조가 개체의 인스턴스로 설정되지 않았습니다.</I> </H2></SPAN>             <FONT face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif "><B>설명: 
+</B>현재 웹 요청을 실행하는 동안 처리되지 않은 예외가 발생했습니다. 스택 추적을 검토하여 발생한 오류 및 코드에서 오류가 발생한 위치에 
+대한 자세한 정보를 확인하십시오.             <BR><BR><B>예외 정보: 
+</B>System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.<BR><BR><B>소스 
+오류:</B> <BR><BR>
+<TABLE width="100%" bgcolor="#ffffcc">
+  <TBODY>
+  <TR>
+    <TD><CODE>
+<PRE>
+줄 74:             if (!IsPostBack)
+줄 75:             {
+<FONT color="red">줄 76:                 prevPage = Request.UrlReferrer.ToString();
+</FONT>줄 77: 
+줄 78:                 try</PRE></CODE> 
+                        </TD></TR></TBODY></TABLE><BR><B>소스 파일: </B> 
+d:\WIND\View.aspx.cs<B> &nbsp;&nbsp; 줄: </B> 76             <BR><BR><B>스택 
+추적:</B> <BR><BR>
+<TABLE width="100%" bgcolor="#ffffcc">
+  <TBODY>
+  <TR>
+    <TD><CODE>
+<PRE>
+[NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.]
+   View.Page_Load(Object sender, EventArgs e) in d:\WIND\View.aspx.cs:76
+   System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e) +24
+   System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e) +41
+   System.Web.UI.Control.OnLoad(EventArgs e) +131
+   System.Web.UI.Control.LoadRecursive() +65
+   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +2427
+</PRE></CODE> 
+                        </TD></TR></TBODY></TABLE><BR>
+<HR width="100%" size="1" color="silver">
+<B>버전 정보:</B>&nbsp;Microsoft .NET Framework 버전:2.0.50727.8762; ASP.NET 
+버전:2.0.50727.8762             </FONT>     </BODY></HTML><!-- 
+[NullReferenceException]: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: View.Page_Load(Object sender, EventArgs e) 파일 d:\WIND\View.aspx.cs:줄 76
+   위치: System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   위치: System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   위치: System.Web.UI.Control.OnLoad(EventArgs e)
+   위치: System.Web.UI.Control.LoadRecursive()
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[HttpUnhandledException]: 'System.Web.HttpUnhandledException' 형식의 예외가 Throw되었습니다.
+   위치: System.Web.UI.Page.HandleError(Exception e)
+   위치: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   위치: System.Web.UI.Page.ProcessRequest()
+   위치: System.Web.UI.Page.ProcessRequest(HttpContext context)
+   위치: ASP.view_aspx.ProcessRequest(HttpContext context) 파일 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\628f4083\3a1f34da\App_Web_dbqizlk8.14.cs:줄 0
+   위치: System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   위치: System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+자세한 오류 메시지를 표시하도록 ASP.NET이 &lt;customErrors mode="Off"/&gt;를 사용하여 구성되었으므로 이 오류 페이지에는 중요한 정보가 포함될 수 있습니다. 프로덕션 환경에서는 &lt;customErrors mode="On"/&gt; 또는 &lt;customErrors mode="RemoteOnly"/&gt;를 사용하십시오.-->

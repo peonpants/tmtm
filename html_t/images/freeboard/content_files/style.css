@@ -1,0 +1,954 @@
+body {
+	background: url("../images/bg_main_00.jpg") fixed 0% 0% / cover; color: rgb(255, 255, 255); font-family: "nanumgothic", "dotum", "gulim", "arial", sans-serif; font-size: 12px;
+}
+img {
+	border: 0px currentColor; border-image: none; font-size: 0px; vertical-align: top;
+}
+ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+dl {
+	list-style: none; margin: 0px; padding: 0px;
+}
+* {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none;
+}
+a {
+	border: 0px currentColor; border-image: none; text-decoration: none;
+}
+img.bg {
+	left: 0px; top: 0px; width: 100%; height: auto; position: fixed; min-height: 100%; min-width: 1180px;
+}
+@media screen and (max-width:1180px)
+{
+img.bg {
+	left: 50%; margin-left: -590px;
+}
+}
+div#wrap {
+	position: relative;
+}
+div#sub-area {
+	position: relative;
+}
+#wrap {
+	width: 100%; height: 100%;
+}
+#sub-area {
+	width: 100%; height: 100%;
+}
+.introHead {
+	width: 100%; height: 384px;
+}
+.introBody {
+	width: 100%; height: 634px;
+}
+.introFooter {
+	background: url("../images/bg_footer.png") repeat-x 0px 0px; width: 100%; height: 61px;
+}
+.introWrap {
+	margin: 0px auto; width: 1180px; height: auto;
+}
+.logoIntro p {
+	background: url("../images/logo_intro_02.png") no-repeat 315px 50px; margin: 0px auto; width: 100%; height: 384px; text-indent: -9999px; display: block;
+}
+.introBody .bgLogin {
+	background: url("../images/loginBox.png") no-repeat 0px 15px; margin: 0px auto; width: 450px; height: 634px;
+}
+.joinUs {
+	margin: 0px auto; padding: 34px 0px 15px 300px; width: 130px; height: 26px;
+}
+.joinUs a {
+	width: 100%; height: 100%; text-indent: -9999px; display: block;
+}
+.loginBox {
+	margin: 0px auto; width: 446px; height: 146px;
+}
+.loginBox ul {
+	padding: 0px 16px; width: 414px; height: 146px;
+}
+.loginBox ul li {
+	width: 100%; height: 58px; line-height: 2; padding-bottom: 15px;
+}
+.loginBox label {
+	width: 105px; height: 58px; text-indent: -9999px; display: inline-block;
+}
+.loginBox input {
+	background: rgba(0, 0, 0, 0.01); border: currentColor; border-image: none; width: 280px; height: 55px; color: rgb(255, 255, 255); font-size: 14px;
+}
+.btnBox {
+	margin: 0px auto; width: 446px; height: 65px;
+}
+.btnBox ul {
+	padding: 8px 17px; width: 412px; height: 49px;
+}
+.btnBox li {
+	width: 50%; height: 49px; float: left;
+}
+.btnBox button {
+	width: 150px; height: 49px; text-indent: -9999px;
+}
+.btnBox .btn {
+	background: none; width: 150px; height: 49px; text-indent: -9999px; display: block;
+}
+.btnLogin {
+	text-align: right;
+}
+.inquireKakao {
+	margin: 0px auto; width: 446px; height: 30px; padding-top: 50px;
+}
+.inquireKakao a {
+	width: 100%; height: 100%; text-indent: -9999px; display: block;
+}
+.introFooter p {
+	margin: 0px auto; width: 100%; height: 100%; text-align: center; color: rgb(170, 170, 170); line-height: 61px; letter-spacing: -1px; font-size: 11px;
+}
+#wrap {
+	margin: 0px auto; width: 100%; height: 100%;
+}
+#sub-area {
+	margin: 0px auto; width: 100%; height: 100%;
+}
+#header {
+	background: url("../images/bg_top_01.png") repeat-x 0px 0px; width: 100%; height: 230px;
+}
+#content::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: "";
+}
+#footer {
+	background: url("../images/bg_footer.png") repeat-x 0px 0px; width: 100%; height: 61px;
+}
+.article {
+	margin: 0px auto; width: 1180px; height: auto; position: relative;
+}
+#sideWing {
+	background: rgb(204, 204, 204); left: 50%; top: 355px; width: 209px; height: auto; margin-left: -819px; position: absolute;
+}
+.topLink {
+	width: 100%; height: 34px;
+}
+.topLink ul {
+	height: 34px; overflow: hidden; float: left;
+}
+.topLink li {
+	height: 34px; color: rgb(170, 170, 170); line-height: 34px;
+}
+.topLink li a {
+	color: rgb(204, 204, 204);
+}
+.topLink li a:hover {
+	color: rgb(255, 255, 255);
+}
+.myInfo01 {
+	width: 680px;
+}
+.myInfo02 {
+	width: 500px;
+}
+.myInfo01 li {
+	background: url("../images/ar05.gif") no-repeat 13px 14px; text-indent: 22px; font-family: "dotum"; float: left;
+}
+.myInfo01 .nicname {
+	background: none; text-indent: 0px;
+}
+.myInfo01 li img {
+	margin-top: 5px;
+}
+.myInfo02 li {
+	background: url("../images/bar08.png") no-repeat 0px 15px; padding: 0px 7px; font-weight: 600; float: right;
+}
+.myInfo02 li:last-child {
+	background: none;
+}
+.topMain {
+	width: 100%; height: 100px; position: relative;
+}
+.logoMain {
+	left: 50%; top: 15px; width: 378px; height: 83px; margin-left: -189px; position: absolute;
+}
+.logoMain a {
+	background: url("../images/logo_main2.gif") no-repeat 0px 0px; width: 292px; height: 83px; text-indent: -9999px; display: block;
+}
+.linkBtn {
+	top: 22px; width: 400px; height: 33px; right: 0px; position: absolute;
+}
+.linkBtn li {
+	width: 100px; float: left;
+}
+.linkBtn img {
+	width: 90px; height: 33px; margin-left: 10px;
+}
+.nav {
+	width: 100%; height: 40px;
+}
+.navigator {
+	width: 100%; height: 100%; text-align: center; margin-top: 20px; position: relative;
+}
+.navigator > li {
+	padding: 0px 10px; height: 54px; text-align: center; line-height: 54px; font-family: "daum"; font-size: 17px; display: inline-block; position: relative;
+}
+.navigator a {
+	color: rgb(255, 255, 255); display: block;
+}
+.navigator a:hover {
+	color: rgb(155, 203, 223);
+}
+.sub {
+	left: 0px; top: 35px; width: 700px; height: 20px; text-align: center; line-height: 20px; position: absolute; z-index: 1000;
+}
+.sub li {
+	padding: 0px 10px; text-align: center; font-size: 12px; float: left; display: block;
+}
+.sub li a {
+	color: rgb(255, 255, 255); font-weight: 600;
+}
+.sub a:hover {
+	color: rgb(2, 187, 214) !important;
+}
+.news {
+	width: 100%;
+}
+.news h3 {
+	background: url("../images/bar15.png") no-repeat 110px 14px; width: 130px; height: 42px; color: rgb(204, 204, 204); line-height: 42px; font-size: 16px; float: left;
+}
+.news ul {
+	width: 1050px; height: 42px; line-height: 42px; overflow: hidden; float: left;
+}
+.news li a {
+	color: rgb(187, 187, 187);
+}
+.promotionBanner {
+	width: 100%; height: 325px; margin-bottom: 10px; position: relative;
+}
+.bannerImg {
+	left: 0px; top: 0px; width: 1180px; height: 325px; overflow: hidden; position: relative;
+}
+.bannerImg img {
+	width: 1180px; height: 325px;
+}
+.bannerBtn {
+	left: 540px; bottom: 30px; list-style-type: none; position: absolute;
+}
+.bannerBtn li {
+	background: rgb(69, 69, 69); color: rgb(255, 255, 255); font-size: 14px; font-weight: 600; margin-right: 7px; float: left;
+}
+.bannerBtn li:first-child {
+	margin-left: 0px;
+}
+.bannerBtn a {
+	padding: 5px 9px; border: 1px solid rgb(51, 51, 51); border-image: none; color: rgb(255, 255, 255); display: block;
+}
+.bannerBtn a:hover {
+	padding: 5px 9px; border: 1px solid rgb(51, 51, 51); border-image: none; color: rgb(255, 255, 255); display: block;
+}
+.bannerBtn a:visited {
+	padding: 5px 9px; border: 1px solid rgb(51, 51, 51); border-image: none; color: rgb(255, 255, 255); display: block;
+}
+.bannerBtn a:hover {
+	background: rgb(254, 140, 5);
+}
+.bannerBtn a:visited {
+	background: rgb(254, 140, 5);
+}
+.menuBanner {
+	width: 100%; height: 317px;
+}
+.menuBanner ul {
+	width: 100%; height: 317px;
+}
+.menuBanner li {
+	width: 228px; height: 317px; margin-left: 10px; float: left;
+}
+.menuBanner li:first-child {
+	margin-left: 0px;
+}
+#footer p {
+	width: 100%; height: 100%; text-align: center; color: rgb(170, 170, 170); line-height: 85px; font-size: 11px;
+}
+.linkTop {
+	background: rgb(2, 187, 214); width: 40px; height: 35px; text-align: center; right: 0px; bottom: 15px; color: rgb(255, 255, 255); line-height: 15px; padding-top: 3px; font-weight: 600; display: block; position: absolute;
+}
+.linkGame {
+	width: 100%; height: 30px; text-align: center; line-height: 30px;
+}
+.linkGame a {
+	padding: 0px 5px; color: rgb(255, 255, 255); font-size: 13px; font-weight: 600;
+}
+.linkGame a:hover {
+	color: rgb(49, 134, 155);
+}
+.subTitle {
+	background: url("../images/bg_subTitle.png") repeat-x 0px 0px; width: 100%; height: 100px;
+}
+.leftSection {
+	width: 951px; height: auto;
+}
+.rightSection {
+	top: 0px; width: 209px; height: auto; right: 0px; position: absolute;
+}
+.subTitle h1 {
+	width: 300px; height: 100px; color: rgb(245, 245, 245); line-height: 100px; overflow: hidden; font-size: 36px; float: left;
+}
+.subTitle ul {
+	padding: 9px 0px; width: 862px; height: 82px; float: right;
+}
+.subTitle li {
+	width: 60px; height: 82px; overflow: hidden; padding-right: 8px; float: right;
+}
+.subTitle a {
+	width: 60px; height: 82px; display: block;
+}
+.subTitle li.searchBox {
+	width: 350px; height: 30px; padding-top: 36px; float: left;
+}
+.searchBox select {
+	background: rgb(21, 21, 21); border: 1px solid rgb(2, 187, 214); border-image: none; width: 90px; height: 25px; color: rgb(2, 187, 214);
+}
+.searchBox input {
+	background: rgb(21, 21, 21); border: 1px solid rgb(2, 187, 214); border-image: none; width: 200px; height: 23px; color: rgb(255, 255, 255);
+}
+.searchBox button {
+	background: rgb(21, 21, 21); border: 1px solid rgb(2, 187, 214); border-image: none; width: 50px; height: 25px; color: rgb(2, 187, 214); line-height: 25px;
+}
+.subTitle li.fRight {
+	width: 350px; height: 30px; padding-top: 36px; float: right;
+}
+.pageNumbering {
+	padding: 50px 0px; text-align: center;
+}
+.pageNumbering li {
+	display: inline;
+}
+.pageNumbering li a {
+	margin: 0px 1px; padding: 5px 7px; border: 1px solid rgb(170, 170, 170); border-image: none; text-align: center; color: rgb(174, 174, 174); line-height: 3;
+}
+.pageNumbering .on {
+	background: rgb(2, 187, 214); color: rgb(255, 255, 255); font-weight: 600;
+}
+.gameList {
+	width: 100%;
+}
+.gameList > div {
+	width: 100%;
+}
+.gameTitle {
+	background: url("../images/titleBar.png") no-repeat 0px 0px; height: 35px;
+}
+.gameScore ul {
+	background: url("../images/bg_gamelist.png") repeat-x 0px 0px; width: 100%; height: 29px; line-height: 29px; margin-top: 4px;
+}
+.gameScore ul li {
+	text-align: center; color: rgb(174, 174, 174); font-family: "dotum"; display: inline-block;
+}
+.gameScore .w_362 a {
+	padding: 0px 10px; width: 342px; height: 29px; color: rgb(174, 174, 174); display: block;
+}
+.gameScore .w_362 a:hover {
+	background: rgb(2, 187, 214); padding: 0px 10px; width: 342px; height: 29px; color: rgb(255, 255, 255);
+}
+.gameScore .w_332 a {
+	padding: 0px 10px; width: 312px; height: 29px; color: rgb(174, 174, 174); display: block;
+}
+.gameScore .w_332 a:hover {
+	background: rgb(2, 187, 214); padding: 0px 10px; width: 312px; height: 29px; color: rgb(255, 255, 255);
+}
+.w_105 {
+	width: 105px;
+}
+.w_262 {
+	width: 262px;
+}
+.w_362 {
+	width: 362px;
+}
+.w_332 {
+	width: 332px;
+}
+.w_60 {
+	width: 60px;
+}
+.w_62 {
+	width: 62px;
+}
+.wp_100 img {
+	margin: 5px; width: 27px; height: 17px;
+}
+span.btn_vs {
+	background: url("../images/bg_vs.png") no-repeat 0px 0px; width: 48px; height: 23px; color: rgb(170, 170, 170); line-height: 23px; font-size: 11px; font-weight: 600; display: inline-block;
+}
+.w_362 span.ta_r {
+	float: right;
+}
+.w_332 span.ta_r {
+	float: right;
+}
+.w_362 span.ta_l {
+	float: left;
+}
+.w_332 span.ta_l {
+	float: left;
+}
+.gameSummary {
+	height: 29px; line-height: 29px;
+}
+.gameSummary ul {
+	background: url("../images/bg_gamelist.png") repeat-x 0px 0px; width: 100%; height: 100%; margin-top: 4px;
+}
+.gameSummary li {
+	padding: 0px 7px 0px 10px; color: rgb(255, 255, 255); float: left;
+}
+.gameSummary li:last-child {
+	float: right;
+}
+.gameSummary li:first-child {
+	height: 29px;
+}
+.gameSummary input {
+	height: 26px; margin-top: 3px;
+}
+.bettingBoard {
+	width: 100%;
+}
+.bettingBoard > div {
+	width: 100%;
+}
+.bettingBoard {
+	background: rgb(21, 21, 21); height: auto; padding-bottom: 1px;
+}
+.bettingBoard h2 {
+	background: url("../images/clock.png") no-repeat 0px 0px; width: 100%; height: 60px; color: rgb(255, 255, 255); line-height: 58px; font-size: 24px; font-weight: 600; display: block; text-shadow: 1px 0px 0px #555;
+}
+.bettingBoard h2 span {
+	text-align: center; font-family: "nanumgothic"; display: inline-block;
+}
+.bettingBoard h2 span.fs_10 {
+	width: 10%; text-align: right;
+}
+.bettingBoard h2 span.hour {
+	width: 20%;
+}
+.bettingBoard h2 span.minutes {
+	width: 30%; margin-left: 5%;
+}
+.bettingBoard h2 span.seconds {
+	width: 30%; margin-left: 5%;
+}
+.sportsLive {
+	width: 100%; height: 100px;
+}
+.selectedGame {
+	padding: 5px; width: 199px;
+}
+.bettingSlip {
+	height: 30px; color: rgb(187, 187, 187); line-height: 30px;
+}
+.bettingSlip h3 {
+	width: 120px; height: 30px; text-indent: 12px; letter-spacing: -1px; font-size: 16px; font-weight: 600; float: left;
+}
+.bettingSlip label {
+	height: 30px; margin-left: 5px; float: left;
+}
+.bettingSlip input {
+	height: 30px; margin-left: 5px; float: left;
+}
+.selectedGame ul {
+	margin: 5px 10px; width: 189px; font-family: "dotum";
+}
+.selectedGame li {
+	width: 100%; height: auto; overflow: hidden; margin-bottom: 2px;
+}
+.selectedGame dl {
+	width: 100%; height: auto; color: rgb(204, 204, 204); letter-spacing: -1px; overflow: hidden; font-size: 11px; position: relative;
+}
+.selectedGame dt {
+	top: 0px; width: 50px; height: 38px; text-align: right; right: 10px; position: absolute;
+}
+.selectedGame dd {
+	width: 139px; line-height: 14px; padding-bottom: 3px;
+}
+button.btnDel {
+	background: url("../images/btnX.png") no-repeat 0px 0px; width: 15px; height: 17px;
+}
+.boxRed img {
+	width: 11px; height: 11px;
+}
+.bettingBoard .bettingScore {
+	background: rgb(51, 51, 51); margin: 7px; border-radius: 5px; width: 195px; font-family: "dotum"; -moz-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius: 5px;
+}
+.bettingScore ul {
+	padding: 7px; width: 181px;
+}
+.bettingScore li {
+	width: 100%; height: 20px;
+}
+.bettingScore dl {
+	width: 100%; height: 20px;
+}
+.bettingScore dt {
+	width: 47%; color: rgb(170, 170, 170); letter-spacing: -1px; overflow: hidden; display: inline-block;
+}
+.bettingScore dd {
+	width: 53%; text-align: right; overflow: hidden; display: inline-block;
+}
+.amountBet01 {
+	border-radius: 3px; width: 80%; height: 17px; text-align: right; color: rgb(2, 187, 214); font-family: "dotum"; background-color: rgb(17, 17, 17); -moz-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.amountBet02 {
+	border-radius: 3px; width: 80%; height: 17px; text-align: right; color: rgb(254, 140, 5); font-family: "dotum"; background-color: rgb(17, 17, 17); -moz-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.btn_max {
+	background: rgb(17, 17, 17); margin: 0px 0px 2px 4px; border: 1px solid rgb(118, 87, 66); border-image: none; width: 25px; height: 13px; color: rgb(118, 87, 66); line-height: 10px; display: inline-block;
+}
+.bettingScore ul .btn_bet {
+	background: url("../images/bg_betting.png") no-repeat 1px 10px; width: 100%; height: 50px;
+}
+.linkKakao {
+	margin: 10px 0px; width: 100%; height: 161px;
+}
+.linkKakao a {
+	background: url("../images/katalk.png") no-repeat 0px 0px; width: 100%; height: 100%; color: rgb(255, 255, 255); line-height: 209px; text-indent: 10px; letter-spacing: -1px; font-size: 25px; font-weight: 600; display: block; text-shadow: 1px 0px 0px #555;
+}
+.newsBoard {
+	background: rgb(21, 21, 21); width: 100%; height: auto;
+}
+.newsBoard ul {
+	padding: 5px 10px; width: 189px; font-family: "dotum";
+}
+.newsBoard h3 {
+	background: url("../images/bg_quick_02.gif") no-repeat 0px 0px; width: 100%; height: 40px; text-align: center; color: rgb(255, 255, 255); line-height: 40px; font-weight: 600; display: block; text-shadow: 4px 2px 8px #555;
+}
+.newsBoard li {
+	width: 100%; height: auto; color: rgb(153, 153, 153); overflow: hidden; margin-bottom: 2px;
+}
+.qnaGuide {
+	padding: 15px 30px; border-radius: 10px; border: 1px solid rgb(254, 140, 5); border-image: none; width: 889px; height: auto; margin-bottom: 15px; opacity: 0.7 !important; background-color: rgb(17, 17, 17); -moz-border-radius: 10px; -o-border-radius: 10px; -webkit-border-radius: 10px;
+}
+.qnaGuide p {
+	width: 100%; color: rgb(255, 255, 255); line-height: 30px; font-size: 14px; font-weight: 600;
+}
+.qnaBoard {
+	width: 100%;
+}
+.qnaBoard > div {
+	width: 100%;
+}
+.qnaTitle {
+	background: url("../images/titleBar_empty.png") no-repeat 0px 0px; height: 35px;
+}
+.qnaTitle li {
+	height: 35px; text-align: center; color: rgb(174, 174, 174); line-height: 35px; font-family: "dotum"; font-weight: 600; display: inline-block;
+}
+.qnaList ul {
+	background: url("../images/bg_gamelist.png") repeat-x 0px 0px; width: 100%; height: 29px; line-height: 29px; margin-top: 4px;
+}
+.qnaList ul li {
+	height: 29px; text-align: center; color: rgb(174, 174, 174); font-family: "dotum"; display: inline-block;
+}
+.qnaList ul li a {
+	color: rgb(174, 174, 174);
+}
+.qnaList ul li a:hover {
+	color: rgb(255, 255, 255);
+}
+.qnaList .qnaMore {
+	width: 100%; border-top-color: rgb(85, 85, 85); border-top-width: 1px; border-top-style: solid; opacity: 0.5 !important; background-color: rgb(17, 17, 17);
+}
+.qnaMore p {
+	padding: 15px 5%; width: 90%; color: rgb(250, 250, 250); line-height: 20px;
+}
+.w_65 {
+	width: 65px;
+}
+.w_120 {
+	width: 120px;
+}
+.w_581 {
+	width: 581px;
+}
+.w_701 {
+	width: 701px;
+}
+.w_646 {
+	width: 646px;
+}
+.w_180 {
+	width: 180px;
+}
+.w_231 {
+	width: 231px;
+}
+.w_135 {
+	width: 135px;
+}
+.w_141 {
+	width: 141px;
+}
+.w_273 {
+	width: 273px;
+}
+.w_120 img {
+	width: 23px; height: 23px; margin-top: 3px; margin-right: 5px;
+}
+.btnDTxt {
+	border: 1px solid rgb(2, 187, 214); border-image: none; width: 45px; height: 19px; color: rgb(2, 187, 214); font-size: 11px;
+}
+.btnWrite {
+	padding: 15px 0px; width: 100%; height: 30px;
+}
+.btnWrite a {
+	background: rgb(254, 140, 5); border-radius: 3px; width: 140px; height: 28px; text-align: center; color: rgb(255, 255, 255); line-height: 28px; font-size: 13px; font-weight: 600; float: right; -moz-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.btnWrite button {
+	background: rgb(254, 140, 5); border-radius: 3px; width: 120px; height: 28px; text-align: center; color: rgb(255, 255, 255); line-height: 28px; font-weight: 600; float: right; -moz-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.btnWrite02 {
+	padding: 15px 0px; width: 100%; height: 30px; text-align: center;
+}
+.btnWrite02 a {
+	background: rgb(49, 134, 155); margin: 0px 3px; padding: 0px 30px; border-radius: 3px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 28px; font-weight: 600; display: inline-block; -moz-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.boardView {
+	background: rgba(0, 0, 0, 0.7); width: 100%;
+}
+.boardView > div {
+	width: 100%; color: rgb(105, 105, 105); font-family: "dotum";
+}
+.bdTtl ul {
+	background: url("../images/titleBar_empty.png") no-repeat 0px 0px; width: 100%;
+}
+.bdTtl li {
+	width: 100%; color: rgb(255, 255, 255);
+}
+.bdTtl .bdTtl01 {
+	height: 35px; text-align: center; line-height: 35px; font-weight: 600; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.bdTtl .bdTtl02 {
+	height: 35px; line-height: 35px; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.bdTtl p {
+	padding: 0px 10px; color: rgb(170, 170, 170); display: inline;
+}
+.bdContents {
+	width: 100%; min-height: 100px;
+}
+.boardView .bdReply {
+	padding: 10px 15px; width: 921px;
+}
+.bdReply ul {
+	background: rgb(51, 51, 51); padding: 10px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 899px; height: 60px;
+}
+.bdReply li {
+	overflow: hidden; float: left;
+}
+.bdReply01 {
+	width: 779px; height: 60px;
+}
+.bdReply02 {
+	width: 120px; height: 60px; text-align: center;
+}
+.bdReply dt {
+	color: rgb(255, 255, 255); float: left;
+}
+.bdReply dd {
+	color: rgb(255, 255, 255); float: left;
+}
+.bdReply01 dt {
+	width: 120px; height: 60px; line-height: 3; text-indent: 25px;
+}
+.bdReply01 dd {
+	width: 658px; height: 60px;
+}
+.bdReply01 .bd_t01 {
+	background: rgb(250, 250, 250); border: 1px solid rgb(204, 204, 204); border-image: none; width: 645px; height: 56px;
+}
+.bdReply02 button {
+	background: rgb(2, 187, 214); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(221, 221, 221); border-image: none; width: 100px; height: 58px; color: rgb(255, 255, 255);
+}
+.bdRecentList {
+	width: 100%;
+}
+.bdRecentList ul {
+	width: 100%; border-top-color: rgb(153, 153, 153); border-top-width: 1px; border-top-style: solid;
+}
+.bdRecentList li {
+	width: 100%; height: auto; border-bottom-color: rgb(85, 85, 85); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.bdRecentList dl {
+	padding: 5px 5%; width: 90%;
+}
+.bdRecentList dt {
+	width: 100%; color: rgb(136, 136, 136); line-height: 28px;
+}
+.bdRecentList dt p {
+	color: rgb(170, 170, 170); padding-right: 10px; display: inline;
+}
+.bdRecentList dd {
+	width: 100%; color: rgb(255, 255, 255); line-height: 20px;
+}
+.wrapWrite {
+	padding: 25px 0px; width: 100%; margin-bottom: 10px; opacity: 0.7 !important; background-color: rgb(17, 17, 17);
+}
+.wrapWrite ul {
+	padding: 0px 5%; width: 90%;
+}
+.wrapWrite li {
+	display: inline-block;
+}
+.wrapWrite .wwTitle {
+	width: 14%; color: rgb(254, 140, 5); text-indent: 10px; letter-spacing: -1px; font-size: 13px; font-weight: 600;
+}
+.wrapWrite .wwContents {
+	width: 81%; margin-left: 5%;
+}
+.wrapWrite01 {
+	height: 35px; color: rgb(255, 255, 255); line-height: 25px;
+}
+.wrapWrite02 {
+	height: 62px; line-height: 60px; border-top-color: rgb(85, 85, 85); border-bottom-color: rgb(85, 85, 85); border-top-width: 1px; border-bottom-width: 1px; border-top-style: dashed; border-bottom-style: dashed;
+}
+.wrapWrite03 {
+	height: 280px;
+}
+.wrapWrite02 input {
+	width: 100%; height: 30px;
+}
+.wrapWrite02 select {
+	width: 30%; height: 30px;
+}
+.wrapWrite03 textarea {
+	width: 100%; height: 265px; margin-top: 15px; vertical-align: middle;
+}
+.wrapWrite04 {
+	height: 62px; line-height: 60px; border-top-color: rgb(85, 85, 85); border-top-width: 1px; border-top-style: dashed;
+}
+.wrapWrite04 input {
+	width: 30%; height: 30px;
+}
+.wrapWrite05 {
+	height: 40px; line-height: 40px;
+}
+.wrapWrite05 input {
+	width: 30%; height: 30px;
+}
+.wrapWrite h2 {
+	background: url("../images/titleBar_empty.png") no-repeat 0px 0px; width: 100%; height: 35px; color: rgb(255, 255, 255); line-height: 35px; text-indent: 30px; font-size: 15px; font-weight: 600;
+}
+.wwContents button {
+	background: rgb(85, 85, 85); padding: 0px 5px; border: 1px solid rgb(2, 187, 214); border-image: none; height: 30px; color: rgb(255, 255, 255); line-height: 30px; margin-left: 5px;
+}
+.simpleView {
+	background: rgb(17, 17, 17); border: 1px solid rgb(204, 204, 204); border-image: none; left: 50%; top: 130px; width: 500px; height: 200px; margin-left: -250px; display: none; position: absolute; z-index: 10000;
+}
+.svWrap {
+	padding: 10px; width: 480px; height: 180px;
+}
+.svTop {
+	width: 100%; height: 32px; line-height: 27px; text-indent: 10px;
+}
+.svMid {
+	border: 1px solid rgb(254, 140, 5); border-image: none; width: 478px; height: 38px; line-height: 38px; text-indent: 10px;
+}
+.svBottom {
+	padding: 24px 0px 15px; width: 100%; height: 31px;
+}
+.svBottom input {
+	border-radius: 3px; border: 1px solid rgb(2, 187, 214); border-image: none; width: 210px; height: 29px; -moz-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.svBtn {
+	width: 100%; height: 25px; text-align: center;
+}
+.svBtn a {
+	background: rgb(0, 0, 0); border: 1px solid rgb(51, 51, 51); border-image: none; width: 190px; height: 23px; color: rgb(255, 255, 255); line-height: 25px; display: inline-block;
+}
+#bankGuide {
+	background: rgb(17, 17, 17); border: 1px solid rgb(204, 204, 204); border-image: none; left: 50%; top: 445px; width: 949px; height: 347px; margin-left: -590px; display: none; position: absolute; z-index: 10000;
+}
+#bankGuide a.fc_fff {
+	padding: 3px 10px; top: 10px; right: 10px; display: block; position: absolute;
+}
+#bankGuide h2 {
+	background: rgba(255, 255, 255, 0.3); padding: 0px 5%; width: 90%; height: 40px; color: rgb(255, 255, 255); line-height: 40px; font-size: 15px;
+}
+#bankGuide p {
+	margin: 0px 5%; width: 90%; height: 30px; color: rgb(2, 187, 214); line-height: 30px;
+}
+#bankGuide ul {
+	margin: 10px 5%; width: 90%;
+}
+#bankGuide li {
+	width: 50%; color: rgb(204, 204, 204); line-height: 28px; font-size: 12px; float: left; min-height: 28px;
+}
+#bankGuide dl {
+	width: 100%;
+}
+#bankGuide dt {
+	overflow: hidden; float: left;
+}
+#bankGuide dd {
+	overflow: hidden; float: left;
+}
+#bankGuide dt {
+	width: 20%; text-align: center; color: rgb(2, 187, 214);
+}
+#bankGuide dd {
+	padding: 0px 2%; width: 76%;
+}
+.gameSpace {
+	width: 100%; height: auto; margin-bottom: 15px;
+}
+.gameNotice {
+	width: 949px; margin-bottom: 15px;
+}
+.gameNotice h2 {
+	background: url("../images/titleBar_empty.png") no-repeat 0px 0px; width: 100%; height: 35px; color: rgb(254, 140, 5); line-height: 35px; text-indent: 30px; font-size: 15px; font-weight: 600;
+}
+.gameNotice ul {
+	width: 100%;
+}
+.gameNotice li {
+	background: url("../images/bg_gamelist.png") repeat-x 0px 0px; width: 100%; height: 29px; color: rgb(174, 174, 174); line-height: 29px; text-indent: 30px; font-family: "dotum"; margin-top: 4px;
+}
+.emptySpace {
+	padding: 10px 59px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 831px; min-height: 300px;
+}
+.chargGuide {
+	width: 100%; opacity: 0.7 !important; background-color: rgb(17, 17, 17);
+}
+.chargGuide ol {
+	padding: 15px 5%; width: 90%; color: rgb(255, 255, 255);
+}
+.chargGuide h2 {
+	background: url("../images/titleBar_empty.png") no-repeat 0px 0px; width: 100%; height: 35px; color: rgb(2, 187, 214); line-height: 35px; text-indent: 30px; font-size: 15px; font-weight: 600;
+}
+.chargGuide ol li {
+	width: 100%; line-height: 22px;
+}
+#joinUs {
+	border: 1px solid rgb(170, 170, 170); border-image: none; left: 50%; top: 150px; width: 800px; margin-left: -400px; display: none; position: absolute; opacity: 0.9 !important; background-color: rgb(17, 17, 17);
+}
+#joinUs h1 {
+	height: 60px; color: rgb(255, 255, 255); line-height: 60px; text-indent: 15px; font-weight: 600;
+}
+#joinUs > p {
+	width: 100%; height: 30px; color: rgb(204, 204, 204); text-indent: 15px;
+}
+.middle_section {
+	margin: 5px 15px; border-radius: 10px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 768px; -moz-border-radius: 10px; -o-border-radius: 10px; -webkit-border-radius: 10px;
+}
+.middle_section > ul {
+	margin: 0px 10px; padding: 5px 0px; width: 748px;
+}
+.middle_section > ul > li {
+	padding: 4px 0px; width: 100%; height: 28px; color: rgb(204, 204, 204); font-size: 12px;
+}
+.middle_section dl {
+	width: 100%;
+}
+.middle_section dt {
+	width: 120px; color: rgb(153, 153, 153); line-height: 28px; text-indent: 10px; font-size: 13px; font-weight: 600; float: left; display: inline-block;
+}
+.middle_section dd {
+	width: 613px; padding-left: 15px; font-family: "dotum"; float: left; display: inline-block;
+}
+.middle_section button {
+	padding-bottom: 1px; font-size: 12px; display: inline-block; cursor: pointer;
+}
+.middle_section .btnChk {
+	background: rgb(254, 140, 5); width: 70px; height: 25px; color: rgb(255, 255, 255); margin-left: 5px;
+}
+.middle_section input[type='text'] {
+	border: 1px solid rgb(204, 204, 204); border-image: none; height: 24px; font-size: 12px; opacity: 0.7 !important;
+}
+.middle_section input[type='password'] {
+	border: 1px solid rgb(204, 204, 204); border-image: none; height: 24px; opacity: 0.7 !important;
+}
+.middle_section select {
+	border: 1px solid rgb(204, 204, 204); border-image: none; height: 26px; color: rgb(105, 105, 105); line-height: 28px; padding-left: 10px; font-size: 12px; opacity: 0.7 !important;
+}
+.middle_section label {
+	margin-right: 10px;
+}
+.middle_section p {
+	height: 25px; color: rgb(136, 136, 136); line-height: 27px; letter-spacing: -1px; padding-left: 10px; display: inline;
+}
+.fRed {
+	color: rgb(188, 0, 1);
+}
+.middle_section .regLine {
+	padding-bottom: 5px; margin-bottom: 5px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.middle_section .h_58 {
+	height: 58px;
+}
+.middle_section .ddF3 {
+	width: 613px; line-height: 28px;
+}
+.iq_t01 {
+	width: 200px;
+}
+.iq_t02 {
+	width: 320px; color: rgb(136, 136, 136);
+}
+.iq_t05 {
+	width: 120px;
+}
+.iq_t09 {
+	width: 127px; color: rgb(136, 136, 136);
+}
+.btnWrite03 {
+	padding: 15px 0px; width: 100%; height: 35px; text-align: center;
+}
+.btnWrite03 a {
+	background: rgb(1, 124, 170); margin: 0px 3px; padding: 0px 25px; border-radius: 3px; height: 33px; text-align: center; color: rgb(238, 238, 238); line-height: 33px; font-size: 14px; font-weight: 600; display: inline-block; -moz-border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.userGuide {
+	background: rgba(0, 0, 0, 0.3); width: 100%;
+}
+.userGuide ol {
+	padding: 15px 5%; width: 90%; color: rgb(255, 255, 255);
+}
+.userGuide h2 {
+	background: url("../images/titleBar_empty02.png") repeat-x 0px 0px; width: 100%; height: 35px; color: rgb(2, 187, 214); line-height: 35px; text-indent: 30px; font-size: 15px; font-weight: 600;
+}
+.userGuide li {
+	width: 100%; line-height: 22px;
+}
+.userGuide h3 {
+	padding: 15px 5%; width: 90%; color: rgb(254, 140, 5); line-height: 28px;
+}
+.userGuide table {
+	background: rgba(255, 255, 255, 0.3); margin: 15px 5%; width: 90%; color: rgb(204, 204, 204);
+}
+.userGuide table th {
+	background: rgba(0, 0, 0, 0.5); padding: 10px 3px 8px; font-weight: bold;
+}
+.userGuide table td {
+	background: rgba(0, 0, 0, 0.5); padding: 10px 3px 8px; text-align: center;
+}
+.listWrap {
+	background: rgb(21, 21, 21); width: 100%; height: auto; color: rgb(187, 187, 187); line-height: 30px;
+}
+.listWrap h1 {
+	background: url("../images/bg_quick_03.gif") no-repeat 0px 0px; width: 100%; height: 40px; text-align: center; color: rgb(255, 255, 255); line-height: 40px; font-size: 15px; font-weight: 600; display: block; text-shadow: 4px 2px 8px #555;
+}
+.battingList dl {
+	padding: 5px 10px; width: 189px; font-family: "dotum"; border-bottom-color: rgb(85, 85, 85); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.battingList dt {
+	background: url("../images/icon_bell.png") no-repeat 0px 11px; width: 100%; height: 35px; line-height: 35px; text-indent: 18px; font-size: 13px; font-weight: 600;
+}
+.battingList dd {
+	background: url("../images/icon_bell.png") no-repeat 0px 2px; width: 90%; height: auto; line-height: 18px; text-indent: 15px; letter-spacing: -1px; overflow: hidden; margin-bottom: 5px; margin-left: 10%;
+}
+.battingList a:hover {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+#refresh {
+	width: 100px; height: 18px; margin-left: 15px; display: inline-block; position: relative; cursor: pointer;
+}
+#refresh img {
+	background: rgb(117, 159, 255); border-radius: 5px; border: 1px solid rgb(35, 89, 243); border-image: none; bottom: 0px; color: rgb(255, 255, 255); position: absolute; cursor: pointer; opacity: 0.5;
+}
+#refresh #re_word {
+	left: 19px; font-family: sans-serif; font-size: 14px; text-decoration: none; position: absolute;
+}

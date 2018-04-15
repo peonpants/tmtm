@@ -1,0 +1,237 @@
+span.tleft-title01 {
+	font-family:tahoma;
+}
+span.bt_status {
+	font-size:12px;
+}
+.title-name01 {
+	text-indent:10px;
+}
+.title-name01 img {
+	width:25px;
+	margin:0;
+	vertical-align:middle;
+}
+/*좌측 경기리스트, 콘텐츠 상단 경기리스트, 좌측 라이브스코어 css*/
+body {
+	
+}
+/*
+#sub-area {
+	width: 1180px;
+	margin: 0 auto;
+}*/
+#sub-area .left-side {
+	float: left;
+	width: 190px;
+	padding: 20px;
+}
+#sub-area .left-side h3 {
+	font-size: 16px;
+	color: #bbb;
+	padding: 0.5em;
+	background: #222 url(../images/content-list-h3.png?) no-repeat 10em 0.65em;
+	margin-top: 0;
+	border: 1px solid #333;
+}
+#sub-area .left-side dl dt {
+	font-size: 14px;
+	font-weight: bold;
+	color: #bd951b;
+	padding-left: 0.2em;
+	margin: 1em 0 0.5em 0;
+}
+#sub-area .left-side dl dt img {
+	vertical-align:middle;
+}
+#sub-area .left-side dl dt.football {
+	background: url(../images/content-list01.png?) no-repeat 0.75em 0;
+}
+#sub-area .left-side dl dt.baseball {
+	background: url(../images/content-list02.png?) no-repeat 0.75em 0;
+}
+#sub-area .left-side dl dt.basketball {
+	background: url(../images/content-list03.png?) no-repeat 0.75em 0;
+}
+#sub-area .left-side dl dd {
+	color: #bbb;
+	padding: 0 0 0.25em 2.5em;
+	background: url(../images/content-list-etc.png?2) no-repeat 1.5em 0.4em;
+}
+#sub-area .left-side dl dd a:hover {
+	text-decoration: underline;
+}
+
+#sub-content {
+	float:left;
+	width:850px;
+}
+
+#right-side {
+	width: 340px;
+	display: block;
+}
+
+.left-side dl dd img{
+	width:20px;
+}
+
+.game-check {
+	padding-bottom: 2em;
+}
+.game-check input {
+	vertical-align:middle;
+}
+#tleague img {
+	vertical-align:middle;
+	width:20px;
+}
+.game-check h3 {
+	padding: 1em 0 0 0;
+	margin: 0;
+}
+.game-check h3.game-title01 {
+	padding-top: 0;
+}
+.game-check table {
+	width: 100%;
+	border-top: 2px solid #444;
+	margin-bottom: 1em;
+}
+.game-check table.betting-division td {
+	text-align: center;
+}
+.game-check table td {
+	color: #999;
+	border: 1px solid #333;
+	padding: 0.5em;
+	background: #222;
+}
+.game-check table td:hover {
+	cursor: pointer;
+	color: #eee;
+	text-decoration: underline;
+	background: #444;
+	border: 1px solid #777;
+}
+
+#live-score-area strong {
+	cursor: pointer;
+	padding: 0.25em 0.5em;
+	border: 1px solid #222;
+	background: #222;
+}
+#live-score-area strong:hover {
+	color: #888;
+}
+#live-score-area strong.select {
+	color: #ff0;
+	background: #333;
+}
+#live-score-area table {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+#live-score-area table td {
+	padding: 0.25em;
+}
+#live-score-area table td.pointer-color {
+	color: #666;
+}
+#live-score-area table td.pointer-color:hover {
+	color: #fff;
+}
+.bettingtable01 a.tleft-btn,
+.bettingtable01 a.tcenter-btn,
+.bettingtable01 a.tright-btn {
+	background: url('../images/black-30.png');
+	border: 1px solid #cacaca;
+	background: #dfdfdf ;
+	color: #000;
+	font-weight:bold;
+}
+.bettingtable01 a.tleft-btn:hover,
+.bettingtable01 a.tcenter-btn:hover,
+.bettingtable01 a.tright-btn:hover {
+	border: 1px solid #fbb726;
+}
+a.CssSelect {
+	cursor: pointer;
+	background: #fbb726 !important;
+	border: 1px solid #725000;
+}
+
+/*시계 - 클락타임 css에 백그라운드 제거, rop, right로 위치 조정*/
+#sub-content h2 {
+	position: relative;
+}
+#sub-content .clock-time {
+	position: absolute;
+	top: 0.2em;
+	right: 0.5em;
+}
+.bt_toggle {
+	display: inline-block;
+	width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background: #181818;
+    /* padding: 3px 6px; */
+    border: solid 1px #676767;
+	border-radius: 3px;
+    color: #fc0;
+    font-weight: bold;
+    cursor: pointer;
+}
+#modal_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('/framework/js/image/40x40.png');
+	opacity: 0.5;
+	z-index:499;
+}
+
+.bettingtable01 td.bt_subtype {
+    padding: 0 10px;
+}
+.btn {
+	text-shadow: 1px 1px rgba(0, 1, 1, 0.3);
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35);
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+	cursor:pointer;
+}
+.btn-xs, .btn-group-xs>.btn {
+    padding: 3px 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5d6f65;
+    border-color: #0a6835;
+}
+#divd, #eprice {
+		font-size: inherit;
+		padding:0;
+		line-height:38px;
+		background:transparent;
+		text-align:right;
+		color:#000;
+	}
+	#img_pin {
+		width:20px;
+		height:20px;
+		background:url('/images/pin_white.png') no-repeat;
+		background-size:20px 20px;
+		position:absolute;
+		top:14px;
+		right:48px;
+		cursor:pointer;
+	}
+	#img_pin.down {
+		background-position: -4px 4px;
+	}

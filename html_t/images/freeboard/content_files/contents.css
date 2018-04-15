@@ -1,0 +1,1548 @@
+html {
+	margin: 0px; padding: 0px;
+}
+body {
+	margin: 0px; padding: 0px;
+}
+div {
+	margin: 0px; padding: 0px;
+}
+span {
+	margin: 0px; padding: 0px;
+}
+dl {
+	margin: 0px; padding: 0px;
+}
+dt {
+	margin: 0px; padding: 0px;
+}
+dd {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+ol {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px;
+}
+h2 {
+	margin: 0px; padding: 0px;
+}
+h3 {
+	margin: 0px; padding: 0px;
+}
+h4 {
+	margin: 0px; padding: 0px;
+}
+h5 {
+	margin: 0px; padding: 0px;
+}
+h6 {
+	margin: 0px; padding: 0px;
+}
+blockquote {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+address {
+	margin: 0px; padding: 0px;
+}
+pre {
+	margin: 0px; padding: 0px;
+}
+cite {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+fieldset {
+	margin: 0px; padding: 0px;
+}
+input {
+	margin: 0px; padding: 0px;
+}
+textarea {
+	margin: 0px; padding: 0px;
+}
+select {
+	margin: 0px; padding: 0px;
+}
+table {
+	margin: 0px; padding: 0px;
+}
+th {
+	margin: 0px; padding: 0px;
+}
+td {
+	margin: 0px; padding: 0px;
+}
+body {
+	color: rgb(51, 51, 51); font-family: "Arial", "µ¸¿ò","µ¸¿òÃ¼",dotum,Helvetica,sans-serif; font-size: 12px; background-color: rgb(0, 0, 0);
+}
+h1 {
+	margin: 0px; font-size: 12px;
+}
+h2 {
+	margin: 0px; font-size: 12px;
+}
+h3 {
+	margin: 0px; font-size: 12px;
+}
+h4 {
+	margin: 0px; font-size: 12px;
+}
+h5 {
+	margin: 0px; font-size: 12px;
+}
+h6 {
+	margin: 0px; font-size: 12px;
+}
+fieldset {
+	border: 0px currentColor; border-image: none;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+abbr {
+	border: 0px currentColor; border-image: none;
+}
+acronym {
+	border: 0px currentColor; border-image: none;
+}
+a {
+	text-decoration: none;
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+table {
+	border: 0px currentColor; border-image: none; border-collapse: separate; border-spacing: 0;
+}
+caption {
+	width: 0px; height: 0px; line-height: 0; overflow: hidden; font-size: 0px; position: absolute;
+}
+address {
+	font-style: normal; font-weight: normal;
+}
+caption {
+	font-style: normal; font-weight: normal;
+}
+strong {
+	font-style: normal; font-weight: normal;
+}
+em {
+	font-style: normal; font-weight: normal;
+}
+cite {
+	font-style: normal; font-weight: normal;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+blockquote::before {
+	content: "";
+}
+blockquote::after {
+	content: "";
+}
+q::before {
+	content: "";
+}
+q::after {
+	content: "";
+}
+blockquote {
+	quotes: "" "";
+}
+q {
+	quotes: "" "";
+}
+hr {
+	display: none;
+}
+img {
+	border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.blind {
+	left: 0px; top: -1000em; overflow: hidden; display: block; position: absolute;
+}
+.hidden {
+	left: 0px; top: -1000em; overflow: hidden; display: block; position: absolute;
+}
+legend {
+	left: 0px; top: -1000em; overflow: hidden; display: block; position: absolute;
+}
+.btn_code {
+	background: url("../images/btn_pop_code.png") no-repeat left top; border: 0px currentColor; border-image: none; width: 77px; height: 24px; text-align: center; color: rgb(183, 183, 183); line-height: 24px !important; font-size: 12px; font-weight: bold; display: inline-block;
+}
+.btn_candel {
+	background: url("../images/btn_betting_lst.jpg") no-repeat left top; width: 80px; height: 24px; text-align: center; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px; font-weight: bold; display: inline-block;
+}
+.btn_del {
+	background: url("../images/btn_betting_lst.jpg") no-repeat left top; width: 80px; height: 24px; text-align: center; color: rgb(255, 102, 102); line-height: 24px; font-size: 12px; font-weight: bold; display: inline-block;
+}
+.btn_write {
+	background: url("../images/btn_write.gif") no-repeat left top; width: 70px; height: 24px; text-align: center; color: rgb(183, 183, 183); line-height: 24px !important; font-size: 12px; font-weight: bold; display: inline-block;
+}
+.btn_repple {
+	background: url("../images/btn_repple.gif") no-repeat left top; width: 88px; height: 49px; text-align: center; color: rgb(183, 183, 183); line-height: 49px !important; font-size: 12px; font-weight: bold; display: inline-block;
+}
+.btn_view {
+	background: url("../images/btn_search_top.jpg") no-repeat left top; width: 60px; height: 24px; text-align: center; color: rgb(183, 183, 183); line-height: 24px !important; font-size: 12px; font-weight: bold; display: inline-block;
+}
+.btn_black {
+	background: url("../images/btn_black_lft.jpg") no-repeat left top; padding: 0px 0px 0px 17px; height: 24px; display: inline-block;
+}
+input.btn_black {
+	background: url("../images/btn_black_lft.jpg") no-repeat left top; padding: 2px 10px 0px 12px; border-radius: 2px; height: 24px; color: rgb(255, 255, 255); font-size: 12px; border-top-color: currentColor; border-right-color: rgb(152, 152, 152); border-left-color: currentColor; border-top-width: 0px; border-right-width: 1px; border-left-width: 0px; border-top-style: none; border-right-style: solid; border-left-style: none; display: inline-block; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+}
+.btn_black span {
+	background: url("../images/btn_black_rgt.jpg") no-repeat right top; padding: 0px 17px 0px 0px; height: 24px; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px; display: inline-block;
+}
+#login_header {
+	background: url("../images/bg_login_top_Bg.jpg") repeat-x left top; padding: 4px 0px 0px; width: 100%; height: 81px; overflow: hidden;
+}
+#login_header #header {
+	margin: 0px auto; padding: 0px 0px 0px 409px; width: 947px; overflow: hidden;
+}
+#login_header #header h1 {
+	width: 76px; height: 51px; float: left; display: block;
+}
+#login_header #header .login_gnb {
+	overflow: hidden; float: left;
+}
+#login_header #header .login_gnb li.lst01 {
+	width: 93px; height: 50px; float: left;
+}
+#login_header #header .login_gnb li.lst01 a {
+	background: url("../images/login_gnb01_off.jpg") no-repeat left top; width: auto; height: 50px; display: block;
+}
+#login_header #header .login_gnb li.lst01 a:hover {
+	background: url("../images/login_gnb01_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst01 a:active {
+	background: url("../images/login_gnb01_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst01 a:focus {
+	background: url("../images/login_gnb01_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst02 {
+	width: 180px; height: 50px; float: left;
+}
+#login_header #header .login_gnb li.lst02 a {
+	background: url("../images/login_gnb02_off.jpg") no-repeat left top; width: auto; height: 50px; display: block;
+}
+#login_header #header .login_gnb li.lst02 a:hover {
+	background: url("../images/login_gnb02_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst02 a:active {
+	background: url("../images/login_gnb02_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst02 a:focus {
+	background: url("../images/login_gnb02_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst03 {
+	width: 88px; height: 50px; float: left;
+}
+#login_header #header .login_gnb li.lst03 a {
+	background: url("../images/login_gnb03_off.jpg") no-repeat left top; width: auto; height: 50px; display: block;
+}
+#login_header #header .login_gnb li.lst03 a:hover {
+	background: url("../images/login_gnb03_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst03 a:active {
+	background: url("../images/login_gnb03_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst03 a:focus {
+	background: url("../images/login_gnb03_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst04 {
+	width: 74px; height: 50px; float: left;
+}
+#login_header #header .login_gnb li.lst04 a {
+	background: url("../images/login_gnb04_off.jpg") no-repeat left top; width: auto; height: 50px; display: block;
+}
+#login_header #header .login_gnb li.lst04 a:hover {
+	background: url("../images/login_gnb04_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst04 a:active {
+	background: url("../images/login_gnb04_on.jpg") no-repeat left top;
+}
+#login_header #header .login_gnb li.lst04 a:focus {
+	background: url("../images/login_gnb04_on.jpg") no-repeat left top;
+}
+#login_cont {
+	background: url("../images/login_cont_bg.jpg") no-repeat top rgb(242, 242, 242); height: 868px;
+}
+#login_cont #login {
+	margin: 0px auto; padding: 744px 0px 0px; width: 1356px; height: 124px; overflow: hidden;
+}
+#login_cont #login .login_bx * {
+	line-height: 1.1em; vertical-align: top;
+}
+#login_cont #login .login_bx {
+	overflow: hidden; float: right;
+}
+#login_cont #login .login_bx strong {
+	margin: 0px 0px 0px 19px; float: left; display: block;
+}
+#login_cont #login .login_bx .login_input {
+	padding: 0px 0px 0px 10px; border: 0px currentColor; border-image: none; width: 132px; height: 22px; color: rgb(255, 255, 255); line-height: 22px; font-size: 12px; float: left; display: block; background-color: rgb(75, 75, 75);
+}
+#login_cont #login .login_bx .btn_login {
+	margin: 0px 0px 0px 7px; float: left; display: block;
+}
+.mbinfo_open_pop {
+	left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: fixed; z-index: 1000;
+}
+.mbinfo_open_pop .bg {
+	background: url("../images/bg_layer_pop.png") left top; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.layer_area * {
+	line-height: 1.1em; font-family: Gulim; vertical-align: top;
+}
+.layer_area .mbinfo_input {
+	text-align: center;
+}
+.layer_area .mbinfo_input strong img {
+	margin: -25px 0px 0px -30px;
+}
+.layer_area .mbinfo_input a {
+	margin: 5px 0px 0px -30px;
+}
+#join_wrap {
+	width: 100%; background-color: rgb(0, 0, 0);
+}
+#join_bx {
+	background: rgb(34, 34, 34); margin: 0px auto; width: 837px; height: 1040px;
+}
+#join_bx .join_h1 {
+	padding: 26px 0px 0px 47px; height: 77px; color: rgb(255, 255, 255); font-size: 30px; display: block;
+}
+.join_table {
+	width: 100%;
+}
+.join_table th {
+	padding: 0px 0px 0px 47px; height: 47px; text-align: left; color: rgb(166, 166, 166); font-weight: bold;
+}
+.join_table th.vtop {
+	padding: 7px 0px 0px 47px; vertical-align: top;
+}
+.join_table td {
+	height: 47px; text-align: left; color: rgb(166, 166, 166); overflow: hidden; font-size: 12px;
+}
+.join_table .input_Bx {
+	overflow: hidden;
+}
+.join_table .line_Txt {
+	width: 26px; text-align: center; color: rgb(255, 255, 255); line-height: 26px; font-size: 24px; float: left; display: block;
+}
+.join_table .hoin_sele {
+	border: 1px solid rgb(102, 102, 102); border-image: none; width: 84px; height: 26px; color: rgb(102, 102, 102); line-height: 26px; font-size: 12px; float: left; display: block;
+}
+.join_table .hoin_sele01 {
+	border: 1px solid rgb(102, 102, 102); border-image: none; width: 124px; height: 26px; color: rgb(102, 102, 102); line-height: 26px; font-size: 12px; float: left; display: block;
+}
+.join_table td .join_input {
+	padding: 0px 0px 0px 10px; border: 1px solid rgb(102, 102, 102); border-image: none; width: 144px; height: 24px; color: rgb(102, 102, 102); line-height: 24px; font-size: 12px; float: left; display: block;
+}
+.join_table td .join_input01 {
+	padding: 0px 0px 0px 10px; border: 1px solid rgb(102, 102, 102); border-image: none; width: 72px; height: 24px; color: rgb(102, 102, 102); line-height: 24px; font-size: 12px; float: left; display: block;
+}
+.join_table td .join_input02 {
+	padding: 0px 0px 0px 10px; border: 1px solid rgb(102, 102, 102); border-image: none; width: 194px; height: 24px; color: rgb(102, 102, 102); line-height: 24px; font-size: 12px; float: left; display: block;
+}
+.join_table td strong {
+	margin: 0px 0px 0px 16px; height: 24px; line-height: 24px; font-weight: bold; float: left; display: block;
+}
+.join_table td strong.bu_txt {
+	background: url("../images/bu_gray_txt02.png") no-repeat left 10px; padding: 0px 0px 0px 13px;
+}
+.join_table td .rgt_Txt {
+	padding: 0px 0px 0px 16px; height: 24px; line-height: 24px; font-weight: normal; float: left; display: block;
+}
+.join_table .hoin_lst {
+	margin: 27px 0px 28px; line-height: 18px;
+}
+.join_table .hoin_lst li {
+	background: url("../images/bu_gray_txt.png") no-repeat left 5px; padding: 0px 0px 0px 10px;
+}
+.join_table .code_tr td {
+	padding-bottom: 53px;
+}
+.join_table .code_tr th {
+	padding-top: 18px;
+}
+.join_table .nm_txt {
+	padding: 28px 0px 0px; line-height: 18px; clear: both;
+}
+#join_wrap .join_btn {
+	padding: 43px 0px 0px; width: auto; text-align: center;
+}
+.cont_body {
+	background-color: rgb(0, 0, 0);
+}
+#cont_top {
+	margin: 0px auto 8px; width: 1361px; overflow: hidden;
+}
+.top_cont {
+	margin: 9px 0px 0px; padding: 9px 17px 0px 6px; width: auto; height: 85px; background-color: rgb(31, 31, 31);
+}
+.top_cont .h1_tit {
+	margin: 0px 912px 9px 0px; float: left; display: block;
+}
+.top_cont .util_m {
+	padding: 4px 0px 0px; width: 281px; height: 31px; overflow: hidden; float: left;
+}
+.top_cont .util_m li {
+	padding: 0px 22px 0px 0px; height: 27px; float: left;
+}
+.top_cont .util_m li.link_txt a {
+	height: 27px; color: rgb(255, 255, 255); line-height: 27px; font-size: 12px; display: block;
+}
+.top_cont .util_m li.link_txt a.gree_txt {
+	color: rgb(110, 187, 63);
+}
+.top_cont .util_m li.btn_txt {
+	padding: 4px 0px 0px 3px; height: 23px;
+}
+.top_cont .rgt_btn {
+	margin: 0px 0px 0px 8px; float: left; display: block;
+}
+.top_cont .util_m li.btn_txt a.login {
+	background: url("../images/btn_login.png") no-repeat left top; width: 56px; height: 18px; text-align: center; color: rgb(255, 255, 255); line-height: 18px; font-size: 12px; display: block;
+}
+.gnb {
+	padding: 15px 0px 0px 7px; width: 1113px; height: 29px; overflow: hidden; float: left;
+}
+.gnb li {
+	padding: 0px 37px 0px 0px; float: left;
+}
+.gnb li.lst01 a {
+	background: url("../images/gnb01_off.png") no-repeat left top; width: 48px; height: 18px; display: block;
+}
+.gnb li.lst01 a:hover {
+	background: url("../images/gnb01_on.png") no-repeat left top;
+}
+.gnb li.lst01 a:active {
+	background: url("../images/gnb01_on.png") no-repeat left top;
+}
+.gnb li.lst01 a:focus {
+	background: url("../images/gnb01_on.png") no-repeat left top;
+}
+.gnb li.lst01 a.on {
+	background: url("../images/gnb01_on.png") no-repeat left top;
+}
+.gnb li.lst02 a {
+	background: url("../images/gnb02_off.png") no-repeat left top; width: 47px; height: 18px; display: block;
+}
+.gnb li.lst02 a:hover {
+	background: url("../images/gnb02_on.png") no-repeat left top;
+}
+.gnb li.lst02 a:active {
+	background: url("../images/gnb02_on.png") no-repeat left top;
+}
+.gnb li.lst02 a:focus {
+	background: url("../images/gnb02_on.png") no-repeat left top;
+}
+.gnb li.lst02 a.on {
+	background: url("../images/gnb02_on.png") no-repeat left top;
+}
+.gnb li.lst03 a {
+	background: url("../images/gnb03_off.png") no-repeat left top; width: 47px; height: 18px; display: block;
+}
+.gnb li.lst03 a:hover {
+	background: url("../images/gnb03_on.png") no-repeat left top;
+}
+.gnb li.lst03 a:active {
+	background: url("../images/gnb03_on.png") no-repeat left top;
+}
+.gnb li.lst03 a:focus {
+	background: url("../images/gnb03_on.png") no-repeat left top;
+}
+.gnb li.lst03 a.on {
+	background: url("../images/gnb03_on.png") no-repeat left top;
+}
+.gnb li.lst04 a {
+	background: url("../images/gnb04_off.png") no-repeat left top; width: 56px; height: 18px; display: block;
+}
+.gnb li.lst04 a:hover {
+	background: url("../images/gnb04_on.png") no-repeat left top;
+}
+.gnb li.lst04 a:active {
+	background: url("../images/gnb04_on.png") no-repeat left top;
+}
+.gnb li.lst04 a:focus {
+	background: url("../images/gnb04_on.png") no-repeat left top;
+}
+.gnb li.lst04 a.on {
+	background: url("../images/gnb04_on.png") no-repeat left top;
+}
+.gnb li.lst05 a {
+	background: url("../images/gnb05_off.png") no-repeat left top; width: 59px; height: 18px; display: block;
+}
+.gnb li.lst05 a:hover {
+	background: url("../images/gnb05_on.png") no-repeat left top;
+}
+.gnb li.lst05 a:active {
+	background: url("../images/gnb05_on.png") no-repeat left top;
+}
+.gnb li.lst05 a:focus {
+	background: url("../images/gnb05_on.png") no-repeat left top;
+}
+.gnb li.lst05 a.on {
+	background: url("../images/gnb05_on.png") no-repeat left top;
+}
+.gnb li.lst06 a {
+	background: url("../images/gnb06_off.png") no-repeat left top; width: 64px; height: 18px; display: block;
+}
+.gnb li.lst06 a:hover {
+	background: url("../images/gnb06_on.png") no-repeat left top;
+}
+.gnb li.lst06 a:active {
+	background: url("../images/gnb06_on.png") no-repeat left top;
+}
+.gnb li.lst06 a:focus {
+	background: url("../images/gnb06_on.png") no-repeat left top;
+}
+.gnb li.lst06 a.on {
+	background: url("../images/gnb06_on.png") no-repeat left top;
+}
+.gnb li.lst07 a {
+	background: url("../images/gnb07_off.png") no-repeat left top; width: 62px; height: 18px; display: block;
+}
+.gnb li.lst07 a:hover {
+	background: url("../images/gnb07_on.png") no-repeat left top;
+}
+.gnb li.lst07 a:active {
+	background: url("../images/gnb07_on.png") no-repeat left top;
+}
+.gnb li.lst07 a:focus {
+	background: url("../images/gnb07_on.png") no-repeat left top;
+}
+.gnb li.lst07 a.on {
+	background: url("../images/gnb07_on.png") no-repeat left top;
+}
+.gnb li.lst08 a {
+	background: url("../images/gnb08_off.png") no-repeat left top; width: 48px; height: 18px; display: block;
+}
+.gnb li.lst08 a:hover {
+	background: url("../images/gnb08_on.png") no-repeat left top;
+}
+.gnb li.lst08 a:active {
+	background: url("../images/gnb08_on.png") no-repeat left top;
+}
+.gnb li.lst08 a:focus {
+	background: url("../images/gnb08_on.png") no-repeat left top;
+}
+.gnb li.lst08 a.on {
+	background: url("../images/gnb08_on.png") no-repeat left top;
+}
+.gnb li.lst09 a {
+	background: url("../images/gnb09_off.png") no-repeat left top; width: 62px; height: 18px; display: block;
+}
+.gnb li.lst09 a:hover {
+	background: url("../images/gnb09_on.png") no-repeat left top;
+}
+.gnb li.lst09 a:active {
+	background: url("../images/gnb09_on.png") no-repeat left top;
+}
+.gnb li.lst09 a:focus {
+	background: url("../images/gnb09_on.png") no-repeat left top;
+}
+.gnb li.lst09 a.on {
+	background: url("../images/gnb09_on.png") no-repeat left top;
+}
+.info_lst {
+	background: url("../images/bg_top_info.png") repeat-x left top; padding: 0px 0px 0px 16px; width: auto; height: 32px; overflow: hidden;
+}
+.info_lst .class_lst {
+	height: 32px; overflow: hidden; float: left;
+}
+.info_lst .class_lst .txt {
+	padding: 0px 56px 0px 5px; height: 32px; color: rgb(114, 104, 104); line-height: 32px; font-size: 12px; float: left; display: block;
+}
+.class01 {
+	background: url("../images/ico_top01.png") no-repeat left 5px; padding: 0px 0px 0px 36px; color: rgb(255, 255, 255); line-height: 32px; font-size: 12px; float: left;
+}
+.class02 {
+	background: url("../images/ico_top02.png") no-repeat left 5px; padding: 0px 0px 0px 36px; color: rgb(255, 255, 255); line-height: 32px; font-size: 12px; float: left;
+}
+.class03 {
+	background: url("../images/ico_top03.png") no-repeat left 5px; padding: 0px 0px 0px 36px; color: rgb(255, 255, 255); line-height: 32px; font-size: 12px; float: left;
+}
+.class04 {
+	background: url("../images/ico_top04.png") no-repeat left 5px; padding: 0px 0px 0px 36px; color: rgb(255, 255, 255); line-height: 32px; font-size: 12px; float: left;
+}
+.class05 {
+	background: url("../images/ico_top05.png") no-repeat left 5px; padding: 0px 0px 0px 36px; color: rgb(255, 255, 255); line-height: 32px; font-size: 12px; float: left;
+}
+.class06 {
+	background: url("../images/ico_top06.png") no-repeat left 5px; padding: 0px 0px 0px 36px; color: rgb(255, 255, 255); line-height: 32px; font-size: 12px; float: left;
+}
+.info_lst .lst_cont {
+	height: 32px; overflow: hidden; float: left;
+}
+.info_lst .lst_cont .tit {
+	padding: 9px 6px 0px 0px; height: 21px; line-height: 1em; float: left; display: block;
+}
+.info_lst .lst_cont .count {
+	padding: 0px 61px 0px 0px; height: 32px; color: rgb(255, 255, 255); line-height: 32px; font-size: 12px; float: left; display: block;
+}
+.info_lst .lst_cont .count .green_txt {
+	color: rgb(87, 190, 24);
+}
+#footer {
+	margin: 65px 0px; width: 100%; text-align: center; float: left;
+}
+.index_visual {
+	margin: 0px auto; width: 1361px; height: 600px;
+}
+.game_bx {
+	margin: 0px auto; width: 1362px;
+}
+.game_bx .lft_Bx {
+	margin: 0px 8px 0px 0px; width: 1113px; float: left;
+}
+.game_bx .lft_Bx .game_h2 {
+	background: url("../images/h2_tit_bg.jpg") no-repeat left top; margin: 0px 0px 4px; padding: 26px 0px 0px 45px; width: auto; height: 60px; line-height: 1.1em; vertical-align: top; display: block;
+}
+.game_bx .lft_Bx .game_Tab {
+	margin: 0px 0px 4px; border-radius: 3px 0px 0px 3px; width: auto; height: 25px; overflow: hidden; background-color: rgb(102, 102, 102); -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px 0 0 3px;
+}
+.game_bx .lft_Bx .game_Tab .tab_tit {
+	border-radius: 3px 0px 0px 3px; width: 108px; height: 25px; text-align: center; color: rgb(255, 255, 255); line-height: 25px; font-size: 12px; font-weight: bold; float: left; display: block; -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px 0 0 3px;
+}
+.game_bx .lft_Bx .game_Tab .game_lst {
+	margin: 1px 0px 0px; width: 1004px; height: 23px; overflow: hidden; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst li {
+	margin: 0px 1px 0px 0px;
+}
+.game_bx .lft_Bx .game_Tab .game_lst li a {
+	padding: 0px 0px 0px 27px; width: auto; height: 23px; color: rgb(255, 255, 255); line-height: 23px; letter-spacing: -0.5px; font-size: 12px; border-left-color: rgb(15, 15, 15); border-left-width: 1px; border-left-style: solid; display: block; background-color: rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst01 {
+	width: 75px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst01 a {
+	background: url("../images/ico_spart01.jpg") no-repeat 4px -1px rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst02 {
+	width: 80px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst02 a {
+	background: url("../images/ico_spart02.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst03 {
+	width: 89px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst03 a {
+	background: url("../images/ico_spart013.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst04 {
+	width: 91px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst04 a {
+	background: url("../images/ico_spart03.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst05 {
+	width: 71px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst05 a {
+	background: url("../images/ico_spart04.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst06 {
+	width: 84px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst06 a {
+	background: url("../images/ico_spart05.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst07 {
+	width: 81px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst07 a {
+	background: url("../images/ico_spart06.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst08 {
+	width: 68px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst08 a {
+	background: url("../images/ico_spart07.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst09 {
+	width: 92px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst09 a {
+	background: url("../images/ico_spart08.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst10 {
+	width: 63px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst10 a {
+	background: url("../images/ico_spart09.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst11 {
+	width: 68px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst11 a {
+	background: url("../images/ico_spart10.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst12 {
+	width: 62px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst12 a {
+	background: url("../images/ico_spart11.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst13 {
+	margin: 0px; width: 68px; height: 23px; float: left;
+}
+.game_bx .lft_Bx .game_Tab .game_lst .lst13 a {
+	background: url("../images/ico_spart12.jpg") no-repeat 4px top rgb(58, 58, 58);
+}
+.game_wrap {
+	margin: 0px 0px 8px; width: auto; overflow: hidden;
+}
+.game_wrap h3.h3_tit {
+	background: url("../images/bg_game_title.jpg") no-repeat left top; padding: 0px 0px 0px 13px; width: auto; height: 29px; color: rgb(255, 255, 255); line-height: 29px; font-size: 12px; display: block;
+}
+.game_wrap h3.h3_tit span {
+	background: url("../images/bg_game_arrow.jpg") no-repeat left 11px; padding: 0px 0px 0px 28px; height: 29px; line-height: 29px; display: block;
+}
+.game_bx .rgt_Bx {
+	width: 241px; float: left; position: relative;
+}
+.betting_table {
+	padding: 5px 0px; width: 100%; border-collapse: separate; table-layout: fixed; border-spacing: 2px; background-color: rgb(32, 32, 32);
+}
+.betting_table td {
+	height: 28px;
+}
+.betting_table td.date div {
+	width: auto; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.betting_table td a {
+	background: url("../images/bg_game_on.jpg") repeat-x left top; border-radius: 3px; width: auto; height: 28px; overflow: hidden; display: block; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.betting_table td a:hover {
+	background: url("../images/bg_game_on.jpg") repeat-x left top;
+}
+.betting_table td a:active {
+	background: url("../images/bg_game_on.jpg") repeat-x left top;
+}
+.betting_table td a:focus {
+	background: url("../images/bg_game_on.jpg") repeat-x left top;
+}
+.betting_table td a .left_txt {
+	padding: 7px 0px 0px 12px; height: 21px; color: rgb(255, 255, 255); line-height: 1.1em; font-size: 12px; font-weight: bold; float: left;
+}
+.betting_table td a:hover .left_txt {
+	color: rgb(127, 199, 53);
+}
+.betting_table td a:active .left_txt {
+	color: rgb(127, 199, 53);
+}
+.betting_table td a:focus .left_txt {
+	color: rgb(127, 199, 53);
+}
+.betting_table td a .rgt_txt {
+	padding: 7px 12px 0px 0px; height: 21px; color: rgb(255, 255, 255); line-height: 1.1em; font-size: 12px; font-weight: bold; float: right;
+}
+.betting_table td a:hover .rgt_txt {
+	color: rgb(127, 199, 53);
+}
+.betting_table td a:active .rgt_txt {
+	color: rgb(127, 199, 53);
+}
+.betting_table td a:focus .rgt_txt {
+	color: rgb(127, 199, 53);
+}
+.betting_table td.vs a {
+	width: auto; height: 28px; overflow: hidden; display: block;
+}
+.betting_table td.vs a .date_bx {
+	padding: 7px 0px 0px; width: auto; height: 21px; text-align: center; color: rgb(122, 122, 122); line-height: 1.1em; overflow: hidden; font-size: 12px; font-weight: bold; display: block;
+}
+.betting_table td.vs a:hover .date_bx {
+	color: rgb(127, 199, 53);
+}
+.betting_table td.vs a:active .date_bx {
+	color: rgb(127, 199, 53);
+}
+.betting_table td.vs a:focus .date_bx {
+	color: rgb(127, 199, 53);
+}
+.betting_table td.vs a .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table td.vs a:hover .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table td.vs a:active .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table td.vs a:focus .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table td.betting a {
+	padding: 7px 0px 0px; width: auto; height: 21px; text-align: center; color: rgb(122, 122, 122); line-height: 1.1em; overflow: hidden; font-size: 12px; font-weight: bold; display: block;
+}
+.betting_table td.time a {
+	width: auto; height: 27px; overflow: hidden; display: block;
+}
+.betting_table td.time .close {
+	padding: 0px 0px 0px 7px; height: 27px; color: rgb(122, 122, 122); line-height: 27px; font-size: 12px; font-weight: bold; float: left; display: block;
+}
+.betting_table td.time a:hover .close {
+	color: rgb(255, 255, 255);
+}
+.betting_table td.time a:active .close {
+	color: rgb(255, 255, 255);
+}
+.betting_table td.time a:focus .close {
+	color: rgb(255, 255, 255);
+}
+.betting_table td.time .date_bx {
+	padding: 7px 7px 0px 0px; height: 21px; color: rgb(122, 122, 122); line-height: 1.1em; font-size: 12px; font-weight: bold; float: right; display: block;
+}
+.betting_table td.time a:hover .date_bx {
+	color: rgb(127, 199, 53);
+}
+.betting_table td.time a:active .date_bx {
+	color: rgb(127, 199, 53);
+}
+.betting_table td.time a:focus .date_bx {
+	color: rgb(127, 199, 53);
+}
+.betting_table td.time a .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table td.time a:hover .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table td.time a:active .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table td.time a:focus .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table td.betting a:hover {
+	color: rgb(255, 255, 255);
+}
+.betting_table td.betting a:active {
+	color: rgb(255, 255, 255);
+}
+.betting_table td.betting a:focus {
+	color: rgb(255, 255, 255);
+}
+.betting_table td a.on {
+	background: url("../images/bg_game_click.jpg") repeat-x left top !important;
+}
+.betting_table td a.on span {
+	color: rgb(0, 0, 0) !important;
+}
+.betting_table td.count span {
+	background: url("../images/bg_game_defalt.jpg") repeat-x left top; padding: 7px 0px 0px; border-radius: 3px; width: auto; height: 21px; text-align: center; color: rgb(255, 255, 255); overflow: hidden; font-weight: bold; display: block; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.betting_table td.result span {
+	background: url("../images/bg_game_defalt.jpg") repeat-x left top; padding: 7px 0px 0px; border-radius: 3px; width: auto; height: 21px; text-align: center; color: rgb(255, 255, 255); overflow: hidden; font-weight: bold; display: block; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.betting_table td.result span.home {
+	color: rgb(0, 153, 255);
+}
+.betting_table td.result span.away {
+	color: rgb(204, 255, 0);
+}
+.betting_table td.result span.draw {
+	color: rgb(255, 102, 255);
+}
+.betting_table td.result span.red_txt {
+	color: rgb(255, 0, 0);
+}
+.betting_table td.result span.blue_txt {
+	color: rgb(0, 153, 255);
+}
+.betting_table td.result span.gray_txt {
+	color: rgb(153, 153, 153);
+}
+.betting_table td.result span.yelloe_txt {
+	color: rgb(229, 164, 38);
+}
+.betting_table td.result span.green_txt {
+	color: rgb(102, 204, 0);
+}
+.cart_wrap * {
+	line-height: 1.1em; vertical-align: top;
+}
+.cart_wrap {
+	padding: 0px 0px 7px; width: auto; text-align: center; overflow: hidden; position: absolute; background-color: rgb(128, 168, 90);
+}
+.cart_wrap .btn_bet {
+	margin: 10px 0px 0px; display: inline-block;
+}
+.cart_wrap .bet_slip {
+	background: url("../images/bg_cart_top.jpg") no-repeat left top; margin: 0px 0px 1px; padding: 0px 0px 0px 10px; width: auto; height: 29px; overflow: hidden; display: block;
+}
+.cart_wrap .bet_slip .btn_close {
+	margin: 9px 0px 0px; float: left;
+}
+.cart_wrap .bet_slip .bet_img {
+	margin: 9px 0px 0px; padding: 0px 0px 0px 5px; float: left;
+}
+.cart_wrap .bet_slip .rgt_txt {
+	background: url("../images/ico_cart_off.jpg") no-repeat 56px 3px; padding: 9px 23px 0px 5px; height: 20px; color: rgb(255, 255, 255); font-size: 12px; float: right; display: block;
+}
+.cart_wrap .bet_slip .on.rgt_txt {
+	background: url("../images/ico_cart_on.jpg") no-repeat 54px 3px;
+}
+.cart_btm {
+	padding: 4px 8px 0px 11px; width: auto; background-color: rgb(128, 168, 90);
+}
+.cart_btm li {
+	width: auto; height: 23px; overflow: hidden;
+}
+.cart_btm li .tit_bx {
+	padding: 5px 0px 0px; height: 18px; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; float: left; display: block;
+}
+.cart_btm li .game_txt {
+	padding: 5px 0px 0px; height: 18px; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; float: right; display: block;
+}
+.cart_btm li .game_txt01 {
+	padding: 5px 0px 0px; height: 18px; color: rgb(255, 255, 255); font-size: 12px; font-weight: normal; float: right; display: block;
+}
+.cart_btm li .game_txt02 {
+	padding: 5px 0px 0px; height: 18px; color: rgb(64, 64, 64); font-size: 12px; font-weight: bold; float: right; display: block;
+}
+.betmoney img {
+	margin: 0px 0px 0px 2px; float: left;
+}
+.betmoney input[type='checkbox'] {
+	height: 15px; margin-right: 1px; float: left;
+}
+.betmoney input[type='text'] {
+	background: rgb(255, 255, 255); padding: 0px 5px; border: 1px solid rgb(90, 90, 90); border-image: none; width: 58px; height: 15px; text-align: right; color: rgb(0, 0, 0); line-height: 15px; float: left;
+}
+.result_tab {
+	background: url("../images/bg_game_result_top.gif") no-repeat left top; margin: 0px 0px 4px; padding: 0px 0px 0px 10px; width: auto; height: 39px;
+}
+.result_tab .tab_lst {
+	width: auto; overflow: hidden; float: left;
+}
+.result_tab .tab_lst li {
+	background: url("../images/bg_result_top.gif") no-repeat right 11px; margin: 0px 9px 0px 0px; padding: 0px 10px 0px 0px; height: 39px; float: left;
+}
+.result_tab .tab_lst li.last {
+	background: 0px; margin: 0px; padding: 0px;
+}
+.result_tab .tab_lst li a {
+	height: 39px; color: rgb(255, 255, 255); line-height: 39px; font-size: 12px; font-weight: bold;
+}
+.result_tab .tab_lst li a:hover {
+	color: rgb(102, 255, 0);
+}
+.result_tab .tab_lst li a:active {
+	color: rgb(102, 255, 0);
+}
+.result_tab .tab_lst li a:focus {
+	color: rgb(102, 255, 0);
+}
+.result_tab .tab_lst li a.on {
+	color: rgb(102, 255, 0);
+}
+.result_tab .del_betting_del {
+	margin: 3px 5px 0px 0px; float: right; display: block;
+}
+.rgt_board {
+	width: auto; position: absolute;
+}
+.notica_wrap {
+	margin: 0px 0px 8px; width: auto; overflow: hidden;
+}
+.notica_wrap .notice_h {
+	background: url("../images/bg_notice_rgt.jpg") no-repeat left top; margin: 0px 0px 1px; padding: 7px 0px 0px 10px; width: auto; height: 22px; overflow: hidden;
+}
+.notica_wrap .notice_h .btn_close {
+	margin: 1px 0px 0px; float: left; display: block;
+}
+.notica_wrap .notice_h .notice_tit {
+	padding: 0px 0px 0px 9px; color: rgb(255, 255, 255); font-size: 12px; float: left; display: block;
+}
+.notica_wrap .notice_lst {
+	padding: 7px 1px; background-color: rgb(69, 69, 69);
+}
+.notica_wrap .notice_lst li {
+	height: 25px; border-bottom-color: rgb(88, 88, 88); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.notica_wrap .notice_lst li a {
+	background: url("../images/bg_notice_lst.gif") no-repeat 5px 12px; padding: 0px 10px 0px 15px; width: 214px; height: 25px; color: rgb(255, 255, 255); line-height: 25px; overflow: hidden; font-size: 12px; display: block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.banner_wrap {
+	padding: 15px 0px 13px 17px; background-color: rgb(69, 69, 69);
+}
+.banner_wrap a {
+	margin: 0px 0px 2px; display: block;
+}
+.search_bx {
+	padding: 10px 10px 0px 0px; overflow: hidden; vertical-align: bottom; display: inline-block;
+}
+.search_bx .search_sel {
+	border-width: 1px; border-style: solid; border-color: rgb(0, 71, 49) rgb(0, 103, 71) rgb(0, 103, 71) rgb(0, 71, 49); margin: 0px 4px 0px 0px; width: 86px; height: 24px; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px; float: left; display: block; background-color: rgb(0, 80, 55);
+}
+.search_bx .search_input {
+	margin: 0px 4px 0px 0px; padding: 0px 0px 0px 10px; width: 118px; height: 25px; color: rgb(255, 255, 255); line-height: 25px; font-size: 12px; font-weight: normal; float: left; display: block; background-color: rgb(29, 93, 138);
+}
+.search_bx .search_btn {
+	border-width: 1px; border-style: solid; border-color: rgb(48, 48, 48) rgb(14, 168, 185) rgb(14, 168, 185) rgb(48, 48, 48); border-image: none; width: 60px; height: 24px; text-align: center; color: rgb(255, 255, 255); line-height: 1.3em; font-size: 12px; font-weight: bold; float: left; display: block; background-color: rgb(11, 119, 131);
+}
+.game_wrap01 {
+	padding: 0px 18px 0px 0px; width: auto; border-bottom-color: rgb(102, 102, 102); border-bottom-width: 2px; border-bottom-style: solid; background-color: rgb(40, 40, 40);
+}
+.game_wrap01 .betting_table {
+	background-color: rgb(40, 40, 40);
+}
+.game_wrap01 .betting_table td {
+	padding: 5px 0px;
+}
+.lst_select {
+	width: auto; overflow: hidden;
+}
+.lst_select .search_bx {
+	padding: 0px 0px 4px;
+}
+.lst_table {
+	border-radius: 3px 0px 0px 3px; width: 100%; -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px 0 0 3px;
+}
+.lst_table th {
+	background: url("../images/bg_th_lst.jpg") repeat-x left top; height: 30px; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.lst_table th.first {
+	border-radius: 3px 0px 0px; -moz-border-radius: 3px 0 0 0; -webkit-border-radius: 3px 0 0 0;
+}
+.lst_table th.last {
+	border-radius: 0px 3px 0px 0px; -moz-border-radius: 0 3px 0 0; -webkit-border-radius: 0 3px 0 0;
+}
+.lst_table td {
+	height: 40px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; border-bottom-color: rgb(75, 75, 75); border-bottom-width: 2px; border-bottom-style: solid; background-color: rgb(40, 40, 40);
+}
+.lst_table td.td_lft {
+	padding: 0px 0px 0px 10px; text-align: left;
+}
+.lst_table td.td_rgt {
+	padding: 0px 10px 0px 0px; text-align: right;
+}
+.lst_table td.td_lft a.white_txt {
+	color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.lst_table td.td_lft a.green_txt {
+	color: rgb(2, 160, 17); font-size: 12px; font-weight: bold;
+}
+.lst_table td.td_lft a.yellow_txt {
+	color: rgb(211, 176, 69); font-size: 12px; font-weight: bold;
+}
+.lst_table td.td_lft a.red_txt {
+	color: rgb(255, 0, 0); font-size: 12px; font-weight: bold;
+}
+.lst_table td.td_lft a.blue_txt {
+	color: rgb(0, 255, 255); font-size: 12px; font-weight: bold;
+}
+.lst_table td.td_lft a .coutn {
+	font-weight: normal;
+}
+.lst_table td.td_lft a img {
+	margin: 2px 0px 0px 2px; display: inline-block;
+}
+.lst_table td.blue_txt {
+	color: rgb(0, 153, 255); font-weight: bold;
+}
+.lst_table td.red_txt {
+	color: rgb(255, 0, 0); font-weight: bold;
+}
+.lst_table td.white_txt {
+	color: rgb(255, 255, 255); font-weight: bold;
+}
+.lst_table td.yellow_txt {
+	color: rgb(255, 255, 0); font-weight: bold;
+}
+.lst_table td.details {
+	padding: 15px 0px; text-align: left; color: rgb(255, 255, 255); line-height: 18px; font-size: 12px;
+}
+.lst_table .trdisplay {
+	display: none;
+}
+.lst_table .class01 {
+	float: none; display: inline-block;
+}
+.lst_table .class02 {
+	float: none; display: inline-block;
+}
+.lst_table .class03 {
+	float: none; display: inline-block;
+}
+.lst_table .class04 {
+	float: none; display: inline-block;
+}
+.lst_table .class05 {
+	float: none; display: inline-block;
+}
+.lst_table .class06 {
+	float: none; display: inline-block;
+}
+.board_paing {
+	width: auto; position: relative;
+}
+.board_paing #paging {
+	padding: 15px 0px;
+}
+.board_paing .btn_black {
+	top: 15px; right: 0px; position: absolute;
+}
+.title_bx {
+	background: url("../images/bg_th_lst.jpg") repeat-x left top; padding: 0px 33px 0px 39px; border-radius: 3px 3px 0px 0px; width: auto; height: 30px; overflow: hidden; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0;
+}
+.title_bx strong {
+	height: 28px; color: rgb(255, 255, 255); line-height: 28px; font-weight: bold; float: left; display: block;
+}
+.title_bx strong img {
+	margin: 9px 0px 0px 5px; display: inline-block;
+}
+.title_bx .title_info {
+	float: right; display: block;
+}
+.title_bx .title_info span {
+	background-position: left 3px; height: 28px; color: rgb(255, 255, 255); line-height: 28px; font-size: 12px; display: inline-block;
+}
+.title_bx .title_info span.date {
+	padding: 0px 0px 0px 48px;
+}
+.view_wrap {
+	padding: 0px 4px; width: auto; overflow: hidden; background-color: rgb(40, 40, 40);
+}
+.view_wrap .view_txt {
+	padding: 30px; color: rgb(255, 255, 255); line-height: 18px; font-size: 12px;
+}
+.view_wrap .betting_h {
+	background: url("../images/betting_line.gif") repeat-x left 7px; padding: 0px 0px 0px 31px; width: auto;
+}
+.view_wrap .betting_h strong {
+	padding: 0px 4px; color: rgb(229, 164, 38); font-size: 12px; font-weight: bold; display: inline-block; background-color: rgb(40, 40, 40);
+}
+.betting_table01 {
+	padding: 5px 0px; width: 100%; border-collapse: separate; table-layout: fixed; border-spacing: 2px;
+}
+.betting_table01 td {
+	height: 28px;
+}
+.betting_table01 td.date div {
+	width: auto; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.betting_table01 td a {
+	background: url("../images/bg_game_on.jpg") repeat-x left top; border-radius: 3px; width: auto; height: 28px; overflow: hidden; display: block; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.betting_table01 td a .left_txt {
+	padding: 7px 0px 0px 12px; height: 21px; color: rgb(255, 255, 255); line-height: 1.1em; font-size: 12px; font-weight: bold; float: left;
+}
+.betting_table01 td a .rgt_txt {
+	padding: 7px 12px 0px 0px; height: 21px; color: rgb(255, 255, 255); line-height: 1.1em; font-size: 12px; font-weight: bold; float: right;
+}
+.betting_table01 td.vs a {
+	width: auto; height: 28px; overflow: hidden; display: block;
+}
+.betting_table01 td.vs a .date_bx {
+	padding: 7px 0px 0px; width: auto; height: 21px; text-align: center; color: rgb(255, 255, 255); line-height: 1.1em; overflow: hidden; font-size: 12px; font-weight: bold; display: block;
+}
+.betting_table01 td.vs a .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table01 td.betting a {
+	padding: 7px 0px 0px; width: auto; height: 21px; text-align: center; color: rgb(255, 255, 255); line-height: 1.1em; overflow: hidden; font-size: 12px; font-weight: bold; display: block;
+}
+.betting_table01 td.time a {
+	width: auto; height: 27px; overflow: hidden; display: block;
+}
+.betting_table01 td.time .close {
+	padding: 0px 0px 0px 7px; height: 27px; color: rgb(122, 122, 122); line-height: 27px; font-size: 12px; font-weight: bold; float: left; display: block;
+}
+.betting_table01 td.time .date_bx {
+	padding: 7px 7px 0px 0px; height: 21px; color: rgb(255, 255, 255); line-height: 1.1em; font-size: 12px; font-weight: bold; float: right; display: block;
+}
+.betting_table01 td.time .date_bx .bunsu {
+	font-size: large;
+}
+.betting_table01 td a.on {
+	background: url("../images/bg_game_click.jpg") repeat-x left top !important;
+}
+.betting_table01 td a.on span {
+	color: rgb(0, 0, 0) !important;
+}
+.betting_table01 td.count span {
+	background: url("../images/bg_game_on.jpg") repeat-x left top; padding: 7px 0px 0px; border-radius: 3px; width: auto; height: 21px; text-align: center; color: rgb(255, 255, 255); overflow: hidden; font-weight: bold; display: block; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.betting_table01 td.result span {
+	background: url("../images/bg_game_on.jpg") repeat-x left top; padding: 7px 0px 0px; border-radius: 3px; width: auto; height: 21px; text-align: center; color: rgb(255, 255, 255); overflow: hidden; font-weight: bold; display: block; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.betting_table01 td.count .score {
+	color: rgb(85, 181, 26);
+}
+.betting_table01 td.count .result {
+	color: rgb(31, 31, 31);
+}
+.betting_table01 td.result .org_txt {
+	color: rgb(247, 102, 15);
+}
+.betting_table01 td.result .green_txt {
+	color: rgb(85, 181, 26);
+}
+.betting_table01 td.result .black_txt {
+	color: rgb(31, 31, 31);
+}
+.betting_table01 td.result .yelloe_txt {
+	color: rgb(229, 164, 38);
+}
+.view_paging * {
+	line-height: 1.1em; vertical-align: top;
+}
+.view_paging {
+	width: auto; overflow: hidden; border-right-color: rgb(75, 75, 75); border-bottom-color: rgb(75, 75, 75); border-left-color: rgb(75, 75, 75); border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; background-color: rgb(0, 0, 0);
+}
+.view_paging dt.before_dt {
+	background: url("../images/btn_view_paging_top.gif") no-repeat 80px 19px; padding: 19px 0px 0px 37px; width: 84px; height: 22px; color: rgb(255, 255, 255); font-size: 12px; float: left;
+}
+.view_paging dd.before_dd {
+	padding: 19px 0px 0px; width: 980px; height: 22px; float: left;
+}
+.view_paging dd.before_dd a {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+.view_paging dt.next_dt {
+	background: url("../images/btn_view_paging_btm.gif") no-repeat 80px 8px; padding: 8px 0px 0px 37px; width: 84px; height: 33px; color: rgb(255, 255, 255); font-size: 12px; float: left;
+}
+.view_paging dd.next_dd {
+	padding: 8px 0px 0px; width: 980px; height: 33px; float: left;
+}
+.view_paging dd.next_dd a {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+.repple_wrap {
+	width: auto; overflow: hidden;
+}
+.repple_wrap .repple_txt {
+	padding: 0px 0px 0px 37px; width: 140px; height: 60px; color: rgb(255, 255, 255); line-height: 60px; font-size: 12px; float: left; display: block;
+}
+.repple_wrap .i_text {
+	margin: 5px 9px 0px 0px; padding: 10px; border: 1px solid rgb(160, 160, 160); border-image: none; width: 790px; height: 27px; float: left; display: block;
+}
+.repple_wrap .btn_repple {
+	margin: 5px 0px 0px; float: left; display: block;
+}
+.repple_lst {
+	border-top-color: rgb(75, 75, 75); border-top-width: 2px; border-top-style: solid;
+}
+.repple_lst li {
+	width: auto; height: 40px; overflow: hidden; border-bottom-color: rgb(75, 75, 75); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.repple_lst li .name_txt {
+	padding: 4px 0px 0px 33px; width: 166px; height: 41px; float: left; display: block;
+}
+.repple_lst li .repple_txt {
+	width: 857px; height: 40px; color: rgb(255, 255, 255); line-height: 40px; font-size: 12px; float: left; display: block;
+}
+.repple_lst li .btn_del_lst {
+	margin: 7px 0px 0px; float: left; display: block;
+}
+.btn_view_bx {
+	padding: 20px 0px 0px; width: auto; text-align: right;
+}
+.t_right {
+	text-align: right !important;
+}
+.write_wrap {
+	width: auto; overflow: hidden;
+}
+.write_wrap .title_bx {
+	padding: 0px;
+}
+.write_wrap .title_bx .title_th {
+	width: 128px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; font-size: 12px; font-weight: bold; float: left;
+}
+.write_wrap .title_bx .keyword {
+	margin: 3px 0px 0px; padding: 0px 0px 0px 10px; border: 1px solid rgb(105, 105, 105); border-image: none; width: 928px; height: 20px; line-height: 20px; float: left; display: block;
+}
+.write_wrap .cont_bx {
+	padding: 12px 0px 0px; width: auto; overflow: hidden; background-color: rgb(40, 40, 40);
+}
+.write_wrap .cont_bx .title_th {
+	width: 128px; height: 392px; text-align: center; color: rgb(255, 255, 255); line-height: 392px; font-size: 12px; font-weight: bold; float: left;
+}
+.write_wrap .cont_bx .i_text {
+	padding: 10px; border: 1px solid rgb(105, 105, 105); border-image: none; width: 918px; height: 370px; line-height: 18px; float: left; display: block;
+}
+.write_wrap .cont_bx .text_bx {
+	width: auto; overflow: hidden;
+}
+.write_wrap .btn_write_betting {
+	margin: 16px auto; width: 217px; height: 38px; clear: both; display: block;
+}
+.btn_bx {
+	padding: 15px 0px; width: auto; text-align: center;
+}
+.btn_counsel {
+	width: auto; text-align: center;
+}
+.charge_info * {
+	line-height: 1.1em; vertical-align: top;
+}
+.charge_info {
+	margin: 0px 0px 3px; padding: 19px 0px 31px 34px; width: auto; background-color: rgb(40, 40, 40);
+}
+.charge_info .charge_h3 {
+	padding: 0px 0px 23px; display: block;
+}
+.charge_info .nm_lst {
+	width: auto; overflow: hidden;
+}
+.charge_info .nm_lst li {
+	margin: 0px 0px 11px; padding: 0px 0px 0px 18px; color: rgb(255, 255, 255); font-size: 12px; font-weight: normal;
+}
+.charge_info .nm_lst .green_txt {
+	padding: 8px 0px 0px; color: rgb(83, 186, 32); line-height: 1.1em; display: block;
+}
+.charge_info .nm_lst li.nm01 {
+	background: url("../images/111_11.png") no-repeat left 1px;
+}
+.charge_info .nm_lst li.nm02 {
+	background: url("../images/111_14.png") no-repeat left 1px;
+}
+.charge_info .nm_lst li.nm03 {
+	background: url("../images/111_16.png") no-repeat left 1px;
+}
+.charge_info .nm_lst li.nm04 {
+	background: url("../images/111_18.png") no-repeat left 1px;
+}
+.charge_info .nm_lst li.nm05 {
+	background: url("../images/111_20.png") no-repeat left 1px;
+}
+.charge_info .nm_lst li.last {
+	margin: 0px;
+}
+.charge_info .btm_lst {
+	padding: 36px 0px 0px; width: auto; overflow: hidden;
+}
+.charge_info .btm_lst li {
+	background: url("../images/111_22.png") no-repeat left 4px; margin: 0px 0px 10px; padding: 0px 0px 0px 9px; color: rgb(255, 255, 255); font-size: 12px;
+}
+.charge_info .btm_lst li.last {
+	margin: 0px;
+}
+.charge_btm_Bx {
+	padding: 19px 13px 13px 11px; width: auto; overflow: hidden; background-color: rgb(40, 40, 40);
+}
+.charge_btm_Bx .charge_h4 {
+	padding: 0px 0px 22px 24px; display: block;
+}
+.charge_table {
+	width: 100%; border-collapse: separate; table-layout: fixed; border-spacing: 1px; background-color: rgb(40, 40, 40);
+}
+.charge_table th {
+	text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; background-color: rgb(75, 75, 75);
+}
+.charge_table td {
+	padding: 14px 0px 14px 20px; text-align: left; font-size: 12px; background-color: rgb(75, 75, 75);
+}
+.charge_table td .won_txt {
+	color: rgb(254, 205, 6); font-size: 16px; font-weight: bold;
+}
+.charge_table td .won_txt span {
+	font-size: 12px; font-weight: normal;
+}
+.charge_table td .red_txt {
+	background: url("../images/bu_red_txt.png") no-repeat left 1px; margin: 22px 0px 0px; padding: 0px 0px 0px 14px; color: rgb(249, 0, 20); line-height: 1.1em; font-size: 12px; display: block;
+}
+.charge_table td .top_Txt {
+	padding: 0px 0px 14px; width: auto; overflow: hidden;
+}
+.charge_table td .top_Txt .yellow_txt {
+	padding: 0px 8px 0px 0px; height: 24px; color: rgb(255, 211, 1); line-height: 24px; font-size: 12px; float: left; display: block;
+}
+.charge_table td .top_Txt .btn_black {
+	float: left; display: block;
+}
+.charge_table td .btm_txt {
+	width: auto; overflow: hidden;
+}
+.charge_table td .btm_txt .lft_txt {
+	padding: 0px 15px 0px 0px; height: 24px; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px; font-weight: bold; float: left; display: block;
+}
+.charge_table td .btm_txt .cash_txt {
+	padding: 30px 0px 15px; height: 24px; text-align: center; color: rgb(255, 255, 0); line-height: 24px; font-size: 14px; font-weight: bold; display: block;
+}
+.charge_table td .btm_txt .input_bx {
+	overflow: hidden; float: left; display: block;
+}
+.charge_table td .btm_txt .input_bx .pw_txt {
+	padding: 0px 9px 0px 0px; height: 24px; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px; float: left;
+}
+.charge_table td .btm_txt .pw_input {
+	margin: 0px 5px 0px 0px; padding: 0px 0px 0px 10px; border: 1px solid rgb(102, 102, 102); border-image: none; width: 72px; height: 22px; line-height: 22px; float: left;
+}
+.charge_table td .btm_txt .btn_black {
+	float: left; display: block;
+}
+.charge_table td .pay_bx {
+	width: auto; overflow: hidden;
+}
+.charge_table td .pay_bx .pay_input {
+	margin: 0px 5px 0px 0px; padding: 0px 0px 0px 10px; border: 1px solid rgb(102, 102, 102); border-image: none; width: 92px; height: 24px; line-height: 22px; float: left;
+}
+.charge_table td .pay_bx .btn_won {
+	background: url("../images/btn_white.png") no-repeat left top; margin: 0px 5px 0px 0px; width: 54px; height: 26px; text-align: center; color: rgb(0, 0, 0); line-height: 26px; font-size: 12px; font-weight: bold; float: left; display: block;
+}
+.charge_table td .pay_bx .btn_red {
+	background: url("../images/btn_red.png") no-repeat left top; margin: 0px 5px 0px 0px; width: 74px; height: 26px; text-align: center; color: rgb(0, 0, 0); line-height: 26px; font-size: 12px; font-weight: bold; float: left; display: block;
+}
+.charge_table td .yllow_txt {
+	background: url("../images/bu_yellow_txt.png") no-repeat left 2px; padding: 0px 0px 0px 16px; color: rgb(255, 205, 0); font-size: 12px; display: inline-block;
+}
+.charge_table .pw_bx {
+	width: auto; overflow: hidden;
+}
+.charge_table .pw_bx .yllow_txt {
+	margin: 6px 0px 0px 7px;
+}
+.charge_table .pw_bx .pw_input {
+	margin: 0px 5px 0px 0px; padding: 0px 0px 0px 10px; border: 1px solid rgb(102, 102, 102); border-image: none; width: 72px; height: 22px; line-height: 22px; float: left;
+}
+.btn_charge {
+	padding: 25px 0px; width: auto; text-align: center;
+}
+.rule_info * {
+	line-height: 1.1em; vertical-align: top;
+}
+.rule_info {
+	margin: 0px 0px 3px; padding: 19px 0px 31px 34px; width: auto; background-color: rgb(40, 40, 40);
+}
+.rule_info .rule_h3 {
+	padding: 80px 0px 23px; display: block;
+}
+.rule_info .nm_lst {
+	width: auto; overflow: hidden;
+}
+.rule_info .nm_lst li {
+	margin: 0px 0px 11px; padding: 0px 0px 0px 18px; color: rgb(150, 150, 150); font-size: 12px; font-weight: normal;
+}
+.rule_info .nm_lst .green_txt {
+	padding: 8px 0px 0px; color: rgb(83, 186, 32); line-height: 1.1em; display: block;
+}
+.rule_info .nm_lst li.last {
+	margin: 0px;
+}
+.rule_info .btm_lst {
+	padding: 36px 0px 0px; width: auto; overflow: hidden;
+}
+.rule_info .btm_lst li {
+	margin: 0px 0px 10px; padding: 0px 30px 0px 9px; color: rgb(150, 150, 150); line-height: 180%; font-size: 12px;
+}
+.rule_info .btm_lst li.last {
+	margin: 0px;
+}
+.rule_info .btm_lst li b {
+	color: rgb(204, 204, 204);
+}
+.rule_info .btm_lst1 {
+	padding: 5px 0px 0px; width: auto; overflow: hidden;
+}
+.rule_info .btm_lst1 li {
+	margin: 0px 0px 10px; padding: 0px 30px 0px 9px; color: rgb(150, 150, 150); line-height: 180%; font-size: 12px;
+}
+.rule_info .btm_lst1 li.last {
+	margin: 0px;
+}
+.rule_info .btm_lst1 li b {
+	color: rgb(204, 204, 204);
+}
+.handy_info * {
+	line-height: 1.1em; vertical-align: top;
+}
+.handy_info {
+	margin: 0px 0px 3px; padding: 19px 0px 31px 34px; width: auto; background-color: rgb(40, 40, 40);
+}
+.handy_info .handy_h3 {
+	padding: 36px 0px 23px; display: block;
+}
+.handy_info .nm_lst {
+	width: auto; overflow: hidden;
+}
+.handy_info .nm_lst li {
+	margin: 0px 0px 11px; padding: 0px 0px 0px 18px; color: rgb(150, 150, 150); font-size: 12px; font-weight: normal;
+}
+.handy_info .nm_lst .green_txt {
+	padding: 8px 0px 0px; color: rgb(83, 186, 32); line-height: 1.1em; display: block;
+}
+.handy_info .nm_lst li.last {
+	margin: 0px;
+}
+.handy_info .btm_lst {
+	padding: 36px 0px 0px; width: auto; overflow: hidden;
+}
+.handy_info .btm_lst li {
+	margin: 0px 0px 10px; padding: 0px 30px 0px 9px; color: rgb(150, 150, 150); line-height: 180%; font-size: 12px;
+}
+.handy_info .btm_lst li.last {
+	margin: 0px;
+}
+.handy_info .btm_lst li b {
+	color: rgb(204, 204, 204);
+}
+.handy_info .btm_lst1 {
+	padding: 5px 0px 0px; width: 97%; overflow: hidden; border-bottom-color: rgb(62, 62, 62); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.handy_info .btm_lst1 li {
+	margin: 0px 0px 10px; padding: 0px 30px 0px 9px; color: rgb(255, 255, 255); line-height: 180%; font-size: 12px;
+}
+.handy_info .btm_lst1 li.last {
+	margin: 0px;
+}
+.handy_info .btm_lst1 li b {
+	color: rgb(204, 204, 204);
+}
+.msg_sound_only {
+	margin: 0px !important; padding: 0px !important; border: 0px currentColor !important; border-image: none !important; left: 0px; top: 0px; width: 1px !important; height: 1px !important; line-height: 0; overflow: hidden !important; font-size: 0px; display: inline-block !important; position: absolute;
+}
+.sound_only {
+	margin: 0px !important; padding: 0px !important; border: 0px currentColor !important; border-image: none !important; left: 0px; top: 0px; width: 1px !important; height: 1px !important; line-height: 0; overflow: hidden !important; font-size: 0px; display: inline-block !important; position: absolute;
+}
+.required {
+	background-color: rgb(172, 172, 172) !important;
+}
+.betting_scoll {
+	width: auto; -ms-overflow-y: auto; max-height: 464px;
+}
+.betting_table td .betting_Bx {
+	background: url("../images/bg_game_defalt.jpg") repeat-x left top; border-radius: 3px; width: auto; height: 28px; display: block; -moz-border-radius: 3px; -webkit-border-radius: 3px; behavior: url(/titan/css/PIE.htc);
+}
+.betting_table td .betting_Bx .txt_bx {
+	padding: 7px 0px 0px; width: auto; height: 21px; text-align: center; color: rgb(122, 122, 122); text-transform: uppercase; line-height: 1.1em; overflow: hidden; font-size: 12px; font-weight: bold; display: block;
+}
+.betting_table td .betting_Bx .txt_bx .bunsu {
+	font-size: large;
+}
+.betting_table td .betting_Bx .left_txt {
+	padding: 7px 0px 0px 12px; height: 21px; color: rgb(122, 122, 122); line-height: 1.1em; font-size: 12px; font-weight: bold; float: left;
+}
+.betting_table td .betting_Bx .rgt_txt {
+	padding: 7px 12px 0px 0px; height: 21px; color: rgb(122, 122, 122); line-height: 1.1em; font-size: 12px; font-weight: bold; float: right;
+}

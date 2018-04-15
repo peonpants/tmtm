@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+.bet_btn_inner [type=button] {text-align:center;}
+input.btn_bet {text-align:center;}
+/*사다리게임*/
+.ladder_wrap{background:url('../images/game/livegame/bg_ladder.png') -40px 0;width:100%;}
+
+.ladder_top{overflow-y:hidden;overflow-x:hidden;position:relative;/*margin:0 0px 0 40px;height:450px;*/}
+.ladder_top .ladder_area iframe{width:768px;height:610px;}
+.ladder_top .ladder_area{width:703px;height:425px;overflow:hidden;margin:0 auto;}
+
+.ladder_cnt{clear:both;display:block;}
+.ladder_cnt:after{clear:both;display:block;content:'';}
+.ladder_cnt>div:after{clear:both;display:block;content:'';}
+.ladder_cnt .ladder_choice{background:url('../images/game/livegame/bg_ladder_table.png')0 0 no-repeat;width:100%;height:160px;margin-bottom:2px;overflow:hidden;}
+.ladder_cnt .ladder_choice a{box-sizing:border-box;color:#533620;outline:0;cursor:pointer;display:block;background:url('../images/game/livegame/bg_ladder_table.png?') no-repeat;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;font-weight:300;font-size:12px;overflow:hidden;padding-top:32px;}
+.ladder_cnt .ladder_choice .b_odd{background-position:0 -379px;width:72px;height:110px;padding-top:60px;}
+.ladder_cnt .ladder_choice .b_even{background-position:-81px -379px;width:72px;height:110px;padding-top:60px;}
+.ladder_cnt .ladder_choice .b_lft{background-position:-254px -379px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt{background-position:-335px -379px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_3_odd{background-position:-254px -437px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_4_even{background-position:-335px -437px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_lft_3_oven{background-position:-515px -379px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_lft_4_odd{background-position:-596px -379px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt_3_odd{background-position:-515px -437px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt_4_even{background-position:-596px -437px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_odd:hover,
+.ladder_cnt .ladder_choice .b_odd.btn-mouseclick{background-position:0 -512px;width:72px;height:110px;padding-top:60px;}
+.ladder_cnt .ladder_choice .b_even:hover,
+.ladder_cnt .ladder_choice .b_even.btn-mouseclick{background-position:-81px -512px;width:72px;height:110px;padding-top:60px;}
+.ladder_cnt .ladder_choice .b_lft:hover,
+.ladder_cnt .ladder_choice .b_lft.btn-mouseclick{background-position:-254px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt:hover,
+.ladder_cnt .ladder_choice .b_rgt.btn-mouseclick{background-position:-335px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_3_odd:hover,
+.ladder_cnt .ladder_choice .b_3_odd.btn-mouseclick{background-position:-254px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_4_even:hover,
+.ladder_cnt .ladder_choice .b_4_even.btn-mouseclick{background-position:-335px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_lft_3_oven:hover,
+.ladder_cnt .ladder_choice .b_lft_3_oven.btn-mouseclick{background-position:-515px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_lft_4_odd:hover,
+.ladder_cnt .ladder_choice .b_lft_4_odd.btn-mouseclick{background-position:-596px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt_3_odd:hover,
+.ladder_cnt .ladder_choice .b_rgt_3_odd.btn-mouseclick{background-position:-515px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt_4_even:hover,
+.ladder_cnt .ladder_choice .b_rgt_4_even.btn-mouseclick{background-position:-596px -570px;width:72px;height:52px;}
+
+.ladder_cnt .ladder_choice .b_odd:active{background-position:0 -512px;width:72px;height:110px;padding-top:60px;}
+.ladder_cnt .ladder_choice .b_even:active{background-position:-81px -512px;width:72px;height:110px;padding-top:60px;}
+.ladder_cnt .ladder_choice .b_lft:active{background-position:-254px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt:active{background-position:-335px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_3_odd:active{background-position:-254px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_4_even:active{background-position:-335px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_lft_3_oven:active{background-position:-515px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_lft_4_odd:active{background-position:-596px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt_3_odd:active{background-position:-515px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt_4_even:active{background-position:-596px -570px;width:72px;height:52px;}
+
+.ladder_cnt .ladder_choice .b_odd.focus{background-position:0 -512px;width:72px;height:110px;padding-top:60px;}
+.ladder_cnt .ladder_choice .b_even.focus{background-position:-81px -512px;width:72px;height:110px;padding-top:60px;}
+.ladder_cnt .ladder_choice .b_lft.focus{background-position:-254px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt.focus{background-position:-335px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_3_odd.focus{background-position:-254px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_4_even.focus{background-position:-335px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_lft_3_oven.focus{background-position:-515px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_lft_4_odd.focus{background-position:-596px -512px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt_3_odd.focus{background-position:-515px -570px;width:72px;height:52px;}
+.ladder_cnt .ladder_choice .b_rgt_4_even.focus{background-position:-596px -570px;width:72px;height:52px;}
+
+.ladder_cnt .ladder_choice>div{float:left;padding:25px 0;}
+.ladder_cnt .ladder_choice>div ul{width:155px;margin-left:78px;}
+.ladder_cnt .ladder_choice>div li{float:left;width:50%;text-align:center;}
+.ladder_cnt .ladder_choice .game_info{width:160px;text-align:center;font-size:16px;}
+.ladder_cnt .ladder_choice .game_info strong,.ladder_cnt .ladder_choice .game_info span,.ladder_cnt .ladder_choice .game_info em{font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+.ladder_cnt .ladder_choice .game_info .btn_refresh{margin:15px auto;background:url('../images/game/livegame/ladder_btn_refresh.png');width:92px;height:47px;display:block;text-indent:-999999px;border:none;cursor:pointer;}
+.ladder_cnt .ladder_choice .game_info span{color:#fff;}
+.ladder_cnt .ladder_choice .game_info strong.order{color:#ffce25;}
+.ladder_cnt .ladder_choice .game_info em{display:block;font-style:normal;color:#fff;}
+.ladder_cnt .ladder_choice .game_info strong.count{display:block;color:#fff0c7;font-size:30px;padding:0px 0 5px;line-height:35px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+.ladder_cnt .ladder_choice .game_info em,
+.ladder_cnt .ladder_choice .game_info #remaind_time {display:none;}
+.ladder_cnt .ladder_choice .text_name,
+.ladder_cnt .ladder_choice .name {display:none;}
+.ladder_cnt .ladder_choice .ladder_2nd ul{margin-left:100px;}
+.ladder_cnt .ladder_choice .ladder_3rd ul{margin-left:110px;}
+.ladder_cnt .ladder_choice .ladder_2nd li,.ladder_cnt .ladder_choice .ladder_3rd li{margin-bottom:7px;}
+.ladder_cnt .ladder_cart {position:relative;clear:both;display:block;background:url('../images/game/livegame/bg_ladder_table.png')0 -162px no-repeat;width:100%;height:160px;}
+.ladder_cnt .ladder_cart .cart_info{display:block;width:155px;float:left;margin-right:60px;padding:20px 0px 0 5px;}
+.ladder_cnt .ladder_cart .cart_info li{padding:7px 15px;white-space:nowrap;}
+.ladder_cnt .ladder_cart .cart_info li#selBet{height:48px;}
+.ladder_cnt .ladder_cart .cart_info span{display:inline-block;vertical-align:middle;color:#fff;font-size:13px;width:55px;text-align:left;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+.ladder_cnt .ladder_cart .cart_info input{background:none;width:100%;font-style:normal;font-weight:bold;color:#ffeaad;font-size:14px;}
+.ladder_cnt .ladder_cart .cart_info strong{color:#f7c725;font-size:13px;}
+.ladder_cnt .ladder_cart .cart_info span.tx{width:100%;display:inline-block;margin:0;}
+.ladder_cnt .ladder_cart .cart_pay{float:left;width:660px;position:relative;padding:15px 20px 15px 15px;box-sizing:content-box;}
+.ladder_cnt .ladder_cart .bet_money{float:left;display:block;background-color:#f0f0f0;box-sizing:content-box;border-radius: 5px;border:1px solid #7f3c24;width:258px;height:31px;padding:5px 10px;margin:1px 1px 4px;}
+.ladder_cnt .ladder_cart .bet_money label{font-weight:bold;color:#222;font-size:14px;display:inline-block;margin-right:4px;letter-spacing:-0.5px;}
+.ladder_cnt .ladder_cart .bet_money input{text-align:right;background:#f0f0f0;color:#e42828;width:170px;font-size:20px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;}
+.ladder_cnt .ladder_cart .bet_money.i_blue input{color:#106de1 !important;}
+.ladder_cnt .ladder_cart .bet_btn_inner{clear:both;width:565px;}
+.ladder_cnt .ladder_cart .bet_btn_inner [type=button]{outline:0;cursor:pointer;background:url('../images/game/livegame/bg_ladder_table.png') -681px -380px no-repeat;font-family:'Noto Sans',dotum;letter-spacing:-0.5px;font-weight:bold;font-size:15px;color:#533620;width:92px;height:37px;margin:1px;float:left;}
+.ladder_cnt .ladder_cart .bet_btn_inner [type=button]:hover{background-position:-681px -512px !important;}
+.ladder_cnt .ladder_cart .bet_btn_inner .i_blue{color:#2b5c99 !important;}
+.ladder_cnt .ladder_cart .bet_btn_inner .i_brw{color:#b04b00 !important;}
+.ladder_cnt .ladder_cart .bet_btn_inner .i_gray{color:#666 !important;}
+.ladder_cnt .ladder_cart input.btn_bet{cursor:pointer;display:block;position:absolute;right:10px;top:15px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;font-size:15px;letter-spacing:0 !important;background:#4c1f09 !important;width:100px;height:125px;color:#fff !important;-webkit-border-radius: 5px; 	-moz-border-radius:5px;border-radius: 5px;border:1px solid #000;}
+.ladder_cnt .ladder_cart .bet_money_free{float:left;display:block;background-color:#eee9e4;-webkit-border-radius: 5px; 	-moz-border-radius:5px;border-radius: 5px;border:1px solid #7f3c24;width:258px;height:29px;padding:6px 10px 0;margin:1px 1px;}
+.ladder_cnt .ladder_cart .bet_money_free label{font-weight:bold;color:#222;font-size:13px;display:inline-block;margin-right:4px;letter-spacing:-0.5px;}
+.ladder_cnt .ladder_cart .bet_money_free input{text-align:right;background:#eee9e4;color:#111;width:200px;font-size:15px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;}
+.ladder_cnt .ladder_cart .bet_disable{position:absolute;top:0;bottom:0;left:0;right:0;padding-top:60px;font-size:30px;text-align:center;color:white;background:rgba(0,0,0,0.7);}
+
+.ladder_notice{background:#695e58;padding:25px 20px;}
+.ladder_notice h4{background:url('../images/game/livegame/ladder_img.png') -176px -158px no-repeat;width:66px;height:14px;text-indent:-999999px;margin-bottom:15px;}
+.ladder_notice li{font-size:11px;color:#b8b0ae;font-family:dotum;line-height:20px;}
+
+
+
+/*달팽이*/
+.snail_wrap{background:url('../images/game/livegame/bg_snail.png') -20px 0 repeat-x;width:100%;padding-bottom:20px;}
+.snail_top{overflow-y:hidden;overflow-x:hidden;position:relative;height:490px;;margin-left:50px;}
+.snail_top .snail_area{position:absolute;top:-46px;left:-1px;}
+.snail_top .snail_area iframe{width:820px;height:710px;}
+.snail_cnt{clear:both;display:block;}
+.snail_cnt:after{clear:both;display:block;content:'';}
+.snail_cnt>div:after{clear:both;display:block;content:'';}
+.snail_cnt .snail_choice{background:url('../images/game/livegame/bg_snail_choice_1.png')0 0 no-repeat;width:100%;height:309px;position:relative;}
+.snail_cnt .snail_choice:after{clear:both;display:block;content:'';}
+.snail_cnt .snail_choice .per{display:block;clear:both;text-align:center;color:#fff;width:102px;height:28px;margin: 0 auto;}
+.snail_cnt .snail_choice .per span{font-weight:bold;}
+.snail_cnt .snail_choice .game_info{width:830px;position:absolute;left:62px;top:32px;font-size:14px;text-align:left;}
+.snail_cnt .snail_choice .game_info:after{clear:both;display:block;content:'';}
+.snail_cnt .snail_choice .game_info strong,.snail_cnt .snail_choice .game_info span,.snail_cnt .snail_choice .game_info em{font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+.snail_cnt .snail_choice .game_info a.btn_refresh{display:block;position:absolute;right:0;top:0px;;background:url('../images/game/livegame/ladder_img.png') -206px -79px no-repeat;width:94px;height:26px;text-indent:-999999px;}
+.snail_cnt .snail_choice .game_info span{color:#444;}
+.snail_cnt .snail_choice .game_info strong.order{color:#502c18;}
+.snail_cnt .snail_choice .game_info em{display:block;font-style:normal;color:#fff;}
+.snail_cnt .snail_choice .game_info strong.count{display:block;color:#fff0c7;font-size:30px;padding:0px 0 5px;line-height:35px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+.snail_cnt .snail_choice a{outline:0;cursor:pointer;display:block;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;font-weight:300;font-size:12px;overflow:hidden;display:block;margin:30px auto 11px auto;width:64px;height:60px;background:url('../images/game/livegame/sp_race_player.png') no-repeat;text-indent:-999999px;}
+
+.snail_cnt .snail_choice .btn_ne{background-position:-314px -0;}
+.snail_cnt .snail_choice .btn_im{background-position:-404px -0;}
+.snail_cnt .snail_choice .btn_du{background-position:-494px -0;}
+.snail_cnt .snail_choice .btn_nid{background-position:-314px -128px;}
+.snail_cnt .snail_choice .btn_ndi{background-position:-407px -128px;}
+.snail_cnt .snail_choice .btn_ind{background-position:-496px -128px;}
+.snail_cnt .snail_choice .btn_idn{background-position:-586px -128px;}
+.snail_cnt .snail_choice .btn_dni{background-position:-677px -128px;}
+.snail_cnt .snail_choice .btn_din{background-position:-765px -128px;}
+
+.snail_cnt .snail_choice .btn_ne:hover,
+.snail_cnt .snail_choice .btn_ne.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -314px -0;}
+.snail_cnt .snail_choice .btn_im:hover,
+.snail_cnt .snail_choice .btn_im.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -404px -0;}
+.snail_cnt .snail_choice .btn_du:hover,
+.snail_cnt .snail_choice .btn_du.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -494px -0;}
+.snail_cnt .snail_choice .btn_nid:hover,
+.snail_cnt .snail_choice .btn_nid.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -314px -128px;}
+.snail_cnt .snail_choice .btn_ndi:hover,
+.snail_cnt .snail_choice .btn_ndi.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -407px -128px;}
+.snail_cnt .snail_choice .btn_ind:hover,
+.snail_cnt .snail_choice .btn_ind.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -496px -128px;}
+.snail_cnt .snail_choice .btn_idn:hover,
+.snail_cnt .snail_choice .btn_idn.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -586px -128px;}
+.snail_cnt .snail_choice .btn_dni:hover,
+.snail_cnt .snail_choice .btn_dni.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -677px -128px;}
+.snail_cnt .snail_choice .btn_din:hover,
+.snail_cnt .snail_choice .btn_din.btn-mouseclick{background:url('../images/game/livegame/sp_race_player02.png') no-repeat -765px -128px;}
+
+.snail_cnt .snail_choice .snail_choice_inner{width:830px;height:495px;margin:0 auto;padding-top:100px;}
+.snail_cnt .snail_choice .snail_choice_inner>div{float:left;width:100%;}
+.snail_cnt .snail_choice .snail_choice_inner>div.snail_4th{padding-top:55px;}
+.snail_cnt .snail_choice .snail_choice_inner ul{clear:both;margin-bottom:8px;}
+.snail_cnt .snail_choice .snail_choice_inner li{float:left;width:33%;text-align:center;}
+.snail_cnt .snail_choice .snail_choice_inner:after { display:block; content:""; clear:both;}
+.snail_cnt .snail_choice .snail_1st div {text-align:center;}
+.snail_cnt .snail_choice .snail_1st div ul {display:inline-block;text-align:center;width:30%;}
+.snail_cnt .snail_choice .snail_1st div ul li {float:none;text-align:center;width:100%;}
+.snail_cnt .snail_choice .snail_2nd{margin:0 10px 0 20px;}
+.snail_cnt .snail_choice .snail_4th{display:block;width:100%;}
+.snail_cnt .snail_choice .snail_choice_inner .snail_4th ul{display:inline-block;float:left;clear:none;width:33.3%;}
+.snail_cnt .snail_choice .snail_choice_inner .snail_4th ul:after{clear:both;display:block;}
+.snail_cnt .snail_choice .snail_choice_inner .snail_4th li:first-child{border:none;}
+.snail_cnt .snail_choice .snail_choice_inner .snail_4th li{/*border-left:1px solid #c9a472;*/padding:10px 0; width:50%;}
+.snail_cnt .snail_choice .snail_4th a{width:71px !important;height:202px !important;margin:0 auto;}
+.snail_cnt .snail_choice .snail_4th .per{clear:both;padding-top:7px;}
+
+
+.snail_cnt .now_bet{position:absolute;right:45px;top:285px;width:265px;height:270px;;}
+.snail_cnt .now_bet a.btn_refresh{position:absolute;top:-1px;right:-3px;background:url('../images/game/livegame/ladder_img.png') -174px -79px no-repeat;width:25px;height:25px;display:block;text-indent:-999999px;}
+.snail_cnt .now_bet li{position:relative;float:left;width:33.33%;text-align:center;}
+.snail_cnt .now_bet strong{display:block;overflow:hidden;margin:0 auto;width:39px;height:26px;margin-bottom:5px;background:url('../images/game/livegame/snail_img.png') no-repeat;text-indent:-999999px;}
+.snail_cnt .now_bet .btn_ne{background-position:-280px -30px;}
+.snail_cnt .now_bet .btn_im{background-position:-330px -30px;}
+.snail_cnt .now_bet .btn_du{background-position:-380px -30px;}
+.snail_cnt .now_bet ul span.money{text-align:center;font-size:12.5px;color:#222;display:block;background:#f8ebd9;margin:0 1px;}
+.snail_cnt .now_bet dl{clear:both;display:block;margin:40px 0 10px;}
+.snail_cnt .now_bet dl:after{clear:both;display:block;content:'';}
+
+.snail_cnt .snail_cart{clear:both;display:block;background:url('../images/game/livegame/bg_snail_cart.png') 0 0 no-repeat !important;height:280px !important;}
+.snail_cnt .snail_cart .cart_info{display:block;width:830px;margin:0px auto 0;padding:60px 0 5px;text-align:center;}
+.snail_cnt .snail_cart .cart_info ul{display:inline-block;}
+.snail_cnt .snail_cart .cart_info li{float:left;padding:0 5px;}
+.snail_cnt .snail_cart .cart_info span{display:inline-block;color:#444;font-size:13px;text-align:left;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;vertical-align:middle;}
+.snail_cnt .snail_cart .cart_info input{background:none;width:50px;font-style:normal;font-weight:bold;color:#3e2f21;font-size:14px;}
+.snail_cnt .snail_cart .cart_info input#divd{padding-top:0;}
+.snail_cnt .snail_cart .cart_info strong{color:#844a14;font-size:13px;}
+.snail_cnt .snail_cart .cart_info span.tx{width:27px;height:27px;display:inline-block;margin:0;}
+.snail_cnt .snail_cart .cart_pay{clear:both;display:block;margin:0 auto;width:800px;position:relative;padding:15px 0px;}
+.snail_cnt .snail_cart{clear:both;display:block;background:url('../images/game/livegame/bg_snail_table.png')0 -162px no-repeat;width:100%;height:160px;}
+.snail_cnt .snail_cart .bet_money{float:left;display:block;background-color:#f0f0f0;-webkit-border-radius: 5px; 	-moz-border-radius:5px;border-radius: 5px;border:1px solid #7f3c24;width:324px;height:31px;padding:5px 10px;margin:1px 1px 4px;}
+.snail_cnt .snail_cart .bet_money label{font-weight:bold;color:#222;font-size:14px;display:inline-block;margin-right:4px;letter-spacing:-0.5px;}
+.snail_cnt .snail_cart .bet_money input{text-align:right;background:#f0f0f0;color:#e42828;width:248px;font-size:20px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;}
+
+.snail_cnt .snail_cart .bet_money.i_blue input{color:#106de1 !important;}
+.snail_cnt .snail_cart .bet_btn_inner{clear:both;width:710px;}
+.snail_cnt .snail_cart .bet_btn_inner [type=button]{cursor:pointer;outline:0;-webkit-border-radius: 5px;-moz-border-radius:5px;border-radius: 5px;border:1px solid #4e3720;font-family:'Noto Sans',dotum;letter-spacing:-0.5px;font-weight:bold;font-size:15px;color:#fff;background:#6f5132;width:114px;height:37px;margin:1px;float:left;}
+.snail_cnt .snail_cart .bet_btn_inner [type=button]:hover{background-color:#4c3318;}
+.snail_cnt .snail_cart .bet_btn_inner .i_blue{color:#5eb3df !important;}
+.snail_cnt .snail_cart .bet_btn_inner .i_brw{color:#ffc600 !important;}
+.snail_cnt .snail_cart .bet_btn_inner .i_gray{color:#c6c6c6 !important;}
+.snail_cnt .snail_cart input.btn_bet{cursor:pointer;display:block;position:absolute;right:0px;top:15px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;font-size:15px;letter-spacing:0 !important;background:#202020 !important;width:100px;height:125px;color:#fff !important;-webkit-border-radius: 5px; 	-moz-border-radius:5px;border-radius: 5px;border:1px solid #000;}
+.snail_cnt .snail_cart .bet_money_free{float:left;display:block;background-color:#eee9e4;-webkit-border-radius: 5px; 	-moz-border-radius:5px;border-radius: 5px;border:1px solid #7f3c24;width:324px;height:29px;padding:6px 10px 0;margin:1px 1px;}
+.snail_cnt .snail_cart .bet_money_free label{font-weight:bold;color:#222;font-size:13px;display:inline-block;margin-right:4px;letter-spacing:-0.5px;}
+.snail_cnt .snail_cart .bet_money_free input{text-align:right;background:#eee9e4;color:#111;width:268px;font-size:15px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;}
+
+.snail_notice{background:url('../images/game/livegame/bg_race_tip.png') no-repeat;height:200px;padding-top:45px;box-sizing:border-box;}
+.snail_notice ul{margin:0 35px;}
+.snail_notice li{color:#b0a38d;line-height:16px;font-size:11px;font-family:gulim;}
+
+/* 파워볼 */
+    .powerball_wrap{background:#13205c url('../images/game/livegame/bg_powerball.jpg') ;width:100%;padding-bottom:20px;}
+    .powerball_top{position:relative;/*background:url('../images/game/livegame/bg_powerball_top.png') no-repeat;*/width:935px;height:646px;text-align: center;}
+    .powerball_top .powerball_area{}
+    .powerball_count{text-align:center;width:208px;height:100px;position:absolute;left:15px;top:120px;}
+    .powerball_count span.order{display:block;text-align:center;color:#ffce4b;font-size:15px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;font-weight:300;}
+    .powerball_count strong.count{font-size:48px;line-height:52px;color:#fff;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;font-weight:300;}
+    .powerball_now{display:block;;width:660px;height:183px;margin:0 0 0 230px;padding:40px 15px 0;box-sizing:content-box;}
+    .powerball_now .btn_refresh{float:right;display:block;background:url('../images/game/livegame/btn_pb_refresh.png') no-repeat;text-indent:-999999px;width:81px;height:24px;}
+    .powerball_now .game_info{display:block;clear:both;padding:0 10px;}
+    .powerball_now .game_info:after{clear:both;display:block;content:'';}
+    .powerball_now .game_info strong.order{float:left;display:block;color:#fff;font-size:16px;line-height:16px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;font-weight:300;}
+    .powerball_now .game_info strong.time{float:right;font-weight:normal;margin-right:10px;}
+    .powerball_now .game_info span,.powerball_now .game_info em{text-align:right;color:#cbd1e2;font-size:14px;font-style:normal;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+
+    .powerball_now .ball_list {width:630px;margin:0 auto;padding:46px 0 0 0;}
+    .powerball_now .ball_list li{float:left;width:16.666%;text-align:center;}
+    .powerball_now .ball_list li strong{display:block;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;font-weight:bold;font-size:40px;letter-spacing:-0.5px;color:#fff;}
+    .powerball_now .ball_list li.pb strong{color:#161304 !important;}
+    .powerball_cnt{clear:both;display:block;}
+    .powerball_cnt:after{clear:both;display:block;content:'';}
+    .powerball_cnt>div:after{clear:both;display:block;content:'';}
+    .powerball_cnt .powerball_result_list{background:url('../images/game/livegame/bg_powerball_result_list.png') no-repeat;width:935px;height:300px;}
+    .powerball_cnt .powerball_result_list_inner{padding:60px 30px 10px 28px;}
+    .powerball_cnt .powerball_result_list_inner table{width:100%;border-bottom:2px solid #707ea5;}
+    .powerball_cnt .powerball_result_list_inner table thead{border:1px solid #;background:#13307e;height:30px;line-height:29px;}
+    .powerball_cnt .powerball_result_list_inner table thead th{font-size:11px;font-weight:normal;color:#d2d9eb;text-align:center;}
+    .powerball_cnt .powerball_result_list_inner table tbody{overflow:auto;}
+    .powerball_cnt .powerball_result_list_inner table td{border-bottom:1px solid #909ec4;background:#d1d7e8;text-align:center;padding:6px 0;height:22px;box-sizing:content-box;}
+    .powerball_cnt .powerball_choice{background:url('../images/game/livegame/bg_powerball_choice.png')0 0 no-repeat;width:100%;/*height:533px;*/height:382px;position:relative;padding-top: 37px;box-sizing:border-box;}
+    .powerball_cnt .powerball_choice:after{clear:both;display:block;content:'';}
+    .powerball_cnt .powerball_choice .per{display:block;clear:both;text-align:center;color:#fff;margin-top:85px;}
+    .powerball_cnt .powerball_choice .per span{font-weight:bold;font-size:14px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+    .powerball_cnt .powerball_choice h4{border-bottom:1px solid #454f82;display:block;width:94%;padding:6px 0 9px;margin:0 auto;font-size:16px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;color:#f49d05;}
+    .powerball_cnt .powerball_choice .game_info{width:850px;position:relative;}
+    .powerball_cnt .powerball_choice .game_info:after{clear:both;display:block;content:'';}
+    .powerball_cnt .powerball_choice .game_info strong,.powerball_cnt .powerball_choice .game_info span,.powerball_cnt .powerball_choice .game_info em{font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+    .powerball_cnt .powerball_choice .game_info a.btn_refresh{display:block;position:absolute;right:0;top:0px;;background:url('../images/game/livegame/ladder_img.png') -206px -79px no-repeat;width:94px;height:26px;text-indent:-999999px;}
+    .powerball_cnt .powerball_choice .game_info span{color:#444;}
+    .powerball_cnt .powerball_choice .game_info strong.order{color:#502c18;}
+    .powerball_cnt .powerball_choice .game_info em{display:block;font-style:normal;color:#fff;}
+    .powerball_cnt .powerball_choice .game_info strong.count{display:block;color:#fff0c7;font-size:30px;padding:0px 0 5px;line-height:35px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+    .powerball_cnt .powerball_choice a{outline:0;cursor:pointer;display:inline-block;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;font-weight:bold;font-size:14px;margin:10px auto 3px auto;width:85px;height:85px;background:url('../images/game/livegame/bg_powerball_btn.png') no-repeat;}
+    .powerball_cnt .powerball_choice .btn_odd{background-position:0px -0;}
+    .powerball_cnt .powerball_choice .btn_even{background-position:-95px 0;}
+    .powerball_cnt .powerball_choice .btn_sm{background-position:-189px 0;}
+    .powerball_cnt .powerball_choice .btn_md{background-position:-283px 0px;}
+    .powerball_cnt .powerball_choice .btn_bi{background-position:-377px 0px;}
+    .powerball_cnt .powerball_choice .btn_pb00{background-position:-849px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb01{background-position:0px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb02{background-position:-94px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb03{background-position:-189px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb04{background-position:-283px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb05{background-position:-377px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb06{background-position:-471px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb07{background-position:-566px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb08{background-position:-660px -189px;}
+    .powerball_cnt .powerball_choice .btn_pb09{background-position:-754px -189px;}
+    .powerball_cnt .powerball_choice .btn_pbA{background-position:-0px -375px;}
+    .powerball_cnt .powerball_choice .btn_pbB{background-position:-94px -375px;}
+    .powerball_cnt .powerball_choice .btn_pbC{background-position:-189px -375px;}
+    .powerball_cnt .powerball_choice .btn_pbD{background-position:-283px -375px;}
+    .powerball_cnt .powerball_choice .btn_pbUodd{background-position:-472px -0px;}
+    .powerball_cnt .powerball_choice .btn_pbUeven{background-position:-566px -0px;}
+    .powerball_cnt .powerball_choice .btn_pbOodd{background-position:-660px -0px;}
+    .powerball_cnt .powerball_choice .btn_pbOeven{background-position:-754px 0px;}
+	.powerball_cnt .powerball_choice .btn_pbUnder{background-position:-378px -378px;}
+	.powerball_cnt .powerball_choice .btn_pbOver{background-position:-472px -378px;}
+    .powerball_cnt .powerball_choice .btn_odd:hover,
+	.powerball_cnt .powerball_choice .btn_odd.btn-mouseclick{background-position:0px -89px;}
+    .powerball_cnt .powerball_choice .btn_even:hover,
+	.powerball_cnt .powerball_choice .btn_even.btn-mouseclick{background-position:-95px -89px;}
+    .powerball_cnt .powerball_choice .btn_sm:hover,
+	.powerball_cnt .powerball_choice .btn_sm.btn-mouseclick{background-position:-189px -89px;}
+    .powerball_cnt .powerball_choice .btn_md:hover,
+	.powerball_cnt .powerball_choice .btn_md.btn-mouseclick{background-position:-283px -89px;}
+    .powerball_cnt .powerball_choice .btn_bi:hover,
+	.powerball_cnt .powerball_choice .btn_bi.btn-mouseclick{background-position:-377px -89px;}
+    .powerball_cnt .powerball_choice .btn_pb00:hover,
+	.powerball_cnt .powerball_choice .btn_pb00.btn-mouseclick{background-position:-849px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb01:hover,
+	.powerball_cnt .powerball_choice .btn_pb01.btn-mouseclick{background-position:0px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb02:hover,
+	.powerball_cnt .powerball_choice .btn_pb02.btn-mouseclick{background-position:-94px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb03:hover,
+	.powerball_cnt .powerball_choice .btn_pb03.btn-mouseclick{background-position:-189px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb04:hover,
+	.powerball_cnt .powerball_choice .btn_pb04.btn-mouseclick{background-position:-283px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb05:hover,
+	.powerball_cnt .powerball_choice .btn_pb05.btn-mouseclick{background-position:-377px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb06:hover,
+	.powerball_cnt .powerball_choice .btn_pb06.btn-mouseclick{background-position:-471px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb07:hover,
+	.powerball_cnt .powerball_choice .btn_pb07.btn-mouseclick{background-position:-566px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb08:hover,
+	.powerball_cnt .powerball_choice .btn_pb08.btn-mouseclick{background-position:-660px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb09:hover,
+	.powerball_cnt .powerball_choice .btn_pb09.btn-mouseclick{background-position:-754px -279px;}
+    .powerball_cnt .powerball_choice .btn_pbA:hover,
+	.powerball_cnt .powerball_choice .btn_pbA.btn-mouseclick{background-position:-0px -467px;}
+    .powerball_cnt .powerball_choice .btn_pbB:hover,
+	.powerball_cnt .powerball_choice .btn_pbB.btn-mouseclick{background-position:-94px -467px;}
+    .powerball_cnt .powerball_choice .btn_pbC:hover,
+	.powerball_cnt .powerball_choice .btn_pbC.btn-mouseclick{background-position:-189px -467px;}
+    .powerball_cnt .powerball_choice .btn_pbD:hover,
+	.powerball_cnt .powerball_choice .btn_pbD.btn-mouseclick{background-position:-283px -467px;}
+    .powerball_cnt .powerball_choice .btn_pbUodd:hover,
+	.powerball_cnt .powerball_choice .btn_pbUodd.btn-mouseclick{background-position:-472px -89px;}
+    .powerball_cnt .powerball_choice .btn_pbUeven:hover,
+	.powerball_cnt .powerball_choice .btn_pbUeven.btn-mouseclick{background-position:-566px -89px;}
+    .powerball_cnt .powerball_choice .btn_pbOodd:hover,
+	.powerball_cnt .powerball_choice .btn_pbOodd.btn-mouseclick{background-position:-660px -89px;}
+    .powerball_cnt .powerball_choice .btn_pbOeven:hover,
+	.powerball_cnt .powerball_choice .btn_pbOeven.btn-mouseclick{background-position:-754px -89px;}
+	.powerball_cnt .powerball_choice .btn_pbUnder:hover,
+	.powerball_cnt .powerball_choice .btn_pbUnder.btn-mouseclick{background-position:-378px -468px;}
+	.powerball_cnt .powerball_choice .btn_pbOver:hover,
+	.powerball_cnt .powerball_choice .btn_pbOver.btn-mouseclick{background-position:-472px -468px;}
+
+	.powerball_cnt .powerball_choice .btn_odd.focus{background-position:0px -89px;}
+    .powerball_cnt .powerball_choice .btn_even.focus{background-position:-95px -89px;}
+    .powerball_cnt .powerball_choice .btn_sm.focus{background-position:-189px -89px;}
+    .powerball_cnt .powerball_choice .btn_md.focus{background-position:-283px -89px;}
+    .powerball_cnt .powerball_choice .btn_bi.focus{background-position:-377px -89px;}
+    .powerball_cnt .powerball_choice .btn_pb00.focus{background-position:-849px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb01.focus{background-position:0px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb02.focus{background-position:-94px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb03.focus{background-position:-189px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb04.focus{background-position:-283px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb05.focus{background-position:-377px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb06.focus{background-position:-471px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb07.focus{background-position:-566px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb08.focus{background-position:-660px -279px;}
+    .powerball_cnt .powerball_choice .btn_pb09.focus{background-position:-754px -279px;}
+    .powerball_cnt .powerball_choice .btn_pbA.focus{background-position:-0px -467px;}
+    .powerball_cnt .powerball_choice .btn_pbB.focus{background-position:-94px -467px;}
+    .powerball_cnt .powerball_choice .btn_pbC.focus{background-position:-189px -467px;}
+    .powerball_cnt .powerball_choice .btn_pbD.focus{background-position:-283px -467px;}
+    .powerball_cnt .powerball_choice .btn_pbUodd.focus{background-position:-472px -89px;}
+    .powerball_cnt .powerball_choice .btn_pbUeven.focus{background-position:-566px -89px;}
+    .powerball_cnt .powerball_choice .btn_pbOodd.focus{background-position:-660px -89px;}
+    .powerball_cnt .powerball_choice .btn_pbOeven.focus{background-position:-754px -89px;}
+
+    .powerball_cnt .powerball_choice .powerball_choice_inner{width:900px;margin:0 auto;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner>div{float:left;text-align:center;height:170px;margin-bottom:5px;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner>div li{float:left;width:50%;text-align:center;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner>div>div{width:93% !important;margin:0 auto;clear:both;display:block;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_1st{width:260px;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_2nd{width:260px;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_3rd{width:370px;margin-left:5px;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_3rd ul{width:32% !important;margin:0 auto;display:inline;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_3rd li{width:33% !important;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_4th{clear:both;width:100% !important;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_4th li{width:10%;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_4th>div{width:95% !important;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_5th{width:447px;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_5th li{width:25%;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_6th{/*width:447px;*/width:100%;}
+    .powerball_cnt .powerball_choice .powerball_choice_inner .powerball_6th li{/*width:25%;*/width:50%;}
+    
+    .powerball_cnt .powerball_cart{clear:both;display:block;background:url('../images/game/livegame/bg_powerball_cart.png') 0 0 no-repeat !important;padding:20px;}
+    .powerball_cnt .powerball_cart .cart_info{display:block;width:155px;float:left;padding:30px 10px 10px 5px;box-sizing:content-box;}
+    .powerball_cnt .powerball_cart .cart_info ul{display:inline-block;}
+    .powerball_cnt .powerball_cart .cart_info li{clear:both;display:block;padding:5px 5px 8px;;border-bottom:1px solid #1e3a88;}
+    .powerball_cnt .powerball_cart .cart_info li:after{clear:both;display:block;content:''}
+    .powerball_cnt .powerball_cart .cart_info span{display:block;float:left;color:#ddd;font-size:13px;width:60px;text-align:left;font-family:'YouandiModernHR','Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+    .powerball_cnt .powerball_cart .cart_info input{background:none;width:100%;font-style:normal;font-weight:bold;color:#f60;font-size:15px;font-family:'YouandiModernHR',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+    .powerball_cnt .powerball_cart .cart_info strong{color:#fff;font-size:13px;font-family:'YouandiModernHR',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;}
+    .powerball_cnt .powerball_cart .cart_info span.tx{width:100%;height:27px;display:inline-block;margin:0;}
+    .powerball_cnt .powerball_cart .cart_pay{float:left;width:685px;position:relative;padding:15px;box-sizing:content-box;}
+    .powerball_cnt .powerball_cart{clear:both;display:block;background:url('../images/game/livegame/bg_powerball_table.png')0 -162px no-repeat;width:100%;height:160px;box-sizing:content-box;}
+    .powerball_cnt .powerball_cart .bet_money{float:left;display:block;background-color:#fff;border-radius: 5px;border:1px solid #061643;width:273px;height:31px;padding:5px 10px;margin:12px 1px 4px;font-family:'YouandiModernHR';box-sizing:content-box;}
+    .powerball_cnt .powerball_cart .bet_money label{font-weight:bold;color:#222;font-size:14px;display:inline-block;margin-right:4px;letter-spacing:-0.5px;}
+    .powerball_cnt .powerball_cart .bet_money input{text-align:right;background:#fff;color:#e42828;width:195px;font-size:20px;font-family:'YouandiModernHR','Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;}
+    .powerball_cnt .powerball_cart .bet_money.i_blue input{color:#106de1 !important;}
+    .powerball_cnt .powerball_cart .bet_btn_inner{clear:both;width:690px;}
+    .powerball_cnt .powerball_cart .bet_btn_inner [type=button]{cursor:pointer;outline:0;border-radius: 5px;border:1px solid #061643;font-family:'YouandiModernHR','Noto Sans',dotum;letter-spacing:-0.5px;font-weight:bold;font-size:15px;color:#fff;background:#005dd6;width:97px;height:37px;margin:1px;float:left;}
+	.powerball_cnt .powerball_cart .bet_btn_inner [type=button]:hover{background-color:#4394fe;}
+    .powerball_cnt .powerball_cart .bet_btn_inner .i_blue{background:#004ed8;color:#ff9261 !important}
+    .powerball_cnt .powerball_cart .bet_btn_inner .i_brw{background:#004ed8;color:#ffde00 !important}
+    .powerball_cnt .powerball_cart .bet_btn_inner .i_gray{background:#004ed8;color:#f7f7f7 !important}
+    .powerball_cnt .powerball_cart input.btn_bet{cursor:pointer;display:block;position:absolute;right:0px;top:25px;font-family:'YouandiModernHR','Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;font-size:15px;letter-spacing:0 !important;background:#ff4d01 !important;width:100px;height:125px;color:#fff !important;-webkit-border-radius: 5px; 	-moz-border-radius:5px;border-radius: 5px;border:1px solid #000;}
+    .powerball_cnt .powerball_cart .bet_money_free{float:left;display:block;background-color:#f7f7f7;-webkit-border-radius: 5px; 	-moz-border-radius:5px;border-radius: 5px;border:1px solid #061643;width:273px;height:29px;padding:6px 10px 0;margin:1px 1px;}
+    .powerball_cnt .powerball_cart .bet_money_free label{font-weight:bold;color:#222;font-size:13px;display:inline-block;margin-right:4px;letter-spacing:-0.5px;}
+    .powerball_cnt .powerball_cart .bet_money_free input{text-align:right;background:#f7f7f7;color:#111;width:200px;font-size:15px;font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;letter-spacing:-0.5px;font-weight:bold;}
+    
+    .powerball_notice{background:#000a50;padding:25px;}
+    .powerball_notice h4{font-family:'Noto Sans',맑은 고딕,'Malgeun Gothic','맑은 고딕',dotum;color:#fff;font-size:16px;font-weight:300;margin-bottom:15px;}
+    .powerball_notice ul{}
+    .powerball_notice li{color:#ddd;line-height:16px;font-size:11px;font-family:gulim;}

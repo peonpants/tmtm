@@ -1,0 +1,238 @@
+
+	★ 큰 타이틀 ★
+
+승/무/패						st_01.gif
+
+핸디캡/오버언더					st_02.gif
+
+스/페/셜						st_04.gif
+
+경/기/결/과					st_05.gif
+
+게/임/규/칙					st_06.gif
+
+게/임/방/법					st_07.gif
+
+자/유/게/시/판					st_08.gif
+
+고/객/센/터					st_09.gif
+
+놀/이/터						st_20.gif
+
+충/전/하/기					st_14.gif
+
+환/전/하/기					st_15.gif
+
+마/이/페/이/지					st_40.gif
+
+회/원/가/입					st_12.gif
+
+
+	
+
+
+	
+
+
+
+	★ 작은 타이틀 ★
+
+	⊙ 가이드
+	  게임규칙
+
+이용약관을 미리 숙지 하여주시기 바랍니다. 		m6_00.gif
+
+레벨별 배팅한도 및 당첨금 안내 			m6_01.gif
+
+중복 배팅, 중복 ID 중복 IP에 관한 규정			m6_02.gif
+
+경기 취소 및 지연에 관한 규정			m6_03.gif
+
+경기 중단에 관한 규정				m6_04.gif
+
+경기 시작 시간 변동에 대한 규정			m6_05.gif
+
+배팅 취소 요청에 대한 규정				m6_06.gif
+
+승무패(프로토) 경기 배팅 규정 안내			m6_07.gif
+
+핸디캡 경기 배팅 규정 안내				m6_08.gif
+
+오버/언더 경기 배팅 규정 안내			m6_09.gif
+
+	
+
+	⊙ 회원 가입 
+
+
+이용약관						h3_provision
+
+회원정보는 암호화 하여 저장되고 있으니 안심하세요.	st_12_m01
+
+
+
+
+
+
+	게임방법
+
+승무패(프로토) 경기 방법 안내			tip_smp.gif
+
+핸디캡 경기 방법 안내				tip_handicap.gif
+
+오버/언더 경기 방법 안내				tip_overunder.gif
+
+
+
+
+
+
+
+
+
+	머니충전
+
+주의 사항						joo-ei.gif
+
+충전 요청 하기					st_14_m02.gif
+
+머니충전 리스트					moneychungjuen.gif
+
+
+
+
+
+	머니환전
+
+주의 사항						joo-ei.gif
+
+환전 요청 하기					st_15_m02.gif
+
+머니환전 리스트					moneyhwanjuen.gif
+
+
+
+
+
+	⊙ 마이페이지
+	 최근 활동 내역
+
+최신 뎃글 내역					st_40_00.gif
+
+최근 로그인 접속 통계				st_40_01.gif
+
+접속 위험도					st_40_02.gif
+
+최신 배팅 내역					st_40_03.gif
+
+최근 나를 추천한 회원 목록				st_40_04.gif
+
+
+
+
+	추천 내역
+
+나를 추천한 회원 목록				st_40_11.gif
+
+보너스 캐쉬 지급 리스트				st_40_12.gif
+
+
+
+
+
+	
+
+
+
+
+	★ 큰 버튼 ★
+	
+	⊙ 자유게시판
+		덧글
+
+글쓰기						btn_b_write.gif
+
+검색						btn_search2.gif
+
+확인						btn_Board_Write.gif
+
+목록보기						btn_b_list.gif
+
+		본글
+
+확인						btn_Board_Write.gif
+
+취소						btn_b_cancel.gif
+
+확인						btn_Board_Write.gif
+
+수정하기						btn_b_modify.gif
+
+목록보기						btn_b_list.gif
+
+
+	⊙ 고객센터
+
+글쓰기						btn_b_write.gif
+
+삭제하기						btn_b_delete.gif
+
+목록보기						btn_b_list.gif
+
+
+	⊙ 충전하기
+
+충전하기						btn_money01.gif
+
+취소						btn_b_cancel.gif
+
+
+	⊙ 환전하기
+
+환전하기						btn_money02.gif
+	
+취소						btn_b_cancel.gif
+
+
+
+	⊙ 정보수정
+
+확인						btn_Board_Write.gif
+
+취소						btn_b_cancel.gif
+
+
+
+	
+	⊙ 회원가입
+
+동의함						member_agree02
+
+동의안함						member_notagree01
+
+인증받기						btn_phone
+
+중복확인						btn_duplication
+
+
+
+
+
+
+	★ 긴글씨 버튼 ★
+
+	⊙ 마이페이지
+	  배팅내역
+
+배팅내역 지우기					bt_20.gif
+
+배팅내역 올리기					bt_22.gif
+
+한방내역 올리기					bt_20_multy.gif
+
+배팅 취소하기					bt_23.gif
+
+
+
+
+

@@ -1,0 +1,198 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css)
+#wrap { 
+	width:90%;
+	position: relative;
+	background:url("../images/bg_bg.jpg") center top no-repeat;}
+#login_wrap {float:left; width:100%; overflow-x:hidden; background:url("../images/bg_login.jpg") center top no-repeat;}
+
+/*-------------------------------------------------------------------------------------*
+ *  Header                                                                             *
+ *-------------------------------------------------------------------------------------*/
+#header_wrap {
+	background: linear-gradient(#344,#111);
+	float:left; width:100%; 
+	/*background-image:url('/images/guy/head_bg.png');*/
+}
+.header_box {margin:0px auto; width:1200px; height:159px;}
+.header_info {margin:0px auto; background:#111417; width:100%; height:48px; border-bottom :1px solid #1c2126;}
+
+.logo_wrap {float:left; width:1100px;}
+.my {float:left; width:400px; margin:34px 0 0 0;}
+.my ul li { line-height:28px;}
+.logo {float:left;}
+.util {float:right; margin:49px 0 0 0;}
+.util ul li {float:left; margin:0 0 0 3px;}
+
+.gnb {float:left; width:1100px;}
+
+.notice_wrap {float:left; width:1100px;}
+.notice {float:left; width:1000px; color:#d2d2d2;}
+.notice_right {float:right;}
+.notice_right ul li {float:left; line-height:48px; margin:0 0 0 3px;}
+
+.ul {list-style-type:square; color:#66AEAD; }
+
+
+/*-------------------------------------------------------------------------------------*
+ *  Contents                                                                           *
+ *-------------------------------------------------------------------------------------*/
+#contents_wrap {float:left; width:100%; min-height:500px;}
+.contents_box {margin:0px auto -82px; width:1200px; min-height:100%; height: auto !important; height:100%; }
+
+.bet_bg { background:#191919; border:1px solid #4c4c4c; }
+
+/*-------------------------------------------------------------------------------------*
+ *  Footer                                                                             *
+ *-------------------------------------------------------------------------------------*/
+#footer_wrap {margin-top:30px; position:fixed; bottom:0; float:left; width:100%; height:82px; text-align:center;}
+
+
+
+/* 폰트 스타일 */
+.font_style01 {color:#ffffff; font-weight: bold; background-color: #c8100a}
+.font_style01_off {color:#666666; font-weight: bold;}
+.font_style02 {color:#000000; font-weight: bold;}
+.font_style03 {color:#e0cf6d; font-weight: bold;}
+.font_style03_off {color:#666666; font-weight: bold;}
+.font_style04 {color:#8b8b8b; }
+.font_style05 {color:#ff9c00; font-weight: bold;}
+.font_style06 {color:#8bbccc; font-weight: bold;}
+.font_style07 {color:#00d2ff; font-weight: bold;}
+.font_style08 {color:#ff0000; font-weight: bold;}
+.font_style09 {font-size:13px; font-family:Nanum Gothic,sans-serif; color:#dfdfdf; font-weight:400; line-height:22px; letter-spacing:-1pt;}
+.font_style10 {color:#ffffff; }
+.font_style11 {font-size: 42px; color: #a69e90; font-weight: bold; font-family: Arial; letter-spacing:-1pt;}
+.font_style12 {font-size: 20px; color: #7ba1b9; font-weight: bold; font-family: Arial; letter-spacing:-1pt;}
+.font_style13 {font-size: 20px; color: #e2dcd0; font-weight: bold; font-family: Arial; letter-spacing:-1pt;}
+
+/*테이블 스타일*/
+
+/* td {font-family:Nanum Gothic,sans-serif; font-size:12px; }*/
+
+/* 인풋 스타일 */
+.input_login  {font-size:12px; color:#f6f6f6; font-family:굴림; border:1px solid #3d3d3d; background-color:#000000; padding:8px 0 7px 5px; width:210px;}
+.input_style1 {font-size:12px; color:#f6f6f6; font-family:굴림; border:1px solid #1e1e1e; background-color:#2a2a2a; padding:5px 0 3px 5px;}
+
+/* 패딩 스타일 */
+.pd_style1 {padding:12px 20px 10px 15px; min-height:26px;}
+
+/* 버튼 스타일 */
+.btn01    {padding:11px 16px 8px 16px; margin:0 1px 0 1px; background:url(../images/board_bnt1.jpg); background-repeat:repeat-x; color:#ffffff; line-height:30px; font-weight: bold;}
+
+/* 페이징 스타일 */
+.page { padding:10px; background:#0d0d0d; border:1px solid #26292c; color:#6a6a6a;}
+.page_on { padding:10px 13px 8px 13px; background:#333639; border:1px solid #26292c; color:#ffffff;}
+
+
+/*--ysk--------------------------------------------------------------------------------*
+
+	ysk 2016년01월
+	ysk와 g5와 겹치는 클래스명 container / gnb / logo
+
+	border : border:3px solid red;
+	bg     : background:url(../images/bg_visual.jpg); background-repeat:repeat-x;
+	bg     : background:url("../images/bg.jpg") center top no-repeat;
+	text   : text-align:center; display:inline;
+	font   : font-size:18px; font-family:Nanum Gothic,sans-serif; color:#00aec3; font-weight:700; line-height:55px; letter-spacing:-1pt;
+	font   : font-size: 20px; color: #515151; font-weight: bold; font-family: Arial; letter-spacing:-1pt;
+	input  : font-size:12px; color:#545454; margin:0 0 0 0; border:1px solid #393939; background:#1f1f1f; padding-top:2px; padding-left:5px; height:27px;
+	
+	메뉴 그림자 : box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.8);
+
+-----------------------------------------------------------------------------------ysk-*/
+
+/*--ysk 특정영역에 레이어 띄우기-------------------------------------------------------*
+<div style="position:absolute; z-index:1000000; left:50%;">
+	<div style="position:absolute; left:-500px; top:440px; display: block; z-index:100000;">
+		컨텐츠
+	</div>
+</div>
+-----------------------------------------------------------------------------------ysk-*/
+.small_gnb {float:left;list-style:none;}
+.small_gnb a {display:inline-block;height:30px;}
+.small_gnb:nth-child(1) a {width:105px; background:url(/images/guy/quickmenu.png) no-repeat;}
+.small_gnb:nth-child(2) a {width:90px; background:url(/images/guy/quickmenu.png) no-repeat; background-position:-106px 0}
+.small_gnb:nth-child(3) a {width:75px; background:url(/images/guy/quickmenu.png) no-repeat; background-position:-197px 0}
+.small_gnb:nth-child(4) a {width:90px; background:url(/images/guy/quickmenu.png) no-repeat; background-position:-273px 0}
+.small_gnb:nth-child(5) a {width:90px; background:url(/images/guy/quickmenu.png) no-repeat; background-position:-364px 0}
+.small_gnb:nth-child(6) a {width:90px; background:url(/images/guy/quickmenu.png) no-repeat; background-position:-455px 0}
+/*퀵메뉴 마우스 오버*/
+.small_gnb:nth-child(1) a:hover {width:105px; background:url(/images/guy/quickmenu_on.png) no-repeat;}
+.small_gnb:nth-child(2) a:hover {width:90px; background:url(/images/guy/quickmenu_on.png) no-repeat; background-position:-106px 0}
+.small_gnb:nth-child(3) a:hover {width:75px; background:url(/images/guy/quickmenu_on.png) no-repeat; background-position:-197px 0}
+.small_gnb:nth-child(4) a:hover {width:90px; background:url(/images/guy/quickmenu_on.png) no-repeat; background-position:-273px 0}
+.small_gnb:nth-child(5) a:hover {width:90px; background:url(/images/guy/quickmenu_on.png) no-repeat; background-position:-364px 0}
+.small_gnb:nth-child(6) a:hover {width:90px; background:url(/images/guy/quickmenu_on.png) no-repeat; background-position:-455px 0}
+
+
+/*.tob_gnb {float:left;list-style:none;}*/
+.top_m {float:left;list-style:none; height:73px;margin-right:0px;text-align:center;width:105px;}
+.top_b {float:left;list-style:none;}
+.top_m:nth-child(1) {margin-left:50px;}
+.top_m > a {display:inline-block;width:100%;height:42px;padding-top:30px;}
+.top_m a:hover {background-image:url("/images/guy/top_m_on_bg.png")}
+.top_m:hover ul {display:block;}
+
+.sub_top_m {position:absolute;background:#f73d29;padding:2px 2 2 2;z-index:1;display:;cursor:pointer;display:none;}
+.sub_top_m a , .sub_top_m a:visited , .sub_top_m a:link {color:#cacaca;text-decoration:none;display:inline-block;width:100%;height:100%;font-size:12px; margin-top:5px;}
+.sub_top_m a:hover {color:#fff;background:none;}
+.sub_top_m li {list-style:none;width:140px;height:36px;background:#1f252b;font-size:12px;color:#cacaca;border-bottom:1px solid #0e1114;line-height:36px; background-image:url(../images/sm_sbg.jpg);}
+.sub_top_m li:hover {background:#921a16;color:#fff;}
+
+.game_gnb {background:#111417;width:100%;height:47px;border-bottom:1px solid #1c2126;}
+.game_gnb ul li {list-style:none;float:left;height:47px;line-height:47px;color:#fff;margin-right:15px;font-size:13px;}
+.game_mypage {background:url(/images/btn_myinfopage_off.jpg) no-repeat; width:75px;height:23px;display:inline-block;}
+.game_mypage:hover {background:url(/images/btn_myinfopage_off.jpg) no-repeat;}
+.game_logout {background:url(/images/bt_logout_off.gif) no-repeat; width:64px;height:23px;display:inline-block;}
+.game_logout:hover {background:url(/images/bt_logout_off.gif) no-repeat;}
+.game_charge {background:url(/images/guy/charge.png) no-repeat; width:36px;height:21px;display:inline-block;}
+.game_charge:hover {background:url(/images/guy/charge_over.png) no-repeat;}
+.game_point {background:url(/images/guy/point.png) no-repeat; width:36px;height:21px;display:inline-block;}
+.game_point:hover {background:url(/images/guy/point_over.png) no-repeat;}
+
+.page_title {color:#444a4f;font-size:25px; letter-spacing:-1px;}
+
+.rtitle {font-family:"dotum"; font-size:50px; color:#dc2a10; letter-spacing:-8px; }
+
+.game_view {float:right; width:700px;}
+.game_view li {list-style:none;float:left;height:56px;width:66px;}
+.game_view li:nth-child(1) {background:url(/images/guy/sportsMenu.png) no-repeat;}
+.game_view li:nth-child(2) {background:url(/images/guy/sportsMenu.png) no-repeat; background-position:-67px 0; width:61px;}
+.game_view li:nth-child(3) {background:url(/images/guy/sportsMenu.png) no-repeat; background-position:-128px 0; width:61px;}
+.game_view li:nth-child(4) {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-189px 0; width:61px;}
+.game_view li:nth-child(5) {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-250px 0; width:62px;}
+.game_view li:nth-child(6) {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-312px 0; width:62px;}
+.game_view li:nth-child(7) {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-374px 0; width:62px;}
+.game_view li:nth-child(8) {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-436px 0; width:62px;}
+.game_view li:nth-child(9) {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-498px 0; width:62px;}
+.game_view li:nth-child(10) {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-560px 0; width:62px;}
+.game_view li:nth-child(11) {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-624px 0; width:70px;}
+
+.game_view li:nth-child(1):hover {background:url(/images/guy/sportsMenu.png) no-repeat; background-position:0px -63px;}
+.game_view li:nth-child(2):hover {background:url(/images/guy/sportsMenu.png) no-repeat; background-position:-67px -63px; width:61px;}
+.game_view li:nth-child(3):hover {background:url(/images/guy/sportsMenu.png) no-repeat; background-position:-128px -63px; width:61px;}
+.game_view li:nth-child(4):hover {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-189px -63px; width:61px;}
+.game_view li:nth-child(5):hover {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-250px -63px; width:62px;}
+.game_view li:nth-child(6):hover {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-312px -63px; width:62px;}
+.game_view li:nth-child(7):hover {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-374px -63px; width:62px;}
+.game_view li:nth-child(8):hover {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-436px -63px; width:62px;}
+.game_view li:nth-child(9):hover {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-498px -63px; width:62px;}
+.game_view li:nth-child(10):hover {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-560px -63px; width:62px;}
+.game_view li:nth-child(11):hover {background:url(/images/guy/sportsMenu.png) no-repeat;background-position:-624px -63px; width:70px;}
+
+.game_view li a {width:61px;height:56px;display:inline-block;}
+
+.txt_yellow38b { color:#fff04d; font-weight:bold; font-size:38px;}
+.txt_skyblue38b { color:#89feff; font-weight:bold; font-size:38px;}
+.txt_orange38b { color:#df7711; font-weight:bold; font-size:38px;}
+
+.rtitle_s {font-family:"dotum"; font-weight: bold; font-size:12px; color:#ffbb45;padding-left:10px;}
+.board_title {
+	font-family: 굴림,굴림체,돋움,돋움체;
+	font-size: 9pt;
+	color: #E4D3A3;
+	font-weight: bold;
+	line-height:150%;
+	filter:dropshadow(offx=1,offy=1,color=#000000);
+}

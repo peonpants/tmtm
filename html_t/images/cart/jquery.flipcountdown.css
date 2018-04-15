@@ -1,0 +1,72 @@
+.xdsoft_flipcountdown {
+	display: inline-block;
+}
+.xdsoft_flipcountdown .xdsoft_digit {
+	float: left; background-repeat: no-repeat;
+}
+.xdsoft_flipcountdown .xdsoft_clearex {
+	clear: both; float: none;
+}
+.xdsoft_flipcountdown > .xdsoft_digit {
+	background-position: 0px 0px;
+}
+.xdsoft_flipcountdown > .xdsoft_separator.xdsoft_digit {
+	opacity: 0.9;
+}
+.xdsoft_flipcountdown > .xdsoft_dot.xdsoft_digit {
+	opacity: 0.9;
+}
+.xdsoft_size_lg.xdsoft_flipcountdown > .xdsoft_digit {
+	width: 53px; height: 76px; background-image: url("/images/cart_new/digit-lg.png");
+}
+.xdsoft_size_lg.xdsoft_flipcountdown > .xdsoft_space.xdsoft_digit {
+	background-position: -19px -5082px; width: 14px;
+}
+.xdsoft_size_lg.xdsoft_flipcountdown > .xdsoft_separator.xdsoft_digit {
+	background-position: -19px -5082px; width: 14px;
+}
+.xdsoft_size_lg.xdsoft_flipcountdown > .xdsoft_dot.xdsoft_digit {
+	background-position: -19px -5082px; width: 14px;
+}
+.xdsoft_size_lg.xdsoft_flipcountdown > .xdsoft_dot.xdsoft_digit {
+	background-position: -41px -5082px;
+}
+.xdsoft_size_lg.xdsoft_flipcountdown > .xdsoft_space.xdsoft_digit {
+	background-position: -100px -5082px;
+}
+.xdsoft_size_md.xdsoft_flipcountdown > .xdsoft_digit {
+	width: 36px; height: 51px; background-image: url("/images/cart_new/digit-md.png");
+}
+.xdsoft_size_md.xdsoft_flipcountdown > .xdsoft_space.xdsoft_digit {
+	background-position: -13px -3432px; width: 10px;
+}
+.xdsoft_size_md.xdsoft_flipcountdown > .xdsoft_separator.xdsoft_digit {
+	background-position: -13px -3432px; width: 10px;
+}
+.xdsoft_size_md.xdsoft_flipcountdown > .xdsoft_dot.xdsoft_digit {
+	background-position: -13px -3432px; width: 10px;
+}
+.xdsoft_size_sm.xdsoft_flipcountdown > .xdsoft_digit {
+	width: 24px; height: 34px; background-image: url("/images/cart_new/digit-sm.png");
+}
+.xdsoft_size_sm.xdsoft_flipcountdown > .xdsoft_space.xdsoft_digit {
+	background-position: -6px -2310px; width: 10px;
+}
+.xdsoft_size_sm.xdsoft_flipcountdown > .xdsoft_separator.xdsoft_digit {
+	background-position: -6px -2310px; width: 10px;
+}
+.xdsoft_size_sm.xdsoft_flipcountdown > .xdsoft_dot.xdsoft_digit {
+	background-position: -6px -2310px; width: 10px;
+}
+.xdsoft_size_xs.xdsoft_flipcountdown > .xdsoft_digit {
+	width: 16px; height: 23px; background-image: url("./img/digit-xs.png");
+}
+.xdsoft_size_xs.xdsoft_flipcountdown > .xdsoft_space.xdsoft_digit {
+	background-position: -5px -1584px; width: 5px;
+}
+.xdsoft_size_xs.xdsoft_flipcountdown > .xdsoft_separator.xdsoft_digit {
+	background-position: -5px -1584px; width: 5px;
+}
+.xdsoft_size_xs.xdsoft_flipcountdown > .xdsoft_dot.xdsoft_digit {
+	background-position: -5px -1584px; width: 5px;
+}

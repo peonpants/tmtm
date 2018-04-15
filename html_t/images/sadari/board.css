@@ -1,0 +1,93 @@
+#board_wrap {
+	margin: 0px auto; padding: 10px 0px 0px; width: 832px; text-align: center;
+}
+.board-list {
+	margin: 0px; padding: 0px; width: 830px; border-collapse: collapse; border-spacing: 0;
+}
+.board-list tr.bg0 {
+	background-color: rgb(17, 17, 17);
+}
+.board-list tr.bg1 {
+	background-color: rgb(31, 31, 31);
+}
+.board-list tr.bg3 {
+	background-color: rgb(0, 0, 0);
+}
+.board-list tr td {
+	border: 1px solid rgb(59, 59, 59); border-image: none; height: 30px;
+}
+.board-list tr td.no {
+	width: 80px; color: rgb(192, 192, 192); font-size: 11px;
+}
+.board-list tr td.subject {
+	text-align: left; padding-left: 10px;
+}
+.board-list tr td.subject a {
+	color: rgb(192, 192, 192);
+}
+.board-list tr td.subject a:hover {
+	color: rgb(255, 204, 0);
+}
+.comment_count {
+	color: rgb(255, 223, 135); font-family: Arial; font-size: 11px;
+}
+.board-list tr td.name {
+	width: 99px; color: rgb(192, 192, 192); font-size: 11px;
+}
+.board-list tr td.date {
+	width: 93px; color: rgb(192, 192, 192); font-size: 11px;
+}
+#write_btn {
+	margin: 0px auto; padding: 10px 0px 0px; width: 100%; text-align: right;
+}
+.board-view {
+	margin: 0px; padding: 0px; width: 830px; border-collapse: collapse; border-spacing: 0;
+}
+.board-view tr th {
+	border: 1px solid rgb(59, 59, 59); border-image: none; height: 30px; font-weight: normal; background-color: rgb(0, 0, 0);
+}
+.board-view tr td {
+	border: 1px solid rgb(59, 59, 59); border-image: none; height: 30px; font-weight: normal; background-color: rgb(0, 0, 0);
+}
+.board-view tr th {
+	width: 100px; color: rgb(153, 153, 153);
+}
+.board-view tr td {
+	padding: 6px 0px 6px 6px; text-align: left; color: rgb(238, 238, 238);
+}
+#show_body {
+	margin: 10px auto 15px; padding: 20px; border: 1px solid rgb(59, 59, 59); border-image: none; width: 788px; text-align: left; color: rgb(238, 238, 238); background-color: rgb(0, 0, 0);
+}
+.board_button {
+	margin: 0px auto; padding: 0px 0px 10px; width: 830px; text-align: right;
+}
+#commntTable {
+	margin: 0px; padding: 0px; width: 830px; border-collapse: collapse; border-spacing: 0;
+}
+#comment_body1 {
+	padding: 5px; border: 1px solid rgb(248, 119, 1); border-image: none; width: 755px; height: 48px; font-size: 12px;
+}
+.comment-list {
+	margin: 0px auto 6px; border: 1px solid rgb(59, 59, 59); border-image: none; width: 828px;
+}
+.comment-list table {
+	margin: 0px; padding: 0px; width: 100%; border-collapse: collapse; border-spacing: 0;
+}
+.comment-list table tr td {
+	color: rgb(255, 255, 255); font-size: 11px;
+}
+.comment-list table tr td.name {
+	background: url("http://asdfqwerzxcv.mireene.com/images/game/game_select_bg.gif"); height: 34px;
+}
+.comment-list table tr td.left {
+	padding-left: 14px;
+}
+.comment-list table tr td.right {
+	padding-right: 14px;
+}
+.comment-list table tr td.body {
+	padding: 14px;
+}
+.board_input {
+	padding: 3px 3px 3px 6px; border: 1px solid rgb(51, 51, 51); border-image: none; width: 704px; color: rgb(255, 255, 255); font-size: 12px; background-color: rgb(34, 34, 34);
+}

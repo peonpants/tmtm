@@ -1,0 +1,6 @@
+@font-face {
+	font-family: Cousine;
+	src: local("Cousine Bold"), local("Cousine-Bold"), url(http://fonts.gstatic.com/s/cousine/v10/XkYjaL8YjqL9qW8o0T14uRsxEYwM7FgeyaSgU71cLG0.woff) format("woff");
+	font-weight: 700;
+	font-style: normal;
+}

@@ -1,0 +1,189 @@
+#contents {
+	width: 883px; overflow: hidden; float: left; min-height: 500px;
+}
+#bet_cart_position {
+	width: 205px; margin-left: 11px; float: left; position: relative;
+}
+#contents_title {
+	background: url("/images/contents_bg.png"); width: 883px; height: 58px;
+}
+#contents_title2 {
+	background: url("/images/contents_bg4.png") no-repeat top; width: 883px; height: 100px;
+}
+#contents_body {
+	background: url("/images/contents_bg2.png"); width: 883px; min-height: 500px;
+}
+#contents_open_btn {
+	margin: 0px auto; padding: 15px 0px 0px; width: 830px; text-align: right;
+}
+#contents_load_page {
+	margin: 0px auto; padding: 1px 0px 0px; width: 830px;
+}
+#contents_end {
+	background: url("/images/contents_bg3.png"); width: 883px; height: 25px;
+}
+#game_fildname_img {
+	margin: 0px auto; width: 832px;
+}
+#game_wrap {
+	margin: 0px auto; width: 832px;
+}
+#bet_no {
+	margin: 0px auto; padding: 2px 0px 5px; width: 820px; color: rgb(221, 221, 221);
+}
+#game_notice_box {
+	margin: 0px auto 5px; padding: 10px; border: 1px solid rgb(68, 68, 68); border-image: none; width: 808px; text-align: center; font-weight: bold;
+}
+.betting-list {
+	margin: 0px; padding: 0px; width: 100%; border-collapse: collapse; border-spacing: 0;
+}
+.betting-list span.odds {
+	font-family: Arial; font-weight: normal;
+}
+.game_date {
+	background: url("/images/game_date_bg.gif") no-repeat; width: 83px; height: 34px; text-align: center; color: rgb(255, 255, 255); font-family: Arial; font-size: 11px;
+}
+.game_date2 {
+	width: 83px; height: 34px; text-align: center; color: rgb(255, 255, 255); font-family: Arial; font-size: 12px;
+}
+.game_date3 {
+	width: 83px; height: 34px; text-align: center; color: rgb(153, 153, 153); font-family: Arial; font-size: 12px;
+}
+.game_select {
+	background: url("/images/game_select_bg.gif"); height: 34px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; cursor: pointer;
+}
+.disable {
+	background: url("/images/game_select_bg.gif"); height: 34px; text-align: center; color: rgb(85, 85, 85); font-size: 12px; font-weight: bold;
+}
+.game_no_activate {
+	background: url("/images/game_select_bg.gif"); height: 34px; text-align: center; color: rgb(85, 85, 85); font-size: 12px; font-weight: bold;
+}
+.normal {
+	background: url("/images/game_select_bg.gif"); height: 34px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.game_no_select {
+	background: url("/images/game_select_bg.gif"); height: 34px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.disable2 {
+	background: url("/images/game_select_bg.gif"); height: 34px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.game_no_select2 {
+	background: url("/images/game_select_bg.gif"); height: 34px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.select {
+	background: url("/images/game_select_bg_over.gif"); height: 34px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; cursor: pointer;
+}
+.game_select_over {
+	background: url("/images/game_select_bg_over.gif"); height: 34px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; cursor: pointer;
+}
+.selected {
+	background: url("/images/game_selected.gif"); height: 34px; text-align: center; color: rgb(0, 0, 0); font-size: 12px; font-weight: bold; cursor: pointer;
+}
+.game_selected {
+	background: url("/images/game_selected.gif"); height: 34px; text-align: center; color: rgb(0, 0, 0); font-size: 12px; font-weight: bold; cursor: pointer;
+}
+.game_select_line {
+	background: url("/images/game_select_line.gif"); width: 2px; height: 34px;
+}
+.game_select_line2 {
+	background: url("/images/game_select_line2.gif"); width: 9px; height: 34px;
+}
+.game_select_line3 {
+	background: url("/images/game_select_line3.gif"); width: 9px; height: 34px;
+}
+.game_select_line4 {
+	background: url("/images/game_select_line4.gif"); width: 9px; height: 34px;
+}
+.game_select_line5 {
+	background: url("/images/game_select_line5.gif"); width: 2px; height: 34px;
+}
+.game_select_line6 {
+	background: url("/images/game_select_line6.gif"); width: 2px; height: 34px;
+}
+.game_state {
+	background: url("/images/game_state_bg.gif") no-repeat; width: 55px; height: 34px; text-align: center; color: rgb(255, 255, 255); font-family: Arial; font-size: 11px;
+}
+#betSlip {
+	left: 0px; top: 0px; width: 205px; position: absolute;
+}
+#betSlipTitle2 {
+	background: url("/images/betslip_titlel.png"); width: 205px; height: 40px; position: relative;
+}
+#fixed_box2 {
+	top: 12px; width: 45px; height: 19px; right: 6px; position: absolute;
+}
+#slidingMenu {
+	background: url("/images/betslip_bg1.png") repeat-y top rgb(41, 40, 36);
+}
+#cart_list {
+	background: url("/images/betslip_bg2.png") no-repeat top; min-height: 130px;
+}
+#betting_result {
+	color: rgb(221, 221, 221);
+}
+#no_betting {
+	padding: 55px 0px 0px; width: 205px; height: 75px; text-align: center; color: rgb(200, 172, 111); font-size: 11px;
+}
+#betSlipTitle {
+	width: 205px; height: 31px;
+}
+#betSlipTitle ul li {
+	float: left;
+}
+#cart_information {
+	background: url("/images/betslip_bg3.png") no-repeat top rgb(41, 40, 36); height: 140px; padding-top: 10px;
+}
+.bettingResultTable {
+	width: 185px;
+}
+#cartInformationTable {
+	width: 185px;
+}
+#cartInformationTable tr td {
+	padding: 2px;
+}
+.cartInformation-name {
+	width: 55px; color: rgb(245, 223, 173); font-size: 11px;
+}
+.cartInformation-value {
+	text-align: right; color: rgb(255, 255, 255);
+}
+#BettingQuota {
+	font-weight: bold;
+}
+#bet_money_tmp {
+	border: currentColor; border-image: none; width: 80px; height: 20px; text-align: right; color: rgb(255, 255, 255); padding-right: 5px; font-size: 12px; background-color: rgb(0, 0, 0);
+}
+#BettingQuotaMoney {
+	color: rgb(250, 203, 98); font-weight: bold;
+}
+.cart_button {
+	margin: 5px 0px 0px; width: 205px; height: 43px; text-align: center;
+}
+#bet_game_list {
+	margin: 40px 0px 0px;
+}
+.bet_infomation {
+	margin: 5px 0px 15px;
+}
+.bet_infomation table {
+	margin: 0px; padding: 0px; width: 830px; border-collapse: collapse; border-spacing: 0;
+}
+.bet_infomation table th {
+	padding: 5px; border: 1px solid rgb(59, 59, 59); border-image: none; text-align: center;
+}
+.bet_infomation table td {
+	padding: 5px; border: 1px solid rgb(59, 59, 59); border-image: none; text-align: center;
+}
+.bet_infomation table th {
+	color: rgb(125, 186, 23); font-size: 12px; font-weight: normal; background-color: rgb(34, 34, 34);
+}
+.bet_infomation table td {
+	color: rgb(255, 255, 255); font-size: 12px; font-weight: normal; background-color: rgb(0, 0, 0);
+}
+.result_winner {
+	color: rgb(41, 242, 36); font-weight: bold;
+}
+.result_loser {
+	color: rgb(39, 161, 255);
+}

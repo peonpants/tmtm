@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html xmlns:og="http://ogp.me/ns#" class="no-js">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>::::::: 365game :::::::</title>
+  <script src="/jsj/video.js?ver=101"></script>
+  <script src="/jsj/videojs-flash.js?ver=101"></script>
+  <script src="/jsj/videojs-contrib-hls.min.js?ver=101"></script>
+</head>
+<body>
+  <link href="/jsj/video-js.css?ver=101" rel="stylesheet">
+  <video id=video-player width=512 height=288 class="video-js vjs-default-skin" controls autoplay>
+    <source src="https://vsports.bet365.com/L1_C146_S1/playlist.m3u8" type="application/x-mpegURL">
+  </video>
+</body>
+<script>
+  var player = videojs('video-player');
+  player.play();
+  player.on('loadedmetadata', function () {
+    var hls = player.tech({ IWillNotUseThisInPlugins: true }).hls;
+    hls.representations().forEach(function (rep) {
+      rep.enabled(false);
+    });
+  });
+</script>
+</html>

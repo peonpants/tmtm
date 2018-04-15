@@ -1,0 +1,1693 @@
+@import url( http://fonts.googleapis.com/earlyaccess/nanumgothic.css );
+input[type='radio'] {
+	margin-top: -1px; margin-right: 3px; vertical-align: middle;
+}
+input[type='text'] {
+	margin-top: 0px; vertical-align: middle; cursor: text;
+}
+select {
+	border: 1px solid rgb(204, 204, 204); border-image: none; color: rgb(121, 121, 121); font-family: "dotum"; font-size: 12px; margin-top: 0px; vertical-align: middle;
+}
+button {
+	background: none; outline: 0px; font-family: "dotum"; font-size: 12px; text-decoration: none; vertical-align: middle; display: inline-block; white-space: nowrap; cursor: pointer;
+}
+.fs_10 {
+	font-size: 10px !important;
+}
+.fs_11 {
+	font-size: 11px !important;
+}
+.fs_12 {
+	font-size: 12px !important;
+}
+.fs_13 {
+	font-size: 13px !important;
+}
+.fs_14 {
+	font-size: 14px !important;
+}
+.fs_15 {
+	font-size: 15px !important;
+}
+.fc_blk {
+	color: rgb(0, 0, 0) !important;
+}
+.fc_hblk {
+	color: rgb(85, 85, 85) !important;
+}
+.fc_sky {
+	color: rgb(2, 187, 214) !important;
+}
+.fc_orange {
+	color: rgb(254, 140, 5) !important;
+}
+.fc_red {
+	color: rgb(255, 3, 3) !important;
+}
+.fc_purple {
+	color: rgb(114, 63, 177) !important;
+}
+.fc_green {
+	color: rgb(0, 171, 78) !important;
+}
+.fc_tuk {
+	color: rgb(49, 134, 155) !important;
+}
+.fc_dSky {
+	color: rgb(0, 166, 212) !important;
+}
+.fc_gray {
+	color: rgb(168, 167, 167) !important;
+}
+.fc_ccc {
+	color: rgb(204, 204, 204) !important;
+}
+.fc_bbb {
+	color: rgb(187, 187, 187) !important;
+}
+.fc_fff {
+	color: rgb(255, 255, 255) !important;
+}
+.fc_dRed {
+	color: rgb(188, 0, 1) !important;
+}
+.fc_yellow {
+	color: rgb(255, 252, 33) !important;
+}
+.fc_blue {
+	color: rgb(1, 42, 247) !important;
+}
+.fc_violet {
+	color: rgb(184, 4, 110) !important;
+}
+.fc_sand {
+	color: rgb(198, 156, 109) !important;
+}
+.fw_n {
+	font-weight: normal !important;
+}
+.fw_b {
+	font-weight: bold !important;
+}
+.fw_600 {
+	font-weight: 600 !important;
+}
+.b_1px {
+	border: 1px solid currentColor; border-image: none;
+}
+.b_ccc {
+	border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.bb_ccc {
+	border: 1px dashed rgb(204, 204, 204); border-image: none;
+}
+.bg_ccc {
+	background-color: rgb(204, 204, 204) !important;
+}
+.bg_aaa {
+	background-color: rgb(170, 170, 170) !important;
+}
+.bg_111 {
+	background-color: rgb(17, 17, 17) !important;
+}
+.bg_sky {
+	background-color: rgb(2, 187, 214) !important;
+}
+.bg_tuk {
+	background-color: rgb(49, 134, 155) !important;
+}
+.td_ul {
+	text-decoration: underline;
+}
+.ti_10 {
+	text-indent: 10px !important;
+}
+.ti_20 {
+	text-indent: 20px !important;
+}
+.ti_30 {
+	text-indent: 30px !important;
+}
+.ti_35 {
+	text-indent: 35px !important;
+}
+.ta_c {
+	text-align: center !important;
+}
+.ta_r {
+	text-align: right !important;
+}
+.ta_l {
+	text-align: left !important;
+}
+.wp_100 {
+	width: 100% !important;
+}
+.wp_50 {
+	width: 50% !important;
+}
+.w_16 {
+	width: 16px !important;
+}
+.w_25 {
+	width: 25px !important;
+}
+.w_50 {
+	width: 50px !important;
+}
+.w_100 {
+	width: 100px !important;
+}
+.w_150 {
+	width: 150px !important;
+}
+.h_16 {
+	height: 16px !important;
+}
+.h_25 {
+	height: 25px !important;
+}
+.h_50 {
+	height: 50px !important;
+}
+.h_100 {
+	height: 100px !important;
+}
+.h_150 {
+	height: 150px !important;
+}
+.mt_5 {
+	margin-top: 4px !important;
+}
+.mt_10 {
+	margin-top: 10px !important;
+}
+.mt_15 {
+	margin-top: 15px !important;
+}
+.mt_20 {
+	margin-top: 20px !important;
+}
+.mt_25 {
+	margin-top: 25px !important;
+}
+.mt_40 {
+	margin-top: 40px !important;
+}
+.ml_4 {
+	margin-left: 4px !important;
+}
+.ml_10 {
+	margin-left: 10px !important;
+}
+.ml_15 {
+	margin-left: 15px !important;
+}
+.ml_20 {
+	margin-left: 20px !important;
+}
+.mr_10 {
+	margin-right: 10px !important;
+}
+.mr_15 {
+	margin-right: 15px !important;
+}
+.mr_20 {
+	margin-right: 20px !important;
+}
+.mb_10 {
+	margin-bottom: 10px !important;
+}
+.mb_15 {
+	margin-bottom: 15px !important;
+}
+.mb_20 {
+	margin-bottom: 20px !important;
+}
+.mb_40 {
+	margin-bottom: 40px !important;
+}
+.pt_5 {
+	margin-top: 4px !important;
+}
+.pt_10 {
+	margin-top: 10px !important;
+}
+.pt_15 {
+	margin-top: 15px !important;
+}
+.pt_20 {
+	margin-top: 20px !important;
+}
+.pt_25 {
+	margin-top: 25px !important;
+}
+.pt_40 {
+	margin-top: 40px !important;
+}
+.pl_10 {
+	margin-left: 10px !important;
+}
+.pl_15 {
+	margin-left: 15px !important;
+}
+.pl_20 {
+	margin-left: 20px !important;
+}
+.pr_10 {
+	margin-right: 10px !important;
+}
+.pr_15 {
+	margin-right: 15px !important;
+}
+.pr_20 {
+	margin-right: 20px !important;
+}
+.pb_1 {
+	padding-bottom: 1px;
+}
+.pb_10 {
+	margin-bottom: 10px !important;
+}
+.pb_15 {
+	margin-bottom: 15px !important;
+}
+.pb_20 {
+	margin-bottom: 20px !important;
+}
+.pb_40 {
+	margin-bottom: 40px !important;
+}
+html {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+body {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+div {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+span {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+object {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+iframe {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+h1 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+h2 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+h3 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+h4 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+h5 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+h6 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+p {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+blockquote {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+pre {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+a {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+abbr {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+address {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+big {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+cite {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+code {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+del {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+dfn {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+em {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+font {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+img {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+ins {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+q {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+s {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+samp {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+small {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+strike {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+strong {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+sub {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+sup {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+tt {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+var {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+b {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+u {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+i {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+dl {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+dt {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+dd {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+ol {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+ul {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+li {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+fieldset {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+form {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+label {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+legend {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+table {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+caption {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+tbody {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+tfoot {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+thead {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+tr {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+th {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+td {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; font-family: "Nanum Gothic", Dotum;
+}
+h1 {
+	font-size: 12px;
+}
+h2 {
+	font-size: 12px;
+}
+h3 {
+	font-size: 12px;
+}
+h4 {
+	font-size: 12px;
+}
+h5 {
+	font-size: 12px;
+}
+h6 {
+	font-size: 12px;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+fieldset {
+	border: 0px currentColor; border-image: none;
+}
+iframe {
+	border: 0px currentColor; border-image: none;
+}
+table {
+	font-size: 12px; border-collapse: collapse;
+}
+div {
+	font-size: 12px; border-collapse: collapse;
+}
+textarea {
+	overflow: auto; font-family: Dotum; outline-style: none;
+}
+select {
+	text-align: left; font-family: "Nanum Gothic", Dotum, sans-serif; font-size: 12px; vertical-align: middle; outline-style: none;
+}
+input {
+	text-align: left; font-family: "Nanum Gothic", Dotum, sans-serif; font-size: 12px; vertical-align: middle; outline-style: none;
+}
+img {
+	text-align: left; font-family: "Nanum Gothic", Dotum, sans-serif; font-size: 12px; vertical-align: middle; outline-style: none;
+}
+li {
+	text-align: left; font-family: "Nanum Gothic", Dotum, sans-serif; font-size: 12px; vertical-align: middle; outline-style: none;
+}
+address {
+	font-style: normal; font-weight: normal;
+}
+caption {
+	font-style: normal; font-weight: normal;
+}
+cite {
+	font-style: normal; font-weight: normal;
+}
+code {
+	font-style: normal; font-weight: normal;
+}
+dfn {
+	font-style: normal; font-weight: normal;
+}
+em {
+	font-style: normal; font-weight: normal;
+}
+th {
+	font-style: normal; font-weight: normal;
+}
+var {
+	font-style: normal; font-weight: normal;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	list-style-type: none;
+}
+ol {
+	list-style-type: none;
+}
+legend {
+	display: none;
+}
+caption {
+	display: none;
+}
+hr {
+	display: none; border-collapse: collapse;
+}
+a {
+	color: rgb(51, 51, 51); text-decoration: none; cursor: pointer;
+}
+body {
+	width: 100%; color: rgb(51, 51, 51); font-size: 12px; background-color: rgb(255, 255, 255);
+}
+.clearboth {
+	clear: both;
+}
+#go_top {
+	background: rgb(51, 51, 51); border-radius: 50px; left: 50%; width: 50px; height: 35px; text-align: center; bottom: 50px; color: rgb(255, 255, 255); padding-top: 15px; font-family: Tahoma; font-size: 14px; font-weight: bold; margin-left: 620px; display: none; position: fixed; z-index: 999; cursor: pointer;
+}
+.scenter {
+	margin: 0px auto; width: 1200px;
+}
+.popup_bgmask {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: fixed; z-index: 9999; opacity: 0.8;
+}
+.mbinfo_open_pop2 {
+	position: absolute; z-index: 99999;
+}
+.mbinfo_open_pop2 .layer_main {
+	background: rgb(255, 255, 255); padding: 20px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 400px; line-height: 1.1em; position: relative; min-height: 250px;
+}
+.mbinfo_open_pop2 .check {
+	margin: 0px auto; padding: 20px; top: 10%; width: 400px; text-align: center; color: rgb(242, 242, 242); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: relative; background-color: rgb(34, 34, 34);
+}
+.popdiv_1 {
+	left: 50px; top: 100px;
+}
+.popdiv_2 {
+	left: 500px; top: 100px;
+}
+.popdiv_3 {
+	left: 950px; top: 100px;
+}
+.popdiv_4 {
+	left: 1400px; top: 100px;
+}
+.league_image1 {
+	margin-right: 3px;
+}
+.league_image1 img {
+	width: 20px;
+}
+.league_image2 {
+	margin-right: 5px;
+}
+.league_image2 img {
+	height: 20px;
+}
+#mainBox2 {
+	
+}
+.nm_wrap {
+	margin: 0px auto; width: 1190px;
+}
+.nm_container {
+	height: 800px; margin-top: 133px; position: relative;
+}
+.nm_container > div {
+	color: rgb(165, 165, 165); position: absolute;
+}
+.nm_box1 {
+	background: url("/img/nm_box1.jpg") no-repeat; left: 0px; top: 0px; width: 330px; height: 240px;
+}
+.nm_box2 {
+	background: url("/img/nm_box2.jpg") no-repeat; left: 0px; top: 250px; width: 330px; height: 240px;
+}
+.nm_box3 {
+	top: 0px; right: 0px;
+}
+.nm_box4 {
+	left: 0px; top: 500px;
+}
+.nm_box5 {
+	left: 400px; top: 500px;
+}
+.nm_box6 {
+	top: 500px; right: 0px;
+}
+.nm_list {
+	margin: 135px 0px 0px 19px; width: 292px; height: 100px;
+}
+.nm_list > li {
+	overflow: hidden; margin-bottom: 7px;
+}
+.nm_list > li > em {
+	width: 207px; overflow: hidden; float: left; display: block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.nm_list > li > em > a {
+	color: rgb(255, 255, 255);
+}
+.nm_list > li > span {
+	width: 85px; text-align: right; float: right; display: block;
+}
+#log_wrap {
+	height: 100%; min-width: 800px;
+}
+.log_top {
+	height: 69px;
+}
+.log_top > span {
+	margin-left: 10%; float: left;
+}
+.log_top > div {
+	width: 550px; height: 69px; overflow: hidden; margin-left: 100px; float: left;
+}
+.log_top > div div {
+	font-size: 14px; float: left;
+}
+.log_top > div div > input {
+	height: 20px; padding-left: 10px;
+}
+.log_in1 {
+	margin: 23px 10px 0px 0px;
+}
+.log_in2 {
+	margin: 23px 5px 0px 0px;
+}
+.log_top > em {
+	margin-right: 10%; float: right;
+}
+.log_btnc {
+	background: rgb(109, 109, 109); margin: 12px 0px 0px 15px; padding: 15px 9px; border-radius: 50%; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; float: right; display: block; cursor: pointer;
+}
+.log_btnc:hover {
+	background: rgb(34, 34, 34);
+}
+.log_body {
+	background: url("../images/loginbg.jpg") no-repeat top; height: 100%;
+}
+.layer_area {
+	background: rgb(204, 204, 204); padding: 20px; left: 50%; top: 50%; width: 297px; position: absolute;
+}
+.layer_area h2 {
+	text-align: center; color: rgb(17, 17, 17); font-family: Tahoma; font-size: 16px; margin-bottom: 10px; display: block;
+}
+.layer_area .code_input {
+	width: 297px; text-align: center;
+}
+.layer_area .code_input .code_ioput {
+	padding: 0px 0px 0px 10px; border: 1px solid rgb(8, 8, 8); border-image: none; width: 180px; height: 26px; color: rgb(8, 8, 8); line-height: 22px; font-size: 12px; background-color: rgb(172, 172, 172);
+}
+.layer_area .code_btn {
+	padding: 15px 0px 0px; width: 297px; text-align: center; overflow: hidden;
+}
+#topBox {
+	left: 0px; top: 0px; width: 100%; position: fixed; z-index: 9999;
+}
+#footBox {
+	padding: 40px 0px; text-align: center;
+}
+#mainBox {
+	
+}
+.topbar1 {
+	background: rgb(0, 0, 0); height: 68px; opacity: 0.92;
+}
+.topbar1 > div {
+	position: relative;
+}
+.top_logo {
+	padding-top: 12px; display: block;
+}
+#top_menu {
+	top: 0px; right: 0px; position: absolute;
+}
+#top_menu > li {
+	padding: 25px 22px; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold; float: left; position: relative; cursor: pointer; opacity: 0.6;
+}
+#top_menu > li > var {
+	background: rgb(255, 255, 255); left: 0px; top: -3px; width: 100%; height: 3px; display: block; position: absolute;
+}
+.top_menu_over {
+	opacity: 1 !important;
+}
+.top_menu_over > var {
+	top: 0px !important;
+}
+.topbar2 {
+	background: rgb(46, 46, 46); height: 44px; opacity: 0.95;
+}
+.top_info1 {
+	margin-top: 12px; float: left;
+}
+.top_info1 > em {
+	background: rgb(255, 255, 255); border-radius: 4px; width: 22px; height: 20px; text-align: center; padding-top: 2px; font-size: 14px; font-weight: bold; margin-top: -2px; float: left; display: block;
+}
+.top_info1 > span {
+	margin: 0px 10px; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; float: left; display: block;
+}
+.top_info1 > div {
+	background: rgb(68, 68, 68); margin: -3px 5px; padding: 6px 12px; border-radius: 4px; float: left;
+}
+.top_info1 > div > a {
+	margin: 0px 5px; color: rgb(209, 209, 209); display: inline-block;
+}
+.top_info1 > div > a > b {
+	color: rgb(255, 255, 255);
+}
+.top_info1 > label {
+	background: rgb(52, 82, 103); padding: 6px 12px; border-radius: 4px; color: rgb(176, 202, 221); font-weight: bold; margin-top: -3px; float: left; display: block; cursor: pointer;
+}
+.top_info1 > label:hover {
+	background: rgb(70, 102, 124);
+}
+.top_info2 {
+	margin: 14px 8px 0px 0px; float: right;
+}
+.top_info2 > li {
+	float: left;
+}
+.top_info2 > li > a {
+	padding: 0px 14px; color: rgb(225, 225, 225); font-weight: bold; border-right-color: rgb(87, 87, 87); border-right-width: 1px; border-right-style: solid; display: block;
+}
+.top_info2 > li > a:hover {
+	color: rgb(255, 255, 255);
+}
+.mainVideobox {
+	width: 100%; position: relative; min-height: 300px; min-width: 599px; background-size: 100%;
+}
+.mainVideo {
+	border: 0px currentColor; border-image: none; width: 100%; height: 100%; min-height: 300px;
+}
+.mainVideoFilter {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0.5;
+}
+.mainVideoFilter2 {
+	background: url("/img/video_pattern.png"); left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0.6;
+}
+.mainVideo_img {
+	left: 0px; top: 50%; width: 100%; text-align: center; color: rgb(241, 241, 241); line-height: 150%; font-size: 17px; font-weight: bold; margin-top: -6em; position: absolute;
+}
+.mainbtn1 {
+	background: rgb(0, 0, 0); height: 325px;
+}
+#footBox2 {
+	margin: 0px auto; padding: 40px 0px; width: 1200px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid;
+}
+#footBox2 .footicon {
+	background: url("/img/foot_icon.png") no-repeat center; margin: 0px auto 25px; width: 1200px; height: 50px; text-align: center;
+}
+#footBox2 .footicon ul {
+	margin-left: 250px;
+}
+#footBox2 .footicon ul li {
+	height: 50px; margin-right: 1px; float: left; cursor: pointer;
+}
+#footBox2 .footicon ul li * {
+	background: red; opacity: 0.6;
+}
+.foot_icon1 {
+	width: 68px;
+}
+.foot_icon2 {
+	width: 77px;
+}
+.foot_icon3 {
+	width: 83px;
+}
+.foot_icon4 {
+	width: 83px;
+}
+.foot_icon5 {
+	width: 83px;
+}
+.foot_icon6 {
+	width: 80px;
+}
+.foot_icon7 {
+	width: 75px;
+}
+.foot_icon8 {
+	width: 62px;
+}
+.foot_icon9 {
+	width: 78px;
+}
+#footBox2 .footlogo {
+	text-align: center; margin-bottom: 20px; opacity: 0.6;
+}
+#footBox2 > span {
+	background: rgb(102, 102, 102); margin: 0px auto; padding: 4px 0px; border-radius: 30px; width: 270px; text-align: center; color: rgb(255, 255, 255); font-size: 10px; display: block;
+}
+#subwrap {
+	margin-top: 0px;
+}
+#sub-content {
+	margin-top: 0px;
+}
+.subtitleBox {
+	background: url("../images/sub_title.png"); height: 170px;
+}
+.subtitle {
+	margin: 0px auto; top: 0px; width: 1200px; height: 100px; position: relative;
+}
+.subtitle > div {
+	left: 0px; top: 0px; position: absolute;
+}
+.subtitle > div > span {
+	color: rgb(84, 84, 84); font-size: 25px; font-weight: normal; margin-left: 10px;
+}
+.subbody {
+	margin: 0px auto; padding: 0px; width: 1200px;
+}
+.subtitle_hee {
+	padding: 40px 0px 50px; margin-top: -156px;
+}
+.subtitle_hee > div {
+	color: rgb(0, 0, 0); font-family: "Anton", sans-serif; font-size: 50px;
+}
+.subtitle_hee > div > span {
+	font-family: "seoul-namsan-jung-m"; font-size: 15px; font-weight: bold; margin-bottom: 10px;
+}
+.selectbtn {
+	margin: 0px auto 20px; width: 520px; overflow: hidden;
+}
+.selectbtn > li {
+	background: rgb(249, 249, 249); padding: 15px 0px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 250px; text-align: center; color: rgb(153, 153, 153); font-size: 14px; font-weight: bold; float: left; cursor: pointer;
+}
+.selectbtn > li:first-child {
+	margin-right: 10px;
+}
+.selectbtn > li:hover {
+	background: rgb(92, 116, 133); border: 1px solid rgb(92, 116, 133); border-image: none; color: rgb(176, 202, 221);
+}
+.selectbtn_over {
+	background: rgb(52, 82, 103) !important; border: 1px solid rgb(26, 49, 65) !important; border-image: none !important; color: rgb(255, 255, 255) !important;
+}
+.selectbtn2 {
+	margin: 0px auto 20px; width: 935px; overflow: hidden;
+}
+.selectbtn2 > li {
+	background: rgb(249, 249, 249); padding: 15px 0px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 227px; text-align: center; color: rgb(153, 153, 153); font-size: 14px; font-weight: bold; margin-right: 5px; float: left; cursor: pointer;
+}
+.selectbtn2 > li:hover {
+	background: rgb(92, 116, 133); border: 1px solid rgb(92, 116, 133); border-image: none; color: rgb(176, 202, 221);
+}
+.mentbox {
+	background: rgb(248, 248, 248); margin: 0px auto; padding: 0px; width: 935px;
+}
+.mentbox > em {
+	font-size: 16px; font-weight: bold; margin-bottom: 20px; display: block;
+}
+.mentbox > ol {
+	margin: 0px 0px 15px 20px;
+}
+.mentbox > ol > li {
+	color: rgb(102, 102, 102); font-weight: bold; margin-bottom: 5px; list-style-type: disc;
+}
+.mentbox > ul {
+	margin-left: 23px;
+}
+.mentbox > ul > li {
+	color: rgb(153, 153, 153); margin-bottom: 5px; list-style-type: decimal;
+}
+.btns_01 {
+	background: rgb(92, 116, 133); padding: 5px 15px; border-radius: 4px; color: rgb(255, 255, 255); display: inline-block; cursor: pointer;
+}
+.btns_01:hover {
+	background: rgb(52, 82, 103);
+}
+.btns_02 {
+	overflow: hidden; margin-top: 1px; float: left;
+}
+.btns_02 > dd {
+	background: rgb(204, 204, 204); padding: 5px 15px; border-radius: 4px; margin-right: 3px; float: left; cursor: pointer;
+}
+.btns_02 > dd:hover {
+	background: rgb(51, 51, 51); color: rgb(255, 255, 255);
+}
+.btns_02 > dt {
+	background: rgb(92, 116, 133); padding: 5px 15px; border-radius: 4px; color: rgb(255, 255, 255); float: left; cursor: pointer;
+}
+.btns_02 > dt:hover {
+	background: rgb(52, 82, 103);
+}
+.btns_03 {
+	background: rgb(59, 68, 75); padding: 14px 0px; border-radius: 4px; border: 0px currentColor; border-image: none; width: 220px; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold; cursor: pointer;
+}
+.btns_03:hover {
+	background: rgb(17, 17, 17);
+}
+.inputs1 {
+	padding: 0px 10px; border-radius: 4px; border: 1px solid rgb(204, 204, 204); border-image: none; height: 24px;
+}
+.stitle_btn {
+	margin-top: -4px; float: right;
+}
+.btns_04 {
+	background: rgb(70, 101, 122); padding: 5px 13px; border-radius: 4px; border: 1px solid rgb(97, 127, 147); border-image: none; color: rgb(255, 255, 255); cursor: pointer;
+}
+.btns_04:hover {
+	background: rgb(38, 62, 78);
+}
+.btna_01 {
+	background: rgb(59, 68, 75); padding: 14px 0px; border-radius: 4px; border: 0px currentColor; border-image: none; width: 220px; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold; display: inline-block; cursor: pointer;
+}
+.btna_01:hover {
+	background: rgb(17, 17, 17);
+}
+.btna_02 {
+	background: rgb(29, 93, 138); padding: 6px 16px; border-radius: 4px; border: 0px currentColor; border-image: none; color: rgb(255, 255, 255); font-weight: bold; display: inline-block; cursor: pointer;
+}
+.btnDelete {
+	background: rgb(29, 93, 138); padding: 6px 16px; border-radius: 4px; border: 0px currentColor; border-image: none; color: rgb(255, 255, 255); font-weight: bold; display: inline-block; cursor: pointer;
+}
+.btna_02:hover {
+	background: rgb(52, 82, 103);
+}
+.btnDelete:hover {
+	background: rgb(52, 82, 103);
+}
+.btna_02_submit {
+	background: rgb(29, 93, 138); padding: 6px 16px; border-radius: 4px; border: 0px currentColor; border-image: none; color: rgb(255, 255, 255); font-weight: bold; margin-top: -3px; display: inline-block; cursor: pointer;
+}
+.btna_02_submit:hover {
+	background: rgb(52, 82, 103);
+}
+.btna_03 {
+	background: rgb(224, 0, 0); padding: 6px 16px; border-radius: 4px; border: 0px currentColor; border-image: none; color: rgb(255, 255, 255); font-weight: bold; display: inline-block; cursor: pointer;
+}
+.btnCancel {
+	background: rgb(224, 0, 0); padding: 6px 16px; border-radius: 4px; border: 0px currentColor; border-image: none; color: rgb(255, 255, 255); font-weight: bold; display: inline-block; cursor: pointer;
+}
+.btna_03:hover {
+	background: rgb(189, 0, 0);
+}
+.btnCancel:hover {
+	background: rgb(189, 0, 0);
+}
+.inputb_01 {
+	background: rgb(255, 255, 255) !important; padding: 0px 10px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 78%; height: 26px;
+}
+.textb_01 {
+	background: rgb(255, 255, 255) !important; padding: 10px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 91%;
+}
+.textb_02 {
+	background: rgb(255, 255, 255) !important; padding: 10px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 97%; height: 50px;
+}
+.btn_reply {
+	background: rgb(29, 93, 138); border: 0px currentColor; border-image: none; width: 90%; height: 70px; text-align: center; color: rgb(255, 255, 255); font-weight: bold; cursor: pointer;
+}
+.btn_reply:hover {
+	background: rgb(52, 82, 103);
+}
+.table1 {
+	width: 100%; background-color: rgb(52, 82, 103);
+}
+.table1 tr td {
+	height: 39px; color: rgb(255, 255, 255); padding-left: 20px; font-size: 14px; font-weight: bold;
+}
+.table2 {
+	width: 100%;
+}
+.table2 tr th {
+	background: rgb(29, 93, 138); height: 36px; color: rgb(255, 255, 255); font-family: "Nanum Gothic", Dotum, sans-serif !important; font-weight: bold; border-right-color: rgb(94, 94, 94); border-right-width: 1px; border-right-style: solid;
+}
+.table2 tr th:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.table2 #nlists tr td {
+	background: rgb(221, 221, 221);
+}
+.table2 tr td {
+	background: rgb(238, 238, 238); height: 40px; text-align: center; border-right-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.table2 tr td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.table2 tr td * {
+	font-family: Dotum;
+}
+.table3 {
+	width: 100%;
+}
+.table3 tr td {
+	background: rgb(238, 238, 238); padding: 30px; height: 200px; line-height: 150%; vertical-align: top; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.table4 {
+	width: 100%;
+}
+.table4 > tr td {
+	background: rgb(238, 238, 238) !important; padding: 20px; color: red; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.table4_head {
+	background: rgb(37, 37, 37) !important; padding: 10px 20px !important; color: rgb(255, 255, 255); font-weight: bold; display: none;
+}
+.table4_head2 {
+	background: rgb(52, 82, 103) !important; text-align: left !important; color: rgb(255, 255, 255); padding-left: 20px !important; font-weight: bold;
+}
+.table5 {
+	width: 100%;
+}
+.table5 tr td {
+	background: rgb(241, 241, 241); height: 35px; text-align: center; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.tbl_left {
+	text-align: left !important; padding-left: 20px;
+}
+.search_btn0 {
+	background: rgb(52, 82, 103); padding: 5px 0px; border: 0px currentColor; border-image: none; width: 50px; text-align: center; color: rgb(255, 255, 255);
+}
+.btn_box {
+	margin: 20px 0px; text-align: center;
+}
+.btn_box2 {
+	margin: 20px 0px; text-align: right;
+}
+.page_box {
+	margin: 5px 0px; text-align: center;
+}
+.board_beticon {
+	background: rgb(29, 93, 138); padding: 2px 5px; border-radius: 4px; color: rgb(255, 255, 255); font-size: 10px; font-weight: bold; margin-left: 5px;
+}
+.beticon2 {
+	background: rgb(241, 241, 241); color: rgb(34, 34, 34); box-shadow: 1px 1px 1px #000;
+}
+.board_levicon {
+	background: rgb(52, 82, 103); padding: 2px 5px; border-radius: 4px; color: rgb(255, 255, 255); margin-right: 5px;
+}
+.levicon2 {
+	background: rgb(241, 241, 241); color: rgb(34, 34, 34); font-size: 11px; box-shadow: 1px 1px 1px #000;
+}
+.font11 {
+	font-size: 11px;
+}
+#paging {
+	padding: 25px 0px; text-align: center;
+}
+#paging .paging_btn {
+	background: rgb(29, 93, 138); margin: 0px 2px; width: 43px; height: 23px; text-align: center; color: rgb(255, 255, 255); line-height: 23px; font-size: 11px; font-weight: bold; display: inline-block;
+}
+#paging .paging_btn:hover {
+	background: rgb(52, 82, 103);
+}
+#paging .paging_count {
+	background: rgb(224, 224, 224); margin: 0px 2px; width: 23px; height: 23px; text-align: center; color: rgb(136, 136, 136); line-height: 23px; font-size: 11px; font-weight: bold; display: inline-block;
+}
+#paging .paging_count:hover {
+	background: rgb(204, 204, 204); color: rgb(34, 34, 34);
+}
+#paging strong {
+	background: rgb(29, 93, 138); margin: 0px 2px; width: 23px; height: 23px; text-align: center; color: rgb(255, 255, 255); line-height: 23px; font-size: 11px; font-weight: bold; display: inline-block;
+}
+#bet_result_paging .paging {
+	margin: 15px 0px 0px 100px; border-radius: 5px; text-align: center; display: inline-block;
+}
+#bet_result_paging .paging .center span {
+	background: rgb(255, 255, 255); padding: 6px; border: 1px solid rgb(223, 223, 223); border-image: none; width: 10px; font-family: tahoma; font-size: 11px; margin-right: 4px; float: left;
+}
+#bet_result_paging .paging .center span.current {
+	border-color: rgb(223, 223, 223); color: rgb(0, 168, 255);
+}
+#bet_result_paging .paging .prev {
+	background: rgb(255, 255, 255); padding: 6px; border: 1px solid rgb(223, 223, 223); border-image: none; width: 10px; font-family: tahoma; font-size: 11px; margin-right: 4px; float: left;
+}
+#bet_result_paging .paging .prev::before {
+	content: "<";
+}
+#bet_result_paging .paging .first {
+	background: rgb(255, 255, 255); padding: 6px; border: 1px solid rgb(223, 223, 223); border-image: none; width: 10px; font-family: tahoma; font-size: 11px; margin-right: 4px; float: left;
+}
+#bet_result_paging .paging .first::before {
+	margin-left: -3px; content: "<<";
+}
+#bet_result_paging .paging .next {
+	background: rgb(255, 255, 255); padding: 6px; border: 1px solid rgb(223, 223, 223); border-image: none; width: 10px; font-family: tahoma; font-size: 11px; margin-right: 4px; float: left;
+}
+#bet_result_paging .paging .next::before {
+	content: ">";
+}
+#bet_result_paging .paging .last {
+	background: rgb(255, 255, 255); padding: 6px; border: 1px solid rgb(223, 223, 223); border-image: none; width: 10px; font-family: tahoma; font-size: 11px; margin-right: 4px; float: left;
+}
+#bet_result_paging .paging .last::before {
+	margin-left: -2px; content: ">>";
+}
+#bet_result_paging .paging span:hover {
+	border-color: rgb(0, 168, 255); cursor: pointer;
+}
+.join_pop {
+	left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: fixed; z-index: 1000;
+}
+.login_pop {
+	left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: fixed; z-index: 1000;
+}
+.login_pop .bg {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0.9;
+}
+.join_pop .bg {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0.9;
+}
+.layer_betting {
+	background: rgb(255, 255, 255); padding: 20px 10px 0px 0px; border: 1px solid rgb(204, 204, 204); border-image: none; left: 50%; top: 50%; width: 1100px; position: absolute; box-shadow: 5px 5px 40px #ccc;
+}
+.layer_betting .betting_h {
+	padding: 0px 0px 15px 22px; color: rgb(51, 51, 51); font-size: 20px; font-weight: bold; display: block;
+}
+.layer_betting .game_wrap01 {
+	padding: 7px 0px;
+}
+.layer_betting .check_bx {
+	padding: 0px 0px 0px 22px;
+}
+.check_bx * {
+	line-height: 1.1em; overflow: hidden; vertical-align: top;
+}
+.check_bx .i_check {
+	width: 13px; height: 13px; vertical-align: top; float: left; display: block;
+}
+.check_bx label {
+	padding: 1px 0px 0px 10px; color: rgb(29, 93, 138); font-size: 12px; font-weight: bold; float: left; display: block;
+}
+.bet_table01 {
+	background: rgb(255, 255, 255); margin: 5px auto; width: 96%; font-weight: bold;
+}
+.bet_table01 tr td {
+	background: url("../images/gamebar_normal2.png") repeat-x; border: 1px solid rgb(2, 88, 62); border-image: none; height: 32px; text-align: center; color: rgb(139, 155, 226);
+}
+.bet_table01 tr .beton {
+	background: url("../images/gamebar_on2.png") repeat-x !important; color: rgb(255, 255, 255) !important;
+}
+.bet_table01 tr .beton font {
+	color: rgb(255, 255, 255) !important;
+}
+.bet_table01 tr td span.left_txt {
+	margin-left: 10px; float: left;
+}
+.bet_table01 tr td span.rgt_txt {
+	margin-right: 10px; float: right;
+}
+.bet_table02 {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 100%; font-weight: bold;
+}
+.bet_table02 tr td {
+	background: rgb(14, 168, 185); border: 1px solid rgb(11, 119, 131); border-image: none; height: 32px; text-align: center; color: rgb(185, 235, 220);
+}
+.bet_table02 tr .beton {
+	background: url("../images/gamebar_on2.png") repeat-x !important; color: rgb(0, 0, 0) !important;
+}
+.bet_table02 tr .beton font {
+	color: rgb(255, 255, 255) !important;
+}
+.bet_table02 tr td span.left_txt {
+	margin-left: 10px; float: left;
+}
+.bet_table02 tr td span.rgt_txt {
+	margin-right: 10px; float: right;
+}
+.bet_table02 tr td * {
+	font-family: Dotum;
+}
+.bet_table03 {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 100%; font-weight: bold;
+}
+.bet_table03 tr td {
+	background: url("../images/gamebar_normal2.png") repeat-x; border: 1px solid rgb(2, 88, 62); border-image: none; height: 32px; text-align: center; color: rgb(185, 235, 220);
+}
+.bet_table03 tr .beton {
+	background: url("../images/gamebar_on2.png") repeat-x !important; color: rgb(255, 255, 255) !important;
+}
+.bet_table03 tr td > a {
+	width: 100%; height: 21px; color: rgb(185, 235, 220); padding-top: 11px; display: block;
+}
+.bet_table03 tr td > a:hover {
+	background: url("../images/gamebar_over2.png") repeat-x; color: rgb(255, 255, 255);
+}
+.bet_table03 tr td > a.on {
+	background: url("../images/gamebar_on2.png") repeat-x; color: rgb(0, 0, 0) !important;
+}
+.bet_table03 tr td > a.on font {
+	color: rgb(255, 255, 255) !important;
+}
+.bet_table03 tr td span.left_txt {
+	margin-left: 10px; float: left;
+}
+.bet_table03 tr td span.rgt_txt {
+	margin-right: 10px; float: right;
+}
+.bet_table03 .bett_hol {
+	color: blue;
+}
+.bet_table03 .bett_jjak {
+	color: red;
+}
+.bet_table03 tr td * {
+	font-family: Dotum;
+}
+.bet_table04 {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 100%; font-weight: bold;
+}
+.bet_table04 tr td {
+	background: url("../images/gamebar_bg2.png") repeat-x; border: 1px solid rgb(2, 88, 62); border-image: none; height: 32px; text-align: center; color: rgb(15, 132, 97);
+}
+.bet_table04 tr .beton {
+	background: rgb(29, 93, 138) !important; color: rgb(255, 255, 255) !important;
+}
+.bet_table04 tr td > a {
+	width: 100%; height: 21px; padding-top: 11px; display: block;
+}
+.bet_table04 tr td > a:hover {
+	background: url("../images/gamebar_over2.png") repeat-x; color: rgb(255, 255, 255);
+}
+.bet_table04 tr td > a.on {
+	background: url("../images/gamebar_on2.png") repeat-x; color: rgb(0, 0, 0) !important;
+}
+.bet_table04 tr td > a.on font {
+	color: rgb(255, 255, 255) !important;
+}
+.bet_table04 tr td span.left_txt {
+	margin-left: 10px; float: left;
+}
+.bet_table04 tr td span.rgt_txt {
+	margin-right: 10px; float: right;
+}
+.bet_table04 .bett_hol {
+	color: blue;
+}
+.bet_table04 .bett_jjak {
+	color: red;
+}
+.bet_table04 tr td * {
+	font-family: Dotum;
+}
+.betting_btm {
+	padding: 0px 0px 20px 26px; width: auto; overflow: hidden;
+}
+.betting_btm .betting_btm_lst {
+	margin: 6px 0px 0px; width: auto; overflow: hidden; float: left;
+}
+.betting_btm .betting_btm_lst li {
+	color: rgb(102, 102, 102); font-size: 12px; font-weight: bold; float: left;
+}
+.betting_btm .betting_btm_lst .lst01 {
+	width: 220px;
+}
+.betting_btm .betting_btm_lst .lst02 {
+	width: 153px;
+}
+.betting_btm .betting_btm_lst .lst03 {
+	width: 104px;
+}
+.betting_btm .betting_btm_lst .lst04 {
+	width: 165px;
+}
+.betting_btm .betting_btm_lst .lst05 {
+	width: 142px;
+}
+.betting_btm .betting_btm_lst .green_txt {
+	color: rgb(102, 255, 0);
+}
+.betting_btm .betting_btm_lst .white_txt {
+	color: rgb(255, 255, 255);
+}
+.betting_btm .betting_btm_lst .blue_txt {
+	color: rgb(19, 122, 194);
+}
+.betting_btm .betting_btm_lst .red_txt {
+	color: rgb(255, 0, 0);
+}
+.betting_btm .btn_candel {
+	margin: 0px 3px; float: left;
+}
+.betting_btm .btn_del {
+	float: left;
+}
+#betlist_write {
+	background: rgb(238, 238, 238); padding: 15px;
+}
+.game_wrap02 {
+	background: rgb(238, 238, 238); padding-top: 15px;
+}
+.betlistbox {
+	width: 100%; padding-top: 15px; padding-bottom: 10px; margin-bottom: 0px; border-bottom-color: rgb(223, 223, 223); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.betlistbox:hover {
+	background: rgb(248, 248, 248);
+}
+.list_upup {
+	padding-top: 10px;
+}
+.green_txt {
+	color: rgb(95, 156, 0);
+}
+.org_txt {
+	color: rgb(255, 105, 15);
+}
+.black_txt {
+	text-decoration: line-through;
+}
+.yelloe_txt {
+	color: red;
+}
+.black_text {
+	color: rgb(34, 34, 34); text-transform: uppercase;
+}
+.txt_bx {
+	text-transform: uppercase !important;
+}
+.date_info {
+	background: url("../images/gamebar_bg2.png") repeat-x !important; color: rgb(255, 255, 255) !important; font-family: tahoma;
+}
+.betting_status {
+	background: url("../images/gamebar_bg2.png") repeat-x !important; color: rgb(255, 255, 255) !important; font-weight: bold;
+}
+.betting_status2 {
+	background: url("../images/gamebar_bg2.png") repeat-x !important; color: rgb(202, 120, 118) !important;
+}
+.betting_status3 {
+	background: rgb(236, 236, 236) !important; color: rgb(170, 170, 170) !important;
+}
+.trdisplay .details {
+	height: 0px !important;
+}
+.open_wrap {
+	height: 0px; overflow: hidden;
+}
+.open_con {
+	padding: 20px;
+}
+.table_board tr:hover td {
+	background: rgb(228, 228, 228);
+}
+.charge_box {
+	
+}
+.sub_wrap {
+	
+}
+.chargebox {
+	margin: 20px auto; width: 935px;
+}
+.chargetitle {
+	background: rgb(52, 82, 103); padding: 15px 25px; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold; margin-bottom: 5px;
+}
+.chargecon {
+	background: rgb(248, 248, 248); padding: 25px; border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.chargetable {
+	width: 100%;
+}
+.chargetable tr {
+	
+}
+.chargetable tr th {
+	background: rgb(230, 230, 230); padding: 15px 0px; border: 1px solid rgb(248, 248, 248); border-image: none; text-align: center; font-weight: bold;
+}
+.chargetable1 tr td {
+	background: rgb(235, 235, 235); padding: 15px 0px 15px 25px; border: 1px solid rgb(248, 248, 248); border-image: none;
+}
+.chargetable2 tr td {
+	background: rgb(235, 235, 235); padding: 15px 0px; border: 1px solid rgb(248, 248, 248); border-image: none; text-align: center;
+}
+.chargetable tr td b {
+	color: rgb(34, 101, 148);
+}
+.charge_inputtd {
+	margin-right: 15px; float: left;
+}
+.charge_pw {
+	margin-top: 10px;
+}
+.cash_txt {
+	font-weight: bold;
+}
+.charge_submit {
+	text-align: center; margin-top: 20px;
+}
+.subbox_935 {
+	margin: 0px auto; width: 935px;
+}
+.subbox {
+	margin: 0px auto; width: 1200px;
+}
+.subbody .subtitlebox {
+	background: rgb(11, 119, 131); padding: 13px; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; margin-bottom: 0px; border-bottom-color: rgb(11, 119, 131); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.subtitlebox2 {
+	background: rgb(37, 37, 37); overflow: hidden; font-weight: bold;
+}
+.subtitlebox2 .subtitlebox2_btn {
+	padding: 15px 20px; margin-left: 7px; float: left;
+}
+.subtitlebox2 .subtitlebox2_btn a {
+	color: rgb(190, 190, 190); padding-right: 15px;
+}
+.subtitlebox2 .subtitlebox2_btn a:hover {
+	color: rgb(255, 255, 255);
+}
+.subtitlebox2 .subtitlebox2_btn a.resulton {
+	color: yellow;
+}
+.search_boox {
+	margin: 9px 10px 0px 0px; float: right;
+}
+.search_boox .search_sel {
+	height: 24px;
+}
+.search_boox .search_input {
+	border: 0px currentColor; border-image: none; height: 24px;
+}
+.game_result_box {
+	margin-bottom: 30px;
+}
+.game_result_title {
+	background: rgb(39, 39, 39); padding: 10px 20px; color: rgb(255, 255, 255); font-weight: bold; border-top-color: rgb(56, 56, 56); border-top-width: 1px; border-top-style: solid;
+}
+.game_result_title2 {
+	background: rgb(88, 118, 138); padding: 10px 20px; color: rgb(255, 255, 255); font-weight: bold;
+}
+.betting_wrap {
+	overflow: hidden;
+}
+.betting_left {
+	width: 935px; padding-bottom: 10px; float: left; position: relative; min-height: 500px;
+}
+#sub-content {
+	width: 935px; padding-bottom: 10px; float: left; position: relative; min-height: 500px;
+}
+.bet_game_box {
+	margin-bottom: 20px;
+}
+.bet_game_title {
+	background: url("../images/titlebar2.png") repeat-x left top; padding: 6px 20px 6px 10px; border: 1px solid rgb(3, 90, 64); border-image: none; color: rgb(255, 255, 255); font-weight: bold; margin-bottom: 2px;
+}
+.bet_game_title3 {
+	background: url("../images/titlebar2.png") repeat-x left top; padding: 6px 20px 6px 10px; border: 1px solid rgb(3, 90, 64); border-image: none; color: rgb(51, 185, 144); font-weight: bold; margin-bottom: 2px;
+}
+.bet_game_title2 {
+	background: rgb(47, 47, 47); padding: 5px 20px; color: yellow; font-weight: bold;
+}
+.betting_right {
+	width: 251px; float: right; position: relative;
+}
+#right-side {
+	width: 251px; float: right; position: relative;
+}
+#betting_cartbox {
+	
+}
+.betting_cartinput {
+	width: 251px; color: rgb(255, 255, 255); font-weight: bold; position: relative;
+}
+.betting_cartinput div.int01 {
+	color: yellow; font-size: 13px !important;
+}
+.betting_cartinput div.int02 {
+	font-size: 11px !important;
+}
+.betting_cartinput div.int03 {
+	font-size: 11px !important;
+}
+.betting_cartinput div.int04 {
+	
+}
+.betting_cartinput div.int04 > input {
+	background: none; border: 0px currentColor; border-image: none; text-align: right; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold;
+}
+.betting_cartinput div.int05 {
+	width: 62px; height: 25px; cursor: pointer;
+}
+.betting_cartinput div.int06 {
+	width: 40px; height: 22px; cursor: pointer;
+}
+#max_betting_checkbox {
+	display: none;
+}
+.betting_cartinput div.int07 {
+	background: url("../images/icon_del.png") no-repeat center / 30px 30px; width: 38px; height: 38px; cursor: pointer;
+}
+.betting_cartinput .int08 {
+	margin: 5px auto 0px; left: 16px; top: 215px; width: 240px; height: 46px; position: absolute; cursor: pointer;
+}
+.betting_cartinput > #betting_cartinfo > li {
+	background: rgb(0, 141, 151); height: 38px; line-height: 38px; padding-right: 15px; padding-left: 15px; border-bottom-color: rgb(0, 147, 159); border-bottom-width: medium; border-bottom-style: none;
+}
+.betting_cartinput > #betting_cartinfo > li > div {
+	float: right;
+}
+.betting_cartinput > #betting_cartinfo > li > div > input {
+	background: none; width: 100px; text-align: right; color: rgb(255, 255, 255); font-family: tahoma; font-size: 12px; font-weight: bold; margin-right: 3px;
+}
+.btnmoney_table td {
+	text-align: center; color: rgb(0, 141, 151);
+}
+.btnmoney_table td:hover {
+	color: rgb(0, 130, 144);
+}
+#btnMax {
+	color: rgb(255, 255, 255);
+}
+#btnMoneyClear {
+	color: rgb(255, 255, 255);
+}
+#temp_cart {
+	padding: 0px;
+}
+#temp_cart .temp_cart {
+	background: rgb(0, 141, 151); padding: 7px 6px 7px 9px; height: 19px; overflow: hidden;
+}
+#temp_cart li {
+	background: rgb(238, 238, 238); padding: 7px 6px 7px 9px; border: 1px solid rgb(205, 205, 205); border-image: none; width: auto; height: 19px; overflow: hidden; margin-bottom: 4px;
+}
+#temp_cart .btn_close {
+	margin: 1px 5px 0px 0px; font-weight: bold; float: left; display: block;
+}
+#temp_cart .lft_txt {
+	padding: 1px 0px 0px; color: rgb(21, 111, 196); font-size: 12px; font-weight: bold; float: left; display: block;
+}
+#temp_cart .game_result {
+	padding: 1px 0px 0px; color: rgb(98, 98, 98); font-size: 12px; font-weight: bold; float: right; display: block;
+}
+#temp_cart .game_result strong {
+	color: rgb(21, 111, 196); font-weight: bold; margin-right: 2px;
+}
+#temp_cart .game_result span {
+	font-weight: normal;
+}
+.game_empty {
+	background: rgb(248, 248, 248); padding: 100px 0px; border: 1px solid rgb(241, 241, 241); border-image: none; text-align: center; color: rgb(187, 187, 187); font-size: 16px;
+}
+.loggbox {
+	background: rgb(247, 247, 247); border: 1px solid rgb(215, 215, 215); border-image: none; z-index: 9999;
+}
+.logb1 {
+	height: 110px; position: relative;
+}
+.logb1 > em {
+	left: 16px; top: 20px; position: absolute;
+}
+.logb1 > span {
+	left: 104px; top: 38px; color: rgb(249, 47, 0); font-size: 13px; font-weight: bold; position: absolute;
+}
+.logb1 > label {
+	background: rgb(126, 126, 126); padding: 3px 10px; border-radius: 4px; left: 160px; top: 36px; color: rgb(255, 255, 255); font-weight: bold; display: block; position: absolute; cursor: pointer;
+}
+.logb1 > label:hover {
+	background: rgb(109, 109, 109);
+}
+.logb1 > code {
+	left: 105px; top: 61px; color: rgb(34, 34, 34); font-size: 17px; font-weight: bold; position: absolute;
+}
+.logb2 {
+	background: rgb(255, 255, 255); padding: 18px 20px; border-top-color: rgb(215, 215, 215); border-bottom-color: rgb(215, 215, 215); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.logb2 > div * {
+	font-size: 13px; font-weight: bold;
+}
+.logb2 > div {
+	overflow: hidden;
+}
+.logb2 > div > em {
+	width: 60px; float: left; display: block;
+}
+.logb2 > div > span {
+	width: 112px; text-align: right; color: rgb(255, 50, 50); float: left; display: block;
+}
+.logb2 > div > label {
+	background: rgb(255, 78, 0); margin: 1px 6px 0px 0px; border-radius: 3px; width: 24px; height: 13px; text-align: center; color: rgb(255, 255, 255); padding-top: 1px; font-family: Dotum; font-size: 11px; font-weight: normal; float: right; display: block; cursor: pointer;
+}
+.logb2_div2 {
+	margin-top: 8px;
+}
+.logb2_div2 > span {
+	color: rgb(28, 120, 181) !important;
+}
+.logb2_div2 > label {
+	background: rgb(51, 153, 204) !important;
+}
+.logb3 {
+	margin: 0px; overflow: hidden;
+}
+.logb3 > li {
+	float: left; position: relative; cursor: pointer;
+}
+.logb3 > li > div {
+	left: 42px; top: 49px; color: rgb(255, 78, 0); font-weight: bold; position: absolute;
+}
+.logg_banner {
+	margin-top: 10px;
+}
+.logg_banner > ul {
+	
+}
+.logg_banner > ul > li {
+	margin-bottom: 10px;
+}
+.logg_listbox {
+	border: 1px solid rgb(214, 214, 214); border-image: none; margin-bottom: 5px;
+}
+.logg_listbox > span {
+	background: rgb(247, 247, 247); padding: 10px 12px; color: rgb(34, 34, 34); font-size: 15px; font-weight: bold; border-bottom-color: rgb(214, 214, 214); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.logg_listbox > dl {
+	padding: 17px 12px;
+}
+.logg_listbox > dl > dd {
+	margin-bottom: 7px;
+}
+.logg_listbox > dl > dd:last-child {
+	margin-bottom: 0px;
+}
+.logg_listbox > dl > dd > em {
+	border-radius: 20px; border: 1px solid red; border-image: none; width: 25px; text-align: center; color: red; font-size: 10px; margin-right: 6px; display: inline-block;
+}
+.onenotice {
+	padding: 2px 0px; border: 1px solid rgb(2, 134, 94); border-image: none; width: 933px; margin-bottom: 5px; background-color: rgb(13, 156, 113);
+}
+nav ul {
+	display: inline-block;
+}
+nav ul li {
+	padding: 11px 20px; transition:0.5s; color: rgb(255, 255, 255); letter-spacing: -1px; font-size: 13px; float: left; cursor: pointer; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+nav ul a li {
+	font-family: "notokr-regular";
+}
+nav ul a li:hover {
+	background: rgb(14, 168, 185);
+}
+nav ul a li:hover {
+	transition:0.5s; color: rgb(255, 222, 0);
+}
+#comments {
+	width: 935px; float: left;
+}
+#comment-wrapper {
+	position: relative;
+}
+#commentWrapper {
+	left: 0px; width: 251px; position: relative;
+}
+#right-side {
+	left: 0px; width: 251px; position: relative;
+}
+#comment {
+	
+}
+#comments ol li:first-child {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.fixed#comment {
+	top: 0px; position: fixed;
+}
+.btnMoney {
+	color: rgb(255, 255, 255);
+}

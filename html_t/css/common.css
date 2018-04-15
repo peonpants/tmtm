@@ -1,0 +1,639 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@font-face {
+    font-family: 'Noto Sans';
+
+    src: url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Regular.woff2') format('woff2'),
+    url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Regular.woff') format('woff'),
+url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Regular.otf') format('opentype');
+	font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-DemiLight.woff2') format('woff2'),
+    url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-DemiLight.otf') format('woff'),
+url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-DemiLight.otf') format('opentype');
+	font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Medium.woff2') format('woff2'),
+    url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Medium.otf') format('woff'),
+url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Medium.otf') format('opentype');
+	font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Bold.woff2') format('woff2'),
+    url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Bold.woff') format('woff'),
+url('//cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/fonts/full/NotoSansKR-Bold.otf') format('opentype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: 'YouandiModernHR';
+  src: url('../fonts/YouandiModernHR.eot?32465997');
+  src: url('../fonts/YouandiModernHR.eot?32465997#iefix') format('embedded-opentype'),
+       url('../fonts/YouandiModernHR.woff?32465997') format('woff'),
+       url('../fonts/YouandiModernHR.ttf?32465997') format('truetype'),
+       url('../fonts/YouandiModernHR.svg?32465997#YouandiModernHR') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input[type="radio"] {margin-top: -1px;vertical-align: middle;margin-right:3px;}
+input[type="text"] {cursor:text;margin-top:0;vertical-align: middle;}
+select {margin-top:0;vertical-align: middle;border:1px solid #ccc;color:#797979;font-size:12px;font-family:"dotum";}
+button {display:inline-block;vertical-align:middle;cursor:pointer;white-space:nowrap;text-decoration:none;background:transparent;outline:0;cursor:pointer;font-size:12px;font-family:"dotum";}
+
+/*font 속성*/
+.fs_10{font-size:10px !important;}
+.fs_11{font-size:11px !important;}
+.fs_12{font-size:12px !important;}
+.fs_13{font-size:13px !important;}
+.fs_14{font-size:14px !important;}
+.fs_15{font-size:15px !important;}
+
+.fc_blk{color:#000 !important;}
+.fc_hblk {color:#555 !important;}
+.fc_sky{color:#02bbd6 !important;}
+.fc_orange{color:#fe8c05 !important;}
+.fc_red{color:#ff0303 !important;}
+.fc_purple{color:#723fb1 !important;}
+.fc_green{color:#00AB4E !important;}
+.fc_tuk{color:#31869b !important;}
+.fc_dSky {color:#00A6D4 !important;}
+.fc_gray {color:#a8a7a7 !important;}
+.fc_ccc {color:#ccc !important;}
+.fc_bbb {color:#bbb !important;}
+.fc_fff {color:#fff !important;}
+.fc_dRed {color:#bc0001 !important;}
+.fc_yellow {color:#FFFC21 !important;}
+.fc_blue {color:#012af7 !important;}
+.fc_violet {color:#b8046e !important;}
+.fc_sand {color:#c69c6d !important;}
+
+.fw_n{font-weight:normal !important;}
+.fw_b{font-weight:bold !important;}
+.fw_600{font-weight:600 !important;}
+
+/*border 속성*/
+.b_1px {border:1px solid;}
+.b_ccc {border:1px solid #ccc;}
+.bb_ccc {border:1px dashed #ccc;}
+
+/*background 속성*/
+.bg_ccc {background-color:#ccc !important;}
+.bg_aaa {background-color:#aaa !important;}
+.bg_111 {background-color:#111 !important;}
+.bg_sky {background-color:#02bbd6 !important;}
+.bg_tuk {background-color:#31869b !important;}
+.bg_bbb {background-color:#16171b !important;}
+
+/*text 속성*/
+.td_ul {text-decoration:underline;}
+
+.ti_10 {text-indent:10px !important;}
+.ti_20 {text-indent:20px !important;}
+.ti_30 {text-indent:30px !important;}
+.ti_35 {text-indent:35px !important;}
+
+.ta_c {text-align:center !important;}
+.ta_r {text-align:right !important;}
+.ta_l {text-align:left !important;}
+
+/*width, height 속성*/
+.wp_100 {width:100% !important;}
+.wp_50 {width:50% !important;}
+
+.w_16 {width:16px !important;}
+.w_25 {width:25px !important;}
+.w_50 {width:50px !important;}
+.w_100 {width:100px !important;}
+.w_150 {width:150px !important;}
+
+.h_16 {height:16px !important;}
+.h_25 {height:25px !important;}
+.h_50 {height:50px !important;}
+.h_100 {height:100px !important;}
+.h_150 {height:150px !important;}
+
+/*margin, padding 속성*/
+.mt_5 {margin-top:4px !important;}
+.mt_10 {margin-top:10px !important;}
+.mt_15 {margin-top:15px !important;}
+.mt_20 {margin-top:20px !important;}
+.mt_25 {margin-top:25px !important;}
+.mt_40 {margin-top:40px !important;}
+
+.ml_4 {margin-left:4px !important;}
+.ml_10 {margin-left:10px !important;}
+.ml_15 {margin-left:15px !important;}
+.ml_20 {margin-left:20px !important;}
+
+.mr_10 {margin-right:10px !important;}
+.mr_15 {margin-right:15px !important;}
+.mr_20 {margin-right:20px !important;}
+
+.mb_10 {margin-bottom:10px !important;}
+.mb_15 {margin-bottom:15px !important;}
+.mb_20 {margin-bottom:20px !important;}
+.mb_40 {margin-bottom:40px !important;}
+
+.pt_5 {margin-top:4px !important;}
+.pt_10 {margin-top:10px !important;}
+.pt_15 {margin-top:15px !important;}
+.pt_20 {margin-top:20px !important;}
+.pt_25 {margin-top:25px !important;}
+.pt_40 {margin-top:40px !important;}
+
+.pl_10 {margin-left:10px !important;}
+.pl_15 {margin-left:15px !important;}
+.pl_20 {margin-left:20px !important;}
+
+.pr_10 {margin-right:10px !important;}
+.pr_15 {margin-right:15px !important;}
+.pr_20 {margin-right:20px !important;}
+
+.pb_1{padding-bottom:1px;}
+.pb_10 {margin-bottom:10px !important;}
+.pb_15 {margin-bottom:15px !important;}
+.pb_20 {margin-bottom:20px !important;}
+.pb_40 {margin-bottom:40px !important;}
+
+/*****************************************************************************************/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+address, big, cite, code, del, dfn, em, font, img, ins,
+q, s, samp, small, strike, strong, sub, sup, tt, var, b,
+/*u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:none 0; font-family:'Nanum Gothic', Dotum}*/
+h1, h2, h3, h4, h5, h6 {/*font-size:12px*/}
+img, fieldset, iframe {border:0 none}
+table, div {border-collapse: collapse; font-size:12px}
+textarea {overflow:auto; outline-style:none; font-family:Dotum}
+select, input, img, li {vertical-align:middle; text-align:left; font-size:12px; font-family:'Nanum Gothic', Dotum, sans-serif; outline-style:none}
+address, caption, cite, code, dfn, em, th, var {font-style:normal; font-weight:normal}
+ul, li, ol {list-style-type:none}
+legend, caption {display:none}
+hr {border-collapse:collapse; display:none}
+a { text-decoration:none; cursor:pointer; color:#333}
+body {background-color:#eaeaea; width:100%; font-size:12px; color:#333}
+.clearboth {clear:both}
+#go_top {display:none; position:fixed; bottom:50px; left:50%; margin-left:620px; width:50px; height:35px; padding-top:15px; background:#333; font-family:Tahoma; font-weight:bold; font-size:14px; color:#FFF; cursor:pointer; text-align:center; border-radius:50px; z-index:999}
+.scenter {width:1200px; margin:0 auto}
+
+
+/* 팝업 */
+.popup_bgmask {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000; opacity:0.8; filter:alpha(opacity=80); z-index:9999}
+.mbinfo_open_pop2 {position:absolute; z-index:99999}
+.mbinfo_open_pop2 .layer_main {position:relative; background:#FFF; padding:20px; line-height: 1.1em; font-family:'Nanum Gothic' !important, Dotum; width:400px; border:1px solid #ccc; min-height:250px}
+.mbinfo_open_pop2 .check {position:relative; margin:0 auto; top:10%; width:400px; background-color:#222; text-align:center; padding:20px; color:#f2f2f2; border-bottom:1px solid #ccc; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+.popdiv_1 {left:50px; top:100px}
+.popdiv_2 {left:500px; top:100px}
+.popdiv_3 {left:950px; top:100px}
+.popdiv_4 {left:1400px; top:100px}
+
+
+/* PC 리그이미지 */
+.league_image1 {margin-right:3px}
+.league_image1 img {width:20px}
+.league_image2 {margin-right:5px}
+.league_image2 img {height:20px}
+
+/*새로운 메인*/
+#mainBox2 {}
+	.nm_wrap {width:1190px; margin:0 auto}
+	.nm_container {position:relative; margin-top:133px; height:800px}
+		.nm_container > div {position:absolute; color:#a5a5a5}
+		.nm_box1 {left:0; top:0; width:330px; height:240px; background:url('/img/nm_box1.jpg') no-repeat}
+		.nm_box2 {left:0; top:250px; width:330px; height:240px; background:url('/img/nm_box2.jpg') no-repeat}
+		.nm_box3 {right:0; top:0}
+		.nm_box4 {left:0; top:500px}
+		.nm_box5 {left:400px; top:500px}
+		.nm_box6 {right:0; top:500px}
+
+		.nm_list {margin:135px 0 0 19px; width:292px; height:100px}
+			.nm_list > li {overflow:hidden; margin-bottom:7px}
+			.nm_list > li > em {display:block; float:left; width:207px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
+			.nm_list > li > em > a {color:#FFF}
+			.nm_list > li > span {display:block; float:right; width:85px; text-align:right}
+
+
+
+
+#log_wrap {height:100%; min-width:800px}
+	.log_top {height:69px}
+	.log_top > span {float:left; margin-left:10%}
+	.log_top > div {float:left; height:69px; width:550px; overflow:hidden; margin-left:100px}
+	.log_top > div div {float:left; font-size:14px}
+		.log_top > div div > input {height:20px; padding-left:10px}
+		.log_in1 {margin:23px 10px 0 0}
+		.log_in2 {margin:23px 5px 0 0}
+	.log_top > em {float:right; margin-right:10%}
+	.log_btnc {display:block; float:right; margin:12px 0 0 15px; padding:15px 9px; background:#6d6d6d; color:#FFF; font-weight:bold; font-size:14px; cursor:pointer; border-radius:50%}
+	.log_btnc:hover {background:#222}
+	.log_body {height:100%; background:url('../images/loginbg.jpg') center top no-repeat}
+	
+
+		.layer_area {position:absolute; left:50%; top:50%; padding: 20px; width: 297px;background:#CCC}
+		.layer_area h2 {display:block; text-align:center; color:#111; font-family:Tahoma; font-size:16px; margin-bottom:10px}
+		.layer_area .code_input{width:297px; text-align:center}
+		.layer_area .code_input .code_ioput{width: 180px; padding: 0 0 0 10px; height: 26px; background-color: #acacac; border: 1px solid #080808; line-height: 22px; font-size: 12px; color: #080808;}
+		.layer_area .code_btn{width: 297px; overflow: hidden; text-align:center; padding:15px 0 0 0;}
+
+
+#topBox {position:fixed; left:0; top:0; width:100%; z-index:9999}
+#footBox {padding:40px 0; text-align:center}
+#mainBox {}
+
+.topbar1 {height:68px; background:#000; opacity:0.92; filter:alpha(opacity=92)}
+	.topbar1 > div {position:relative}
+	.top_logo {display:block; padding-top:12px}
+	#top_menu {position:absolute; right:0; top:0}
+		#top_menu > li {float:left; position:relative; color:#FFF; font-weight:bold; font-size:16px; padding:25px 22px; cursor:pointer; opacity:0.6; filter:alpha(opacity=60)}
+		#top_menu > li > var {display:block; width:100%; height:3px; background:#FFF; position:absolute; left:0; top:-3px}
+		.top_menu_over {opacity:1 !important; filter:alpha(opacity=100) !important}
+		.top_menu_over > var {top:0px !important}
+.topbar2 {height:44px; background:#2e2e2e; opacity:0.95; filter:alpha(opacity=95)}
+	.top_info1 {float:left; margin-top:12px}
+		.top_info1 > em {display:block; float:left; width:22px; height:20px; margin-top:-2px; padding-top:2px; background:#FFF; border-radius:4px; font-weight:bold; text-align:center; font-size:14px}
+		.top_info1 > span {display:block; float:left; color:#FFF; font-weight:bold; font-size:14px; margin:0 10px}
+		.top_info1 > div {float:left; background:#444; padding:6px 12px; border-radius:4px; margin:-3px 5px}
+		.top_info1 > div > a {color:#d1d1d1; display:inline-block; margin:0 5px}
+		.top_info1 > div > a > b {color:#FFF}
+		.top_info1 > label {display:block; float:left; border-radius:4px; color:#b0cadd; padding:6px 12px; margin-top:-3px; font-weight:bold; background:#345267; cursor:pointer}
+		.top_info1 > label:hover {background:#46667c}
+	.top_info2 {float:right; margin:14px 8px 0 0}
+		.top_info2 > li {float:left}
+		.top_info2 > li > a {display:block; padding:0 14px; border-right:1px solid #575757; color:#e1e1e1; font-weight:bold}
+		.top_info2 > li > a:hover {color:#FFF}
+
+.mainVideobox {position:relative; width:100%; min-width:599px; min-height:300px; background-size:100%}
+.mainVideo {width:100%; height:100%; border:0; min-height:300px}
+.mainVideoFilter {position:absolute; left:0; top:0; width:100%; height:100%; background:#000; opacity:0.5; filter:alpha(opacity=50)}
+.mainVideoFilter2 {position:absolute; left:0; top:0; width:100%; height:100%; background:url('/img/video_pattern.png'); opacity:0.6; filter:alpha(opacity=60)}
+.mainVideo_img {position:absolute; left:0; top:50%; margin-top:-6em; width:100%; text-align:center; color:#f1f1f1; font-size:17px; font-weight:bold; line-height:150%}
+
+.mainbtn1 {background:#000; height:325px}
+
+#footBox2 {width:1200px; margin:0 auto; border-top:1px solid #CCC; padding:40px 0}
+#footBox2 .footicon {width:1200px; height:50px; background:url('/img/foot_icon.png') center no-repeat; margin:0 auto; margin-bottom:25px; text-align:center}
+#footBox2 .footicon ul {margin-left:250px}
+#footBox2 .footicon ul li {float:left; height:50px; cursor:pointer; margin-right:1px}
+#footBox2 .footicon ul li *{opacity:0.6; filter:alpha(opacity=60); background:red}
+	.foot_icon1 {width:68px}
+	.foot_icon2 {width:77px}
+	.foot_icon3 {width:83px}
+	.foot_icon4 {width:83px}
+	.foot_icon5 {width:83px}
+	.foot_icon6 {width:80px}
+	.foot_icon7 {width:75px}
+	.foot_icon8 {width:62px}
+	.foot_icon9 {width:78px}
+#footBox2 .footlogo {text-align:center; margin-bottom:20px; opacity:0.6; filter:alpha(opacity=60)}
+#footBox2 > span {display:block; width:270px; margin:0 auto; padding:4px 0; text-align:center; color:#FFF; background:#666; border-radius:30px; font-size:10px}
+
+#subwrap, #sub-content {margin-top:0px}
+.subtitleBox {background:url('../images/sub_title.png');height:170px;}
+	.subtitle {position:relative; width:1200px; height:100px; margin:0 auto;top:0px;}
+	.subtitle > div {position:absolute; left:0; top:0px;}
+	.subtitle > div > span {margin-left:10px; font-size:25px; font-weight:normal; color:#545454}
+.subbody {width:1200px; margin:0 auto; padding:0px 0 0px 0}
+.subbody:after {clear:both;display:block;content:'';}
+
+.subtitle_hee	{margin-top:-156px; padding:40px 0 50px;}
+	.subtitle_hee > div	{color:#000;font-family: 'Anton', sans-serif;font-size:50px;;}
+	.subtitle_hee > div > span {font-size:15px;font-weight:bold;font-family: 'seoul-namsan-jung-m';margin-bottom:10px;}
+
+
+.selectbtn {width:520px; margin:0 auto; overflow:hidden; margin-bottom:20px}
+	.selectbtn > li {float:left; width:250px; padding:15px 0; text-align:center; background:#f9f9f9; border:1px solid #CCC; font-size:14px; font-weight:bold; color:#999; cursor:pointer}
+	.selectbtn > li:first-child {margin-right:10px}
+	.selectbtn > li:hover {background:#5c7485; color:#b0cadd; border:1px solid #5c7485}
+	.selectbtn_over {background:#345267 !important; color:#FFF !important; border:1px solid #1a3141 !important}
+
+.selectbtn2 {width:935px; margin:0 auto; overflow:hidden; margin-bottom:20px}
+	.selectbtn2 > li {float:left; width:227px; padding:15px 0; text-align:center; background:#f9f9f9; border:1px solid #CCC; font-size:14px; font-weight:bold; color:#999; cursor:pointer; margin-right:5px}
+	.selectbtn2 > li:hover {background:#5c7485; color:#b0cadd; border:1px solid #5c7485}
+
+.mentbox {/*width:935px;*/ margin:0 auto; background:#f8f8f8; padding:0px}
+	.mentbox > em {display:block; font-size:16px; font-weight:bold; margin-bottom:20px}
+	.mentbox > ol {margin:0 0 15px 20px}
+	.mentbox > ol > li {margin-bottom:5px; font-weight:bold; color:#666; list-style-type:disc}
+	.mentbox > ul {margin-left:23px}
+	.mentbox > ul > li {margin-bottom:5px; color:#999; list-style-type:decimal}
+
+/* 공통 */
+.select {padding:8px 5px; font-size:14px;}
+.btns_01 {display:inline-block; padding:5px 15px; background:#5c7485; color:#FFF; border-radius:4px; cursor:pointer}
+.btns_01:hover {background:#345267}
+.btns_02 {float:left; overflow:hidden; margin-top:1px}
+	.btns_02 > dd {float:left; padding:5px 15px; background:#333; border-radius:4px; cursor:pointer; margin-right:3px; color:#fff;}
+	.btns_02 > dd:hover {background:#CCC; color:#FFF}
+	.btns_02 > dt {float:left; padding:5px 15px; background:#5c7485; color:#FFF; border-radius:4px; cursor:pointer}
+	.btns_02 > dt:hover {background:#345267}
+.btns_03 {width:220px; padding:14px 0; text-align:center; background:#3b444b; color:#FFF; border:0 none; border-radius:4px; font-size:16px; font-weight:bold; cursor:pointer}
+.btns_03:hover {background:#111}
+.inputs1 {height:24px; border:1px solid #CCC; padding:0 10px; border-radius:4px}
+.stitle_btn {float:right; /*margin-top:-4px*/}
+.btns_04 {background:#46657a; color:#FFF; padding:5px 13px; border:1px solid #617f93; border-radius:4px; cursor:pointer;}
+.btns_04:hover {background:#263e4e}
+.btna_01 {display:inline-block; width:220px; padding:14px 0; text-align:center; background:#3b444b; color:#FFF; border:0 none; border-radius:4px; font-size:16px; font-weight:bold; cursor:pointer}
+.btna_01:hover {background:#111}
+.btna_02, .btnDelete {display:inline-block; padding:10px 16px; background:#1d5d8a; color:#FFF; border:0 none; border-radius:4px; font-weight:bold; cursor:pointer; font-size:14px; vertical-align:middle;}
+.btna_02:hover, .btnDelete:hover {background:#345267}
+.btna_02_submit {display:inline-block; padding:6px 16px; background:#1d5d8a; color:#FFF; border:0 none; border-radius:4px; font-weight:bold; margin-top:-3px; cursor:pointer}
+.btna_02_submit:hover {background:#345267}
+.btna_03, .btnCancel {display:inline-block; padding:10px 16px; background:#fd4646; color:#FFF; border:0 none; border-radius:4px; font-weight:bold; cursor:pointer;font-size:14px; vertical-align:middle;}
+.btna_03:hover, .btnCancel:hover {background:#bd0000}
+.inputb_01 {height:26px; width:78%; border:1px solid #CCC; background:#FFF !important; padding:0 10px}
+.textb_01 {width:91%; padding:10px; background:#FFF !important; border:1px solid #CCC}
+.textb_02 {width:97%; padding:10px; height:50px; background:#FFF !important; border:1px solid #CCC}
+.btn_reply {width:90%; height:70px; text-align:center; border:0 none; background:#1d5d8a; color:#FFF; font-weight:bold; cursor:pointer}
+.btn_reply:hover {background:#345267}
+
+.table1 {width:100%; background-color:#345267}
+.table1 tr td {padding-left:20px; height:39px; font-weight:bold; color:#FFF; font-size:14px}
+.table2 {width:100%}
+.table2 tr th {height:36px; background:#959595; color:#fff; /*border-right:1px solid #5e5e5e; */font-weight:bold;font-family:'Nanum Gothic', Dotum, sans-serif !important;}
+.table2 tr th:last-child {border-right:0 none}
+.table2 #nlists tr td {background:#ddd;}
+.table2 tr td {height:40px; background:#eee; text-align:center; border-right:1px solid #FFF; border-bottom:1px solid #FFF}
+.table2 tr td:last-child {border-right:0 none}
+.table2 tr td * {font-family:Dotum}
+.table3 {width:100%}
+.table3 tr td {height:200px; background:#eee; padding:30px; border-bottom:1px solid #FFF; vertical-align:top; line-height:150%}
+.table4 {width:100%}
+.table4 > tr td {background:#eee !important; padding:20px; border-bottom:1px solid #FFF; color:red}
+.table4_head {background:#252525 !important; padding:10px 20px !important; font-weight:bold; color:#FFF; display:none;}
+.table4_head2 {background:#345267 !important; padding-left:20px !important; font-weight:bold; color:#FFF; text-align:left !important}
+.table5 {width:100%}
+.table5 tr td {height:35px; background:#f1f1f1; border-bottom:1px solid #FFF; text-align:center}
+.tbl_left {text-align:left !important; padding-left:20px}
+
+/*.search_bx {margin-bottom:10px;}*/
+.search_btn0 {background:#345267; color:#FFF; border:0 none; width:50px; text-align:center; padding:5px 0}
+
+.btn_box {text-align:center; margin:20px 0}
+.btn_box2 {text-align:right; margin:20px 0}
+.page_box {text-align:center; margin:5px 0}
+.board_beticon {padding:2px 5px; background:#1d5d8a; color:#FFF; font-size:10px; font-weight:bold; border-radius:4px; margin-left:5px}
+.beticon2 {background:#f1f1f1; color:#222; box-shadow:1px 1px 1px #000}
+.board_levicon {padding:2px 5px; background:#345267; color:#FFF; border-radius:4px; margin-right:5px}
+.levicon2 {font-size:11px; background:#f1f1f1; color:#222; box-shadow:1px 1px 1px #000}
+.font11 {font-size:11px}
+
+/** paging **/
+#paging {width: 100%: line-height: 1.1em; text-align: center; padding: 25px 0;}
+#paging .paging_btn {margin: 0 2px; display: inline-block; width: 43px; line-height: 23px; height: 23px; text-align: center; font-size: 11px; color:#FFF; background: #1d5d8a; font-weight: bold}
+#paging .paging_btn:hover {background:#345267}
+#paging .paging_count {margin: 0 2px; display: inline-block; width: 23px; height: 23px; text-align: center; color:#888; font-size: 11px; line-height: 23px; background: #e0e0e0; font-weight: bold;}
+#paging .paging_count:hover {background:#CCC; color:#222}
+#paging strong {margin: 0 2px; display: inline-block; width: 23px; height: 23px; text-align: center; color: #fff; font-size: 11px; line-height: 23px; background:#1d5d8a; font-weight: bold;}
+
+/*  베팅 페이징 */
+#bet_result_paging .paging {margin:15px 0 0 100px;display:inline-block;text-align:center;border-radius:5px;}
+#bet_result_paging .paging .center span {float:left;border:1px solid #dfdfdf;background:#fff;font-family:tahoma;font-size:11px;width:10px;padding:6px;margin-right:4px;}
+#bet_result_paging .paging .center span.current {color:#00a8ff;border-color:#dfdfdf;}
+#bet_result_paging .paging .prev{float:left;border:1px solid #dfdfdf;background:#fff;font-family:tahoma;font-size:11px;width:10px;padding:6px;margin-right:4px;}
+#bet_result_paging .paging .prev::before{content:'<'}
+#bet_result_paging .paging .first{float:left;border:1px solid #dfdfdf;background:#fff;font-family:tahoma;font-size:11px;width:10px;padding:6px;margin-right:4px;}
+#bet_result_paging .paging .first::before{content:'<<';margin-left:-3px;}
+#bet_result_paging .paging .next{float:left;border:1px solid #dfdfdf;background:#fff;font-family:tahoma;font-size:11px;width:10px;padding:6px;margin-right:4px;}
+#bet_result_paging .paging .next::before{content:'>'}
+#bet_result_paging .paging .last{float:left;border:1px solid #dfdfdf;background:#fff;font-family:tahoma;font-size:11px;width:10px;padding:6px;margin-right:4px;}
+#bet_result_paging .paging .last::before{content:'>>';margin-left:-2px;}
+#bet_result_paging .paging span:hover {border-color:#00a8ff;cursor:pointer}
+
+/* 게시판 레이어 배팅내역 */
+.join_pop{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 1000;}
+/*login_pop{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 1000;}*/
+.login_pop .bg {position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:0.9; filter:alpha(opacity=90)}
+.join_pop .bg {position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:0.9; filter:alpha(opacity=90)}
+
+.layer_betting{position: absolute; left: 50%; top: 50%; width: 1100px; padding:20px 10px 0 0; background:#fff; border:1px solid #CCC; box-shadow:5px 5px 40px #ccc}
+.layer_betting .betting_h{display: block; padding: 0 0 15px 22px; color:#333; font-size:20px; font-weight:bold}
+.layer_betting .game_wrap01{padding: 7px 0;}
+.layer_betting .check_bx{padding: 0 0 0 22px;}
+.check_bx *{line-height: 1.1em; vertical-align: top; overflow: hidden;}
+.check_bx .i_check{display: block; width: 13px; height: 13px; vertical-align: top; float: left;}
+.check_bx label{display: block; font-size: 12px; color:#1d5d8a; float: left; font-weight: bold; padding: 1px 0 0 10px;}
+
+.bet_table01 {width:96%; margin:5px auto; background:#FFF; font-weight:bold}
+.bet_table01 tr td {height:32px; background:url('../images/gamebar_normal2.png') repeat-x; border:1px solid #02583e; text-align:center;color:#8b9be2}
+.bet_table01 tr .beton {background:url('../images/gamebar_on2.png') repeat-x !important; color:#FFF !important}
+.bet_table01 tr .beton font {color:#FFF !important}
+.bet_table01 tr td span.left_txt {float:left; margin-left:10px}
+.bet_table01 tr td span.rgt_txt {float:right; margin-right:10px}
+
+.bet_table02 {width:100%; margin:0 auto; background:#FFF; font-weight:bold}
+.bet_table02 tr td {height:32px; background:url('../images/gamebar_normal2.png') repeat-x; border:1px solid #0b7783; text-align:center;background:#0ea8b9;color:#b9ebdc}
+.bet_table02 tr .beton {background:url('../images/gamebar_on2.png') repeat-x !important; color:#000 !important}
+.bet_table02 tr .beton font {color:#FFF !important}
+.bet_table02 tr td span.left_txt {float:left; margin-left:10px}
+.bet_table02 tr td span.rgt_txt {float:right; margin-right:10px}
+.bet_table02 tr td * {font-family:Dotum}
+
+.bet_table03 {width:100%; margin:0 auto; background:#FFF; font-weight:bold}
+.bet_table03 tr td {height:32px; background:url('../images/gamebar_normal2.png') repeat-x; border:1px solid #02583e; text-align:center;color:#b9ebdc}
+.bet_table03 tr .beton {background:url('../images/gamebar_on2.png') repeat-x !important; color:#FFF !important}
+.bet_table03 tr td > a {display:block; width:100%; height:21px; padding-top:11px;color:#b9ebdc;}
+.bet_table03 tr td > a:hover {background:url('../images/gamebar_over2.png') repeat-x; color:#fff}
+.bet_table03 tr td > a.on {background:url('../images/gamebar_on2.png') repeat-x; color:#000 !important}
+.bet_table03 tr td > a.on font {color:#FFF !important}
+.bet_table03 tr td span.left_txt {float:left; margin-left:10px;}
+.bet_table03 tr td span.rgt_txt {float:right; margin-right:10px;}
+.bet_table03 .bett_hol {color:blue}
+.bet_table03 .bett_jjak {color:red}
+.bet_table03 tr td * {font-family:Dotum}
+
+
+.bet_table04 {width:100%; margin:0 auto; background:#FFF; font-weight:bold}
+.bet_table04 tr td {height:32px; background:url('../images/gamebar_bg2.png') repeat-x; border:1px solid #02583e; text-align:center;color:#0f8461}
+.bet_table04 tr .beton {background:#1d5d8a !important; color:#FFF !important}
+.bet_table04 tr td > a {display:block; width:100%; height:21px; padding-top:11px;}
+.bet_table04 tr td > a:hover {background:url('../images/gamebar_over2.png') repeat-x; color:#FFF}
+.bet_table04 tr td > a.on {background:url('../images/gamebar_on2.png') repeat-x; color:#000 !important}
+.bet_table04 tr td > a.on font {color:#FFF !important}
+.bet_table04 tr td span.left_txt {float:left; margin-left:10px;}
+.bet_table04 tr td span.rgt_txt {float:right; margin-right:10px;}
+.bet_table04 .bett_hol {color:blue}
+.bet_table04 .bett_jjak {color:red}
+.bet_table04 tr td * {font-family:Dotum}
+
+.betting_btm{width: auto; overflow: hidden; padding: 0 0 20px 26px;}
+.betting_btm .betting_btm_lst{width: auto; overflow: hidden; float: left; margin: 6px 0 0 0;}
+.betting_btm .betting_btm_lst li{float: left; font-size:12px; font-weight: bold; color:#666}
+.betting_btm .betting_btm_lst .lst01{width: 220px;}
+.betting_btm .betting_btm_lst .lst02{width: 153px;}
+.betting_btm .betting_btm_lst .lst03{width: 104px;}
+.betting_btm .betting_btm_lst .lst04{width: 165px;}
+.betting_btm .betting_btm_lst .lst05{width: 142px;}
+.betting_btm .betting_btm_lst .green_txt{color: #66ff00;}
+.betting_btm .betting_btm_lst .white_txt{color: #fff;}
+.betting_btm .betting_btm_lst .blue_txt{color: #137ac2;}
+.betting_btm .betting_btm_lst .red_txt{color: #ff0000;}
+.betting_btm .btn_candel{float: left; margin: 0 3px; 0 0;}
+.betting_btm .btn_del{float: left;}
+
+#betlist_write {background:#eee; padding:15px}
+
+.game_wrap02 {background:#eee; padding-top:15px}
+
+.betlistbox	{width:100%;border-bottom:1px solid #dfdfdf;padding-top:15px;padding-bottom:10px;margin-bottom:0px;}
+.betlistbox:hover {background:#f8f8f8}
+.list_upup {padding-top:10px}
+
+
+.green_txt {color:#5f9c00}
+.org_txt {color:#ff690f}
+.black_txt {text-decoration: line-through}
+.yelloe_txt {color:red}
+.black_text {color:#222; text-transform :uppercase}
+.txt_bx {text-transform :uppercase !important}
+
+.date_info {background:url('../images/gamebar_bg2.png') repeat-x !important; font-family:tahoma;color:#fff !important} /* 타임 */
+.betting_status {background:url('../images/gamebar_bg2.png') repeat-x !important; color:#fff !important; font-weight:bold} /* 배팅 */
+.betting_status2 {background:url('../images/gamebar_bg2.png') repeat-x !important; color:#ca7876 !important} /* 경기중 */
+.betting_status3 {background:#ececec !important; color:#aaaaaa !important} /* 배팅마감 */
+
+.trdisplay .details {height:0 !important}
+.open_wrap {height:0; overflow:hidden}
+.open_con {padding:20px}
+
+.table_board tr:hover td {background:#e4e4e4}
+
+.charge_box {}
+.sub_wrap {}
+	.chargebox {/*width:935px;*/ margin:20px auto}
+		.chargetitle {padding:15px 25px; background:#345267; font-size:16px; font-weight:bold; color:#FFF; margin-bottom:5px}
+		.chargecon {background:#f8f8f8; border:1px solid #e0e0e0; padding:25px}
+			.chargetable {width:100%}
+				.chargetable tr {}
+				.chargetable tr th {background:#959595; border:1px solid #f8f8f8; font-weight:bold; padding:15px 0; text-align:center; font-size:15px; font-family:noto; color:#fff;}
+				.chargetable1 tr td {background:#ebebeb; border:1px solid #f8f8f8; padding:15px 0 15px 25px; color:#000;}
+				.chargetable2 tr td {background:#ebebeb; border:1px solid #f8f8f8; padding:15px 0; text-align:center; color:#000;font-size:13px;}
+				.chargetable tr td b {color:#226594}
+					.charge_inputtd {float:left; margin-right:15px}
+					.charge_pw {margin-top:10px}
+					.cash_txt {font-weight:bold}
+		.charge_submit {margin-top:20px; text-align:center}
+	.subbox_935	{width:935px;margin:0px auto}
+	.subbox {width:1200px; margin:0px auto}
+			.subbody .subtitlebox {padding:13px 13px; font-size:14px; font-weight:bold; color:#FFF; margin-bottom:0;background:url('../images/titlebar02.png') repeat-x left top; background:#0b7783; border-bottom:1px solid #0b7783}
+
+		
+		.subtitlebox2 {background:#252525; font-weight:bold; overflow:hidden}
+		.subtitlebox2 .subtitlebox2_btn {float:left; padding:15px 20px; margin-left:7px}
+		.subtitlebox2 .subtitlebox2_btn a {color:#bebebe; padding-right:15px}
+		.subtitlebox2 .subtitlebox2_btn a:hover {color:#FFF}
+		.subtitlebox2 .subtitlebox2_btn a.resulton {color:yellow}
+		.search_boox {float:right; margin:5px 10px 0 0}
+		.search_boox .search_sel {height:24px}
+		.search_boox .search_input {height:24px; border:0 none}
+
+	.game_result_box {margin-bottom:30px}
+	.game_result_title {padding:10px 20px;  background:#272727;border-top:1px solid #383838; color:#FFF; font-weight:bold}
+	.game_result_title2 {padding:10px 20px; background:#58768a; color:#FFF; font-weight:bold}
+
+.betting_wrap {overflow:hidden; }
+	#sub-content {min-height:533px; padding-bottom:10px; position:relative;}
+		.bet_game_box {margin-bottom:20px}
+		.bet_game_title {padding:6px 20px 6px 10px;background:url('../images/titlebar2.png') repeat-x left top;border:1px solid #035a40; color:#FFF; font-weight:bold;margin-bottom:2px;}
+		.bet_game_title3 {padding:6px 20px 6px 10px; background:url('../images/titlebar2.png') repeat-x left top; border:1px solid #035a40;color:#33b990; font-weight:bold;margin-bottom:2px;}
+		.bet_game_title2 {padding:5px 20px; background:#2f2f2f; repeat-x; color:yellow; font-weight:bold}
+	.betting_right, #right-side {float:right; position:relative;}
+		#betting_cartbox {}
+		.betting_cartinput {position:relative; width:251px; /*height:268px; background:url('../images/newcart_blue.png') no-repeat;*/ font-weight:bold; color:#FFF}
+		.betting_cartinput div.int01 {font-size:13px !important; color:yellow}
+		.betting_cartinput div.int02 {font-size:11px !important}
+		.betting_cartinput div.int03 {font-size:11px !important}
+		.betting_cartinput div.int04 {}
+		.betting_cartinput div.int04 > input {text-align:right; background:none; border:0 none; color:#FFF; font-size:14px; font-weight:bold}
+		.betting_cartinput div.int05 {width:62px; height:25px; cursor:pointer}
+		.betting_cartinput div.int06 {width:40px; height:22px; cursor:pointer;}
+			#max_betting_checkbox {display:none}
+		.betting_cartinput div.int07 {width:38px; height:38px; cursor:pointer;background:url('../images/icon_del.png') no-repeat center;background-size:30px 30px;}
+		.betting_cartinput .int08 {position:absolute; left:16px; top:215px; width:240px; height:46px; cursor:pointer; margin: 5px auto 0;}
+		.betting_cartinput > #betting_cartinfo > li {background:#008d97;border-bottom:#00939f;height:38px;line-height:38px;padding-left:15px;padding-right:15px;}
+		.betting_cartinput > #betting_cartinfo > li > div {float:right;}
+		.betting_cartinput > #betting_cartinfo > li > div > input {width:100px;background:transparent;text-align:right;font-family:tahoma;font-size:12px;color:#fff;margin-right:3px;font-weight:bold;}
+		.btnmoney_table td {text-align:center;color:#008d97;}
+		.btnmoney_table td:hover {color:#008290;}
+		#btnMax, #btnMoneyClear {color:#fff;}
+
+		.game_empty {background:#f8f8f8; border:1px solid #f1f1f1; text-align:center; padding:100px 0; font-size:16px; color:#bbb}
+
+
+
+.loggbox {background:#f7f7f7; border:1px solid #d7d7d7; z-index:9999}
+				.logb1 {position:relative; height:110px}
+					.logb1 > em {position:absolute; left:16px; top:20px}
+					.logb1 > span {position:absolute; left:104px; top:38px; font-size:13px; font-weight:bold; color:#f92f00}
+					.logb1 > label {position:absolute; left:160px; top:36px; display:block; padding:3px 10px; background:#7e7e7e; color:#FFF; font-weight:bold; cursor:pointer; border-radius:4px}
+					.logb1 > label:hover {background:#6d6d6d}
+					.logb1 > code {position:absolute; left:105px; top:61px; font-weight:bold; color:#222; font-size:17px}
+				.logb2 {background:#FFF; border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; padding:18px 20px}
+					.logb2 > div * {font-weight:bold; font-size:13px}
+					.logb2 > div {overflow:hidden}
+					.logb2 > div > em {display:block; float:left; width:60px}
+					.logb2 > div > span {float:left; width:112px; display:block; text-align:right; color:#ff3232}
+					.logb2 > div > label {float:right; display:block; font-family:Dotum; font-size:11px; color:#FFF; background:#ff4e00; width:24px; height:13px; text-align:center; padding-top:1px; border-radius:3px; font-weight:normal; cursor:pointer; margin:1px 6px 0 0}
+					.logb2_div2 {margin-top:8px}
+					.logb2_div2 > span {color:#1c78b5 !important}
+					.logb2_div2 > label {background:#3399cc !important}
+				.logb3 {overflow:hidden; margin:0px 0 0px 0}
+					.logb3 > li {float:left; cursor:pointer; position:relative}
+					.logb3 > li > div {position:absolute; left:42px; top:49px; color:#ff4e00; font-weight:bold}
+
+			.logg_banner {margin-top:10px}
+				.logg_banner > ul {}
+				.logg_banner > ul > li {margin-bottom:10px}
+
+				.logg_listbox {border:1px solid #d6d6d6; margin-bottom:5px}
+					.logg_listbox > span {display:block; background:#f7f7f7; border-bottom:1px solid #d6d6d6; font-size:15px; font-weight:bold; color:#222; padding:10px 12px}
+					.logg_listbox > dl {padding:17px 12px}
+					.logg_listbox > dl > dd {margin-bottom:7px}
+					.logg_listbox > dl > dd:last-child {margin-bottom:0}
+					.logg_listbox > dl > dd > em {display:inline-block; border:1px solid red; color:red; font-size:10px; width:25px; text-align:center; border-radius:20px; margin-right:6px}
+
+
+.onenotice	{background-color:#0d9c71;margin-bottom:5px;width:933px;padding:2px 0px;border:1px solid #02865e}
+
+
+nav ul {display:inline-block}
+nav ul li {float:left;color:#fff;font-size:13px;letter-spacing:-1px;text-shadow:1px 1px 2px rgba(0,0,0,0.5);padding:11px 20px;cursor:pointer;transition:all 0.5s;}
+nav ul a li {font-family:'notokr-regular';}
+nav ul a li:hover {background:#0ea8b9;}
+nav ul a li:hover {transition:all 0.5s;color:#ffde00}
+	
+
+#comments {
+  float:left;
+  width:935px;
+}
+#comment-wrapper {
+  position: relative;
+}
+#commentWrapper{ /* required to avoid jumping */
+	display:none;
+	position: relative;
+	left:0px;
+	width:251px;
+}
+#comment {
+  
+}
+#comments ol li:first-child {
+  border-top: 0;
+}
+#comment.fixed {
+  position: fixed;
+  top: 0;
+}
+.btnMoney {color:#fff;}

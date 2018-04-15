@@ -1,0 +1,561 @@
+#header {
+	margin: 0px auto; padding: 0px; position: relative;
+}
+#top-menu {
+	width: 1180px;
+}
+#top-menu ul {
+	height: 22px; line-height: 22px; padding-right: 22px; float: right; display: block;
+}
+#top-menu ul li {
+	background: url("../images/topline01.jpg") no-repeat 10px 8px; padding: 5px 0px 4px 24px; height: 13px; color: rgb(136, 136, 136); line-height: 13px; float: left; display: block;
+}
+#top-menu ul li.first {
+	background: none; padding-left: 0px;
+}
+#top-menu ul li a {
+	font-size: 11px;
+}
+#middle-menu {
+	clear: both;
+}
+#middle-menu h1 {
+	margin: 0px; padding: 10px 0px 0px 20px; float: left;
+}
+#middle-menu .middle-menu-user {
+	background: none; width: 810px; height: 80px; float: right; position: relative;
+}
+#middle-menu ul {
+	right: 8px; bottom: 20px; position: absolute;
+}
+#middle-menu ul li {
+	background: url("../images/navicon01.png") no-repeat 0px 0px; padding-left: 12px; font-size: 11px; margin-right: 12px; float: left;
+}
+#middle-menu ul li.first {
+	background: none; top: -5px; position: relative;
+}
+#nav-menu {
+	padding: 7px 0px 13px; clear: both; display: inline-block;
+}
+#nav-menu li {
+	height: 12px; text-indent: -9999px; margin-left: 6px; float: left;
+}
+#nav-menu li a {
+	height: 16px; display: block;
+}
+#nav-menu li.nav-casino a {
+	background: url("../images/menu_casino_on.png") no-repeat 0px 0px; width: 60px;
+}
+#nav-menu li.nav-casino a:hover {
+	background: url("../images/menu_casino_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu13 a {
+	height: 16px; display: block;
+}
+#nav-menu li.nav-menu01 a {
+	background: url("../images/menu01_on.png") no-repeat 0px 0px; width: 45px;
+}
+#nav-menu li.nav-menu02 a {
+	background: url("../images/menu02_on.png") no-repeat 0px 0px; width: 45px;
+}
+#nav-menu li.nav-menu03 a {
+	background: url("../images/menu03_on.png") no-repeat 0px 0px; width: 45px;
+}
+#nav-menu li.nav-menu04 a {
+	background: url("../images/menu04_on.png") no-repeat 0px 0px; width: 60px;
+}
+#nav-menu li.nav-menu05 a {
+	background: url("../images/menu05_on.png") no-repeat 0px 0px; width: 30px;
+}
+#nav-menu li.nav-menu06 a {
+	background: url("../images/menu06_on.png") no-repeat 0px 0px; width: 30px;
+}
+#nav-menu li.nav-menu07 a {
+	background: url("../images/menu07_on.png") no-repeat 0px 0px; width: 30px;
+}
+#nav-menu li.nav-menu08 a {
+	background: url("../images/menu08_on.png") no-repeat 0px 0px; width: 28px;
+}
+#nav-menu li.nav-menu09 a {
+	background: url("../images/menu09_on.png") no-repeat 0px 0px; width: 30px;
+}
+#nav-menu li.nav-menu10 a {
+	background: url("../images/menu10_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu11 a {
+	background: url("../images/menu11_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu12 a {
+	background: url("../images/menu12_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu13 a {
+	background: url("../images/menu13_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu30 a {
+	background: url("../images/menu20_off.png") no-repeat 0px 0px; width: 70px;
+}
+#nav-menu li.nav-menu-realtime a {
+	background: url("../images/menu-realtime_off.png") no-repeat 0px 0px; width: 60px;
+}
+#nav-menu li.nav-menu-realtime a:hover {
+	background: url("../images/menu-realtime_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu-realtime_st a {
+	background: url("../images/menu-realtime_st_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu-realtime_st a:hover {
+	background: url("../images/menu-realtime_st_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu-ladder a {
+	background: url("../images/ladder-menu_off.png") no-repeat 0px 0px; width: 60px;
+}
+#nav-menu li.nav-menu-ladder a:hover {
+	background: url("../images/ladder-menu_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu-dal a {
+	background: url("../images/dal-menu_off.png") no-repeat 0px 0px; width: 60px;
+}
+#nav-menu li.nav-menu-dal a:hover {
+	background: url("../images/dal-menu_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-game01 a {
+	background: url("../images/menu_game01_on.png") no-repeat 0px 0px; width: 70px;
+}
+#nav-menu li.nav-game02 a {
+	background: url("../images/menu_game02_on.png") no-repeat 0px 0px; width: 50px;
+}
+#nav-menu li.nav-game03 a {
+	background: url("../images/menu_game03_on.png") no-repeat 0px 0px; width: 60px;
+}
+#nav-menu li.nav-game04 a {
+	background: url("../images/menu_game04_on.png") no-repeat 0px 0px; width: 70px;
+}
+#nav-menu li.nav-game05 a {
+	background: url("../images/menu_game05_on.png") no-repeat 0px 0px; width: 70px;
+}
+#nav-menu li.nav-game06 a {
+	background: url("../images/menu_game06_on.png") no-repeat 0px 0px; width: 70px;
+}
+#nav-menu li.nav-menu01 a:hover {
+	background: url("../images/menu01_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu02 a:hover {
+	background: url("../images/menu02_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu03 a:hover {
+	background: url("../images/menu03_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu04 a:hover {
+	background: url("../images/menu04_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu05 a:hover {
+	background: url("../images/menu05_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu06 a:hover {
+	background: url("../images/menu06_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu07 a:hover {
+	background: url("../images/menu07_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu08 a:hover {
+	background: url("../images/menu08_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu09 a:hover {
+	background: url("../images/menu09_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu10 a:hover {
+	background: url("../images/menu10_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu11 a:hover {
+	background: url("../images/menu11_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu12 a:hover {
+	background: url("../images/menu12_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu13 a:hover {
+	background: url("../images/menu13_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-menu30 a:hover {
+	background: url("../images/menu20_on.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-game01 a:hover {
+	background: url("../images/menu_game01_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-game02 a:hover {
+	background: url("../images/menu_game02_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-game03 a:hover {
+	background: url("../images/menu_game03_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-game04 a:hover {
+	background: url("../images/menu_game04_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-game05 a:hover {
+	background: url("../images/menu_game05_off.png") no-repeat 0px 0px;
+}
+#nav-menu li.nav-game06 a:hover {
+	background: url("../images/menu_game06_off.png") no-repeat 0px 0px;
+}
+#bottom-menu {
+	width: 1050px; height: 42px; color: white; line-height: 42px; overflow: hidden; font-weight: bold; float: left; position: relative;
+}
+#bottom-menu ul {
+	position: absolute;
+}
+#bottom-menu ul li {
+	float: left;
+}
+#bottom-menu ul li.first {
+	background: none; padding-left: 0px;
+}
+#bottom-menu img {
+	vertical-align: top;
+}
+#bottom-menu span.news-area {
+	width: 100%; overflow: hidden; display: inline-block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+#hot_news {
+	width: 100%; overflow: hidden;
+}
+#hot_news ul {
+	width: 100%; font-family: "NanumGothic","Gulim","Arial"; position: relative;
+}
+#hot_news ul li {
+	display: none;
+}
+#main-content {
+	
+}
+#main-content .top-area {
+	height: 295px;
+}
+#main-content .top-area .content1 {
+	text-indent: -9999px; float: left;
+}
+#main-content .top-area .content2 {
+	text-indent: -9999px; float: left;
+}
+#main-content .top-area .content3 {
+	text-indent: -9999px; float: left;
+}
+#main-content .meddle-area .content4 {
+	text-indent: -9999px; float: left;
+}
+#main-content .meddle-area .content5 {
+	text-indent: -9999px; float: left;
+}
+#main-content .meddle-area .content6 {
+	text-indent: -9999px; float: left;
+}
+#main-content .top-area .content1 a {
+	background: url("../images/mainimg01.png") no-repeat 0px 0px; width: 347px; height: 295px; display: block;
+}
+#main-content .top-area .content1 a:hover {
+	background: url("../images/Mainimg01.gif?") no-repeat 0px 0px;
+}
+#main-content .top-area .content2 a {
+	background: url("../images/mainimg02.png") no-repeat 0px 0px; width: 426px; height: 295px; display: block;
+}
+#main-content .top-area .content2 a:hover {
+	background: url("../images/Mainimg02.gif?") no-repeat 0px 0px;
+}
+#main-content .top-area .content3 a {
+	background: url("../images/mainimg03.png") no-repeat 0px 0px; width: 387px; height: 295px; display: block;
+}
+#main-content .top-area .content3 a:hover {
+	background: url("../images/Mainimg03.gif?") no-repeat 0px 0px;
+}
+#main-content .meddle-area {
+	height: 305px;
+}
+#main-content .meddle-area .content4 {
+	background: url("../images/mainimg04.png") no-repeat 0px 0px; width: 347px; height: 305px;
+}
+#main-content .meddle-area .content5 a {
+	background: url("../images/mainimg05.png") no-repeat 0px 0px; width: 306px; height: 305px; display: block;
+}
+#main-content .meddle-area .content5 a:hover {
+	background: url("../images/Mainimg04.gif?") no-repeat 0px 0px;
+}
+#main-content .meddle-area .content6 {
+	background: url("../images/mainimg06.png") no-repeat 0px 0px; width: 507px; height: 305px;
+}
+#right-side {
+	width: 210px; height: 100%; float: right; position: relative;
+}
+.bettingtable01 {
+	width: 100%; table-layout: fixed;
+}
+.bettingtable01 th {
+	background: rgb(11, 119, 131); padding: 8px 0px 8px 8px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.bettingtable01 td {
+	background: rgb(11, 119, 131); padding: 1px; color: rgb(255, 255, 255); font-size: 12px;
+}
+.bettingtable01 .league {
+	letter-spacing: -1px; font-size: 11px; vertical-align: middle; white-space: nowrap;
+}
+.title-name01 {
+	background: rgb(11, 119, 131); padding: 4px 0px 2px 9px;
+}
+.title-name01 strong {
+	padding: 6px 0px 4px; color: rgb(255, 255, 0); font-size: 12px; vertical-align: top; display: inline-block;
+}
+.title-name01 img {
+	margin: 0px 4px;
+}
+.bettingtable01 .bt_stime {
+	text-align: center;
+}
+.bettingtable01 td .tleft-title01 {
+	
+}
+.bettingtable01 td .tleft-title02 {
+	color: rgb(255, 255, 255);
+}
+.bettingtable01 a.tleft-btn {
+	margin: 2px 2px 1px 1px; padding: 6px 3px 0px; border: 1px solid rgb(175, 175, 165); border-image: none; height: 18px; color: rgb(78, 78, 78); font-weight: bold; display: block;
+}
+.bettingtable01 a.tcenter-btn {
+	margin: 2px 2px 1px 1px; padding: 6px 3px 0px; border: 1px solid rgb(175, 175, 165); border-image: none; height: 18px; color: rgb(78, 78, 78); font-weight: bold; display: block;
+}
+.bettingtable01 a.tright-btn {
+	margin: 2px 2px 1px 1px; padding: 6px 3px 0px; border: 1px solid rgb(175, 175, 165); border-image: none; height: 18px; color: rgb(78, 78, 78); font-weight: bold; display: block;
+}
+.bettingtable01 .tleft-btn .point-r {
+	font-family: sans-serif; float: right;
+}
+.bettingtable01 .tright-btn .team-r {
+	font-family: sans-serif; float: right;
+}
+.bettingtable01 .tleft-btn .team-l {
+	font-family: sans-serif; float: left;
+}
+.bettingtable01 .tright-btn .point-l {
+	font-family: sans-serif; float: left;
+}
+.bettingtable01 a.btn-mouseenter {
+	border: 1px solid rgb(255, 255, 0); border-image: none; color: rgb(255, 255, 0) !important; cursor: pointer;
+}
+.bettingtable01 a.btn-mouseclick {
+	background: rgb(255, 255, 0); border: 1px solid rgb(114, 80, 0); border-image: none; color: rgb(72, 51, 0) !important; cursor: pointer;
+}
+.bettingtable01 a.tleft-btn02 {
+	background: linear-gradient(rgba(255, 186, 0, 1) 0%, rgba(255, 210, 0, 1) 100%); border: 1px solid rgb(255, 202, 0); border-image: none; color: rgb(34, 34, 34) !important; cursor: pointer;
+}
+.tleft-btn03 {
+	background: rgb(24, 129, 54); margin: 2px; padding: 4px 4px 0px; border: 1px solid rgb(17, 118, 45); border-image: none; height: 18px; color: rgb(255, 255, 255); font-weight: bold; display: block; position: relative; cursor: pointer;
+}
+.tleft-btn03:hover {
+	color: rgb(255, 255, 255);
+}
+.tleft-btn03.tleft-btn {
+	background: rgb(28, 117, 184);
+}
+.tleft-btn03.tcenter-btn {
+	background: rgb(24, 129, 54);
+}
+.tright-btn03.tright-btn {
+	background: rgb(211, 16, 15);
+}
+.tleft-btn03 .point-r {
+	right: 4px; position: absolute;
+}
+.tright-btn03 {
+	background: rgb(24, 129, 54); margin: 2px; padding: 4px 4px 0px; border: 1px solid rgb(17, 118, 45); border-image: none; height: 18px; color: rgb(255, 255, 255); font-weight: bold; display: block; position: relative; cursor: pointer;
+}
+.tright-btn03:hover {
+	color: rgb(255, 255, 255);
+}
+.tright-btn03 .team-r {
+	right: 4px; position: absolute;
+}
+.tright-btn04 {
+	background: rgb(25, 92, 130); margin: 2px; padding: 4px 4px 0px; border: 1px solid rgb(16, 82, 119); border-image: none; height: 18px; color: rgb(255, 255, 255); font-weight: bold; display: block; position: relative; cursor: pointer;
+}
+.tright-btn04:hover {
+	color: rgb(255, 255, 255);
+}
+.tright-btn04 .team-r {
+	right: 4px; position: absolute;
+}
+.betting-active a.tleft-btn {
+	color: rgb(255, 255, 255);
+}
+.betting-active a.tcenter-btn {
+	color: rgb(255, 255, 255);
+}
+.betting-active a.tright-btn {
+	color: rgb(255, 255, 255);
+}
+#cartbox {
+	height: 100%; float: right; position: relative;
+}
+#cartbox h2 {
+	background: rgb(20, 20, 20); padding: 0px; height: auto; display: block;
+}
+#sitelink-menu h2 {
+	background: rgb(20, 20, 20); padding: 0px; height: auto; display: block;
+}
+#sitelink-menu h2 {
+	background: rgb(20, 20, 20); padding: 8px 0px 0px 14px; height: 30px; border-top-color: rgb(153, 153, 153); border-top-width: 2px; border-top-style: solid;
+}
+.cart-content {
+	background: url("../images/cartbackground-top.png") no-repeat 0px 0px; margin: 0px 12px 12px; padding: 0px; width: 262px; height: 100%; position: relative;
+}
+.cart-content02 {
+	background: url("../images/cartbackground-bottom.png") no-repeat 0px bottom;
+}
+.cart-content ul {
+	margin: 0px 8px; padding: 4px 0px;
+}
+.cart-content ul li {
+	padding: 8px 22px 4px 8px; color: rgb(34, 34, 34); border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dotted; position: relative;
+}
+.cart-content ul li.last-line {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.cart-content ul li span {
+	top: 6px; right: 8px; position: absolute;
+}
+.cart-content ul li span.cartmoney {
+	top: 4px; right: 8px; position: absolute;
+}
+#cartbox .btn01 img {
+	width: 7px; height: 7px;
+}
+#cartbox .btn02 img {
+	width: 7px; height: 7px;
+}
+#cartbox .btn01 {
+	top: 12px; right: 14px; position: absolute;
+}
+#cartbox .btn02 {
+	top: 12px; right: 32px; position: absolute;
+}
+#cartbox #btnCart {
+	
+}
+#cartbox #btnBett {
+	
+}
+#cartbox #btnHalf {
+	
+}
+#cartbox #btnMax {
+	
+}
+#sitelink-menu {
+	margin: 0px 4px; font-size: 13px; font-weight: bold; border-bottom-color: rgb(68, 68, 68); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#sitelink-menu ul li {
+	display: block;
+}
+#sitelink-menu ul li a {
+	background: url("../images/sitelinkicon01.png") no-repeat 0px 0px; padding: 4px 0px 4px 14px; height: 14px; border-top-color: rgb(68, 68, 68); border-top-width: 1px; border-top-style: dotted; display: block;
+}
+#sitelink-menu ul li a:hover {
+	background: url("../images/sitelinkicon02.png") no-repeat 0px 0px; color: rgb(255, 255, 255);
+}
+.tabmenu01 {
+	top: 5px; right: 8px; position: absolute;
+}
+.tabmenu01 ul li {
+	line-height: 24px; padding-right: 4px; float: left;
+}
+.tabmenu01 ul li a {
+	
+}
+.tabmenu01 ul li a.selectmode {
+	
+}
+.tabmenu01 ul li a:hover {
+	
+}
+.search-button {
+	background: rgb(68, 68, 68); border: 1px solid rgb(34, 34, 34); border-image: none; color: rgb(238, 238, 238); cursor: pointer;
+}
+.search-button:hover {
+	background: rgb(238, 238, 238); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(255, 192, 0);
+}
+#listnumber01 {
+	background: rgb(11, 119, 131); margin: 10px auto; padding: 5px 8px 2px 12px; height: 24px; text-align: center;
+}
+#listnumber01 img {
+	padding-top: 4px; margin-right: 4px; cursor: pointer;
+}
+#listnumber01 img {
+	float: left;
+}
+#listnumber01 ul li {
+	float: left;
+}
+#listnumber01 ul li a {
+	padding: 4px; color: rgb(221, 221, 221); font-size: 12px; font-weight: bold; display: block; cursor: pointer;
+}
+#listnumber01 ul li a:hover {
+	color: rgb(255, 204, 0);
+}
+#speedpage {
+	margin: 0px auto;
+}
+.cashboard ul li {
+	margin: 8px 0px;
+}
+.cashboard ul li a img {
+	margin-right: 4px;
+}
+.num_style {
+	color: rgb(0, 0, 0);
+}
+#visual-content .visual-left {
+	margin: 0px; padding: 0px; width: 744px; height: 379px; float: left;
+}
+.warp_01 {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+.btn-bbs {
+	background: rgb(1, 1, 1); padding: 2px 4px; border: 1px solid rgb(75, 75, 75); border-image: none; color: rgb(176, 176, 176); font-family: dotum; font-size: 12px; font-weight: normal; vertical-align: middle; cursor: pointer;
+}
+#live-pattern-wrapper {
+	margin: 20px; overflow: auto;
+}
+#live-pattern-wrapper h1 {
+	color: rgb(255, 255, 255); position: absolute;
+}
+#live-pattern {
+	margin-top: 60px;
+}
+#live-pattern ul {
+	width: 32px; vertical-align: top; border-top-color: rgb(238, 238, 238); border-left-color: rgb(238, 238, 238); border-top-width: 1px; border-left-width: 1px; border-top-style: solid; border-left-style: solid; display: inline-block;
+}
+#live-pattern ul:last-child {
+	border-right-color: rgb(238, 238, 238); border-right-width: 1px; border-right-style: solid;
+}
+#live-pattern ul li {
+	width: 32px; height: 32px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid; display: inline-block;
+}
+#live-pattern ul li span {
+	margin: 2px 0px 0px 2px; border-radius: 28px; width: 28px; height: 28px; text-align: center; line-height: 28px; font-size: 12px; font-weight: bold; display: inline-block;
+}
+#live-pattern ul li.w span {
+	background: linear-gradient(rgb(255, 255, 255) 0%, rgb(241, 241, 241) 50%, rgb(225, 225, 225) 51%, rgb(246, 246, 246) 100%); color: rgb(0, 0, 0);
+}
+#live-pattern ul li.b span {
+	background: linear-gradient(rgb(174, 188, 191) 0%, rgb(110, 119, 116) 50%, rgb(10, 14, 10) 51%, rgb(10, 8, 9) 100%); color: rgb(255, 255, 255);
+}
+#live-pattern ul li.s span {
+	background: linear-gradient(rgb(174, 188, 191) 0%, rgb(110, 119, 116) 50%, rgb(10, 14, 10) 51%, rgb(10, 8, 9) 100%); color: rgb(255, 255, 255);
+}
+#live-pattern ul li.r span {
+	background: linear-gradient(rgb(248, 80, 50) 0%, rgb(241, 111, 92) 50%, rgb(246, 41, 12) 51%, rgb(240, 47, 23) 71%, rgb(231, 56, 39) 100%); color: rgb(255, 255, 255);
+}
+#live-pattern ul li.p span {
+	background: linear-gradient(rgb(248, 80, 50) 0%, rgb(241, 111, 92) 50%, rgb(246, 41, 12) 51%, rgb(240, 47, 23) 71%, rgb(231, 56, 39) 100%); color: rgb(255, 255, 255);
+}
+#live-pattern ul li.h span {
+	background: linear-gradient(rgb(248, 80, 50) 0%, rgb(241, 111, 92) 50%, rgb(246, 41, 12) 51%, rgb(240, 47, 23) 71%, rgb(231, 56, 39) 100%); color: rgb(255, 255, 255);
+}

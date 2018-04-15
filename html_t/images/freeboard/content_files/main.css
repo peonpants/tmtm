@@ -1,0 +1,36 @@
+.notice {
+	width: 585px; margin-right: 5px; float: left;
+}
+.notice h3 {
+	padding: 8px; color: rgb(245, 245, 245); font-family: nanumgothic,"nanumgothic"; font-size: 18px; font-weight: 600; text-shadow: 0px 0px 3px rgba(0,0,0,0.47); background-color: black;
+}
+.notice h3 em {
+	padding-top: 10px; font-size: 10px; font-style: normal; float: right;
+}
+.notice li {
+	background-position: 10px 50%; height: 35px; color: white; line-height: 35px; padding-left: 35px; font-family: "GulimChe",sans-serif; margin-top: 3px; background-image: url("../images/bullet_notice.png"); background-repeat: no-repeat; background-color: rgba(0, 0, 0, 1);
+}
+.notice li span {
+	color: rgb(231, 225, 206) !important; font-weight: normal !important; margin-right: 5px; float: right;
+}
+.notice li a {
+	
+}
+.notice li.point {
+	color: rgb(255, 203, 42); font-weight: bold; background-image: url("../images/bullet_notice_point.png");
+}
+.event li {
+	background-image: url("../images/bullet_free.png");
+}
+.event li.point {
+	background-image: url("../images/bullet_free_point.png");
+}
+.free {
+	margin-right: 0px;
+}
+.free li {
+	background-image: url("../images/bullet_free.png");
+}
+.free li.point {
+	background-image: url("../images/bullet_free_point.png");
+}

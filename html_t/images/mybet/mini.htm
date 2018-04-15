@@ -1,0 +1,2580 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0046)http://mvp-t5.com/game/mini.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ <TITLE>HARTZ</TITLE> 
+<META http-equiv="Imagetoolbar" content="No"> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> <LINK href="mini_files/main.css" 
+rel="stylesheet" type="text/css"> <LINK href="/image/icon.ico" rel="icon" type="image/x-icon"> 
+<SCRIPT src="mini_files/jquery-1.4.2.js"></SCRIPT>
+ 
+<SCRIPT src="mini_files/flash.js"></SCRIPT>
+ 
+<SCRIPT src="mini_files/flashobj.js"></SCRIPT>
+ 
+<SCRIPT src="mini_files/header.js"></SCRIPT>
+ 
+<SCRIPT language="JavaScript">
+function msgToFocus(msg,form)	{
+	alert(msg);
+	if ( form ) form.focus();
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function noticePopUp(str) {
+	var d = document.getElementById('noticeLay');
+	d.style.display = 'block';
+	d.style.left = event.clientX + document.body.scrollLeft - 210+"px";
+	d.style.top = event.clientY + document.body.scrollTop - 70+"px";
+	document.getElementById('notice_contents').innerHTML = str;
+}
+var submitChargeFlag = 0;
+function chargePoint() { 
+	if ( submitChargeFlag == 1 ) {
+		alert("처리 중입니다. 잠시만 기다려주세요.");
+		return false;
+	}
+	if ( !confirm("정말 포인트 전환 신청을 하시겠습니까?") )	{
+		return false;
+	}
+	//document.getElementById("if_proc").src = "/charge/point.php";
+	document.procForm.action='/charge/point.php';
+	submitChargeFlag = 1;
+	document.procForm.submit();
+}
+
+var cookie_gameData = "";
+function saveCookie(data) {
+	document.cookie = "totoGameSelect=" + escape(data) + ";";
+}
+function pageReplace() {
+	//-> 쿠키삭제
+	var cdb = document.getElementsByName('cart_del_btn');
+	var cdbCnt = cdb.length-1;
+	for(var i=cdbCnt;i>=0;i--){
+		cdb[i].click();
+	}
+	/*
+	saveCookie('');
+	window.location.reload();
+	*/
+}
+function logout() {
+	document.getElementById("if_proc").src = "/loginout/logout.php";
+}
+
+
+
+function setPng24(obj) {
+obj.width=obj.height=1;
+obj.className=obj.className.replace(/\bpng24\b/i,'');
+obj.style.filter =
+"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');"
+obj.src=''; 
+return '';
+}
+
+function xgo(url) {
+	location.replace(url);
+}
+
+function stop(){
+<!--return false; -->
+}
+document.oncontextmenu=stop;
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+function live(){
+	window.open('/live.html','','toolbar=no,location=no,directories=no,menubar=no,scrollbars=no,resizable=no,width=960,height=740');
+}
+
+function checkCharge(mb_id, mode){
+	$.ajax({
+		type: "POST",
+		url: "/include/checkCharge.php",
+		data: "mode="+mode+"&mem_id="+mb_id,
+		dataType: 'json',
+		success: function (res) {
+			
+			if(res.status == 'ok'){
+				if(mode == 'in'){
+					if(confirm("입금이 확인되어 머니충전이 완료되었습니다. 페이지를 새로고침 하시겠습니까??")){
+						document.location.reload();
+					};
+				}
+				if(mode == 'out'){
+					if(confirm("신청하신 환전이 완료되었습니다. 환전 입금 확인 하시기 바랍니다.")){
+						document.location.reload();
+					};
+				}
+				if(mode == 'qna'){
+					if(confirm("작성하신 1:1문의에 답변이 완료되었습니다. 1:1문의 게시판으로 이동하시겠습니까?")){
+						location.href="/board/as_list.html";
+					};
+				}
+			}else{
+				setTimeout(function(){checkCharge(mb_id, mode);},3000);
+			}
+		}
+	});
+}
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18377"></HEAD> 
+<BODY>
+<DIV style="display: none;"><IFRAME name="if_proc" width="0" height="0" id="if_proc" 
+src="about:blank"></IFRAME> </DIV>
+<FORM name="procForm" style="margin: 0px;" method="post" 
+target="if_proc"></FORM><!-- 미니 게임 공지 레이어 --> 
+<DIV id="noticeLay" style="display: none; position: absolute; z-index: 1;">
+<TABLE class="noticeTb">
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width="180" height="100" border="0" cellspacing="2" 
+cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD height="20" align="center" class="a1"><B>경기 공지 사항</B></TD></TR>
+        <TR>
+          <TD class="a1"><SPAN id="notice_contents"></SPAN></TD></TR>
+        <TR>
+          <TD height="30" align="center" class="a1"><B><A style="cursor: pointer;" 
+            onclick="document.getElementById('noticeLay').style.display = 'none';">닫기</A></B></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><!-- 미니 게임 공지 레이어 끝 -->
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0"> 
+  <TBODY>
+  <TR>
+    <TD align="center">
+      <TABLE width="100%" style="background: rgb(13, 13, 13);" border="0" 
+      cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE width="1200" align="center" border="0" cellspacing="0" 
+            cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD align="center"><A href="http://mvp-t5.com/main.html"><IMG 
+                  src="mini_files/logo_link.png"></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <TABLE width="100%" style='background: url("/image/menu_bg.png") repeat-x;' 
+      border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE width="1200" align="center" border="0" cellspacing="0" 
+            cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD><A 
+                  href="http://mvp-t5.com/game/sports.html?g_type=all"><IMG 
+                  onmouseover="this.src='/image/menu_01_on.png?'" onmouseout="this.src='/image/menu_01.png?'" 
+                  src="mini_files/menu_01.png"></A></TD>
+                <TD><A href="http://mvp-t5.com/game/sports.html?g_type=s"><IMG 
+                  onmouseover="this.src='/image/menu_02_on.png?'" onmouseout="this.src='/image/menu_02.png?'" 
+                  src="mini_files/menu_02.png"></A></TD>
+                <TD><A 
+                  href="http://mvp-t5.com/game/sports.html?g_type=live"><IMG 
+                  onmouseover="this.src='/image/menu_03_on.png?'" onmouseout="this.src='/image/menu_03.png?'" 
+                  src="mini_files/menu_03.png"></A></TD>
+                <TD><A 
+                  href="http://mvp-t5.com/game/mini.html?g_type=ladder"><IMG 
+                  onmouseover="this.src='/image/menu_04_on.png?'" onmouseout="this.src='/image/menu_04.png?'" 
+                  src="mini_files/menu_04.png"></A></TD>
+                <TD><A href="http://mvp-t5.com/game/end_games.html"><IMG 
+                  onmouseover="this.src='/image/menu_05_on.png?'" onmouseout="this.src='/image/menu_05.png?'" 
+                  src="mini_files/menu_05.png"></A></TD>
+                <TD><A href="http://mvp-t5.com/mypage/bet_info.html"><IMG 
+                  onmouseover="this.src='/image/menu_06_on.png?'" onmouseout="this.src='/image/menu_06.png?'" 
+                  src="mini_files/menu_06.png"></A></TD>
+                <TD><A href="http://mvp-t5.com/video.html"><IMG onmouseover="this.src='/image/menu_07_on.png?'" 
+                  onmouseout="this.src='/image/menu_07.png?'" src="mini_files/menu_07.png"></A></TD>
+                <TD><A href="http://mvp-t5.com/board/free_list.html"><IMG 
+                  onmouseover="this.src='/image/menu_08_on.png?'" onmouseout="this.src='/image/menu_08.png?'" 
+                  src="mini_files/menu_08.png"></A></TD>
+                <TD><A href="http://mvp-t5.com/board/as_list.html"><IMG 
+                  onmouseover="this.src='/image/menu_09_on.png?'" onmouseout="this.src='/image/menu_09.png?'" 
+                  src="mini_files/menu_09.png"></A></TD>
+                <TD><A href="http://mvp-t5.com/payment/bank_in.html"><IMG 
+                  onmouseover="this.src='/image/menu_10_on.png?'" onmouseout="this.src='/image/menu_10.png?'" 
+                  src="mini_files/menu_10.png"></A></TD>
+                <TD><A href="http://mvp-t5.com/payment/bank_out.html"><IMG 
+                  onmouseover="this.src='/image/menu_11_on.png?'" onmouseout="this.src='/image/menu_11.png?'" 
+                  src="mini_files/menu_11.png"></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <TABLE width="100%" style='background: url("/image/topmenu_bg.png") repeat-x top;' 
+      border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD></TD></TR></TBODY></TABLE>
+      <TABLE width="1200" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD align="center">
+            <TABLE width="1200" height="26" align="center" style='background: url("/image/notice_bg.png") no-repeat;' 
+            border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD height="27" 
+                  style="padding-top: 12px; padding-left: 90px;"><DIV id="demo" 
+                  style="width: 1020px; height: 26px; overflow: hidden;">
+                  <TABLE border="0" cellpadding="0" valign="center" cellspace="0">
+                    <TBODY>
+                    <TR>
+                      <TD id="demo1">
+                        <DIV style="height: 36px; overflow: hidden; white-space: nowrap;"><SPAN 
+                        style="color: rgb(255, 204, 0); font-size: 12px;"><B><FONT 
+                        color="#0696f0">※ 7月 지인추천 이벤트,  파워볼 . 알라딘 사다리 돌발 홀/짝 2배당 
+                        이벤트, 스포츠 All 미당첨 이벤트 게시판 확인해주세요. 
+                        ※&nbsp;&nbsp;&nbsp;&nbsp;<B><FONT color="#41a541">※ 개인정보 
+                        변경시 고객센터로 문의주시기바랍니다.※&nbsp;&nbsp;&nbsp;&nbsp;<B><FONT 
+                        color="#e16a9d">※ 접속 도메인 분실시 www.하츠주소.com 에서 확인 하세요.   
+                        ※&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></B></FONT></B></FONT></B></SPAN></DIV></TD>
+                      <TD 
+            id="demo2"></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE>
+<SCRIPT>
+        var speed=30
+        var MyMar=setInterval(Marquee,speed)
+        demo2.innerHTML=demo1.innerHTML
+        demo.onmouseover=function() {clearInterval(MyMar)}
+        demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+        function Marquee(){
+			if(demo2.offsetWidth-demo.scrollLeft<=0)
+			   demo.scrollLeft-=demo1.offsetWidth
+			else{
+			   demo.scrollLeft++
+			}
+        }
+        </SCRIPT>
+          </TD></TR>
+        <TR>
+          <TD align="center" valign="top">
+<SCRIPT language="javascript">
+function onColor(type,target)	{
+	if ( type == "on" ) {
+		if(target.search('non')>0){
+			$("#"+target).addClass("MouseOn");
+		}else{
+			$("#"+target).addClass("MouseOn");
+		}
+	} else if ( type == "off" ) {
+		if(target.search('non')>0){
+			$("#"+target).removeClass("MouseOn");
+		}else{
+			$("#"+target).removeClass("MouseOn");
+		}
+	}
+}
+</SCRIPT>
+             ?&gt; 
+            <FORM name="betForm" action="/game/betting.php" method="post" 
+            target="if_proc"><INPUT name="bet_uk_code" type="hidden" value="301544189"> 
+<INPUT name="g_type" id="g_type" type="hidden" value="ladder"> 
+<INPUT name="betMatch" id="betMatch" type="hidden"> <INPUT name="gameType" id="gameType" type="hidden"> 
+<INPUT name="ladder_pass" id="ladder_pass" type="hidden"> 
+<INPUT name="_totalBeDangPer" id="_totalBeDangPer" type="hidden" value="0"> 
+            <TABLE width="100%" align="center" id="wrap" border="0" cellspacing="0" 
+            cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD align="left" valign="top">
+                  <TABLE width="100%" border="0" cellspacing="0" 
+cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD align="left" style="padding-top: 25px;"><IMG src="mini_files/title_ladder.png"></TD></TR>
+                    <TR>
+                      <TD class="titstyle">
+                        <TABLE width="100%" class="guide" border="0" 
+                        cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD height="198" style="position: relative;">
+                              <DIV style="left: 0px; top: 0px; position: absolute;">
+                              <TABLE width="100%" border="0" cellspacing="0" 
+                              cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD height="180" align="center" valign="top">
+                                <TABLE width="100%" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD align="center"><A href="http://mvp-t5.com/game/mini.html?sportSeq=&amp;g_type=ladder"><IMG 
+                                width="154" onmouseover="this.src='/image/mini_menu_on_01.png'" 
+                                onmouseout="this.src='/image/mini_menu_on_01.png'" 
+                                src="mini_files/mini_menu_on_01.png"></A></TD>
+                                <TD align="center"><A href="http://mvp-t5.com/game/mini.html?sportSeq=&amp;g_type=dari"><IMG 
+                                width="154" onmouseover="this.src='/image/mini_menu_on_06.png'" 
+                                onmouseout="this.src='/image/mini_menu_06.png'" 
+                                src="mini_files/mini_menu_06.png"></A></TD>
+                                <TD align="center"><A href="http://mvp-t5.com/game/mini.html?sportSeq=&amp;g_type=snail"><IMG 
+                                width="154" onmouseover="this.src='/image/mini_menu_on_02.png'" 
+                                onmouseout="this.src='/image/mini_menu_02.png'" 
+                                src="mini_files/mini_menu_02.png"></A></TD>
+                                <TD align="center"><A href="http://mvp-t5.com/game/mini.html?sportSeq=&amp;g_type=power"><IMG 
+                                width="154" onmouseover="this.src='/image/mini_menu_on_03.png'" 
+                                onmouseout="this.src='/image/mini_menu_03.png'" 
+                                src="mini_files/mini_menu_03.png"></A></TD>
+                                <TD align="center"><A href="http://mvp-t5.com/game/mini.html?sportSeq=&amp;g_type=lowhigh"><IMG 
+                                width="154" onmouseover="this.src='/image/mini_menu_on_04.png'" 
+                                onmouseout="this.src='/image/mini_menu_04.png'" 
+                                src="mini_files/mini_menu_04.png"></A></TD>
+                                <TD align="center"><A href="http://mvp-t5.com/game/mini.html?sportSeq=&amp;g_type=aladin"><IMG 
+                                width="154" onmouseover="this.src='/image/mini_menu_on_05.png'" 
+                                onmouseout="this.src='/image/mini_menu_05.png'" 
+                                src="mini_files/mini_menu_05.png"></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR>
+                          <TR>
+                            <TD align="left" class="content" valign="top">
+                              <TABLE width="100%" border="0" cellspacing="0" 
+                              cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD align="center"><IFRAME name="namedFrame" 
+                                width="840" height="630" src="mini_files/named.htm" 
+                                frameborder="no" marginheight="0" 
+                                scrolling="no"></IFRAME>                         
+                                </TD></TR>
+                                <TR>
+                                <TD height="20"></TD></TR></TBODY></TABLE>
+<SCRIPT>
+function togglePatten(){
+	if ($(".pattenList").height() == 0)
+	{
+		$(".pattenList .historyArea").scrollLeft(99999);
+		$(".pattenList").animate({
+			"height" : $('.round').height()+30
+		},
+		function ()
+		{
+			$(".pattenTitle").html('패턴 닫기▲');
+		});
+	}
+	else
+	{
+		$(".pattenList").animate({
+			"height" : "0px"
+		},
+		function ()
+		{
+			$(".pattenTitle").html('패턴 열기▼');
+		});
+	};
+}
+</SCRIPT>
+                               
+<STYLE>/****LIVEGAME***/
+.pattenArea {
+	width:932px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+.pattenTitle {
+	width:932px;
+	height:30px;
+	line-height:30px;
+	background:url("/image/popBackground.png");
+	color:#f3e024;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+}
+.pattenList {
+	width:932px;
+	background:#242424;
+	overflow:hidden;
+	height:0px;
+}
+.historyArea {
+	width:98%;
+	padding-bottom:5px;
+	padding-top:5px;
+	margin:0 1%;
+	overflow-x:scroll;
+	float:left;
+	box-sizing:border-box;
+}
+.historyArea ul,.historyArea li{padding:0px;}
+.historyArea .round {
+	width:29px;
+	background:#111;
+	border-right:1px solid #333;
+	height:165px;
+	float:left;
+	overflow:hidden;
+}
+.historyArea .round .roundTitle {
+	text-align:center;
+	padding:10px 0;
+	border-bottom:1px solid #333;
+	background:#111;
+}
+.historyArea .round .hisDataArea {
+	overflow:hidden;
+}
+.historyArea .round .hisDataArea .hisData {
+	font-size:10px;
+	text-align:center;
+}
+.historyArea .round .hisDataArea .hisData li {
+	text-align:center;
+	width:20px;
+	height:17px;
+	padding-top:3px;
+	margin:5px auto;
+	color:#fff;
+}
+.historyArea .round .hisDataArea .hisData li.odd {
+	background:url("/image/ball.png") -22px 0;
+}
+.historyArea .round .hisDataArea .hisData li.even {
+	background:url("/image/ball.png") 0 0;
+}
+.historyArea .round .hisDataArea .hisData li.ne {
+	background:url("/image/snail_balls.png") 0px 0;
+}
+.historyArea .round .hisDataArea .hisData li.im {
+	background:url("/image/snail_balls.png") -22px 0;
+}
+.historyArea .round .hisDataArea .hisData li.de {
+	background:url("/image/snail_balls.png") -43px 0;
+}
+</STYLE>
+                                 
+                              <DIV class="pattenTitle" 
+                              onclick="togglePatten();">패턴 열기▼ </DIV>
+                              <DIV class="pattenList">
+                              <DIV class="historyArea" data-oddeven="" 
+                              data-round="">
+                              <UL class="historyUl" style="width: 4185px;">
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">236</LI>
+                                <LI class="even">237</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">238</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">239</LI>
+                                <LI class="even">240</LI>
+                                <LI class="even">241</LI>
+                                <LI class="even">242</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">243</LI>
+                                <LI class="odd">244</LI>
+                                <LI class="odd">245</LI>
+                                <LI class="odd">246</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">247</LI>
+                                <LI class="even">248</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">249</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">250</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">251</LI>
+                                <LI class="odd">252</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">253</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">254</LI>
+                                <LI class="odd">255</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">256</LI>
+                                <LI class="even">257</LI>
+                                <LI class="even">258</LI>
+                                <LI class="even">259</LI>
+                                <LI class="even">260</LI>
+                                <LI class="even">261</LI>
+                                <LI class="even">262</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">263</LI>
+                                <LI class="odd">264</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">265</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">266</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">267</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">268</LI>
+                                <LI class="odd">269</LI>
+                                <LI class="odd">270</LI>
+                                <LI class="odd">271</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">272</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">273</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">274</LI>
+                                <LI class="even">275</LI>
+                                <LI class="even">276</LI>
+                                <LI class="even">277</LI>
+                                <LI class="even">278</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">279</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">280</LI>
+                                <LI class="even">281</LI>
+                                <LI class="even">282</LI>
+                                <LI class="even">283</LI>
+                                <LI class="even">284</LI>
+                                <LI class="even">285</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">286</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">287</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">288</LI>
+                                <LI class="odd">1</LI>
+                                <LI class="odd">2</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">3</LI>
+                                <LI class="even">4</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">5</LI>
+                                <LI class="odd">6</LI>
+                                <LI class="odd">7</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">8</LI>
+                                <LI class="even">9</LI>
+                                <LI class="even">10</LI>
+                                <LI class="even">11</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">12</LI>
+                                <LI class="odd">13</LI>
+                                <LI class="odd">14</LI>
+                                <LI class="odd">15</LI>
+                                <LI class="odd">16</LI>
+                                <LI class="odd">17</LI>
+                                <LI class="odd">18</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">19</LI>
+                                <LI class="even">20</LI>
+                                <LI class="even">21</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">22</LI>
+                                <LI class="odd">23</LI>
+                                <LI class="odd">24</LI>
+                                <LI class="odd">25</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">26</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">27</LI>
+                                <LI class="odd">28</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">29</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">30</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">31</LI>
+                                <LI class="even">32</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">33</LI>
+                                <LI class="odd">34</LI>
+                                <LI class="odd">35</LI>
+                                <LI class="odd">36</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">37</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">38</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">39</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">40</LI>
+                                <LI class="odd">41</LI>
+                                <LI class="odd">42</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">43</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">44</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">45</LI>
+                                <LI class="even">46</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">47</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">48</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">49</LI>
+                                <LI class="odd">50</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">51</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">52</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">53</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">54</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">55</LI>
+                                <LI class="even">56</LI>
+                                <LI class="even">57</LI>
+                                <LI class="even">58</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">59</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">60</LI>
+                                <LI class="even">61</LI>
+                                <LI class="even">62</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">63</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">64</LI>
+                                <LI class="even">65</LI>
+                                <LI class="even">66</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">67</LI>
+                                <LI class="odd">68</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">69</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">70</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">71</LI>
+                                <LI class="even">72</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">73</LI>
+                                <LI class="odd">74</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">75</LI>
+                                <LI class="even">76</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">77</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">78</LI>
+                                <LI class="even">79</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">80</LI>
+                                <LI class="odd">81</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">82</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">83</LI>
+                                <LI class="odd">84</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">85</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">86</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">87</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">88</LI>
+                                <LI class="odd">89</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">90</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">91</LI>
+                                <LI class="odd">92</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">93</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">94</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">95</LI>
+                                <LI class="even">96</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">97</LI>
+                                <LI class="odd">98</LI>
+                                <LI class="odd">99</LI>
+                                <LI class="odd">100</LI>
+                                <LI class="odd">101</LI>
+                                <LI class="odd">102</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">103</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">104</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">105</LI>
+                                <LI class="even">106</LI>
+                                <LI class="even">107</LI>
+                                <LI class="even">108</LI>
+                                <LI class="even">109</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">110</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">111</LI>
+                                <LI class="even">112</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">113</LI>
+                                <LI class="odd">114</LI>
+                                <LI class="odd">115</LI>
+                                <LI class="odd">116</LI>
+                                <LI class="odd">117</LI>
+                                <LI class="odd">118</LI>
+                                <LI class="odd">119</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">120</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">121</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">122</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">123</LI>
+                                <LI class="odd">124</LI>
+                                <LI class="odd">125</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">126</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">127</LI>
+                                <LI class="odd">128</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">129</LI>
+                                <LI class="even">130</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">131</LI>
+                                <LI class="odd">132</LI>
+                                <LI class="odd">133</LI>
+                                <LI class="odd">134</LI>
+                                <LI class="odd">135</LI>
+                                <LI class="odd">136</LI>
+                                <LI class="odd">137</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">138</LI>
+                                <LI class="even">139</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">140</LI>
+                                <LI class="odd">141</LI>
+                                <LI class="odd">142</LI>
+                                <LI class="odd">143</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">144</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">145</LI>
+                                <LI class="odd">146</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">147</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">148</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">149</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">150</LI>
+                                <LI class="odd">151</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">152</LI>
+                                <LI class="even">153</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">154</LI>
+                                <LI class="odd">155</LI>
+                                <LI class="odd">156</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">157</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">158</LI>
+                                <LI class="odd">159</LI>
+                                <LI class="odd">160</LI>
+                                <LI class="odd">161</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">162</LI>
+                                <LI class="even">163</LI>
+                                <LI class="even">164</LI>
+                                <LI class="even">165</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">166</LI>
+                                <LI class="odd">167</LI>
+                                <LI class="odd">168</LI>
+                                <LI class="odd">169</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">170</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">171</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">172</LI>
+                                <LI class="even">173</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">174</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">175</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">176</LI>
+                                <LI class="odd">177</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">178</LI>
+                                <LI class="even">179</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">180</LI>
+                                <LI class="odd">181</LI>
+                                <LI class="odd">182</LI>
+                                <LI class="odd">183</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">184</LI>
+                                <LI class="even">185</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">186</LI>
+                                <LI class="odd">187</LI>
+                                <LI class="odd">188</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">189</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">190</LI>
+                                <LI class="odd">191</LI>
+                                <LI class="odd">192</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">193</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">194</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">195</LI>
+                                <LI class="even">196</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">197</LI>
+                                <LI class="odd">198</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">199</LI>
+                                <LI class="even">200</LI>
+                                <LI class="even">201</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">202</LI>
+                                <LI class="odd">203</LI>
+                                <LI class="odd">204</LI>
+                                <LI class="odd">205</LI>
+                                <LI class="odd">206</LI>
+                                <LI class="odd">207</LI>
+                                <LI class="odd">208</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">209</LI>
+                                <LI class="even">210</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">211</LI>
+                                <LI class="odd">212</LI>
+                                <LI class="odd">213</LI>
+                                <LI class="odd">214</LI>
+                                <LI class="odd">215</LI>
+                                <LI class="odd">216</LI>
+                                <LI class="odd">217</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">218</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">219</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">220</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">221</LI>
+                                <LI class="odd">222</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">223</LI>
+                                <LI class="even">224</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">225</LI>
+                                <LI class="odd">226</LI>
+                                <LI class="odd">227</LI>
+                                <LI class="odd">228</LI>
+                                <LI class="odd">229</LI>
+                                <LI class="odd">230</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="even">231</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#106de1">홀</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI class="odd">232</LI>
+                                <LI class="odd">233</LI>
+                                <LI class="odd">234</LI></UL></DIV></LI>
+                                <LI class="round">
+                                <DIV class="roundTitle"><FONT 
+                                color="#e42828">짝</FONT></DIV>
+                                <DIV class="hisDataArea">
+                                <UL class="hisData">
+                                <LI 
+                              class="even">235</LI></UL></DIV></LI></UL></DIV></DIV>
+                              <TABLE width="940" class="mini_list" border="0" 
+                              cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TH>홀짝 경기</TH>
+                                <TH>출발점&amp;줄갯수 경기</TH>
+                                <TH>조합배팅 경기</TH>
+                                <TH>3게임 경기</TH>
+                                <TH>연타게임 경기</TH></TR>
+                                <TR><INPUT name="3757638_win_b" id="3757638_win_b" type="hidden" value="1.98">
+                                		 <INPUT name="3757638_non_b" id="3757638_non_b" type="hidden" value="vs">
+                                		 <INPUT name="3757638_lose_b" id="3757638_lose_b" type="hidden" value="1.98">
+                                		 
+                                <TD>
+                                <TABLE width="155" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="75" height="132" align="center" 
+                                class="homeTeamLadder1" id="3757638_win" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757638_win');" 
+                                onmouseout="onColor('off','3757638_win')" 
+                                onclick="cartBarIn('winlose','3757638_win','236 회차 사다리 ','236 회차 사다리 ','1.98','236회차 [홀]')">
+                                <DIV class="info1 info1 downStr"></DIV>
+                                <DIV 
+                                class="ratio1"><STRONG>1.98</STRONG></DIV></TD>
+                                <TD width="5" class="nonTeam" 
+                                id="3757638_non">&nbsp;</TD>
+                                <TD width="75" align="center" class="awayTeamLadder1" 
+                                id="3757638_lose" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757638_lose');" 
+                                onmouseout="onColor('off','3757638_lose')" 
+                                onclick="cartBarIn('winlose','3757638_lose','236 회차 사다리 ','236 회차 사다리 ','1.98','236회차 [짝]')">
+                                <DIV class="info1 info1 upStr"></DIV>
+                                <DIV 
+                                class="ratio1"><STRONG>1.98</STRONG></DIV></TD></TR></TBODY></TABLE></TD><INPUT name="3757639_win_b" id="3757639_win_b" type="hidden" value="1.92">
+                                		 <INPUT name="3757639_non_b" id="3757639_non_b" type="hidden" value="vs">
+                                		 <INPUT name="3757639_lose_b" id="3757639_lose_b" type="hidden" value="1.92">
+                                		 
+                                <TD>
+                                <TABLE width="155" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="75" height="63" align="center" class="homeTeamLadder2" 
+                                id="3757639_win" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757639_win');" 
+                                onmouseout="onColor('off','3757639_win')" 
+                                onclick="cartBarIn('winlose','3757639_win','236 회차 [출발점','236 회차 [출발점','1.92','236회차 [좌]')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>1.92</STRONG></DIV></TD>
+                                <TD width="5" class="nonTeam" 
+                                id="3757639_non">&nbsp;</TD>
+                                <TD width="75" align="center" class="awayTeamLadder2" 
+                                id="3757639_lose" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757639_lose');" 
+                                onmouseout="onColor('off','3757639_lose')" 
+                                onclick="cartBarIn('winlose','3757639_lose','236 회차 [출발점','236 회차 [출발점','1.92','236회차 [우]')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>1.92</STRONG></DIV></TD></TR></TBODY></TABLE>
+                                <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD 
+height="7"></TD></TR></TBODY></TABLE><INPUT name="3757640_win_b" id="3757640_win_b" type="hidden" value="1.92">
+                                		 <INPUT name="3757640_non_b" id="3757640_non_b" type="hidden" value="vs">
+                                		 <INPUT name="3757640_lose_b" id="3757640_lose_b" type="hidden" value="1.92">
+                                		 
+                                <TABLE width="155" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="75" height="63" align="center" class="homeTeamLadder3" 
+                                id="3757640_win" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757640_win');" 
+                                onmouseout="onColor('off','3757640_win')" 
+                                onclick="cartBarIn('winlose','3757640_win','236 회차 [줄][','236 회차 [줄][','1.92','236회차 [3줄]')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>1.92</STRONG></DIV></TD>
+                                <TD width="5" class="nonTeam" 
+                                id="3757640_non">&nbsp;</TD>
+                                <TD width="75" align="center" class="awayTeamLadder3" 
+                                id="3757640_lose" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757640_lose');" 
+                                onmouseout="onColor('off','3757640_lose')" 
+                                onclick="cartBarIn('winlose','3757640_lose','236 회차 [줄][','236 회차 [줄][','1.92','236회차 [4줄]')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>1.92</STRONG></DIV></TD></TR></TBODY></TABLE></TD><INPUT name="3757642_win_b" id="3757642_win_b" type="hidden" value="3.60">
+                                		 <INPUT name="3757642_non_b" id="3757642_non_b" type="hidden" value="1.85">
+                                		 <INPUT name="3757642_lose_b" id="3757642_lose_b" type="hidden" value="3.60">
+                                		 
+                                <TD>
+                                <TABLE align="center" border="0" cellspacing="0" 
+                                cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD align="center">
+                                <TABLE width="155" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="75" height="63" align="center" class="homeTeamLadder4" 
+                                id="3757642_win" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757642_win');" 
+                                onmouseout="onColor('off','3757642_win')" 
+                                onclick="cartBarIn('winlose','3757642_win','236 회차 [좌 +','236 회차 [우 +','3.60','236회차 좌3')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>3.60</STRONG></DIV></TD>
+                                <TD width="5" class="nonTeam" id="3757642_non" 
+                                style="cursor: pointer;" onmouseover="onColor('on','3757642_non');" 
+                                onmouseout="onColor('off','3757642_non')" 
+                                onclick="cartBarIn('winlose','3757642_non','236 회차 [좌 +','236 회차 [우 +','1.85','236회차 ')"></TD>
+                                <TD width="75" align="center" class="awayTeamLadder4" 
+                                id="3757642_lose" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757642_lose');" 
+                                onmouseout="onColor('off','3757642_lose')" 
+                                onclick="cartBarIn('winlose','3757642_lose','236 회차 [좌 +','236 회차 [우 +','3.60','236회차 우3')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>3.60</STRONG></DIV></TD></TR></TBODY></TABLE></TD></TR>
+                                <TR>
+                                <TD height="7"></TD></TR>
+                                <TR>
+                                <TD height="42" align="center"><INPUT name="3757643_win_b" id="3757643_win_b" type="hidden" value="3.60">
+                                		 <INPUT name="3757643_non_b" id="3757643_non_b" type="hidden" value="1.85">
+                                		 <INPUT name="3757643_lose_b" id="3757643_lose_b" type="hidden" value="3.60">
+                                		 
+                                <TABLE width="155" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="75" height="63" align="center" class="homeTeamLadder5" 
+                                id="3757643_win" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757643_win');" 
+                                onmouseout="onColor('off','3757643_win')" 
+                                onclick="cartBarIn('winlose','3757643_win','236 회차 [좌 +','236 회차 [우 +','3.60','236회차 좌4')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>3.60</STRONG></DIV></TD>
+                                <TD width="5" class="nonTeam" id="3757643_non" 
+                                style="cursor: pointer;" onmouseover="onColor('on','3757643_non');" 
+                                onmouseout="onColor('off','3757643_non')" 
+                                onclick="cartBarIn('winlose','3757643_non','236 회차 [좌 +','236 회차 [우 +','1.85','236회차 ')"></TD>
+                                <TD width="75" align="center" class="awayTeamLadder5" 
+                                id="3757643_lose" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757643_lose');" 
+                                onmouseout="onColor('off','3757643_lose')" 
+                                onclick="cartBarIn('winlose','3757643_lose','236 회차 [좌 +','236 회차 [우 +','3.60','236회차 우4')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>3.60</STRONG></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><INPUT name="3757644_win_b" id="3757644_win_b" type="hidden" value="1.95">
+                                		 <INPUT name="3757644_non_b" id="3757644_non_b" type="hidden" value="vs">
+                                		 <INPUT name="3757644_lose_b" id="3757644_lose_b" type="hidden" value="1.95">
+                                		 
+                                <TD>
+                                <TABLE align="center" border="0" cellspacing="0" 
+                                cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD align="center">
+                                <TABLE width="155" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="75" height="63" align="center" class="homeTeamLadder6" 
+                                id="3757644_win" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757644_win');" 
+                                onmouseout="onColor('off','3757644_win')" 
+                                onclick="cartBarIn('winlose','3757644_win','236 회차 3게임 ','236 회차 3게임 ','1.95','236회차 1.5오버 홀')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>1.95</STRONG></DIV></TD>
+                                <TD width="5" class="nonTeam" 
+                                id="3757644_non"></TD>
+                                <TD width="75" align="center" class="awayTeamLadder6" 
+                                id="3757644_lose" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757644_lose');" 
+                                onmouseout="onColor('off','3757644_lose')" 
+                                onclick="cartBarIn('winlose','3757644_lose','236 회차 3게임 ','236 회차 3게임 ','1.95','236회차 1.5오버 짝')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>1.95</STRONG></DIV></TD></TR></TBODY></TABLE></TD></TR>
+                                <TR>
+                                <TD height="7"></TD></TR>
+                                <TR>
+                                <TD height="42" align="center"><INPUT name="3757645_win_b" id="3757645_win_b" type="hidden" value="4.75">
+                                		 <INPUT name="3757645_non_b" id="3757645_non_b" type="hidden" value="vs">
+                                		 <INPUT name="3757645_lose_b" id="3757645_lose_b" type="hidden" value="0">
+                                		 
+                                <TABLE width="155" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="75" height="63" align="center" class="homeTeamLadder7" 
+                                id="3757645_win" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757645_win');" 
+                                onmouseout="onColor('off','3757645_win')" 
+                                onclick="cartBarIn('winlose','3757645_win','236 회차 3게임 ','236 회차 3게임 ','4.75','236회차 2.0오버 홀')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>4.75</STRONG></DIV></TD>
+                                <TD width="4">
+                                <DIV class="displayNone">
+                                <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD id="3757645_non"></TD>
+                                <TD 
+                                id="3757645_lose"></TD></TR></TBODY></TABLE></DIV></TD><INPUT name="3757646_win_b" id="3757646_win_b" type="hidden" value="0">
+                                		 <INPUT name="3757646_non_b" id="3757646_non_b" type="hidden" value="vs">
+                                		 <INPUT name="3757646_lose_b" id="3757646_lose_b" type="hidden" value="4.75">
+                                		 
+                                <TD width="75" align="center" class="awayTeamLadder7" 
+                                id="3757646_lose" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757646_lose');" 
+                                onmouseout="onColor('off','3757646_lose')" 
+                                onclick="cartBarIn('winlose','3757646_lose','236 회차 3게임 ','236 회차 3게임 ','4.75','236회차 2.0오버 짝')">
+                                <DIV class="info2"></DIV>
+                                <DIV class="ratio2"><STRONG>4.75</STRONG></DIV>
+                                <DIV class="displayNone">
+                                <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD id="3757646_win"></TD>
+                                <TD 
+                                id="3757646_non"></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><INPUT name="3757647_win_b" id="3757647_win_b" type="hidden" value="1.95">
+                                		 <INPUT name="3757647_non_b" id="3757647_non_b" type="hidden" value="vs">
+                                		 <INPUT name="3757647_lose_b" id="3757647_lose_b" type="hidden" value="1.95">
+                                		 
+                                <TD width="86">
+                                <TABLE width="155" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="75" height="63" align="center" class="homeTeamLadder8" 
+                                id="3757647_win" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757647_win');" 
+                                onmouseout="onColor('off','3757647_win')" 
+                                onclick="cartBarIn('winlose','3757647_win','236 회차 2게임 ','236 회차 2게임 ','1.95','236회차 2연타')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>1.95</STRONG></DIV></TD></TR>
+                                <TR>
+                                <TD height="7" class="nonTeam" 
+                                id="3757647_non"></TD></TR>
+                                <TR>
+                                <TD width="75" height="63" align="center" class="awayTeamLadder8" 
+                                id="3757647_lose" style="cursor: pointer;" 
+                                onmouseover="onColor('on','3757647_lose');" 
+                                onmouseout="onColor('off','3757647_lose')" 
+                                onclick="cartBarIn('winlose','3757647_lose','236 회차 2게임 ','236 회차 2게임 ','1.95','236회차 2미연타')">
+                                <DIV class="info2"></DIV>
+                                <DIV 
+                                class="ratio2"><STRONG>1.95</STRONG></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                              <TABLE width="100%" style="margin-top: 10px;" 
+                              border="0" cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD width="250" height="290" valign="top" style='background: url("/image/mini_bg_01.png") no-repeat;'>
+                                <TABLE width="240" border="0" cellspacing="0" 
+                                cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD height="34" align="center" colspan="2"><SPAN 
+                                style="color: rgb(224, 224, 224); font-weight: bold; margin-left: 20px;"><IMG 
+                                height="30" style="vertical-align: middle;" src="mini_files/level_2.png" 
+                                border="0"> 광개토</SPAN></TD></TR>
+                                <TR>
+                                <TD height="30" colspan="2"></TD></TR>
+                                <TR>
+                                <TD height="22" 
+                                style="padding-left: 16px;"><FONT style="color: rgb(247, 147, 31); font-weight: bold;">보유머니</FONT></TD>
+                                <TD height="22" align="right" style="padding-right: 15px;"><FONT 
+                                style="font-weight: bold;">0</FONT><FONT style="color: rgb(200, 200, 200);">원</FONT></TD></TR>
+                                <TR>
+                                <TD height="22" 
+                                style="padding-left: 16px;"><FONT style="color: rgb(247, 219, 26); font-weight: bold;">포인트</FONT></TD>
+                                <TD height="22" align="right" style="padding-right: 15px;"><FONT 
+                                style="font-weight: bold;">400</FONT><FONT 
+                                style="color: rgb(200, 200, 200);">원</FONT></TD></TR>
+                                <TR>
+                                <TD height="22" colspan="2">&nbsp;</TD></TR>
+                                <TR>
+                                <TD><A onclick="chargePoint();" href="javascript:;"><IMG 
+                                height="32" style="margin-left: 15px;" src="mini_files/mini_button_04.png"></A></TD></TR>
+                                <TR>
+                                <TD height="6" colspan="2"></TD></TR>
+                                <TR>
+                                <TD height="20" colspan="2"><A href="http://mvp-t5.com/payment/bank_in.html"><IMG 
+                                height="32" style="margin-left: 15px;" src="mini_files/mini_button_02.png"></A> 
+                                <A href="http://mvp-t5.com/game/mini.html?sportSeq=&amp;g_type=ladder"><IMG 
+                                height="32" style="margin-left: 5px;" src="mini_files/mini_button_03.png"></A></TD></TR>
+                                <TR></TR></TBODY></TABLE></TD>
+                                <TD width="8">&nbsp;</TD>
+                                <TD width="240" align="center" valign="top" 
+                                style='background: url("/image/mini_bg_02.png") no-repeat;'>
+                                <TABLE width="168" border="0" cellspacing="0" 
+                                cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD height="34" align="center">배팅금액</TD></TR>
+                                <TR>
+                                <TD>
+                                <TABLE width="168" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD style="padding-top: 22px;"><IMG style="vertical-align: middle; cursor: pointer;" 
+                                onclick="addMoney(5000);" src="mini_files/mini_box_ico_02.png"></TD>
+                                <TD style="padding-top: 22px;"><IMG style="vertical-align: middle; cursor: pointer;" 
+                                onclick="addMoney(10000);" src="mini_files/mini_box_ico_03.png"></TD></TR>
+                                <TR>
+                                <TD style="padding-top: 8px;"><IMG style="vertical-align: middle; cursor: pointer;" 
+                                onclick="addMoney(50000);" src="mini_files/mini_box_ico_04.png"></TD>
+                                <TD style="padding-top: 8px;"><IMG style="vertical-align: middle; cursor: pointer;" 
+                                onclick="addMoney(100000);" src="mini_files/mini_box_ico_05.png"></TD></TR>
+                                <TR>
+                                <TD style="padding-top: 8px; padding-bottom: 21px;"><IMG 
+                                style="vertical-align: middle; cursor: pointer;" 
+                                onclick="addMoney(500000);" src="mini_files/mini_box_ico_06.png"></TD>
+                                <TD style="padding-top: 8px; padding-bottom: 21px;"><IMG 
+                                style="vertical-align: middle; cursor: pointer;" 
+                                onclick="maxBetting('');" src="mini_files/mini_box_ico_08.png"></TD></TR></TBODY></TABLE></TD></TR>
+                                <TR>
+                                <TD align="center"><IMG style="vertical-align: middle; cursor: pointer;" 
+                                onclick="f._Bet.value=0;" src="mini_files/mini_box_title_05.png"></TD></TR>
+                                <TR>
+                                <TD height="24" align="center" style="padding-top: 12px;"><IMG 
+                                style="cursor: pointer;" onclick="maxBetting('all');" 
+                                src="mini_files/mini_max_bet.png"></TD></TR></TBODY></TABLE></TD>
+                                <TD width="10">&nbsp;</TD>
+                                <TD width="240" align="center" valign="top" 
+                                style='background: url("/image/mini_bg_03.png") no-repeat;'>
+                                <TABLE width="196" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD height="34" style="text-align: center; color: rgb(255, 227, 40);">07월31일 
+                                (일) 236회차</TD></TR>
+                                <TR>
+                                <TD height="4"></TD></TR>
+                                <TR>
+                                <TD id="cartContent" valign="top" style="padding: 6px; width: 165px; height: 42px;"></TD></TR>
+                                <TR>
+                                <TD height="32"></TD></TR>
+                                <TR>
+                                <TD 
+align="center"><INPUT name="_Bet" id="_Bet" style="padding: 2px; border: currentColor; border-image: none; width: 156px; height: 20px; text-align: right; color: rgb(103, 103, 103); background-color: transparent;" onkeyup="this.value=this.value.replace(/[^0-9]/g,''); setCurrency(this); betBarEx();if(event.keyCode == 13){bettingCheck();}" type="text" value="0"></TD></TR>
+                                <TR>
+                                <TD height="34"></TD></TR>
+                                <TR>
+                                <TD align="center"><INPUT name="_totalBet" id="_totalBet" style="padding: 2px; border: currentColor; border-image: none; width: 156px; height: 20px; text-align: right; color: rgb(103, 103, 103); background-color: transparent;" type="text" value="0"></TD></TR>
+                                <TR>
+                                <TD height="13"></TD></TR>
+                                <TR>
+                                <TD height="24" align="center" style="padding-top: 6px;"><IMG 
+                                style="cursor: pointer;" onclick="bettingCheck();" 
+                                src="mini_files/mini_box_title_09.png"></TD></TR></TBODY></TABLE></TD>
+                                <TD width="10">&nbsp;</TD>
+                                <TD width="170" align="center" valign="top" 
+                                style='background: url("/image/mini_bg_04.png") no-repeat;'>
+                                <TABLE width="170" align="center" border="0" 
+                                cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR>
+                                <TD height="34" style="text-align: center; color: rgb(255, 227, 40);">배팅 
+                                가능 시간</TD></TR>
+                                <TR>
+                                <TD height="4"></TD></TR>
+<STYLE>.present {
+	margin: 0 10px;
+}
+.present p.howmany-time {
+	padding: 0;
+	width: 160px;
+	height: 18px;
+	color: #ffd52d;
+	font-weight: bold;
+	text-align: center;
+}
+.present p.buy-time {
+	width: 160px;
+	height: 18px;
+	color: #fff;
+	text-align: center;
+}
+.present p.time-limit {
+	margin: 0;
+	padding: 90px 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 44px;
+	color: #FFF;
+	font-family: "tahoma",  sans-serif;
+}
+</STYLE>
+                                						   
+                                <TR>
+                                <TD align="center" colspan="2">
+                                <DIV class="present">
+                                <P class="time-limit" 
+                                id="time-limit">00:00</P></DIV></TD></TR>
+<SCRIPT>
+// 파워볼 남은시간
+function timerSet(totalSec){
+	var	varSec	=	totalSec;
+	psec	=	varSec%60;
+	pmin	=	(varSec-psec)/60;
+	timeCount();
+}
+function timeCount(){
+	var oTimeCnt = document.getElementById("time-limit");
+	var strMin = "";
+	var strSec = "";
+	if(pmin < 10)
+		strMin = "0"+pmin;
+	else
+		strMin = pmin;
+	if (psec < 10)
+		strSec = "0"+psec;
+	else
+		strSec = psec;
+	
+	oTimeCnt.innerHTML= strMin+":"+strSec;
+	timer =	setTimeout("timeCount()",1000);
+	if (pmin<=0 && psec<=0) {
+		timerStop();
+		oTimeCnt.innerHTML= "마감";
+		$('div.blind').show();
+		return;
+	}
+	if(psec==0) {
+		psec = 60;
+		if ( pmin != 0 ){
+			pmin--;
+		}
+	}
+	psec--;
+}
+function timerStop() {
+	clearTimeout(timer);
+	setTimeout("window.location.reload()",60000);
+	return;
+}
+timerSet(54);
+</SCRIPT>
+                                                           
+                                </TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+                <TD width="10"></TD>
+                <TD width="232" valign="top" style="padding-top: 25px;">
+<SCRIPT language="JavaScript">
+$(document).ready(function(){
+	//new Scroller("idScroller", "idScrollMid",{ PauseHeight:144 });
+});
+</SCRIPT>
+                   
+                  <TABLE width="260" class="sub_right01" border="0" cellspacing="0" 
+                  cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD align="center" style="position: relative;">
+                        <DIV style="right: -30px; position: absolute;">
+                        <DIV style="position: fixed;"><IMG src="mini_files/sns_link.png" 
+                        usemap="#SnsMap"></DIV><MAP name="SnsMap" 
+                          id="SnsMap"><AREA href="http://blog.naver.com/gkcm1111" 
+                          shape="rect" coords="5,36,62,95" target="_blank">   
+                          <AREA href="https://www.facebook.com/%ED%95%98%EC%B8%A0-%EA%B8%88%EC%9D%BC%EC%9D%98-%EC%86%8C%EC%8B%9D-604361273036563/?fref=ts" 
+                          shape="rect" coords="1,97,66,159" target="_blank">   
+                          <AREA href="http://twitter.com/hartztalk" shape="rect" 
+                          coords="2,162,68,218" target="_blank">   <AREA href="http://mvp-t5.com/game/mini.html?g_type=ladder#" 
+                          shape="rect" coords="4,226,60,282"> </MAP>	 </DIV>
+                        <TABLE width="241" border="0" cellspacing="0" 
+                        cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD height="30"><IMG height="30" style="vertical-align: middle;" 
+                              src="mini_files/level_2.png" border="0">           
+                              <SPAN style="color: rgb(26, 25, 25); font-weight: bold;"><STRONG>광개토 
+                                       </STRONG> </SPAN>님 안녕하세요.</TD>
+                            <TD align="right" style="padding-left: 0px;"><A 
+                              href="javascript:logout();"><IMG src="mini_files/sub_right_ico_01.png"></A></TD></TR></TBODY></TABLE>
+                        <TABLE width="241" class="betForm" border="0" 
+                        cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD height="10"></TD></TR>
+                          <TR>
+                            <TD width="120" height="28"><SPAN style="color: rgb(255, 255, 255);">배팅중인 
+                              금액:</SPAN></TD>
+                            <TD align="right" style="padding-left: 0px;"><FONT 
+                              style="color: rgb(255, 255, 255); font-weight: bold;">0 
+                                       </FONT> <SPAN>원</SPAN></TD></TR>
+                          <TR>
+                            <TD height="26"><IMG src="mini_files/ico_02.png"> 
+                              <SPAN>보유머니:</SPAN></TD>
+                            <TD align="right" style="padding-left: 0px;"><FONT 
+                              class="color01">0          </FONT> 
+                            <SPAN>원</SPAN></TD></TR>
+                          <TR>
+                            <TD height="20"><IMG src="mini_files/ico_03.png"> 
+                              <SPAN>포인트:</SPAN></TD>
+                            <TD align="right" style="padding-left: 0px;"><FONT 
+                              class="color01">400           </FONT> 
+                              <SPAN>P</SPAN> <A onclick="chargePoint();" href="javascript:;"><IMG 
+                              src="mini_files/sub_right_ico_02.png"></A></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD>
+                        <TABLE width="240" style="margin: 9px 0px 16px 10px;" 
+                        border="0" cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD align="left"><A href="http://mvp-t5.com/mypage/msg.html"><IMG 
+                              src="mini_files/sub_right_ico_03.png"></A></TD>
+                            <TD align="center"><A href="http://mvp-t5.com/game/attend.html"><IMG 
+                              src="mini_files/sub_right_ico_04.png"></A></TD>
+                            <TD align="right"><A href="http://mvp-t5.com/mypage/my_info.html"><IMG 
+                              src="mini_files/sub_right_ico_05.png"></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                  <TABLE width="260" style="margin-top: 10px;" border="0" 
+                  cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD><IMG 
+src="mini_files/Katalk.png"></TD></TR></TBODY></TABLE>
+                  <TABLE width="260" style="margin-top: 10px;" border="0" 
+                  cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD><IMG src="mini_files/right_link_title.png"></TD></TR>
+                    <TR>
+                      <TD style='background: url("/image/right_link_bg.png") repeat-y;'>
+                        <TABLE width="254" align="center" style="margin-top: 5px; margin-bottom: 5px;" 
+                        border="0" cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD><A href="http://livescore.co.kr/" target="_blank"><IMG 
+                              src="mini_files/right_ico_01.png"></A></TD>
+                            <TD><A href="http://named.com/" 
+                              target="_blank"><IMG src="mini_files/right_ico_02.png"></A></TD>
+                            <TD><A href="http://www.afreeca.com/" target="_blank"><IMG 
+                              src="mini_files/right_ico_03.png"></A></TD></TR>
+                          <TR>
+                            <TD height="3" colspan="3"></TD></TR>
+                          <TR>
+                            <TD><A href="http://mlb.com/" target="_blank"><IMG 
+                              src="mini_files/right_ico_04.png"></A></TD>
+                            <TD><A href="http://www.nba.com/" 
+                              target="_blank"><IMG src="mini_files/right_ico_05.png"></A></TD>
+                            <TD><A href="http://www.npb.or.jp/" target="_blank"><IMG 
+                              src="mini_files/right_ico_06.png"></A></TD></TR>
+                          <TR>
+                            <TD height="1" colspan="3"></TD></TR>
+                          <TR>
+                            <TD><A href="http://www.nhl.com/" 
+                              target="_blank"><IMG src="mini_files/right_ico_07.png"></A></TD>
+                            <TD><A href="http://www.hafline.com/" target="_blank"><IMG 
+                              src="mini_files/right_ico_08.png"></A></TD>
+                            <TD><A href="http://www.nlotto.co.kr/" target="_blank"><IMG 
+                              src="mini_files/right_ico_09.png"></A></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD><IMG 
+                    src="mini_files/right_link_bottom.png"></TD></TR></TBODY></TABLE></TD>
+                <TD width="10"></TD></TR></TBODY></TABLE>
+<SCRIPT language="javascript">
+var gameType_w = 0;
+var gameType_h_u = 0;
+var gameType_s = 0;
+var cookie_gameData = "";
+
+var mixBetMoney			= '5000';		//일회 최소 베팅액
+var w_maxBetMoney		= '1000000';		//일회 최대 베팅액 (승무패)
+var w_maxBedang			= '3000000';		//일회 배당 상한가 (승무패)
+var h_maxBetMoney		= '1000000';		//일회 최대 베팅액 (핸디캡)
+var h_maxBedang			= '3000000';		//일회 배당 상한가 (핸디캡)
+var s_maxBetMoney		= '1000000';		//일회 최대 베팅액 (스페셜)
+var s_maxBedang			= '3000000';		//일회 배당 상한가 (스패셜)
+
+$(document).ready(function() {
+	initSelectGame();
+});
+
+function addMoney(plusMoney) {
+	f = document.betForm;
+	money = f._Bet.value;
+	money = money.toString().replace(/\$|\,/g,'');
+	f._Bet.value = Number(money)+Number(plusMoney);
+	//f._Bet.value = Number(plusMoney);
+	setCurrency(f._Bet);
+	betBarEx();
+}
+
+
+function gameTypeCnt(gameType, procStr) {
+	if ( procStr == "+" ) {
+		//-> 담은 경기 타입수 증가
+		if ( gameType == "winlose" ) gameType_w++;
+		if ( gameType == "handicap" || gameType == "underover" ) gameType_h_u++;
+		if ( gameType == "s_winlose" || gameType == "s_handicap" || gameType == "s_underover" ) gameType_s++;
+	} else if ( procStr == "-" ) {
+		//-> 담은 경기 타입수 감소
+		if ( gameType == "winlose" ) gameType_w--;
+		if ( gameType == "handicap" || gameType == "underover" ) gameType_h_u--;
+		if ( gameType == "s_winlose" || gameType == "s_handicap" || gameType == "s_underover" ) gameType_s--;
+	}
+}
+
+
+function saveCookie(data) {
+	document.cookie = "totoGameSelect=" + escape(data) + ";";
+}
+
+function initSelectGame() {
+	}
+
+
+function checkRGB(R,G,B) {
+	return toHex(R)+toHex(G)+toHex(B)
+} 
+function toHex(N) { 
+	if (N==null) return "00"; 
+	N=parseInt(N); if (N==0 || isNaN(N)) return "00"; 
+	N=Math.max(0,N); N=Math.min(N,255); N=Math.round(N); 
+	return "0123456789ABCDEF".charAt((N-N%16)/16) + "0123456789ABCDEF".charAt(N%16); 
+} 
+function RGBtoHex(rgb) {
+	if( rgb.substr(0,1)!='#' ) { 
+		var rgbs = rgb.split('('); 
+		var rgbs = rgbs[1].split(')'); 
+		var rgbs = rgbs[0].split(','); 
+		return '#'+checkRGB(rgbs[0],rgbs[1],rgbs[2]).toLowerCase(); 
+	} else if(rgb.substr(0,1)=='#' && (rgb.length==4 || rgb.length==7)) {
+		return rgb; 
+	} else {
+		return '#000000';
+	}
+}
+
+var cartStr= "";
+var cartCnt = 0;
+var total_beDang = 1;
+var view_total_beDang;
+var totalBeDangPer = 0;
+function cartBarIn(gameType, target,_teamA,_teamB,_beDang,_winLose)	{
+	if ( $("#"+target).attr("class").indexOf("Selected")==-1 ) {
+		pageReplace();
+	}
+	f = document.betForm;
+	var targetArr = target.split("_");
+	var now_total_money = parseInt(f._totalBet.value.replace(/\,/gi,''));
+	
+	if ( $("#"+targetArr[0]+"_win").attr("class").indexOf("Selected")>-1  ) {
+		now_total_money = now_total_money / document.getElementById(targetArr[0]+"_win_b").value;
+	}
+	if ( $("#"+targetArr[0]+"_non").attr("class").indexOf("Selected")>-1 ) {
+		now_total_money = now_total_money / document.getElementById(targetArr[0]+"_non_b").value;
+	}
+	if ( $("#"+targetArr[0]+"_lose").attr("class").indexOf("Selected")>-1 ) {
+		now_total_money = now_total_money / document.getElementById(targetArr[0]+"_lose_b").value;
+	}
+
+	if( $("#"+target).attr("class").indexOf("Selected")==-1 && _teamA && _teamB ){
+
+		var tmpMaxBettingMoney = 0;
+		var tmpMaxBedangMoney = 0;
+		if (f.gameType.value=='winlose'){
+			tmpMaxBettingMoney		= parseInt(w_maxBetMoney);
+			tmpMaxBedangMoney	= parseInt(w_maxBedang);
+		}
+		else if (f.gameType.value=='handicap' || f.gameType.value=='underover'){
+			tmpMaxBettingMoney		= parseInt(h_maxBetMoney);
+			tmpMaxBedangMoney	= parseInt(h_maxBedang);
+		}
+		else if (f.gameType.value=='s_winlose' || f.gameType.value=='s_handicap' || f.gameType.value=='s_underover'){
+			tmpMaxBettingMoney		= parseInt(s_maxBetMoney);
+			tmpMaxBedangMoney	= parseInt(s_maxBedang);
+		}
+		
+		if ( now_total_money*_beDang > tmpMaxBedangMoney ) {
+			tempTotal = f._totalBeDangPer.value*_beDang;
+			f._Bet.value = Math.floor(tmpMaxBedangMoney/( tempTotal.toString().match(/^.*\.\d{2}/) || tempTotal ));
+			setCurrency(f._Bet); betBarEx();
+//			msgToFocus("적중예상금은 "+MoneyFormat(tmpMaxBedangMoney)+"원을 넘을 수 없습니다.",f._totalBet);
+//			return false;
+		}
+	}
+
+//	if ( gameType == "winlose" || gameType == "handicap" || gameType == "underover" ) {
+//		if ( gameType_s > 0 ) {
+//			alert("선택하신 배팅을 조합할 수 없습니다. 자세한 사항은 \n\n공지사항을 참조하시거나 고객센터로 문의주시기 바랍니다.");
+//			return false;
+//		}
+//	}
+//	
+//
+//	if ( gameType == "s_winlose" || gameType == "s_handicap" || gameType == "s_underover" ) {
+//		if ( gameType_w > 0 || gameType_h_u > 0 ) {
+//			alert("선택하신 배팅을 조합할 수 없습니다. 자세한 사항은 \n\n공지사항을 참조하시거나 고객센터로 문의주시기 바랍니다.");
+//			return false;
+//		}
+//	}
+
+	betForm.gameType.value=gameType;
+	
+	if ( _beDang == 0 ) {
+		alert("배당율이 아직 책정되지 않았거나 선택 할 수 없는 배당입니다.");
+		return false;
+	}
+
+	if ( $("#"+target).attr("class").indexOf("Selected")>-1 ) {
+		cartCnt = cartCnt - 1;
+		total_beDang = total_beDang / _beDang;
+		if ( cartCnt < 1 ) {
+			document.getElementById('_totalBeDangPer').value = 0;
+			totalBeDangPer = 0;
+			total_beDang = 1;
+			view_total_beDang = 1;
+		} else {
+			if (String(total_beDang).length > 10 ) {
+				view_total_beDang = String(total_beDang).split(".");
+				view_total_beDang = view_total_beDang[0]+"."+view_total_beDang[1].substr(0,4);
+			} else {
+				view_total_beDang = total_beDang;
+			}
+			
+			document.getElementById('_totalBeDangPer').value = view_total_beDang.toString().match(/^.*\.\d{2}/) || view_total_beDang;
+			totalBeDangPer = view_total_beDang;
+		}
+		$('#cartContent #betVar_'+targetArr[0]).remove();
+		if(target.search('non')>0){
+			$("#"+target).removeClass("Selected");
+		}else{
+			$("#"+target).removeClass("Selected");
+		}
+		
+		betBarEx();
+		gameTypeCnt(gameType,"-");
+		
+		//document.getElementById("_betCount").innerHTML  = cartCnt;
+
+		//-> 쿠키삭제
+		cookie_gameData = cookie_gameData.replace(target+",","");
+		saveCookie(cookie_gameData);
+	} else {
+		//alert(2)
+		var maxCartCnt = 0;
+		maxCartCnt = '1';
+		maxCartCnt = parseInt(maxCartCnt);
+		if ( cartCnt > (maxCartCnt-1) && $("#"+targetArr[0]+"_win").attr("class").indexOf("Selected")==-1 && $("#"+targetArr[0]+"_non").attr("class").indexOf("Selected")==-1 && $("#"+targetArr[0]+"_lose").attr("class").indexOf("Selected")==-1) {
+			alert("배팅슬립에 담을수 있는 갯수는 최고 "+maxCartCnt+"개 까지 입니다.");
+			return false;		
+		}
+		
+		if ( $("#"+targetArr[0]+"_win").attr("class").indexOf("Selected")>-1 ) {
+			$("#"+targetArr[0]+"_win").removeClass("Selected");
+			total_beDang = total_beDang / document.getElementById(targetArr[0]+"_win_b").value;
+			cartCnt = cartCnt - 1;
+			cookie_gameData = cookie_gameData.replace(targetArr[0]+"_win,","");
+			gameTypeCnt(gameType,"-");
+		}
+		if ( $("#"+targetArr[0]+"_non").attr("class").indexOf("Selected")>-1 ) {
+			$("#"+targetArr[0]+"_non").removeClass("Selected");
+			total_beDang = total_beDang / document.getElementById(targetArr[0]+"_non_b").value;
+			cartCnt = cartCnt - 1;
+			cookie_gameData = cookie_gameData.replace(targetArr[0]+"_non,","");
+			gameTypeCnt(gameType,"-");
+		}
+		if ( $("#"+targetArr[0]+"_lose").attr("class").indexOf("Selected")>-1 ) {
+			$("#"+targetArr[0]+"_lose").removeClass("Selected");
+			total_beDang = total_beDang / document.getElementById(targetArr[0]+"_lose_b").value;
+			cartCnt = cartCnt - 1;
+			cookie_gameData = cookie_gameData.replace(targetArr[0]+"_lose,","");
+			gameTypeCnt(gameType,"-");
+		}
+		if(target.search('non')>0){
+			$("#"+target).addClass("Selected");
+		}else{
+			$("#"+target).addClass("Selected");
+		}
+
+		cartCnt = cartCnt + 1;
+		total_beDang = total_beDang * _beDang;
+		if ( cartCnt < 1 ) {
+			document.getElementById('_totalBeDangPer').value = 0;
+			totalBeDangPer = 0;
+			total_beDang = 1;
+			view_total_beDang = 1;
+		} else {
+			if (String(total_beDang).length > 10 ) {
+				view_total_beDang = String(total_beDang).split(".");
+				view_total_beDang = view_total_beDang[0]+"."+view_total_beDang[1].substr(0,4);
+			} else {
+				view_total_beDang = total_beDang;
+			}
+			document.getElementById('_totalBeDangPer').value = view_total_beDang.toString().match(/^.*\.\d{2}/) || view_total_beDang;
+			totalBeDangPer = view_total_beDang;
+		}
+		
+		var winPoint='';
+		var losePoint='';
+		var selectTeam='';
+		if(_winLose=='승'){
+			var winPoint=' cartPoint';
+			var selectTeam = _teamA;
+		}else if(_winLose=='패'){
+			var losePoint=' cartPoint';
+			var selectTeam = _teamB;
+		}
+		//cartStr =  "<input type=\"hidden\" name=\"bedang_"+targetArr[0]+"\" value=\""+_beDang+"\" /><input type=\"hidden\" name=\"bedang_non_"+targetArr[0]+"\" value=\""+$("#"+targetArr[0]+"_non_b").val()+"\" /><table width=\"120\"><tr><td valign=\"middle\"><table width=\"120\" height=\"52\"><tr><td style=\"color:#fff; font-size:12px;\" width=\"20\">홈</td><td class='slipTeam"+winPoint+"' width=\"60\"><nobr>"+_teamA+"</nobr></td><td style=\"color:#fff; font-size:12px;\" width=\"38\">"+_winLose+"</td><td width=\"16\" align=\"center\"><a onClick=\"cartBarIn('"+gameType+"','"+target+"','','',"+_beDang+");\" style=\"cursor:pointer\" name=\"cart_del_btn\"><img src=\"/image/delet.gif\"></a></td></tr><tr><td height=\"2\"></td></tr><tr><td style=\"color:#fff; font-size:12px;\">원</td><td class='slipTeam"+losePoint+"'><nobr>"+_teamB+"</nobr></td><td style=\"color:#fff; font-size:12px;\">"+_beDang+"</td></tr><tr><td colspan=\"4\"><img src=\"/image/xian.gif\"></td></tr></table></td></tr></table>";
+		cartStr =  "<input type=\"hidden\" name=\"bedang_"+targetArr[0]+"\" value=\""+_beDang+"\" /><input type=\"hidden\" name=\"bedang_non_"+targetArr[0]+"\" value=\""+$("#"+targetArr[0]+"_non_b").val()+"\" /><table width=\"158\"><tr><td class='slipTeam'><nobr>"+_winLose+"</nobr></td><td style=\"color:#fff; font-size:12px;\" width=\"32\">"+_beDang+"</td><td width=\"16\" align=\"center\"><a onClick=\"cartBarIn('"+gameType+"','"+target+"','','',"+_beDang+");\" style=\"cursor:pointer\" name=\"cart_del_btn\"><img src=\"/image/delet.gif\"></a></td></tr></table>";
+
+		if(!$('#cartContent #betVar_'+targetArr[0]).html()){
+			$("#cartContent").append("<span id=\"betVar_"+targetArr[0]+"\">"+cartStr+"</span>");
+		}else{
+			$("#cartContent #betVar_"+targetArr[0]).html(cartStr);
+		}
+
+		betBarEx();
+		gameTypeCnt(gameType,"+");
+		
+		//document.getElementById("_betCount").innerHTML  = cartCnt;
+		
+		//-> 쿠키저장
+		cookie_gameData += target + ",";
+		saveCookie(cookie_gameData);
+	}
+
+//	if ( document.getElementById("maxCheck").checked ) {
+//		maxBetting();
+//	}
+}
+
+function cartBarIn_cancel(gameType, target,_teamA,_teamB,_beDang,_winLose)	{
+	var targetArr = target.split("_");
+	cartCnt = cartCnt - 1;
+
+	total_beDang = total_beDang / _beDang;
+	if ( cartCnt < 1 ) {
+		document.getElementById('_totalBeDangPer').value = 0;
+		totalBeDangPer = 0;
+		total_beDang = 1;
+		view_total_beDang = 1;
+	} else {
+		if (String(total_beDang).length > 10 ) {
+			view_total_beDang = String(total_beDang).split(".");
+			view_total_beDang = view_total_beDang[0]+"."+view_total_beDang[1].substr(0,4);
+		} else {
+			view_total_beDang = total_beDang;
+		}
+		
+		document.getElementById('_totalBeDangPer').value = view_total_beDang.toString().match(/^.*\.\d{2}/) || view_total_beDang;
+		totalBeDangPer = view_total_beDang;
+	}
+	$('#cartContent #betVar_'+targetArr[0]).remove();
+
+	betBarEx();
+	gameTypeCnt(gameType,"-");
+
+	//-> 쿠키삭제
+	cookie_gameData = cookie_gameData.replace(target+",","");
+	saveCookie(cookie_gameData);
+
+//	if ( document.getElementById("maxCheck").checked ) {
+//		maxBetting();
+//	}
+}
+
+function cartBarIn_insert(gameType, target,_teamA,_teamB,_beDang,_winLose)	{
+	cartCnt = cartCnt + 1;
+	total_beDang = total_beDang * _beDang;
+	if ( cartCnt < 1 ) {
+		document.getElementById('_totalBeDangPer').value = 0;
+		totalBeDangPer = 0;
+		total_beDang = 1;
+		view_total_beDang = 1;
+	} else {
+		if (String(total_beDang).length > 10 ) {
+			view_total_beDang = String(total_beDang).split(".");
+			view_total_beDang = view_total_beDang[0]+"."+view_total_beDang[1].substr(0,4);
+		} else {
+			view_total_beDang = total_beDang;
+		}
+		document.getElementById('_totalBeDangPer').value = view_total_beDang.toString().match(/^.*\.\d{2}/) || view_total_beDang;
+		totalBeDangPer = view_total_beDang;
+	}
+
+	//-> 쿠키저장
+	cookie_gameData += target + ",";
+	saveCookie(cookie_gameData);
+
+//	if ( document.getElementById("maxCheck").checked ) {
+//		maxBetting();
+//	}
+
+	betBarEx();
+}
+
+function betBarEx()	{
+	f = document.betForm;
+	if ( view_total_beDang > 0 ) {
+		var beDangPer = view_total_beDang.toString().match(/^.*\.\d{2}/) || Math.abs(view_total_beDang);
+		var betMoney = document.getElementById('_Bet').value;
+		betMoney = betMoney.toString().replace(/\$|\,/g,'');
+		//강제 당첨금 300만들기
+		if (f.gameType.value=='winlose'){
+			tmpMaxBettingMoney		= parseInt(w_maxBetMoney);
+			tmpMaxBedangMoney	= parseInt(w_maxBedang);
+		}
+		else if (f.gameType.value=='handicap' || f.gameType.value=='underover'){
+			tmpMaxBettingMoney		= parseInt(h_maxBetMoney);
+			tmpMaxBedangMoney	= parseInt(h_maxBedang);
+		}
+		else if (f.gameType.value=='s_winlose' || f.gameType.value=='s_handicap' || f.gameType.value=='s_underover'){
+			tmpMaxBettingMoney		= parseInt(s_maxBetMoney);
+			tmpMaxBedangMoney	= parseInt(s_maxBedang);
+		}
+		if(Math.abs(betMoney * beDangPer) > tmpMaxBedangMoney){
+			f._Bet.value = Math.floor(tmpMaxBedangMoney/beDangPer);
+			setCurrency(f._Bet);
+			betBarEx();
+			return false;
+		}
+
+		document.getElementById('_totalBet').value = Math.abs(betMoney * beDangPer);
+		setCurrency(document.getElementById('_totalBet'));
+	}
+}
+
+function setCurrency(obj)	{
+	var str = obj.value;
+	str = str.toString().replace(/\$|\,/g,'');
+	if(isNaN(str)) Str = "0";
+	cents = Math.floor((str*100+0.5)%100);
+	str = Math.floor((str*100+0.5)/100).toString();
+	if(cents < 10) cents = "0" + cents;
+	for (var i = 0; i < Math.floor((str.length-(1+i))/3); i++)
+	str = str.substring(0,str.length-(4*i+3))+','+str.substring(str.length-(4*i+3));
+	if ( str == 0 )
+		str = "0";
+	obj.value = str;
+}
+
+function heartBeat() { 
+	cartTop = '296';
+	if ( document.getElementById('bt_fixed').checked == true ) {
+		diffY = 0;
+		document.getElementById('betBar').style.pixelTop;
+	} else {
+		if ( cartCnt < 6 ) {
+			diffY = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+			//alert(diffY)
+			if ( diffY < cartTop )	{
+				diffY = 0;
+			}else{
+				diffY = diffY - cartTop;
+			}
+			//diffX = 0; 
+			$('#betBar').stop().animate({top: diffY}, 10,'linear');
+		} else {
+			diffY = Math.max(document.documentElement.scrollTop, document.body.scrollTop) - cartTop - ((cartCnt-5)*10);
+			if ( Math.max(document.documentElement.scrollTop, document.body.scrollTop) < cartTop )	diffY = 0;
+			$('#betBar').stop().animate({top: diffY}, 10,'linear');
+		}
+	}
+} 
+
+//window.setInterval("heartBeat()",1);
+
+var submitFlag = 0;
+function bettingCheck() {
+
+	if ( submitFlag == 1 ) {
+		alert("처리 중입니다. 잠시만 기다려주세요.");
+		return false;
+	}
+	var bettingMoney = 0;
+	var bedangMoney = 0;
+
+	mixBetMoney = parseInt(mixBetMoney);
+
+	f = document.betForm;
+	bettingMoney = f._Bet.value.replace(/\,/gi,'');
+	bedangMoney = parseInt(f._totalBet.value.replace(/\,/gi,''));
+
+	if ( cartCnt < 1 ) {
+		alert("경기를 선택해주시기 바랍니다.");
+		return false;
+	}
+	if ( bettingMoney < mixBetMoney) {
+		msgToFocus("배팅금액은 "+MoneyFormat(mixBetMoney)+"원 이상 입력해주세요.",f._Bet);
+		return false;
+	}
+
+	if(cartCnt==1 && bettingMoney>1000000){
+		alert("단경기 배팅시 배팅금액은 1000000원 이상 배팅할수 없습니다.");
+		return false;
+	}
+
+	/*
+	if ( (bettingMoney/1000) < (Math.ceil(bettingMoney/1000)) ) {
+		msgToFocus("배팅은 1000원 단위로 입력해주세요.",f._Bet);
+		return false;
+	}
+	*/
+
+	var tmpMaxBettingMoney = 0;
+	var tmpMaxBedangMoney = 0;
+	if (f.gameType.value=='winlose'){
+		tmpMaxBettingMoney		= parseInt(w_maxBetMoney);
+		tmpMaxBedangMoney	= parseInt(w_maxBedang);
+	}
+	else if (f.gameType.value=='handicap' || f.gameType.value=='underover'){
+		tmpMaxBettingMoney		= parseInt(h_maxBetMoney);
+		tmpMaxBedangMoney	= parseInt(h_maxBedang);
+	}
+	else if (f.gameType.value=='s_winlose' || f.gameType.value=='s_handicap' || f.gameType.value=='s_underover'){
+		tmpMaxBettingMoney		= parseInt(s_maxBetMoney);
+		tmpMaxBedangMoney	= parseInt(s_maxBedang);
+	}
+	
+	if ( bettingMoney > tmpMaxBettingMoney ) {
+		msgToFocus("배팅금액은 "+MoneyFormat(tmpMaxBettingMoney)+"원을 넘을 수 없습니다.",f._Bet);
+		return false;
+	}
+	if ( bedangMoney > tmpMaxBedangMoney ) {
+		f._Bet.value = Math.floor(tmpMaxBedangMoney/f._totalBeDangPer.value);
+		setCurrency(f._Bet); betBarEx();
+//		msgToFocus("적중예상금은 "+MoneyFormat(tmpMaxBedangMoney)+"원을 넘을 수 없습니다.",f._totalBet);
+//		return false;
+	}
+
+	document.getElementById("betMatch").value = cookie_gameData;
+
+	if ( !confirm('※※※236회차※※※ 경기 배팅중입니다.\n정말 배팅 하시겠습니까?') )	{
+		return false;
+	}
+	//document.embeds[0].play();
+	submitFlag = 1;
+	f.submit();
+}
+
+function maxBetting(type) {
+	var user_money = '0';
+	var beDangPer = Math.floor(Math.abs(view_total_beDang)*100)/100;
+	
+	if ( beDangPer ) {
+		maxBetMoney = 3000000 / beDangPer;
+		//alert(maxBetMoney)
+		if(cartCnt==1&&maxBetMoney>1000000){
+			maxBetMoney = 1000000;
+		}
+
+		if (  maxBetMoney > 1000 ) {
+			if(maxBetMoney<=tmpMaxBettingMoney||cartCnt==1){
+				maxBetMoneyTemp = Math.floor(maxBetMoney);
+				if(type=='all'&&user_money<maxBetMoneyTemp){
+					maxBetMoneyTemp = user_money;
+				}
+				document.getElementById('_Bet').value = maxBetMoneyTemp;
+			}else{
+				document.getElementById('_Bet').value = tmpMaxBettingMoney;
+			}
+			setCurrency(document.getElementById('_Bet'));
+			betBarEx();
+		}
+	}
+}
+function MoneyFormat(str)
+{
+	var re="";
+	str = str + "";
+	str=str.replace(/-/gi,"");
+	str=str.replace(/ /gi,"");
+	
+	str2=str.replace(/-/gi,"");
+	str2=str2.replace(/,/gi,"");
+	str2=str2.replace(/\./gi,"");	
+	
+	if(isNaN(str2) && str!="-"){
+		return "";
+	}
+	try{
+		for(var i=0;i<str2.length;i++)
+		{
+			var c = str2.substring(str2.length-1-i,str2.length-i);
+			re = c + re;
+			if(i%3==2 && i<str2.length-1) re = "," + re;
+		}
+		
+	}
+	catch(e){re="";	}
+	
+	if(str.indexOf("-")==0){
+		re = "-" + re;
+	}
+	return re;
+}
+
+function scrollCk()
+{
+	var scrollID = document.getElementById("scrollID");
+	var cartScroll = document.getElementById("bt_fixed");
+	
+	if(cartScroll.checked)
+	{
+		//scrollID.src = "/images/btn_scr.gif"			
+		cartScroll.checked = false;
+	}else
+	{
+	
+		//scrollID.src = "/images/btn_pin_on.gif"
+		cartScroll.checked = true;
+	}
+	
+}
+
+</SCRIPT>
+             </FORM></TD></TR>
+        <TR>
+          <TD height="20"></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE width="100%" style='background: url("/image/footer_bg.png") top;' 
+      border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE width="1200" align="center" border="0" cellspacing="0" 
+            cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD height="40" align="center">
+                  <DIV style="align: center;"><A href="http://mvp-t5.com/game/sports.html?sportSeq=&amp;g_type=all">크로스</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A href="http://mvp-t5.com/game/sports.html?sportSeq=&amp;g_type=s">스페셜</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A href="http://mvp-t5.com/game/sports.html?sportSeq=&amp;g_type=live">라이브</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A href="http://mvp-t5.com/game/mini.html?sportSeq=&amp;g_type=ladder">실시간</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A 
+                  href="http://mvp-t5.com/game/end_games.html">경기결과</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A 
+                  href="http://mvp-t5.com/mypage/bet_info.html">배팅내역</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A 
+                  href="http://mvp-t5.com/video.html">티비중계</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A 
+                  href="http://mvp-t5.com/board/free_list.html">게시판</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A 
+                  href="http://mvp-t5.com/board/as_list.html">고객센터</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A 
+                  href="http://mvp-t5.com/payment/bank_in.html">충전</A>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                  				 <A href="http://mvp-t5.com/payment/bank_out.html">환전</A>
+                  			 </DIV></TD></TR></TBODY></TABLE>
+            <TABLE width="1200" align="center" border="0" cellspacing="0" 
+            cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD height="80" align="center" 
+                  style="color: rgb(87, 87, 87);">Copyright ©하츠 All rights 
+                  reserved.</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></BODY></HTML>

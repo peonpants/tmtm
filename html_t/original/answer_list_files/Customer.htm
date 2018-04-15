@@ -1,0 +1,693 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0030)http://wd-82.com/Customer.aspx -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+
+<META name="viewport" content="width=1000">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"><TITLE>	WIND 
+</TITLE><LINK href="images/logo_webpage2.png" rel="Shortcut Icon"><LINK href="Customer_files/style.css" 
+rel="Stylesheet">     
+<SCRIPT src="Customer_files/jquery-1.9.0.min.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT src="Customer_files/jquery-ui.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT type="text/javascript">
+        var year = "2018";
+        var month = "2";
+        var day = "27";
+        var hours = "0";
+        var minutes = "47";
+        var seconds = "33";
+        var milliseconds = "806";
+        var dateTime = new Date(year, month, day, hours, minutes, seconds, milliseconds); // 서버시간 초기화
+
+        settime();
+
+        function settime() {
+            dateTime.setSeconds(dateTime.getSeconds() + 1);
+            var hh = dateTime.getHours();
+            var mm = dateTime.getMinutes();
+            var ss = dateTime.getSeconds();
+
+            if (dateTime.getHours() < 10) {
+                hh = '0' + hh;
+            }
+            if (dateTime.getMinutes() < 10) {
+                mm = '0' + mm;
+            }
+            if (dateTime.getSeconds() < 10) {
+                ss = '0' + ss;
+            }
+            $("#divTime").text(year + "/" + month + "/" + day + " " + hh + ":" + mm + ":" + ss); setTimeout("settime()", 1000);
+        }
+
+        function trans_point() {
+            var minpoint = $('#ctl00_hid_transpoint').val();
+            var point = $('#ctl00_hid_point').val();
+
+            if (parseInt(minpoint, 10) > parseInt(point, 10)) {
+                alert('최소 전환 포인트는 ' + minpoint + '점부터 가능합니다');
+                return false;
+            }
+            else {
+                if (confirm("포인트를 캐시로 전환하시겠습니까?")) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        }
+        function bookmarksite(title) {
+            if (document.all) {
+                window.external.AddFavorite(location.href, title);
+            }
+            else if (window.chrome) {
+                alert("Ctrl+D키를 누르시면 즐겨찾기에 추가하실 수 있습니다.");
+            }
+            else if (window.sidebar) {
+                window.sidebar.addPanel(title, location.href, "");
+            }
+            else if (window.opera && window.print) {
+                var elem = document.createElement('a');
+                elem.setAttribute('href', location.href);
+                elem.setAttribute('title', title);
+                elem.setAttribute('rel', 'sidebar');
+                elem.click();
+            }
+        }
+
+        // 시계
+        function startClock() {
+            var M = dateTime.getMonth();
+            var d = dateTime.getDate();
+            var h = dateTime.getHours();
+            var m = dateTime.getMinutes();
+            var s = dateTime.getSeconds();
+            var days = ['(목)', '(금)', '(토)', '(일)', '(월)', '(화)', '(수)'];
+            m = checkTime(m);
+            s = checkTime(s);
+            M = checkDate(M);
+            M = checkTime(M);
+            var time = M + "월" + d + "일" + days[dateTime.getDay()] + " <strong>" + h + ":" + m + ":" + s + "</strong>";
+            document.getElementById('Display_clock').innerHTML = time;
+            var t = setTimeout(function () { startClock() }, 500);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
+        }
+
+        function checkDate(i) {
+            //i = i + 1;
+            i = i;
+            return i;
+        }
+        window.onload = startClock;
+
+        function daridaeiOpen() {
+            $('#daridaei .box').css('display', 'block');
+        }
+        function sutdaOpen() {
+            $('.sutda .box2').css('display', 'block');
+        }
+        function bet365Open() {
+            $('.bet365 .box3').css('display', 'block');
+        }
+        function mgmOpen() {
+            $('.mgm .box4').css('display', 'block');
+        }
+        function KenoOpen() {
+            $('#Keno .box').css('display', 'block');
+        }
+        function livegoOpen() {
+            $('#livego .box').css('display', 'block');
+        }
+    </SCRIPT>
+         
+<STYLE type="text/css">
+        .numericLink
+        {
+            border: 1px solid #4c4c4c;
+            color: White;
+            font-size: 11px;
+            padding: 8px 8px 8px 8px;
+        }
+        .currentLink
+        {
+            border: 1px solid #000000;
+            background-color: #FFA500;
+            color: Black;
+            font-size: 11px;
+            padding: 8px 8px 8px 8px;
+        }
+        .moveLink
+        {
+            border: 1px solid #4c4c4c;
+            color: White;
+            font-size: 11px;
+            padding: 8px 8px 8px 8px;
+        }
+    </STYLE>
+     
+<STYLE type="text/css">
+        html
+        {
+            background-color: Black;
+            font-family: dotum;
+            letter-spacing: 0;
+            font-size: 11px;
+            color: White;
+            text-align: center;
+        }
+        .style2
+        {
+            font-family: "Comic Sans MS";
+            color: #FFFFFF;
+            font-size: small;
+        }
+        .style3
+        {
+            color: #ffffff;
+            font-weight: bold;
+        }
+       .content5
+        {
+            font-family: dotum;
+            font-size: 14px;
+            padding-Top:10px
+            
+        }
+        .daridaei{position:relative;cursor:pointer}
+        .daridaei .box{position:absolute;left:50%;top:40px;margin-left:-85px;width:171px;z-index:9999;display:none}
+        .daridaei .box a{float:left}
+        div.daridaei:hover .box{display:block}
+        
+        .sutda{position:relative;cursor:pointer}
+        .sutda .box2{position:absolute;left:50%;top:40px;margin-left:-55px;width:171px;z-index:9999;display:none}
+        .sutda .box2 a{float:left}
+        div.sutda:hover .box2{display:block}
+        
+        .bet365{position:relative;cursor:pointer}
+        .bet365 .box3{position:absolute;left:50%;top:40px;margin-left:-60px;width:171px;z-index:9999;display:none}
+        .bet365 .box3 a{float:left}
+        div.bet365:hover .box3{display:block}
+        
+        .mgm{position:relative;cursor:pointer}
+        .mgm .box4{position:absolute;left:50%;top:40px;margin-left:-62px;width:171px;z-index:9999;display:none}
+        .mgm .box4 a{float:left}
+        div.mgm:hover .box4{display:block}
+    </STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY>
+<FORM name="aspnetForm" id="aspnetForm" action="Customer.aspx" method="post">
+<DIV><INPUT name="__EVENTTARGET" id="__EVENTTARGET" type="hidden"> <INPUT name="__EVENTARGUMENT" id="__EVENTARGUMENT" type="hidden"> 
+<INPUT name="__VIEWSTATE" id="__VIEWSTATE" type="hidden" value="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"> 
+</DIV>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</SCRIPT>
+ 
+<DIV><INPUT name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" type="hidden" value="23939B09">
+	 <INPUT name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" type="hidden">
+	 <INPUT name="__EVENTVALIDATION" id="__EVENTVALIDATION" type="hidden" value="yqfjo5H37lr6tz3eBfVbhUwj7kCD7vlnCTXGuORSqbXpVttapUtyAjlIK7hSBt2QtIm37qykpGrcNbyW5y54gof2OguUf0dq3qnQ4aaunVgDNd+Uh9DzuDqCHMmG0c5znwgEQQn6F3Vc90bdsfA/lv1vjze6SFGgOPb35bQIHKEAbplwtnAN9oZLzr3iQ0aAFZtnx4x/3oRokTIHbXxTdHu0hwn40fh6tTy+HkrQNbe0ch1GLzpG4Z6EY98osDh9pimFujaHs90ieKFGXX3QpcOJxZE0jY3BYX0nSv8MIwXweZQyKsh5LW8FXL9PSii9dOElzXMgn+fgsILHYZQZ0L7Qr8AMuJYEKcyk9OxV/6wuoG6Z"> 
+</DIV>
+<DIV align="center">
+<TABLE width="1010" align="center" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class="gnb_top">
+      <TABLE width="1010" align="center" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD style="width: 513px; height: 80px; text-align: left; vertical-align: bottom;"><A 
+            name="1"></A>                                     <A href="http://wd-82.com/mainsite.aspx"><IMG 
+            alt="" src="Customer_files/logo3.png" border="0"></A>                
+                             </TD>
+          <TD><A href="http://wd-82.com/BoardList.aspx"><IMG alt="" src="Customer_files/BoardList_btn.png" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/BetResult.aspx"><IMG alt="" src="Customer_files/betlist1.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/GameResult.aspx"><IMG alt="" src="Customer_files/menu_result1.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/Event.aspx"><IMG alt="" src="Customer_files/Event1.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/Guide.aspx"><IMG alt="" src="Customer_files/menu_guide.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/MyPage.aspx"><IMG alt="" src="Customer_files/menu_modify1.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/Customer.aspx"><IMG alt="" src="Customer_files/menu_cs2.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/Logout.aspx"><IMG alt="" src="Customer_files/menu_logout1.jpg" 
+            border="0"></A>                                 
+      </TD></TR></TBODY></TABLE></DIV></TD></TR>
+  <TR>
+    <TD height="5"></TD></TR>
+  <TR>
+    <TD>
+      <TABLE align="center" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD><A href="http://wd-82.com/cross.aspx"><IMG onmouseover="this.src='images/menu2/m_1_over.png'" 
+            onmouseout="this.src='images/menu2/m_1.png'" src="Customer_files/m_1.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/1x2odds.aspx"><IMG onmouseover="this.src='images/menu2/m_2_over.png'" 
+            onmouseout="this.src='images/menu2/m_2.png'" src="Customer_files/m_2.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/Handi.aspx"><IMG onmouseover="this.src='images/menu2/m_3_over.png'" 
+            onmouseout="this.src='images/menu2/m_3.png'" src="Customer_files/m_3.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/Special.aspx"><IMG onmouseover="this.src='images/menu2/m_4_over.png'" 
+            onmouseout="this.src='images/menu2/m_4.png'" src="Customer_files/m_4.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/Special2.aspx"><IMG onmouseover="this.src='images/menu2/m_5_over.png'" 
+            onmouseout="this.src='images/menu2/m_5.png'" src="Customer_files/m_5.png"></A> 
+                                        </TD>
+          <TD>
+            <DIV class="daridaei"><IMG align="absmiddle" onmouseover="this.src='images/menu2/m_6_over.png'" 
+            onmouseout="this.src='images/menu2/m_6.png'" onclick="daridaeiOpen();" 
+            src="Customer_files/m_6.png" border="0">                             
+                    
+            <DIV class="box"><A href="http://wd-82.com/LadderGame.aspx"><IMG 
+            align="absmiddle" src="Customer_files/menu_ladder3.png" 
+            border="0"></A>                                         <A href="http://wd-82.com/NamedGame.aspx"><IMG 
+            align="absmiddle" src="Customer_files/menu_ladder4.png" 
+            border="0"></A>                                         <A href="http://wd-82.com/DariGame.aspx"><IMG 
+            align="absmiddle" src="Customer_files/menu_ladder5.png" 
+            border="0"></A>                                     </DIV></DIV></TD>
+          <TD><A href="http://wd-82.com/PowerBall.aspx"><IMG onmouseover="this.src='images/menu2/m_7_over.png'" 
+            onmouseout="this.src='images/menu2/m_7.png'" src="Customer_files/m_7.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/PowerLadder.aspx"><IMG onmouseover="this.src='images/menu2/m_14_over.png'" 
+            onmouseout="this.src='images/menu2/m_14.png'" src="Customer_files/m_14.png"></A> 
+                                        </TD>
+          <TD>
+            <DIV class="daridaei" id="Keno"><IMG align="absmiddle" onmouseover="this.src='images/menu2/m_15_over.png'" 
+            onmouseout="this.src='images/menu2/m_15.png'" onclick="KenoOpen();" 
+            src="Customer_files/m_15.png" border="0">                            
+                     
+            <DIV class="box" style="width: 190px; margin-left: -95px;"><A href="http://wd-82.com/Keno.aspx"><IMG 
+            align="absmiddle" src="Customer_files/menu_keno_1.png" 
+            border="0"></A>                                         <A href="http://wd-82.com/KenoLadder.aspx"><IMG 
+            align="absmiddle" src="Customer_files/menu_keno_2.png" 
+            border="0"></A>                                     </DIV></DIV></TD>
+          <TD>
+            <DIV class="daridaei" id="livego"><IMG align="absmiddle" 
+            onmouseover="this.src='images/menu2/m_16_over.png'" onmouseout="this.src='images/menu2/m_16.png'" 
+            onclick="livegoOpen();" src="Customer_files/m_16.png" border="0">    
+                                             
+            <DIV class="box" style="width: 128px; margin-left: -64px;"><A href="http://wd-82.com/Roulette.aspx"><IMG 
+            align="absmiddle" src="Customer_files/menu_live_1.png" 
+            border="0"></A>                                         <A href="http://wd-82.com/Pinball.aspx"><IMG 
+            align="absmiddle" src="Customer_files/menu_live_2.png" 
+            border="0"></A>                                     </DIV></DIV></TD>
+          <TD>
+            <DIV class="bet365"><IMG align="absmiddle" onmouseover="this.src='images/menu2/m_13_over.png'" 
+            onmouseout="this.src='images/menu2/m_13.png'" onclick="bet365Open();" 
+            src="Customer_files/m_13.png" border="0">                            
+                   
+            <DIV class="box3"><A href="http://wd-82.com/B365Greyhounds.aspx?src=https://www.bet365.com"><IMG 
+            align="absmiddle" src="Customer_files/grey.png" border="0"></A>      
+                                               <A href="http://wd-82.com/B365Soccer.aspx?src=https://www.bet365.com"><IMG 
+            align="absmiddle" src="Customer_files/soccer.png" border="0"></A>    
+                                                                                 
+               </DIV></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD height="15"></TD></TR>
+  <TR>
+    <TD><!-- 내정보 -->                     
+      <DIV class="gnb_top_my">
+      <UL class="info">
+        <LI class="my"><IMG id="ctl00_img_lv" style="border-width: 0px;" src="Customer_files/lv_1.png"> 
+                                        <SPAN id="ctl00_lbl_name">GS칼퇴근</SPAN>   
+                                     님 어서오세요.                             </LI>
+        <LI class="money"><STRONG>캐시 :</STRONG>                                 
+        <SPAN id="ctl00_lbl_money">0</SPAN> 원                             </LI>
+        <LI class="point"><STRONG>포인트 :</STRONG>                                 
+        <SPAN id="ctl00_lbl_point">3,871</SPAN> 점                             
+        </LI>
+        <LI class="memo"><STRONG>쪽지 :</STRONG>                                 
+        <A href="http://wd-82.com/Customer.aspx">(<SPAN 
+        id="ctl00_lbl_memo">0</SPAN>)</A> 통                             </LI></UL>
+      <UL class="btn">
+        <LI><A class="c_btn" style="color: rgb(255, 255, 0); font-size: 14px; font-weight: bold;" 
+        href="http://wd-82.com/Charge.aspx">충전신청</A></LI>
+        <LI><A class="c_btn" style="color: rgb(255, 255, 0); font-size: 14px; font-weight: bold;" 
+        href="http://wd-82.com/Exchange.aspx">환전신청</A></LI>
+        <LI><INPUT name="ctl00$ibtn_trans" id="ctl00_ibtn_trans" onclick="return trans_point();" type="submit" value="포인트전환"> 
+                                        <INPUT name="ctl00$hid_point" id="ctl00_hid_point" type="hidden" value="3871"> 
+                                        <INPUT name="ctl00$hid_transpoint" id="ctl00_hid_transpoint" type="hidden" value="5000"> 
+                                    </LI>
+        <LI><A href="http://wd-82.com/CustomerWrite2.aspx">간편계좌문의</A></LI>
+        <LI><A href="http://wd-82.com/MyAct.aspx">마이페이지</A></LI></UL></DIV><!-- //내정보 --> 
+                      </TD></TR>
+  <TR>
+    <TD height="10"></TD></TR>
+  <TR>
+    <TD><!-- 공지사항 -->                     
+      <DIV class="gnb_notice">
+<SCRIPT src="Customer_files/textScroll.js" type="text/javascript"></SCRIPT>
+                               
+      <DIV id="bKey">
+      <MARQUEE width="850" class="content5"><STRONG><SPAN 
+      id="ctl00_lbl_news1"><FONT color="yellow">★게시판 공지내용을 숙지후 
+      이용바랍니다★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                        
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        <STRONG><SPAN 
+      id="ctl00_lbl_news2"><FONT color="yellow">★KBL NBA 쿼터별 실시간 
+      진행중★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        <STRONG><SPAN 
+      id="ctl00_lbl_news3"><FONT color="yellow">★지인추천 이벤트 15만포인트 
+      지급★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        <STRONG><SPAN 
+      id="ctl00_lbl_news4"><FONT color="yellow">★신규게임 LIVE 바카라 개경주 
+      가상축구★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        <STRONG><SPAN 
+      id="ctl00_lbl_news5"><FONT color="yellow">★wd-8787 또는 wd-82 
+      접속가능★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     </MARQUEE>
+<SCRIPT type="text/javascript">
+                                var hotKeyword = new scrolling("jFavList", 4000, 1, 1, 33);
+                            </SCRIPT>
+                               </DIV>
+      <DIV id="Display_clock"></DIV></DIV><!-- //공지사항 -->                 
+  </TD></TR></TBODY></TABLE>
+<TABLE width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD style="height: 7px;"></TD></TR>
+  <TR valign="middle">
+    <TD><A href="http://www.livescore.in/" target="_blank"><IMG src="Customer_files/link_soccer.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.npb.or.jp/" target="_blank"><IMG src="Customer_files/link_npb.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.nhl.com/" target="_blank"><IMG src="Customer_files/link_nhl.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.nba.com/" target="_blank"><IMG src="Customer_files/link_nba.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://mlb.mlb.com/home" target="_blank"><IMG src="Customer_files/link_mlb.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://sports.news.naver.com/" target="_blank"><IMG src="Customer_files/like_naver.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://livego24.com/" target="_blank"><IMG src="Customer_files/livego24.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.espn.com/" target="_blank"><IMG src="Customer_files/link_espn.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.named.com/" target="_blank"><IMG src="Customer_files/link_named.png" 
+      border="0"></A>                 </TD></TR></TBODY></TABLE><!----------->         
+<TABLE width="1010" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD align="center">
+      <TABLE width="1010" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="100%" valign="top"><!--  Mypage Menu -->                  
+                               
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD align="left"><IMG align="absmiddle" src="Customer_files/cs2.png"> 
+                              </TD></TR></TBODY></TABLE>
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD align="center">
+                  <DIV>
+                  <TABLE class="noticestyle" id="ctl00_ContentPlaceHolder1_GridView1" 
+                  style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 100%; text-align: center; font-size: small; border-collapse: collapse;" 
+                  border="0" rules="rows" cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TH style="width: 70px; height: 30px;" scope="col">번호</TH>
+                      <TH style="width: 415px;" scope="col">상담내역</TH>
+                      <TH style="width: 200px;" scope="col">작성일</TH>
+                      <TH style="width: 100px;" scope="col">작성자</TH></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl02$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl02_hid_num" type="hidden" value="1122644"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl02$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl02_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl02_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl02_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl02$lnk_title','')">
+                        <DIV align="left"><FONT color="white">★★★ 입금계좌 
+                        변경안내★★★</FONT>                                 
+                        </DIV></A> </DIV></TD>
+                      <TD><FONT color="white">                                 
+                           02-18 오후 8:57:28</FONT>                             
+                      </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl02_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl03$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl03_hid_num" type="hidden" value="1118817"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl03$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl03_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl03_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl03_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl03$lnk_title','')">
+                        <DIV align="left"><FONT color="white">★★★ 입금계좌 
+                        변경안내★★★</FONT>                                 
+                        </DIV></A> </DIV></TD>
+                      <TD><FONT color="white">                                 
+                           02-12 오전 12:26:23</FONT>                             
+                      </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl03_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl04$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl04_hid_num" type="hidden" value="1116204"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl04$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl04_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl04_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl04_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl04$lnk_title','')">
+                        <DIV align="left"><FONT color="white">★★★ 입금계좌 
+                        변경안내★★★</FONT>                                 
+                        </DIV></A> </DIV></TD>
+                      <TD><FONT color="white">                                 
+                           02-12 오전 12:25:54</FONT>                             
+                      </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl04_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl05$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl05_hid_num" type="hidden" value="1113282"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl05$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl05_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl05_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl05_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl05$lnk_title','')">
+                        <DIV align="left"><FONT color="white">안녕하세요 
+                        WIND운영진입니다</FONT>                                 
+                        </DIV></A> </DIV></TD>
+                      <TD><FONT color="white">02-11 오전 6:02:53</FONT>          
+                                           </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl05_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl06$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl06_hid_num" type="hidden" value="1110518"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl06$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl06_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl06_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl06_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl06$lnk_title','')">
+                        <DIV align="left"><FONT color="white">안녕하세요 
+                        WIND운영진입니다</FONT>                                 
+                        </DIV></A> </DIV></TD>
+                      <TD><FONT color="white">02-11 오전 2:21:56</FONT>          
+                                           </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl06_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl07$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl07_hid_num" type="hidden" value="1107459"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl07$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl07_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl07_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl07_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl07$lnk_title','')">
+                        <DIV align="left"><FONT color="white">안녕하세요 WIND 
+                        운영진입니다</FONT>                                 </DIV></A> 
+                        </DIV></TD>
+                      <TD><FONT color="white">02-09 오후 8:01:31</FONT>          
+                                           </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl07_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl08$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl08_hid_num" type="hidden" value="1104413"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl08$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl08_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl08_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl08_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl08$lnk_title','')">
+                        <DIV align="left"><FONT color="white"> !! 2월 이벤트 진행 
+                        !!</FONT>                                 </DIV></A> 
+                        </DIV></TD>
+                      <TD><FONT color="white">02-07 오후 5:42:22</FONT>          
+                                           </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl08_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl09$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl09_hid_num" type="hidden" value="1101605"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl09$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl09_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl09_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl09_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl09$lnk_title','')">
+                        <DIV align="left"><FONT color="white">관리자입니다 (필독)</FONT> 
+                                                        </DIV></A> </DIV></TD>
+                      <TD><FONT color="white">02-06 오후 9:04:31</FONT>          
+                                           </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl09_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl10$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl10_hid_num" type="hidden" value="1098191"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl10$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl10_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl10_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl10_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl10$lnk_title','')">
+                        <DIV align="left"><FONT color="white">안녕하세요 
+                        WIND운영진입니다</FONT>                                 
+                        </DIV></A> </DIV></TD>
+                      <TD><FONT color="white">02-03 오전 12:14:17</FONT>         
+                                            </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl10_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             </TD></TR>
+                    <TR class="cssRow" style="height: 35px; color: rgb(44, 44, 44); background-color: black;">
+                      <TD><FONT color="white"><INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl11$hid_num" id="ctl00_ContentPlaceHolder1_GridView1_ctl11_hid_num" type="hidden" value="1095227"> 
+                                                            <INPUT name="ctl00$ContentPlaceHolder1$GridView1$ctl11$hid_state" id="ctl00_ContentPlaceHolder1_GridView1_ctl11_hid_state" type="hidden" value="6"> 
+                                                                                 
+                                       <SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl11_lbl_notice" 
+                        style="color: rgb(0, 255, 0); font-weight: bold;"><FONT 
+                        color="#fbca11">[쪽지]</FONT>                              
+                               </SPAN>                                 </FONT>   
+                                                  </TD>
+                      <TD>
+                        <DIV align="left"><A id="ctl00_ContentPlaceHolder1_GridView1_ctl11_lnk_title" 
+                        href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$GridView1$ctl11$lnk_title','')">
+                        <DIV align="left"><FONT color="white">★★★ 2월 진행이벤트 
+                        ★★★</FONT>                                 </DIV></A> 
+                        </DIV></TD>
+                      <TD><FONT color="white">                                 
+                           02-01 오전 2:43:33</FONT>                             
+                      </TD>
+                      <TD><SPAN id="ctl00_ContentPlaceHolder1_GridView1_ctl11_lbl_ad"><IMG 
+                        src="Customer_files/ico_wind.png">                       
+                                  </SPAN>                             
+                    </TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE>
+            <TABLE width="100%" border="0">
+              <TBODY>
+              <TR>
+                <TD height="15"></TD></TR>
+              <TR>
+                <TD align="right"><INPUT name="ctl00$ContentPlaceHolder1$ibtn_write" 
+                  title="상담하기" align="absmiddle" id="ctl00_ContentPlaceHolder1_ibtn_write" 
+                  style="border-width: 0px;" type="image" src="Customer_files/btn_question1.jpg">&nbsp;&nbsp; 
+                             </TD></TR>
+              <TR>
+                <TD 
+  height="15"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD style="height: 30px;"></TD></TR>
+  <TR valign="middle">
+    <TD><A href="http://kr1.7msport.com/" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_01.jpg'" 
+      onmouseout="this.src='images/Link/bottom_01.jpg'" src="Customer_files/bottom_01.jpg"></A> 
+                      </TD>
+    <TD><A href="http://mlb.mlb.com/home" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_02.jpg'" 
+      onmouseout="this.src='images/Link/bottom_02.jpg'" src="Customer_files/bottom_02.jpg"></A> 
+                       </TD>
+    <TD><A href="http://sports.news.naver.com/sports/index.nhn?category=baseball" 
+      target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_03.jpg'" 
+      onmouseout="this.src='images/Link/bottom_03.jpg'" src="Customer_files/bottom_03.jpg"></A> 
+                       </TD>
+    <TD><A href="http://www.npb.or.jp/" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_04.jpg'" 
+      onmouseout="this.src='images/Link/bottom_04.jpg'" src="Customer_files/bottom_04.jpg"></A> 
+                       </TD>
+    <TD><A href="http://www.nba.com/" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_05.jpg'" 
+      onmouseout="this.src='images/Link/bottom_05.jpg'" src="Customer_files/bottom_05.jpg"></A> 
+                        </TD>
+    <TD><A href="http://kbl.or.kr/main/main.as" target="_blank"><IMG 
+      onmouseover="this.src='images/Link/bottom_on_06.jpg'" onmouseout="this.src='images/Link/bottom_06.jpg'" 
+      src="Customer_files/bottom_06.jpg"></A>                   </TD>
+    <TD><A href="http://www.nhl.com/" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_07.jpg'" 
+      onmouseout="this.src='images/Link/bottom_07.jpg'" src="Customer_files/bottom_07.jpg"></A> 
+                        </TD>
+    <TD><A href="http://www.named.com/namedscore/star/index_re.php" target="_blank"><IMG 
+      onmouseover="this.src='images/Link/bottom_on_08.jpg'" onmouseout="this.src='images/Link/bottom_08.jpg'" 
+      src="Customer_files/bottom_08.jpg"></A>                   
+</TD></TR></TBODY></TABLE>
+<TABLE width="1010" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD height="73" align="center">                    COPYRIGHT © WIND ALL 
+      RIGHTS RESERVED.                     
+</TD></TR></TBODY></TABLE></DIV></FORM></BODY></HTML>

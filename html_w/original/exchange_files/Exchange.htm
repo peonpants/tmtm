@@ -1,0 +1,719 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0030)http://wd-82.com/Exchange.aspx -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+
+<META name="viewport" content="width=1000">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"><TITLE>	WIND 
+</TITLE><LINK href="images/logo_webpage2.png" rel="Shortcut Icon"><LINK href="Exchange_files/style.css" 
+rel="Stylesheet">     
+<SCRIPT src="Exchange_files/jquery-1.9.0.min.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT src="Exchange_files/jquery-ui.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT type="text/javascript">
+        var year = "2018";
+        var month = "2";
+        var day = "27";
+        var hours = "0";
+        var minutes = "46";
+        var seconds = "33";
+        var milliseconds = "122";
+        var dateTime = new Date(year, month, day, hours, minutes, seconds, milliseconds); // 서버시간 초기화
+
+        settime();
+
+        function settime() {
+            dateTime.setSeconds(dateTime.getSeconds() + 1);
+            var hh = dateTime.getHours();
+            var mm = dateTime.getMinutes();
+            var ss = dateTime.getSeconds();
+
+            if (dateTime.getHours() < 10) {
+                hh = '0' + hh;
+            }
+            if (dateTime.getMinutes() < 10) {
+                mm = '0' + mm;
+            }
+            if (dateTime.getSeconds() < 10) {
+                ss = '0' + ss;
+            }
+            $("#divTime").text(year + "/" + month + "/" + day + " " + hh + ":" + mm + ":" + ss); setTimeout("settime()", 1000);
+        }
+
+        function trans_point() {
+            var minpoint = $('#ctl00_hid_transpoint').val();
+            var point = $('#ctl00_hid_point').val();
+
+            if (parseInt(minpoint, 10) > parseInt(point, 10)) {
+                alert('최소 전환 포인트는 ' + minpoint + '점부터 가능합니다');
+                return false;
+            }
+            else {
+                if (confirm("포인트를 캐시로 전환하시겠습니까?")) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        }
+        function bookmarksite(title) {
+            if (document.all) {
+                window.external.AddFavorite(location.href, title);
+            }
+            else if (window.chrome) {
+                alert("Ctrl+D키를 누르시면 즐겨찾기에 추가하실 수 있습니다.");
+            }
+            else if (window.sidebar) {
+                window.sidebar.addPanel(title, location.href, "");
+            }
+            else if (window.opera && window.print) {
+                var elem = document.createElement('a');
+                elem.setAttribute('href', location.href);
+                elem.setAttribute('title', title);
+                elem.setAttribute('rel', 'sidebar');
+                elem.click();
+            }
+        }
+
+        // 시계
+        function startClock() {
+            var M = dateTime.getMonth();
+            var d = dateTime.getDate();
+            var h = dateTime.getHours();
+            var m = dateTime.getMinutes();
+            var s = dateTime.getSeconds();
+            var days = ['(목)', '(금)', '(토)', '(일)', '(월)', '(화)', '(수)'];
+            m = checkTime(m);
+            s = checkTime(s);
+            M = checkDate(M);
+            M = checkTime(M);
+            var time = M + "월" + d + "일" + days[dateTime.getDay()] + " <strong>" + h + ":" + m + ":" + s + "</strong>";
+            document.getElementById('Display_clock').innerHTML = time;
+            var t = setTimeout(function () { startClock() }, 500);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
+        }
+
+        function checkDate(i) {
+            //i = i + 1;
+            i = i;
+            return i;
+        }
+        window.onload = startClock;
+
+        function daridaeiOpen() {
+            $('#daridaei .box').css('display', 'block');
+        }
+        function sutdaOpen() {
+            $('.sutda .box2').css('display', 'block');
+        }
+        function bet365Open() {
+            $('.bet365 .box3').css('display', 'block');
+        }
+        function mgmOpen() {
+            $('.mgm .box4').css('display', 'block');
+        }
+        function KenoOpen() {
+            $('#Keno .box').css('display', 'block');
+        }
+        function livegoOpen() {
+            $('#livego .box').css('display', 'block');
+        }
+    </SCRIPT>
+         
+<SCRIPT type="text/javascript">
+        function plus(money) {
+            var exchange;
+            if (money > 0) {
+                exchange = parseInt($('#ctl00_ContentPlaceHolder1_txt_exchangeMoney').val()) + parseInt(money);
+                if (exchange > parseInt($('#ctl00_ContentPlaceHolder1_hid_cash').val())) {
+                    alert('환전금액은 현재 보유 캐시보다 클 수 없습니다');
+                }
+                else {
+                    $('#ctl00_ContentPlaceHolder1_txt_exchangeMoney').val(exchange);
+                }
+            }
+            else {
+                $('#ctl00_ContentPlaceHolder1_txt_exchangeMoney').val('0');
+            }
+        }
+        function checkMoney() {
+            var cash = parseInt($('#ctl00_ContentPlaceHolder1_hid_exchangecash').val()) - parseInt($('#ctl00_ContentPlaceHolder1_hid_betcash').val());
+
+            var isNum = /^[0-9]{5,8}$/;
+
+            var num_check = /^[0-9]*$/;
+
+            if ($('#ctl00_ContentPlaceHolder1_txt_bankpwd').val() == null || $('#ctl00_ContentPlaceHolder1_txt_bankpwd').val() == "") {
+                alert('환전 비밀번호를 입력하세요');
+                return false;
+            }
+            if (!num_check.test($('#ctl00_ContentPlaceHolder1_txt_bankpwd').val())) {
+                alert('환전 비밀번호는 숫자만 입력가능 합니다.');
+                return false;
+            }
+            if (!isNum.test($('#ctl00_ContentPlaceHolder1_txt_exchangeMoney').val())) {
+                alert('10,000원 이상 ~ 10,000,000원 이하 숫자만 입력하세요.');
+                return false;
+            }
+            if (parseInt($('#ctl00_ContentPlaceHolder1_txt_exchangeMoney').val()) > parseInt($('#ctl00_ContentPlaceHolder1_hid_cash').val())) {
+                alert('환전 금액은 현재 보유 캐시보다 클 수 없습니다');
+                return false;
+            }
+            if (parseInt($('#ctl00_ContentPlaceHolder1_txt_exchangeMoney').val()) < 10000) {
+                alert('환전 금액은 10,000원 이상 가능합니다');
+                return false;
+            }
+            if ((parseInt($('#ctl00_ContentPlaceHolder1_txt_exchangeMoney').val()) % 10000) != 0) {
+                alert('환전 금액은 10,000원 단위로 가능합니다');
+                return false;
+            }
+            return true;
+        }
+        function NumObj(obj) {
+            if (event.keyCode >= 48 && event.keyCode <= 57) {
+                return true;
+            } else {
+                event.returnValue = false;
+            }
+        }
+    </SCRIPT>
+     
+<STYLE type="text/css">
+        html
+        {
+            background-color: Black;
+            font-family: dotum;
+            letter-spacing: 0;
+            font-size: 11px;
+            color: White;
+            text-align: center;
+        }
+        .style2
+        {
+            font-family: "Comic Sans MS";
+            color: #FFFFFF;
+            font-size: small;
+        }
+        .style3
+        {
+            color: #ffffff;
+            font-weight: bold;
+        }
+       .content5
+        {
+            font-family: dotum;
+            font-size: 14px;
+            padding-Top:10px
+            
+        }
+        .daridaei{position:relative;cursor:pointer}
+        .daridaei .box{position:absolute;left:50%;top:40px;margin-left:-85px;width:171px;z-index:9999;display:none}
+        .daridaei .box a{float:left}
+        div.daridaei:hover .box{display:block}
+        
+        .sutda{position:relative;cursor:pointer}
+        .sutda .box2{position:absolute;left:50%;top:40px;margin-left:-55px;width:171px;z-index:9999;display:none}
+        .sutda .box2 a{float:left}
+        div.sutda:hover .box2{display:block}
+        
+        .bet365{position:relative;cursor:pointer}
+        .bet365 .box3{position:absolute;left:50%;top:40px;margin-left:-60px;width:171px;z-index:9999;display:none}
+        .bet365 .box3 a{float:left}
+        div.bet365:hover .box3{display:block}
+        
+        .mgm{position:relative;cursor:pointer}
+        .mgm .box4{position:absolute;left:50%;top:40px;margin-left:-62px;width:171px;z-index:9999;display:none}
+        .mgm .box4 a{float:left}
+        div.mgm:hover .box4{display:block}
+    </STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY>
+<FORM name="aspnetForm" id="aspnetForm" action="Exchange.aspx" method="post">
+<DIV><INPUT name="__EVENTTARGET" id="__EVENTTARGET" type="hidden"> <INPUT name="__EVENTARGUMENT" id="__EVENTARGUMENT" type="hidden"> 
+<INPUT name="__VIEWSTATE" id="__VIEWSTATE" type="hidden" value="/wEPDwUKMTYyMjIzNDY4Ng9kFgJmD2QWAgIDD2QWFgIDDw8WAh4ISW1hZ2VVcmwFFWltYWdlcy9sZXZlbC9sdl8xLnBuZ2RkAgUPDxYCHgRUZXh0BQtHU+y5vO2HtOq3vGRkAgcPDxYCHwEFATBkZAIJDw8WAh8BBQUzLDg3MWRkAgsPDxYCHwEFATBkZAITDw8WAh8BBW88Zm9udCBjb2xvcj15ZWxsb3c+4piF6rKM7Iuc7YyQIOqzteyngOuCtOyaqeydhCDsiJnsp4Dtm4Qg7J207Jqp67CU656N64uI64uk4piFPC9mb250PjwvZm9udD4mbmJzcDsmbmJzcDsmbmJzcDtkZAIVDw8WAh8BBV48Zm9udCBjb2xvcj15ZWxsb3c+4piFS0JMIE5CQSDsv7zthLDrs4Qg7Iuk7Iuc6rCEIOynhO2WieykkeKYhTwvZm9udD48L2ZvbnQ+Jm5ic3A7Jm5ic3A7Jm5ic3A7ZGQCFw8PFgIfAQVlPGZvbnQgY29sb3I9eWVsbG93PuKYheyngOyduOy2lOyynCDsnbTrsqTtirggMTXrp4ztj6zsnbjtirgg7KeA6riJ4piFPC9mb250PjwvZm9udD4mbmJzcDsmbmJzcDsmbmJzcDtkZAIZDw8WAh8BBWs8Zm9udCBjb2xvcj15ZWxsb3c+4piF7Iug6rec6rKM7J6EIExJVkUg67CU7Lm06528IOqwnOqyveyjvCDqsIDsg4HstpXqtazimIU8L2ZvbnQ+PC9mb250PiZuYnNwOyZuYnNwOyZuYnNwO2RkAhsPDxYCHwEFWjxmb250IGNvbG9yPXllbGxvdz7imIV3ZC04Nzg3IOuYkOuKlCB3ZC04MiDsoJHsho3qsIDriqXimIU8L2ZvbnQ+PC9mb250PiZuYnNwOyZuYnNwOyZuYnNwO2RkAh0PZBYMAgEPDxYCHwEFBuyasOumrGRkAgMPDxYCHwEFCeycoOuvvOyyoGRkAgUPDxYCHwEFDzEwMC0qKiotNDA1NTI2MmRkAhMPD2QWAh4Hb25jbGljawUfaWYoIWNoZWNrTW9uZXkoKSkgcmV0dXJuIGZhbHNlO2QCFw9kFgJmD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIDFgZmD2QWCmYPFQEBMWQCBA8VAQY1MCwwMDBkAgUPDxYCHwEFEzIwMTgtMDEtMTQgMDI6MTI6MjFkZAIIDxUDAAAjPGZvbnQgY29sb3I9UmVkPuuvuOyymOumrOuQqDwvZm9udD5kAgkPD2QWAh8CBXByZXR1cm4gY29uZmlybSgn7LKY66asIOykkeydvCDqsr3smrAg7IKt7KCc7ZWY7Iuc66m0IO2ZmOyghOydtCDrtojqsIDriqUg7ZWp64uI64ukLiDsgq3soJztlZjsi5zqsqDsirXri4jquYw/Jyk7ZAIBD2QWCmYPFQEBMmQCBA8VAQc2MDAsMDAwZAIFDw8WAh8BBRMyMDE3LTExLTE2IDAwOjEwOjIxZGQCCA8VAyM8Zm9udCBjb2xvcj1ZZWxsb3c+7LKY66as65CoPC9mb250PgAAZAIJDw9kFgIfAgVwcmV0dXJuIGNvbmZpcm0oJ+yymOumrCDspJHsnbwg6rK97JqwIOyCreygnO2VmOyLnOuptCDtmZjsoITsnbQg67aI6rCA64qlIO2VqeuLiOuLpC4g7IKt7KCc7ZWY7Iuc6rKg7Iq164uI6rmMPycpO2QCAg9kFgpmDxUBATNkAgQPFQEHNTAwLDAwMGQCBQ8PFgIfAQUTMjAxNy0xMS0xNCAwMDozODoxOWRkAggPFQMjPGZvbnQgY29sb3I9WWVsbG93PuyymOumrOuQqDwvZm9udD4AAGQCCQ8PZBYCHwIFcHJldHVybiBjb25maXJtKCfsspjrpqwg7KSR7J28IOqyveyasCDsgq3soJztlZjsi5zrqbQg7ZmY7KCE7J20IOu2iOqwgOuKpSDtlanri4jri6QuIOyCreygnO2VmOyLnOqyoOyKteuLiOq5jD8nKTtkAhkPD2QPDxQrAAEWCB4ETmFtZQUCaWQeBFR5cGULKVxTeXN0ZW0uVHlwZUNvZGUsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4ORIeDERlZmF1bHRWYWx1ZQUIaHdhbjUzMjkeDlBhcmFtZXRlclZhbHVlZBQrAQECA2RkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYEBSxjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGlidG5fZXhjaGFuZ2VNb25leQU2Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRSZXBlYXRlcjIkY3RsMDAkaWJ0bl9jaGFyZGVsBTZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJFJlcGVhdGVyMiRjdGwwMSRpYnRuX2NoYXJkZWwFNmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkUmVwZWF0ZXIyJGN0bDAyJGlidG5fY2hhcmRlbN1a786qfBGPXmG//HrRAa5TXbk8"> 
+</DIV>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</SCRIPT>
+ 
+<SCRIPT src="Exchange_files/WebResource.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Exchange_files/ScriptResource.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 클라이언트측 프레임워크를 로드하지 못했습니다.');
+//]]>
+</SCRIPT>
+ 
+<SCRIPT src="Exchange_files/ScriptResource(1).js" type="text/javascript"></SCRIPT>
+ 
+<DIV><INPUT name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" type="hidden" value="1BE11E85">
+	 <INPUT name="__EVENTVALIDATION" id="__EVENTVALIDATION" type="hidden" value="/wEWFwKul52NCgLt3bu0BAKs4pGNBAL6n9xqApCn7RoCqPu2KgLq5qMmAuypzdYNApaSpKMFAsrtkv4MArzvkrIJAqyBm6kPAtimx60NAuLbs9kFAr/HhJMMAsv/mqkPAtnsxq0NAuOhs9kFAtzNrY0MAur/mqkPAtr0xq0NAuCps9kFAv3Tj40MrDlo+6slsRWP8Px96hSuuoh/Lrc="> 
+</DIV>
+<DIV align="center">
+<TABLE width="1010" align="center" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class="gnb_top">
+      <TABLE width="1010" align="center" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD style="width: 513px; height: 80px; text-align: left; vertical-align: bottom;"><A 
+            name="1"></A>                                     <A href="http://wd-82.com/mainsite.aspx"><IMG 
+            alt="" src="Exchange_files/logo3.png" border="0"></A>                
+                             </TD>
+          <TD><A href="http://wd-82.com/BoardList.aspx"><IMG alt="" src="Exchange_files/BoardList_btn.png" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/BetResult.aspx"><IMG alt="" src="Exchange_files/betlist1.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/GameResult.aspx"><IMG alt="" src="Exchange_files/menu_result1.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/Event.aspx"><IMG alt="" src="Exchange_files/Event1.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/Guide.aspx"><IMG alt="" src="Exchange_files/menu_guide.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/MyPage.aspx"><IMG alt="" src="Exchange_files/menu_modify1.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/Customer.aspx"><IMG alt="" src="Exchange_files/menu_cs2.jpg" 
+            border="0"></A>                                 </TD>
+          <TD><A href="http://wd-82.com/Logout.aspx"><IMG alt="" src="Exchange_files/menu_logout1.jpg" 
+            border="0"></A>                                 
+      </TD></TR></TBODY></TABLE></DIV></TD></TR>
+  <TR>
+    <TD height="5"></TD></TR>
+  <TR>
+    <TD>
+      <TABLE align="center" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD><A href="http://wd-82.com/cross.aspx"><IMG onmouseover="this.src='images/menu2/m_1_over.png'" 
+            onmouseout="this.src='images/menu2/m_1.png'" src="Exchange_files/m_1.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/1x2odds.aspx"><IMG onmouseover="this.src='images/menu2/m_2_over.png'" 
+            onmouseout="this.src='images/menu2/m_2.png'" src="Exchange_files/m_2.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/Handi.aspx"><IMG onmouseover="this.src='images/menu2/m_3_over.png'" 
+            onmouseout="this.src='images/menu2/m_3.png'" src="Exchange_files/m_3.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/Special.aspx"><IMG onmouseover="this.src='images/menu2/m_4_over.png'" 
+            onmouseout="this.src='images/menu2/m_4.png'" src="Exchange_files/m_4.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/Special2.aspx"><IMG onmouseover="this.src='images/menu2/m_5_over.png'" 
+            onmouseout="this.src='images/menu2/m_5.png'" src="Exchange_files/m_5.png"></A> 
+                                        </TD>
+          <TD>
+            <DIV class="daridaei"><IMG align="absmiddle" onmouseover="this.src='images/menu2/m_6_over.png'" 
+            onmouseout="this.src='images/menu2/m_6.png'" onclick="daridaeiOpen();" 
+            src="Exchange_files/m_6.png" border="0">                             
+                    
+            <DIV class="box"><A href="http://wd-82.com/LadderGame.aspx"><IMG 
+            align="absmiddle" src="Exchange_files/menu_ladder3.png" 
+            border="0"></A>                                         <A href="http://wd-82.com/NamedGame.aspx"><IMG 
+            align="absmiddle" src="Exchange_files/menu_ladder4.png" 
+            border="0"></A>                                         <A href="http://wd-82.com/DariGame.aspx"><IMG 
+            align="absmiddle" src="Exchange_files/menu_ladder5.png" 
+            border="0"></A>                                     </DIV></DIV></TD>
+          <TD><A href="http://wd-82.com/PowerBall.aspx"><IMG onmouseover="this.src='images/menu2/m_7_over.png'" 
+            onmouseout="this.src='images/menu2/m_7.png'" src="Exchange_files/m_7.png"></A> 
+                                        </TD>
+          <TD><A href="http://wd-82.com/PowerLadder.aspx"><IMG onmouseover="this.src='images/menu2/m_14_over.png'" 
+            onmouseout="this.src='images/menu2/m_14.png'" src="Exchange_files/m_14.png"></A> 
+                                        </TD>
+          <TD>
+            <DIV class="daridaei" id="Keno"><IMG align="absmiddle" onmouseover="this.src='images/menu2/m_15_over.png'" 
+            onmouseout="this.src='images/menu2/m_15.png'" onclick="KenoOpen();" 
+            src="Exchange_files/m_15.png" border="0">                            
+                     
+            <DIV class="box" style="width: 190px; margin-left: -95px;"><A href="http://wd-82.com/Keno.aspx"><IMG 
+            align="absmiddle" src="Exchange_files/menu_keno_1.png" 
+            border="0"></A>                                         <A href="http://wd-82.com/KenoLadder.aspx"><IMG 
+            align="absmiddle" src="Exchange_files/menu_keno_2.png" 
+            border="0"></A>                                     </DIV></DIV></TD>
+          <TD>
+            <DIV class="daridaei" id="livego"><IMG align="absmiddle" 
+            onmouseover="this.src='images/menu2/m_16_over.png'" onmouseout="this.src='images/menu2/m_16.png'" 
+            onclick="livegoOpen();" src="Exchange_files/m_16.png" border="0">    
+                                             
+            <DIV class="box" style="width: 128px; margin-left: -64px;"><A href="http://wd-82.com/Roulette.aspx"><IMG 
+            align="absmiddle" src="Exchange_files/menu_live_1.png" 
+            border="0"></A>                                         <A href="http://wd-82.com/Pinball.aspx"><IMG 
+            align="absmiddle" src="Exchange_files/menu_live_2.png" 
+            border="0"></A>                                     </DIV></DIV></TD>
+          <TD>
+            <DIV class="bet365"><IMG align="absmiddle" onmouseover="this.src='images/menu2/m_13_over.png'" 
+            onmouseout="this.src='images/menu2/m_13.png'" onclick="bet365Open();" 
+            src="Exchange_files/m_13.png" border="0">                            
+                   
+            <DIV class="box3"><A href="http://wd-82.com/B365Greyhounds.aspx?src=https://www.bet365.com"><IMG 
+            align="absmiddle" src="Exchange_files/grey.png" border="0"></A>      
+                                               <A href="http://wd-82.com/B365Soccer.aspx?src=https://www.bet365.com"><IMG 
+            align="absmiddle" src="Exchange_files/soccer.png" border="0"></A>    
+                                                                                 
+               </DIV></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD height="15"></TD></TR>
+  <TR>
+    <TD><!-- 내정보 -->                     
+      <DIV class="gnb_top_my">
+      <UL class="info">
+        <LI class="my"><IMG id="ctl00_img_lv" style="border-width: 0px;" src="Exchange_files/lv_1.png"> 
+                                        <SPAN id="ctl00_lbl_name">GS칼퇴근</SPAN>   
+                                     님 어서오세요.                             </LI>
+        <LI class="money"><STRONG>캐시 :</STRONG>                                 
+        <SPAN id="ctl00_lbl_money">0</SPAN> 원                             </LI>
+        <LI class="point"><STRONG>포인트 :</STRONG>                                 
+        <SPAN id="ctl00_lbl_point">3,871</SPAN> 점                             
+        </LI>
+        <LI class="memo"><STRONG>쪽지 :</STRONG>                                 
+        <A href="http://wd-82.com/Customer.aspx">(<SPAN 
+        id="ctl00_lbl_memo">0</SPAN>)</A> 통                             </LI></UL>
+      <UL class="btn">
+        <LI><A class="c_btn" style="color: rgb(255, 255, 0); font-size: 14px; font-weight: bold;" 
+        href="http://wd-82.com/Charge.aspx">충전신청</A></LI>
+        <LI><A class="c_btn" style="color: rgb(255, 255, 0); font-size: 14px; font-weight: bold;" 
+        href="http://wd-82.com/Exchange.aspx">환전신청</A></LI>
+        <LI><INPUT name="ctl00$ibtn_trans" id="ctl00_ibtn_trans" onclick="return trans_point();" type="submit" value="포인트전환"> 
+                                        <INPUT name="ctl00$hid_point" id="ctl00_hid_point" type="hidden" value="3871"> 
+                                        <INPUT name="ctl00$hid_transpoint" id="ctl00_hid_transpoint" type="hidden" value="5000"> 
+                                    </LI>
+        <LI><A href="http://wd-82.com/CustomerWrite2.aspx">간편계좌문의</A></LI>
+        <LI><A href="http://wd-82.com/MyAct.aspx">마이페이지</A></LI></UL></DIV><!-- //내정보 --> 
+                      </TD></TR>
+  <TR>
+    <TD height="10"></TD></TR>
+  <TR>
+    <TD><!-- 공지사항 -->                     
+      <DIV class="gnb_notice">
+<SCRIPT src="Exchange_files/textScroll.js" type="text/javascript"></SCRIPT>
+                               
+      <DIV id="bKey">
+      <MARQUEE width="850" class="content5"><STRONG><SPAN 
+      id="ctl00_lbl_news1"><FONT color="yellow">★게시판 공지내용을 숙지후 
+      이용바랍니다★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                        
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        <STRONG><SPAN 
+      id="ctl00_lbl_news2"><FONT color="yellow">★KBL NBA 쿼터별 실시간 
+      진행중★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        <STRONG><SPAN 
+      id="ctl00_lbl_news3"><FONT color="yellow">★지인추천 이벤트 15만포인트 
+      지급★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        <STRONG><SPAN 
+      id="ctl00_lbl_news4"><FONT color="yellow">★신규게임 LIVE 바카라 개경주 
+      가상축구★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        <STRONG><SPAN 
+      id="ctl00_lbl_news5"><FONT color="yellow">★wd-8787 또는 wd-82 
+      접속가능★</FONT>&nbsp;&nbsp;&nbsp;</SPAN></STRONG>                       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     </MARQUEE>
+<SCRIPT type="text/javascript">
+                                var hotKeyword = new scrolling("jFavList", 4000, 1, 1, 33);
+                            </SCRIPT>
+                               </DIV>
+      <DIV id="Display_clock"></DIV></DIV><!-- //공지사항 -->                 
+  </TD></TR></TBODY></TABLE>
+<TABLE width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD style="height: 7px;"></TD></TR>
+  <TR valign="middle">
+    <TD><A href="http://www.livescore.in/" target="_blank"><IMG src="Exchange_files/link_soccer.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.npb.or.jp/" target="_blank"><IMG src="Exchange_files/link_npb.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.nhl.com/" target="_blank"><IMG src="Exchange_files/link_nhl.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.nba.com/" target="_blank"><IMG src="Exchange_files/link_nba.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://mlb.mlb.com/home" target="_blank"><IMG src="Exchange_files/link_mlb.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://sports.news.naver.com/" target="_blank"><IMG src="Exchange_files/like_naver.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://livego24.com/" target="_blank"><IMG src="Exchange_files/livego24.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.espn.com/" target="_blank"><IMG src="Exchange_files/link_espn.png" 
+      border="0"></A>                 </TD>
+    <TD><A href="http://www.named.com/" target="_blank"><IMG src="Exchange_files/link_named.png" 
+      border="0"></A>                 </TD></TR></TBODY></TABLE><!----------->         
+<TABLE width="1010" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD align="center">
+      <TABLE width="1010" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD width="100%" valign="top"><!--  Mypage Menu -->                  
+                               
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD width="800" align="left"><IMG align="absmiddle" src="Exchange_files/exchange.png"> 
+                              </TD>
+                <TD width="210" align="right" valign="top" rowspan="9">
+                  <DIV style="position: relative;"><IMG align="absmiddle" style="top: 0px; right: 0px; position: absolute;" 
+                  src="Exchange_files/banklist.png">                 
+</DIV></TD></TR>
+              <TR>
+                <TD height="15"></TD></TR>
+              <TR>
+                <TD align="center">
+                  <TABLE width="100%" align="center" class="noticestyle" border="0" 
+                  cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TH height="35" style="padding: 0px 20px; text-align: left;">주의사항 
+                                                </TH></TR>
+                    <TR>
+                      <TD align="left" style="padding: 15px 20px; text-align: left;">▶ 
+                        24시간 자유롭게 출금이 가능하며 최장 3~5분 소요됩니다.(단, 은행별 점검시간은 은행점검으로 
+                        이체가 되지않을수 있습니다.)<BR><BR>▶ 환전은 신청즉시 아이디에서 차감됩니다.<BR><BR>▶ 
+                        10분이상 입금이 지연될시 회원님 계좌정보를 잘못 기입한 경우가 많습니다. 그럴경우 고객센터로 
+                        계좌정보를 정확히 보내주세요.<BR><BR>▶ 충전금액 100%이상 사용하지 
+                        않을시(추가머니차감)환전이 불가합니다.<BR></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD height="15"></TD></TR>
+              <TR>
+                <TD align="center">
+                  <TABLE width="100%" align="center" class="noticestyle" border="0" 
+                  cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TH height="35" style="padding: 0px 20px; text-align: left;">계좌정보 
+                                                </TH></TR>
+                    <TR>
+                      <TD align="left" style="padding: 15px 20px; text-align: left;">▶ 
+                        <FONT color="#9f9223">환전 은행&nbsp;</FONT>[&nbsp;          
+                                           <SPAN id="ctl00_ContentPlaceHolder1_lbl_bank">우리</SPAN>&nbsp;&nbsp;]<BR><BR>▶ 
+                        <FONT color="#9f9223">예 금 주</FONT>&nbsp;&nbsp;[&nbsp;    
+                                                 <SPAN id="ctl00_ContentPlaceHolder1_lbl_usrName">유민철</SPAN>&nbsp;&nbsp;]<BR><BR>▶ 
+                        <FONT color="#9f9223">계좌 번호</FONT>&nbsp;[&nbsp;          
+                                           <SPAN id="ctl00_ContentPlaceHolder1_lbl_bankacnt">100-***-4055262</SPAN>&nbsp;&nbsp;] 
+                                                    <INPUT name="ctl00$ContentPlaceHolder1$hid_bankacnt" id="ctl00_ContentPlaceHolder1_hid_bankacnt" type="hidden" value="1002154055262"> 
+                                                    <INPUT name="ctl00$ContentPlaceHolder1$hid_cash" id="ctl00_ContentPlaceHolder1_hid_cash" type="hidden" value="0"> 
+                                                    <INPUT name="ctl00$ContentPlaceHolder1$hid_exchangecash" id="ctl00_ContentPlaceHolder1_hid_exchangecash" type="hidden" value="15519244"> 
+                                                    <INPUT name="ctl00$ContentPlaceHolder1$hid_betcash" id="ctl00_ContentPlaceHolder1_hid_betcash" type="hidden" value="34051933"> 
+                                                </TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD height="15"></TD></TR>
+              <TR>
+                <TD align="center">
+                  <TABLE width="100%" align="center" class="noticestyle" border="0" 
+                  cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD height="35" style="padding: 0px 20px; text-align: left;">요청하기 
+                                                </TD></TR>
+                    <TR>
+                      <TD align="left" 
+                        style="padding: 20px; text-align: left;">▶ 비밀번호 :        
+                                             <INPUT name="ctl00$ContentPlaceHolder1$txt_bankpwd" id="ctl00_ContentPlaceHolder1_txt_bankpwd" style="border: 1px solid rgb(76, 76, 76); width: 100px; color: white; -ms-ime-mode: disabled; background-color: black;" onkeypress="javascript:NumObj(this);" type="password" maxlength="8">&nbsp;(회원가입시 
+                                                   기재하신 출금 비밀번호를 입력해 
+                        주십시오.)<BR><BR><BR>▶ 환전금액 :                             
+<INPUT name="ctl00$ContentPlaceHolder1$txt_exchangeMoney" id="ctl00_ContentPlaceHolder1_txt_exchangeMoney" style="border: 1px solid rgb(76, 76, 76); width: 100px; text-align: right; color: white; -ms-ime-mode: disabled; background-color: black;" onkeypress="javascript:NumObj(this);" type="text" maxlength="8" value="0">&nbsp;원<BR><BR><IMG 
+                        align="absmiddle" id="Img6" style="cursor: pointer;" 
+                        onclick="javascript:plus(10000);" alt="1만원" src="Exchange_files/1.png" 
+                        border="0">                             <IMG align="absmiddle" 
+                        id="Img7" style="cursor: pointer;" onclick="javascript:plus(30000);" 
+                        alt="3만원" src="Exchange_files/3.png" border="0">         
+                                            <IMG align="absmiddle" id="Img8" 
+                        style="cursor: pointer;" onclick="javascript:plus(50000);" 
+                        alt="5만원" src="Exchange_files/5.png" border="0">         
+                                            <IMG align="absmiddle" id="Img9" 
+                        style="cursor: pointer;" onclick="javascript:plus(100000);" 
+                        alt="10만원" src="Exchange_files/10.png" border="0">       
+                                              <IMG align="absmiddle" id="Img10" 
+                        style="cursor: pointer;" onclick="javascript:plus(500000);" 
+                        alt="50만원" src="Exchange_files/50.png" border="0">       
+                                              <IMG align="absmiddle" id="Img12" 
+                        style="cursor: pointer;" onclick="javascript:plus(1000000);" 
+                        alt="100만원" src="Exchange_files/100.png" border="0">     
+                                                &nbsp;                           
+                         <IMG align="absmiddle" id="Img11" style="cursor: pointer;" 
+                        onclick="javascript:plus(0);" alt="정정" src="Exchange_files/btn_delete.png" 
+                        border="0">                         
+                </TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD height="15"></TD></TR>
+              <TR>
+                <TD align="center"><INPUT name="ctl00$ContentPlaceHolder1$ibtn_exchangeMoney" 
+                  title="환전요청" id="ctl00_ContentPlaceHolder1_ibtn_exchangeMoney" 
+                  style="border-width: 0px;" onclick="if(!checkMoney()) return false;" 
+                  type="image" src="Exchange_files/exchange1.jpg">             
+                </TD></TR>
+              <TR>
+                <TD height="15"></TD></TR>
+              <TR>
+                <TD align="center">
+                  <TABLE width="100%" border="0" cellspacing="0" 
+cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD width="100%" align="right">
+                        <DIV id="ctl00_ContentPlaceHolder1_UpdatePanel1"></DIV>
+                        <TABLE width="100%" class="noticestyle" style="text-align: center;">
+                          <TBODY>
+                          <TR>
+                            <TH width="5%" height="30">번호                      
+                                             </TH>
+                            <TH width="25%">                                   
+                                   환전금액                                     </TH>
+                            <TH width="25%">                                   
+                                   환전날짜                                     </TH>
+                            <TH width="25%">                                   
+                                   상태                                     </TH>
+                            <TH width="20%">                                   
+                                   삭제                                     </TH></TR>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$ContentPlaceHolder1$UpdatePanel1'], [], [], 90);
+//]]>
+</SCRIPT>
+                                                           
+                          <TR>
+                            <TD height="30"><B><FONT color="#9c9c9c"><B>       
+                                                                                 
+                                1</B></FONT>                                     
+                                              </B></TD>
+                            <TD><B><FONT color="#ffe406"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl00$hid_id" id="ctl00_ContentPlaceHolder1_Repeater2_ctl00_hid_id" type="hidden" value="hwan5329"> 
+                                                                                 
+                                       <INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl00$hid_cash" id="ctl00_ContentPlaceHolder1_Repeater2_ctl00_hid_cash" type="hidden" value="50000"> 
+                                                                                 
+                                      50,000원</FONT></B>                         
+                                                          </TD>
+                            <TD><B><FONT color="#9c9c9c"><SPAN id="ctl00_ContentPlaceHolder1_Repeater2_ctl00_lbl_time">2018-01-14 
+                              02:12:21</SPAN></FONT></B>                         
+                                                          </TD>
+                            <TD><B><FONT color="#ffffff"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl00$hid_state" id="ctl00_ContentPlaceHolder1_Repeater2_ctl00_hid_state" type="hidden" value="4"> 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                         <FONT 
+                              color="red">미처리됨</FONT>                            
+                                                           </FONT></B>           
+                                                                        </TD>
+                            <TD><B><FONT color="#ffe406"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl00$ibtn_chardel" 
+                              align="absmiddle" id="ctl00_ContentPlaceHolder1_Repeater2_ctl00_ibtn_chardel" 
+                              style="border-width: 0px;" onclick="return confirm('처리 중일 경우 삭제하시면 환전이 불가능 합니다. 삭제하시겠습니까?');" 
+                              type="image" src="Exchange_files/cart_x.png">      
+                                                                                 
+                              </FONT></B>                                        
+                                           </TD></TR>
+                          <TR>
+                            <TD height="30"><B><FONT 
+                              color="#9c9c9c"><B>2</B></FONT>                    
+                                                               </B></TD>
+                            <TD><B><FONT color="#ffe406"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl01$hid_id" id="ctl00_ContentPlaceHolder1_Repeater2_ctl01_hid_id" type="hidden" value="hwan5329"> 
+                                                                                 
+                                       <INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl01$hid_cash" id="ctl00_ContentPlaceHolder1_Repeater2_ctl01_hid_cash" type="hidden" value="600000"> 
+                                                                                 
+                                      600,000원</FONT></B>                        
+                                                           </TD>
+                            <TD><B><FONT color="#9c9c9c"><SPAN id="ctl00_ContentPlaceHolder1_Repeater2_ctl01_lbl_time">2017-11-16 
+                              00:10:21</SPAN></FONT></B>                         
+                                                          </TD>
+                            <TD><B><FONT color="#ffffff"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl01$hid_state" id="ctl00_ContentPlaceHolder1_Repeater2_ctl01_hid_state" type="hidden" value="3"> 
+                                                                                 
+                                       <FONT color="yellow">처리됨</FONT>           
+                                                                                 
+                                                                                 
+                                                                                 
+                                           </FONT></B>                           
+                                                        </TD>
+                            <TD><B><FONT color="#ffe406"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl01$ibtn_chardel" 
+                              align="absmiddle" id="ctl00_ContentPlaceHolder1_Repeater2_ctl01_ibtn_chardel" 
+                              style="border-width: 0px;" onclick="return confirm('처리 중일 경우 삭제하시면 환전이 불가능 합니다. 삭제하시겠습니까?');" 
+                              type="image" src="Exchange_files/cart_x.png">      
+                                                                                 
+                              </FONT></B>                                        
+                                           </TD></TR>
+                          <TR>
+                            <TD height="30"><B><FONT 
+                              color="#9c9c9c"><B>3</B></FONT>                    
+                                                               </B></TD>
+                            <TD><B><FONT color="#ffe406"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl02$hid_id" id="ctl00_ContentPlaceHolder1_Repeater2_ctl02_hid_id" type="hidden" value="hwan5329"> 
+                                                                                 
+                                       <INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl02$hid_cash" id="ctl00_ContentPlaceHolder1_Repeater2_ctl02_hid_cash" type="hidden" value="500000"> 
+                                                                                 
+                                      500,000원</FONT></B>                        
+                                                           </TD>
+                            <TD><B><FONT color="#9c9c9c"><SPAN id="ctl00_ContentPlaceHolder1_Repeater2_ctl02_lbl_time">2017-11-14 
+                              00:38:19</SPAN></FONT></B>                         
+                                                          </TD>
+                            <TD><B><FONT color="#ffffff"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl02$hid_state" id="ctl00_ContentPlaceHolder1_Repeater2_ctl02_hid_state" type="hidden" value="3"> 
+                                                                                 
+                                       <FONT color="yellow">처리됨</FONT>           
+                                                                                 
+                                                                                 
+                                                                                 
+                                           </FONT></B>                           
+                                                        </TD>
+                            <TD><B><FONT color="#ffe406"><INPUT name="ctl00$ContentPlaceHolder1$Repeater2$ctl02$ibtn_chardel" 
+                              align="absmiddle" id="ctl00_ContentPlaceHolder1_Repeater2_ctl02_ibtn_chardel" 
+                              style="border-width: 0px;" onclick="return confirm('처리 중일 경우 삭제하시면 환전이 불가능 합니다. 삭제하시겠습니까?');" 
+                              type="image" src="Exchange_files/cart_x.png">      
+                                                                                 
+                              </FONT></B>                                        
+                                           
+                  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD style="height: 30px;"></TD></TR>
+  <TR valign="middle">
+    <TD><A href="http://kr1.7msport.com/" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_01.jpg'" 
+      onmouseout="this.src='images/Link/bottom_01.jpg'" src="Exchange_files/bottom_01.jpg"></A> 
+                      </TD>
+    <TD><A href="http://mlb.mlb.com/home" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_02.jpg'" 
+      onmouseout="this.src='images/Link/bottom_02.jpg'" src="Exchange_files/bottom_02.jpg"></A> 
+                       </TD>
+    <TD><A href="http://sports.news.naver.com/sports/index.nhn?category=baseball" 
+      target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_03.jpg'" 
+      onmouseout="this.src='images/Link/bottom_03.jpg'" src="Exchange_files/bottom_03.jpg"></A> 
+                       </TD>
+    <TD><A href="http://www.npb.or.jp/" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_04.jpg'" 
+      onmouseout="this.src='images/Link/bottom_04.jpg'" src="Exchange_files/bottom_04.jpg"></A> 
+                       </TD>
+    <TD><A href="http://www.nba.com/" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_05.jpg'" 
+      onmouseout="this.src='images/Link/bottom_05.jpg'" src="Exchange_files/bottom_05.jpg"></A> 
+                        </TD>
+    <TD><A href="http://kbl.or.kr/main/main.as" target="_blank"><IMG 
+      onmouseover="this.src='images/Link/bottom_on_06.jpg'" onmouseout="this.src='images/Link/bottom_06.jpg'" 
+      src="Exchange_files/bottom_06.jpg"></A>                   </TD>
+    <TD><A href="http://www.nhl.com/" target="_blank"><IMG onmouseover="this.src='images/Link/bottom_on_07.jpg'" 
+      onmouseout="this.src='images/Link/bottom_07.jpg'" src="Exchange_files/bottom_07.jpg"></A> 
+                        </TD>
+    <TD><A href="http://www.named.com/namedscore/star/index_re.php" target="_blank"><IMG 
+      onmouseover="this.src='images/Link/bottom_on_08.jpg'" onmouseout="this.src='images/Link/bottom_08.jpg'" 
+      src="Exchange_files/bottom_08.jpg"></A>                   
+</TD></TR></TBODY></TABLE>
+<TABLE width="1010" align="center" border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD height="73" align="center">                    COPYRIGHT © WIND ALL 
+      RIGHTS RESERVED.                     </TD></TR></TBODY></TABLE></DIV>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</SCRIPT>
+ </FORM></BODY></HTML>

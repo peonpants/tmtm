@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0035)http://mvp-t5.com/include/time.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<TITLE>time</TITLE> 
+<SCRIPT src="time_files/jquery-1.4.2.js"></SCRIPT>
+ 
+<SCRIPT language="javascript" type="text/javascript">
+<!--
+$(document).ready(function() {
+	stime();
+})
+
+var c=0;
+var Y=2016,M=7,D=28;
+function stime() {
+	c++
+	sec=85310+c;
+	H=Math.floor(sec/3600)%24
+	I=Math.floor(sec/60)%60
+	S=sec%60
+	if(S<10) S='0'+S;
+	if(I<10) I='0'+I;
+	if(H<10) H='0'+H;
+	if (H=='00' & I=='00' & S=='00') D=D+1;
+	if (M==2) {
+		if (Y%4==0 && !Y%100==0 || Y%400==0) { 
+			if (D==30){M+=1;D=1;} 
+		} else { 
+			if (D==29){M+=1;D=1;} 
+		}
+	} else { 
+		if (M==4 || M==6 || M==9 || M==11) { 
+			if (D==31) {M+=1;D=1;} 
+		} else {
+			if (D==32){M+=1;D=1;} 
+		}
+	}
+	if (M==13) {Y+=1;M=1;} 
+	setTimeout("stime()", 1000);
+	if(H>12){
+		str = 'PM';
+	}else{
+		str = 'AM';
+	}
+	document.getElementById("servertime").innerHTML = '<span>'+str+'</span>'+H+':'+I+':'+S
+}
+-->
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18377"></HEAD> 
+<BODY style="margin: 0px;">
+<STYLE>
+*{
+	font-family: Arial; 
+	background-color:transparent;
+}
+#servertime span{color:#fff; margin-right:10px;}
+</STYLE>
+ <B id="servertime" style="color: rgb(255, 255, 255); line-height: 30px; font-size: 20px;"></B> 
+</BODY></HTML>

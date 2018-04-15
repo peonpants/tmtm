@@ -1,0 +1,342 @@
+body {
+	background: url("images/bg2.jpg") no-repeat 50% 0px rgb(0, 0, 0);
+}
+html {
+	margin: 0px; padding: 0px;
+}
+body {
+	margin: 0px; padding: 0px;
+}
+table {
+	border-collapse: collapse;
+}
+div {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none;
+}
+ul {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none;
+}
+li {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none;
+}
+p {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none;
+}
+li {
+	list-style: none !important;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+a:link {
+	color: rgb(168, 168, 168); text-decoration: none;
+}
+a:visited {
+	color: rgb(168, 168, 168); text-decoration: none;
+}
+a:active {
+	color: rgb(168, 168, 168); text-decoration: none;
+}
+a:hover {
+	color: rgb(0, 138, 255); text-decoration: none;
+}
+input {
+	font-family: "??", Dotum, AppleGothic, sans-serif;
+}
+.game_head th {
+	background: linear-gradient(rgb(226, 226, 226) 0%, rgb(219, 219, 219) 50%, rgb(209, 209, 209) 51%, rgb(254, 254, 254) 100%); color: rgb(0, 0, 0); font-size: 12px; border-top-color: rgb(10, 10, 10); border-bottom-color: rgb(10, 10, 10); border-top-width: 2px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.noticestyle th {
+	background: linear-gradient(rgb(226, 226, 226) 0%, rgb(219, 219, 219) 50%, rgb(209, 209, 209) 51%, rgb(254, 254, 254) 100%); color: rgb(0, 0, 0); font-size: 12px; border-top-color: rgb(10, 10, 10); border-bottom-color: rgb(10, 10, 10); border-top-width: 2px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.noticestyle {
+	border-top-color: rgb(10, 10, 10); border-top-width: 1px; border-top-style: solid;
+}
+.noticestyle td {
+	background: rgb(20, 20, 20); padding: 0px 10px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; border-bottom-color: rgb(10, 10, 10); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.gradienttable {
+	background: rgb(13, 13, 13); border-collapse: collapse;
+}
+.CssLeague {
+	background: rgb(7, 7, 7); border: 1px solid rgb(14, 14, 16); border-image: none; color: rgb(217, 217, 217); font-size: 11px; font-weight: bold; text-shadow: 1px 1px 0px #000;
+}
+.gradiCell {
+	background: rgb(30, 30, 30); border: 1px solid rgb(10, 10, 10) !important; border-image: none !important; color: rgb(188, 188, 188); font-size: 12px;
+}
+.GroupCell {
+	background: rgb(30, 30, 30); border-width: 1px 0px 1px 1px !important; border-style: solid none solid solid !important; border-color: rgb(10, 10, 10) currentColor rgb(10, 10, 10) rgb(10, 10, 10) !important; border-image: none !important; color: rgb(188, 188, 188); font-size: 11px;
+}
+.GroupCell + .gradiCell {
+	border-left-color: currentColor !important; border-left-width: 0px !important; border-left-style: none !important;
+}
+.CssHandi {
+	background: rgb(30, 30, 30); border: 1px solid rgb(10, 10, 10) !important; border-image: none !important; color: rgb(106, 184, 83); font-size: 11px; font-weight: bold; text-shadow: 1px 1px 0px #000;
+}
+.CssTeam {
+	background: linear-gradient(rgba(41, 41, 41, 1) 0%, rgba(1, 1, 1, 1) 50%, rgba(41, 41, 41, 1) 100%); padding: 0px 5px; border: 1px solid rgb(10, 10, 10); border-image: none; color: rgb(217, 217, 217); font-size: 12px; cursor: pointer; text-shadow: 1px 1px 0px #000;
+}
+td.CssTeam:hover {
+	background: linear-gradient(rgb(229, 230, 150) 0%, rgb(209, 211, 96) 100%); color: rgb(255, 255, 255);
+}
+.CssNoSelect {
+	background: rgb(30, 30, 30); padding: 0px 5px; border: 1px solid rgb(10, 10, 10); border-image: none; color: rgb(153, 50, 50); font-size: 12px; font-weight: bold;
+}
+.CssSelect {
+	background: linear-gradient(rgb(30, 87, 153) 0%, rgb(41, 137, 216) 50%, rgb(32, 124, 202) 51%, rgb(125, 185, 232) 100%); padding: 0px 5px; border: 1px solid rgb(0, 0, 0); border-image: none; font-size: 12px; font-weight: bold; cursor: pointer;
+}
+.CssSelect2 {
+	background: rgb(249, 214, 0) !important; padding: 0px 5px; border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(0, 0, 0); letter-spacing: -1px; font-size: 12px; font-weight: bold;
+}
+td.NowBetting {
+	background: rgb(30, 30, 30); border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(10, 10, 10) currentColor rgb(10, 10, 10) rgb(10, 10, 10); border-image: none; text-align: center;
+}
+.NowBetting {
+	color: rgb(255, 216, 0); font-size: 12px;
+}
+.CssNoSelect + .NowBetting {
+	background: url("images/txt_notice.gif") no-repeat 50% 50% rgb(30, 30, 30); text-indent: -9999px; overflow: hidden;
+}
+td.NoBetting {
+	background: rgb(30, 30, 30); border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(10, 10, 10) currentColor rgb(10, 10, 10) rgb(10, 10, 10); border-image: none; text-align: center;
+}
+.NoBetting {
+	color: rgb(255, 51, 0); font-size: 12px;
+}
+.endCell {
+	background: rgb(30, 30, 30); padding: 0px 5px; border: 1px solid rgb(10, 10, 10); border-image: none; color: rgb(156, 156, 156); font-size: 11px;
+}
+.CancelCell {
+	background: rgb(30, 30, 30); padding: 0px 5px; border: 1px solid rgb(10, 10, 10); border-image: none; color: rgb(76, 76, 76); font-size: 11px;
+}
+tr.game_tr:hover .gradiCell {
+	background: linear-gradient(rgb(25, 25, 25) 0%, rgb(61, 61, 61) 100%);
+}
+tr.game_tr:hover .GroupCell {
+	background: linear-gradient(rgb(25, 25, 25) 0%, rgb(61, 61, 61) 100%);
+}
+tr.game_tr:hover .CssNoSelect {
+	background: linear-gradient(rgb(25, 25, 25) 0%, rgb(61, 61, 61) 100%);
+}
+tr.game_tr:hover .CssHandi {
+	background: linear-gradient(rgb(25, 25, 25) 0%, rgb(61, 61, 61) 100%);
+}
+tr.game_tr:hover .gradiCell {
+	color: rgb(255, 255, 255); text-shadow: 1px 1px 0px #000;
+}
+tr.game_tr:hover .GroupCell {
+	color: rgb(255, 255, 255); text-shadow: 1px 1px 0px #000;
+}
+tr.game_tr:hover .CssHandi {
+	color: rgb(92, 216, 56);
+}
+.gnb_top_my {
+	background: rgba(30, 87, 153, 0.65); padding: 0px 10px; height: 33px; color: rgb(218, 218, 218); line-height: 33px; overflow: hidden; font-size: 12px; border-top-color: rgb(0, 26, 44); border-bottom-color: rgb(0, 26, 44); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
+}
+.gnb_top_my .info {
+	float: left;
+}
+.gnb_top_my .info li {
+	margin: 0px 25px 0px 0px; overflow: hidden; float: left;
+}
+.gnb_top_my .my img {
+	margin: 10px 5px 0px 0px; vertical-align: top; float: left;
+}
+.gnb_top_my span {
+	color: rgb(255, 255, 255); font-weight: bold;
+}
+.gnb_top_my strong {
+	color: rgb(0, 138, 255);
+}
+.gnb_top_my .btn {
+	top: 0px; right: 5px; position: absolute;
+}
+.gnb_top_my .btn a {
+	color: rgb(218, 218, 218);
+}
+.gnb_top_my .btn li {
+	margin: 0px 0px 0px 8px; padding: 0px 0px 0px 9px; float: left; position: relative;
+}
+.gnb_top_my .btn li::before {
+	background: rgb(61, 61, 61); margin: -6px 0px 0px; left: 0px; top: 50%; width: 1px; height: 11px; position: absolute; content: "";
+}
+.gnb_top_my .btn li:first-child::before {
+	display: none;
+}
+.gnb_top_my .btn input {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; color: rgb(218, 218, 218); cursor: pointer;
+}
+.gnb_top_my .btn input:hover {
+	color: rgb(0, 138, 255);
+}
+.gnb_top_my .c_btn {
+	background: linear-gradient(rgb(0, 107, 179) 0%, rgb(0, 70, 117) 100%); margin: -1px -9px 0px; padding: 0px 8px; border: 1px solid rgb(0, 26, 44); border-image: none; height: 33px; line-height: 33px; display: inline-block; position: relative; z-index: 1; text-shadow: 0px -1px 0px #001a2c;
+}
+.gnb_notice {
+	padding: 0px 5px; left: 0px; top: 0px; height: 33px; position: relative;
+}
+.gnb_notice #bKey {
+	font-weight: bold; position: relative; -ms-zoom: 1;
+}
+.gnb_notice .keyBg {
+	height: 33px; overflow: hidden; font-size: 12px;
+}
+.gnb_notice ul {
+	margin: 0px; padding: 0px; clear: both;
+}
+.gnb_notice li {
+	padding: 1px 0px 0px; line-height: 32px; overflow: hidden; float: left;
+}
+.gnb_notice li a {
+	color: rgb(251, 106, 49); letter-spacing: -1px;
+}
+#Display_clock {
+	background: rgb(24, 24, 24); margin: -10px 0px 0px; border: 1px solid rgb(30, 30, 30); border-image: none; top: 50%; height: 20px; right: 5px; color: rgb(255, 255, 255); line-height: 20px; font-size: 14px; position: absolute;
+}
+#Display_clock strong {
+	color: rgb(255, 255, 255);
+}
+.board_view {
+	width: 100%;
+}
+.board_view th {
+	background: rgb(20, 20, 20); text-align: center;
+}
+.board_view td {
+	background: rgb(0, 0, 0); text-align: left;
+}
+.board_view th {
+	padding: 8px 10px; border: 1px solid rgb(30, 30, 30); border-image: none; line-height: 18px; font-size: 12px;
+}
+.board_view td {
+	padding: 8px 10px; border: 1px solid rgb(30, 30, 30); border-image: none; line-height: 18px; font-size: 12px;
+}
+.prev_next {
+	background: rgb(0, 0, 0); border: 1px solid rgb(30, 30, 30); border-image: none; font-size: 12px;
+}
+.commend_write {
+	background: rgb(20, 20, 20); border: 1px solid rgb(30, 30, 30); border-image: none; font-size: 12px;
+}
+.title_box {
+	width: 800px; position: relative;
+}
+.title_box ul {
+	right: 5px; bottom: 0px; position: absolute;
+}
+.title_box li {
+	float: left;
+}
+.bet_cart_table {
+	border-collapse: collapse;
+}
+.bet_cart_table th {
+	background: rgb(24, 24, 24); padding: 0px 8px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 50%; height: 24px; color: rgb(168, 168, 168); font-size: 11px;
+}
+.bet_cart_table td {
+	background: rgb(24, 24, 24); padding: 0px 8px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 50%; height: 24px; color: rgb(168, 168, 168); font-size: 11px;
+}
+.bet_cart_table th {
+	text-align: left; font-weight: normal;
+}
+.bet_cart_table2 {
+	border-collapse: collapse;
+}
+.bet_cart_table2 th {
+	background: rgb(24, 24, 24); padding: 0px 8px; border: 1px solid rgb(0, 0, 0); border-image: none; height: 30px; color: rgb(168, 168, 168); font-size: 12px;
+}
+.bet_cart_table2 td {
+	background: rgb(24, 24, 24); padding: 0px 8px; border: 1px solid rgb(0, 0, 0); border-image: none; height: 30px; color: rgb(168, 168, 168); font-size: 12px;
+}
+.bet_cart_table2 th {
+	padding: 0px; width: 53px; text-align: center; font-weight: normal;
+}
+.bet_cart1 td {
+	color: rgb(255, 255, 255); padding-right: 24px; font-weight: bold;
+}
+.bet_cart2 span {
+	font-weight: bold;
+}
+.bet_cart3 input {
+	background: rgb(41, 41, 41); margin: 0px 1px 0px 0px; padding: 0px 2px; border-radius: 2px; border: 1px solid rgb(12, 12, 12); border-image: none; width: 90px; height: 20px; text-align: right; color: rgb(255, 255, 255); font-weight: bold;
+}
+.CssHandi {
+	cursor: no-drop;
+}
+.CssNoSelect {
+	cursor: no-drop;
+}
+.currentLink {
+	background: rgb(0, 138, 255) !important; color: rgb(255, 255, 255) !important;
+}
+.login_box {
+	margin: -222px 0px 0px -160px; left: 50%; top: 50%; width: 300px; text-align: center; font-family: Arial, Helvetica, sans-serif; position: absolute;
+}
+.login_box .logo {
+	margin: 0px 0px 0px -35px; padding: 0px; height: 80px;
+}
+.login_box .box {
+	background: radial-gradient(at center, rgb(62, 62, 62) 0%, rgb(7, 7, 7) 100%); height: 400px;
+}
+.login_box h3 {
+	margin: 0px; padding: 0px 0px 0px 30px; height: 29px; text-align: left; color: rgb(200, 200, 200); line-height: 22px; font-size: 14px; font-weight: normal;
+}
+.login_box .input {
+	background: url("images/Login/bg_input.gif") no-repeat 30px 0px; color: rgb(255, 255, 255); border-top-color: rgb(51, 51, 51); border-top-width: 2px; border-top-style: solid;
+}
+.login_box .input li {
+	padding: 5px 0px 5px 65px; height: 30px; text-align: left; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.login_box .input input {
+	background: none; padding: 0px 10px; border: 0px currentColor; border-image: none; width: 235px; height: 30px; color: rgb(255, 255, 255); box-sizing: border-box;
+}
+.login_box .text {
+	margin: 8px 0px 0px; overflow: hidden;
+}
+.login_box .text li {
+	margin: 5px 0px 0px;
+}
+.login_box .btn1 {
+	margin: 20px 0px 0px;
+}
+.login_box .btn2 {
+	margin: 15px 0px 0px;
+}
+.login_box .copy {
+	margin: 15px 0px 0px; color: rgb(171, 171, 170); line-height: 20px; font-size: 11px;
+}
+#pnlCode {
+	background: url("images/Login/bg_code1.png") no-repeat; margin: 73px 0px 0px -140px; padding: 45px 0px 0px; left: 50% !important; top: 50% !important; width: 280px; height: 62px; text-align: center; color: rgb(255, 255, 255); line-height: 24px; font-size: 12px;
+}
+#pnlCode input[type='text'] {
+	background: rgb(30, 30, 30); padding: 0px 10px; border: 1px solid rgb(51, 51, 51); border-image: none; width: 110px; height: 24px; color: rgb(255, 255, 255); font-weight: bold; box-sizing: border-box;
+}
+#pnlCode input {
+	vertical-align: top;
+}
+.gnb_top {
+	position: relative;
+}
+.gnb_top .btn {
+	top: 43px; right: 15px; position: absolute;
+}
+.gnb_top .btn li {
+	margin: 0px 0px 0px 18px; float: left;
+}
+.betcart_btn {
+	background: rgb(13, 13, 13); padding: 5px 0px 0px 5px; border: 1px solid rgb(0, 0, 0); border-image: none; left: 202px; width: 112px; height: 112px; text-align: center; bottom: 122px; position: absolute;
+}
+.betcart_btn li {
+	margin: 0px 3px 3px 0px; float: left;
+}
+.betcart_btn a {
+	background: url("images/cart/btn_03.gif") no-repeat; width: 52px; height: 24px; color: rgb(168, 168, 168); line-height: 24px; display: block;
+}
+.betcart_btn a:hover {
+	color: rgb(0, 138, 255);
+}
+.betcart_btn strong a {
+	background: url("images/cart/btn_04.gif") no-repeat; height: 26px; line-height: 26px;
+}
+.input .input2 td {
+	padding: 5px 0px 5px 65px; height: 30px; text-align: left; color: white; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 2px; border-bottom-style: solid; text-baseline: middle;
+}

@@ -1,0 +1,859 @@
+/*상단*/
+/*#header {
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+}*/
+#top-menu {
+	width: 1180px;
+}
+#top-menu ul {
+	float: right;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	padding-right: 22px;
+}
+#top-menu ul li {
+	float: left;
+	color: #888;
+	line-height: 13px;
+	display: block;
+	height: 13px;
+	padding: 5px 0 4px 24px;
+	background: url(../images/topline01.jpg) no-repeat 10px 8px;
+}
+#top-menu ul li.first {
+	padding-left: 0;
+	background: none;
+}
+#top-menu ul li a {
+	font-size: 11px;
+}
+
+#middle-menu {
+	clear: both;
+}
+#middle-menu h1 {
+	float: left;
+	margin: 0;
+	padding: 10px 0 0 20px;
+}
+#middle-menu .middle-menu-user {
+	position: relative;
+	float: right;
+	background: none;
+	height: 80px;
+	width: 810px;
+}
+#middle-menu ul {
+	position: absolute;
+	bottom: 20px;
+	right: 8px;
+}
+#middle-menu ul li {
+	float: left;
+	font-size: 11px;
+	padding-left: 12px;
+	margin-right: 12px;
+	background: url(../images/navicon01.png) no-repeat 0 0;
+}
+#middle-menu ul li.first {
+	background: none;
+	position: relative;
+	top: -5px;
+}
+#nav-menu {
+	display: inline-block;
+	clear: both;
+	padding: 7px 0 13px 0;
+}
+#nav-menu li {
+	float: left;
+	margin-left: 6px;
+	height: 12px;
+	text-indent: -9999px;
+}
+
+#nav-menu li a {
+	display: block;
+	height: 16px;
+}
+
+#nav-menu li.nav-casino a {
+	width: 60px;
+	background: url(../images/menu_casino_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-casino a:hover {
+	background: url(../images/menu_casino_off.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-menu13 a {
+	display: block;
+	height: 16px;
+}
+#nav-menu li.nav-menu01 a {
+	width: 45px;
+	background: url(../images/menu01_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu02 a {
+	width: 45px;
+	background: url(../images/menu02_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu03 a {
+	width: 45px;
+	background: url(../images/menu03_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu04 a {
+	width: 60px;
+	background: url(../images/menu04_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu05 a {
+	width: 30px;
+	background: url(../images/menu05_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu06 a {
+	width: 30px;
+	background: url(../images/menu06_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu07 a {
+	width: 30px;
+	background: url(../images/menu07_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu08 a {
+	width: 28px;
+	background: url(../images/menu08_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu09 a {
+	width: 30px;
+	background: url(../images/menu09_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu10 a {
+	background: url(../images/menu10_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu11 a {
+	background: url(../images/menu11_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu12 a {
+	background: url(../images/menu12_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu13 a {
+	background: url(../images/menu13_on.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu30 a {
+	width: 70px;
+	background: url(../images/menu20_off.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-menu-realtime a {
+	width: 60px;
+	background: url(../images/menu-realtime_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu-realtime a:hover {
+	background: url(../images/menu-realtime_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-menu-realtime_st a {
+	background: url(../images/menu-realtime_st_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu-realtime_st a:hover {
+	background: url(../images/menu-realtime_st_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-menu-ladder a {
+	width: 60px;
+	background: url(../images/ladder-menu_off.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-menu-ladder a:hover {
+	background: url(../images/ladder-menu_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-menu-dal a {
+	width: 60px;
+	background: url(../images/dal-menu_off.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-menu-dal a:hover {
+	background: url(../images/dal-menu_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-game01 a {
+	width: 70px;
+	background: url(../images/menu_game01_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-game02 a {
+	width: 50px;
+	background: url(../images/menu_game02_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-game03 a {
+	width: 60px;
+	background: url(../images/menu_game03_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-game04 a {
+	width: 70px;
+	background: url(../images/menu_game04_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-game05 a {
+	width: 70px;
+	background: url(../images/menu_game05_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-game06 a {
+	width: 70px;
+	background: url(../images/menu_game06_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-menu01 a:hover {
+	background: url(../images/menu01_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu02 a:hover {
+	background: url(../images/menu02_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu03 a:hover {
+	background: url(../images/menu03_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu04 a:hover {
+	background: url(../images/menu04_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu05 a:hover {
+	background: url(../images/menu05_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu06 a:hover {
+	background: url(../images/menu06_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu07 a:hover {
+	background: url(../images/menu07_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu08 a:hover {
+	background: url(../images/menu08_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu09 a:hover {
+	background: url(../images/menu09_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu10 a:hover {
+	background: url(../images/menu10_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu11 a:hover {
+	background: url(../images/menu11_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu12 a:hover {
+	background: url(../images/menu12_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu13 a:hover {
+	background: url(../images/menu13_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-menu30 a:hover {
+	background: url(../images/menu20_on.png) no-repeat 0 0;
+}
+
+#nav-menu li.nav-game01 a:hover {
+	background: url(../images/menu_game01_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-game02 a:hover {
+	background: url(../images/menu_game02_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-game03 a:hover {
+	background: url(../images/menu_game03_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-game04 a:hover {
+	background: url(../images/menu_game04_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-game05 a:hover {
+	background: url(../images/menu_game05_off.png) no-repeat 0 0;
+}
+#nav-menu li.nav-game06 a:hover {
+	background: url(../images/menu_game06_off.png) no-repeat 0 0;
+}
+
+#bottom-menu {
+	position: relative;
+	float: left;
+	width: 1050px;
+	height: 42px;
+	line-height: 42px;
+	overflow: hidden;
+	color: white;
+	font-weight: bold;
+}
+#bottom-menu ul {
+	position: absolute;
+}
+#bottom-menu ul li {
+	float: left;
+}
+#bottom-menu ul li.first {
+	padding-left: 0;
+	background: none;
+}
+#bottom-menu img {
+	vertical-align: top;
+}
+#bottom-menu span.news-area {
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#hot_news {
+	width: 100%;
+	overflow: hidden;
+}
+#hot_news ul {
+	width: 100%;
+	position: relative;
+	font-family: "NanumGothic", "Gulim", "Arial";
+}
+#hot_news ul li {
+	display: none;
+}
+
+/*메인콘텐츠*/
+#main-content {
+}
+#main-content .top-area {
+	height: 295px;
+}
+#main-content .top-area .content1,
+#main-content .top-area .content2,
+#main-content .top-area .content3,
+#main-content .meddle-area .content4,
+#main-content .meddle-area .content5,
+#main-content .meddle-area .content6 {
+	text-indent: -9999px;
+	float: left;
+}
+#main-content .top-area .content1 a {
+	display: block;
+	height: 295px;
+	width: 347px;
+	background: url(../images/mainimg01.png) no-repeat 0 0;
+}
+#main-content .top-area .content1 a:hover {
+	background: url(../images/Mainimg01.gif?) no-repeat 0 0;
+}
+#main-content .top-area .content2 a {
+	display: block;
+	height: 295px;
+	width: 426px;
+	background: url(../images/mainimg02.png) no-repeat 0 0;
+}
+#main-content .top-area .content2 a:hover {
+	background: url(../images/Mainimg02.gif?) no-repeat 0 0;
+}
+#main-content .top-area .content3 a {
+	display: block;
+	height: 295px;
+	width: 387px;
+	background: url(../images/mainimg03.png) no-repeat 0 0;
+}
+#main-content .top-area .content3 a:hover {
+	background: url(../images/Mainimg03.gif?) no-repeat 0 0;
+}
+#main-content .meddle-area {
+	height: 305px;
+}
+#main-content .meddle-area .content4 {
+	height: 305px;
+	width: 347px;
+	background: url(../images/mainimg04.png) no-repeat 0 0;
+}
+#main-content .meddle-area .content5 a {
+	display: block;
+	height: 305px;
+	width: 306px;
+	background: url(../images/mainimg05.png) no-repeat 0 0;
+}
+#main-content .meddle-area .content5 a:hover {
+	background: url(../images/Mainimg04.gif?) no-repeat 0 0;
+}
+#main-content .meddle-area .content6 {
+	height: 305px;
+	width: 507px;
+	background: url(../images/mainimg06.png) no-repeat 0 0;
+}
+#right-side {
+	height: 100%;
+}
+
+/*경기테이블*/
+.bettingtable01 {
+	width: 100%;
+	table-layout: fixed;
+}
+.bettingtable01 th {
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	padding: 8px 0 8px 8px;
+	background: #959595;
+}
+.bettingtable01 td {
+	color: #000;
+	font-size: 14px;
+	padding: 1px;
+	background: #fff;
+}
+.bettingtable01 .league {
+	letter-spacing: -1px;
+	font-size: 11px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.title-name01 {
+	/*padding: 4px 0 2px 9px;
+	background: #0b7783;*/
+	background: #5e6168;
+	border: 1px solid #cacaca;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 30px;
+	font-family: "noto";
+}
+.title-name01 strong {
+	/*display: inline-block;
+	color: #FFFF00;
+	font-size: 12px;
+	padding: 6px 0 4px 0;
+	vertical-align: top;*/
+	vertical-align: middle;
+}
+.title-name01 img {
+	margin: 0 4px;
+}
+.bettingtable01 .bt_stime {
+	text-align: center;
+	font-size: 13px;
+}
+.bettingtable01 td .tleft-title01 {
+	/*margin-left: 6px;*/
+}
+.bettingtable01 td .tleft-title02 {
+	color: #000;
+}
+.bettingtable01 a.tleft-btn,
+.bettingtable01 a.tright-btn,
+.bettingtable01 a.tcenter-btn {
+	display: flex;
+	color: #4e4e4e;
+	/*font-weight: bold;*/
+	border: 1px solid #afafa5;
+	border-radius: 5px;
+	margin: 2px;
+	height: 18px;
+	padding: 8px 10px;
+}
+.bettingtable01 a.tleft-btn,
+.bettingtable01 a.tright-btn{
+	justify-content: space-between;
+}
+.bettingtable01 a.tcenter-btn{
+	align-items: center;
+}
+
+.bettingtable01 .betting .name {
+	max-width: 210px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.bettingtable01 a span {
+	font-family: noto;
+}
+/*활성화된 경기테이블*/
+.betting-inactive a.tleft-btn,
+.betting-inactive a.tcenter-btn,
+.betting-inactive a.tright-btn {
+	background: grey ;
+	color: #000;
+}
+
+.bettingtable01 a.tleft-btn02 {
+	cursor: pointer;
+	color: #fff !important;
+	background: rgb(255, 186, 0);
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 186, 0, 1) 0%,
+		rgba(255, 210, 0, 1) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffba00', endColorstr='#ffd200',GradientType=0 ); /* IE6-9 */
+	background: #d81a8a;
+	border: 1px solid #d81a8a;
+}
+
+.tleft-btn03 {
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	background: #188136;
+	display: block;
+	font-weight: bold;
+	border: 1px solid #11762d;
+	margin: 2px;
+	height: 18px;
+	padding: 4px 4px 0 4px;
+}
+.tleft-btn03:hover {
+	color: #fff;
+}
+.tleft-btn.tleft-btn03 {
+	background: #1c75b8 !important;
+}
+.tcenter-btn.tleft-btn03 {
+	background: #188136 !important;
+}
+.tright-btn.tright-btn03 {
+	background: #d3100f !important;
+}
+.tleft-btn03 .point-r {
+	position: absolute;
+	right: 4px;
+}
+
+.tright-btn03 {
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	background: #188136;
+	display: block;
+	font-weight: bold;
+	border: 1px solid #11762d;
+	margin: 2px;
+	height: 18px;
+	padding: 4px 4px 0 4px;
+}
+.tright-btn03:hover {
+	color: #fff;
+}
+.tright-btn03 .team-r {
+	position: absolute;
+	right: 4px;
+}
+
+.tright-btn04 {
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	background: #195c82;
+	display: block;
+	font-weight: bold;
+	border: 1px solid #105277;
+	margin: 2px;
+	height: 18px;
+	padding: 4px 4px 0 4px;
+}
+.tright-btn04:hover {
+	color: #fff;
+}
+.tright-btn04 .team-r {
+	position: absolute;
+	right: 4px;
+}
+
+/*오른쪽카트*/
+#cartbox {
+	position: relative;
+	height: 100%;
+	float: right;
+}
+#cartbox h2,
+#sitelink-menu h2 {
+	display: block;
+	background: #141414;
+	height: auto;
+	padding: 0;
+}
+#sitelink-menu h2 {
+	background: #141414;
+	height: 30px;
+	padding: 8px 0 0 14px;
+	border-top: 2px solid #999;
+}
+.cart-content {
+	position: relative;
+	width: 262px;
+	height: 100%;
+	margin: 0 12px 12px 12px;
+	padding: 0;
+	background: url(../images/cartbackground-top.png) no-repeat 0 0;
+}
+.cart-content02 {
+	background: url(../images/cartbackground-bottom.png) no-repeat 0 bottom;
+}
+.cart-content ul {
+	margin: 0 8px;
+	padding: 4px 0;
+}
+.cart-content ul li {
+	position: relative;
+	padding: 8px 22px 4px 8px;
+	color: #222;
+	border-bottom: 1px dotted #999;
+}
+.cart-content ul li.last-line {
+	border-bottom: 0 none;
+}
+.cart-content ul li span {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+}
+.cart-content ul li span.cartmoney {
+	position: absolute;
+	top: 4px;
+	right: 8px;
+}
+#cartbox .btn01 img,
+#cartbox .btn02 img {
+	width: 7px;
+	height: 7px;
+}
+#cartbox .btn01 {
+	position: absolute;
+	right: 14px;
+	top: 12px;
+}
+#cartbox .btn02 {
+	position: absolute;
+	right: 32px;
+	top: 12px;
+}
+#cartbox #btnCart {
+}
+#cartbox #btnBett,
+#cartbox #btnHalf {
+}
+#cartbox #btnMax {
+}
+#sitelink-menu {
+	font-size: 13px;
+	font-weight: bold;
+	border-bottom: 1px dotted #444;
+	margin: 0 4px;
+}
+#sitelink-menu ul li {
+	display: block;
+}
+#sitelink-menu ul li a {
+	display: block;
+	height: 14px;
+	padding: 4px 0 4px 14px;
+	border-top: 1px dotted #444;
+	background: url(../images/sitelinkicon01.png) no-repeat 0 0;
+}
+#sitelink-menu ul li a:hover {
+	color: #fff;
+	background: url(../images/sitelinkicon02.png) no-repeat 0 0;
+}
+
+/*경기결과 input, select box*/
+.tabmenu01 {
+	position: absolute;
+	right: 8px;
+	top: 5px;
+}
+.tabmenu01 ul li {
+	float: left;
+	line-height: 24px;
+	padding-right: 4px;
+}
+.tabmenu01 ul li a {
+}
+.tabmenu01 ul li a.selectmode {
+}
+.tabmenu01 ul li a:hover {
+}
+.search-button {
+	background: #444;
+	color: #eee;
+	cursor: pointer;
+	border: 1px solid #222;
+}
+.search-button:hover {
+	background: #eee;
+	color: #ffc000;
+	border: 1px solid #999;
+}
+
+/*게시판 리스트 번호*/
+#listnumber01 {
+	margin: 10px auto;
+	height: 24px;
+	padding: 5px 8px 2px 12px;
+	text-align: center;
+	background: #5e6168;
+}
+#listnumber01 img {
+	cursor: pointer;
+	padding-top: 4px;
+	margin-right: 4px;
+}
+#listnumber01 img,
+#listnumber01 ul li {
+	float: left;
+}
+#listnumber01 ul li a {
+	display: block;
+	font-weight: bold;
+	font-size: 12px;
+	cursor: pointer;
+	color: #ddd;
+	padding: 4px;
+}
+#listnumber01 ul li a:hover {
+	color: #ffcc00;
+}
+#speedpage {
+	margin: 0 auto;
+}
+
+/*충전환전페이지*/
+.cashboard ul li {
+	margin: 8px 0;
+}
+.cashboard ul li a img {
+	margin-right: 4px;
+}
+
+/*게시판*/
+.num_style {
+	color: #000;
+}
+
+#visual-content .visual-left {
+	float: left;
+	width: 744px;
+	height: 379px;
+	margin: 0;
+	padding: 0;
+}
+
+.warp_01 {
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
+
+.btn-bbs {
+	background: #010101;
+	color: #b0b0b0;
+	border: solid 1px #4b4b4b;
+	cursor: pointer;
+	vertical-align: middle;
+	font-family: dotum;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 2px 4px;
+}
+
+#live-pattern-wrapper {
+	overflow: auto;
+	margin: 20px;
+}
+#live-pattern-wrapper h1 {
+	position: absolute;
+}
+#live-pattern {
+	/*margin-top: 60px;*/
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+#live-pattern ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 32px;
+	border-top: solid 1px #3a3a3a;
+	border-left: solid 1px #3a3a3a;
+}
+
+#live-pattern ul:last-child {
+	border-right: solid 1px #3a3a3a;
+}
+
+#live-pattern ul li {
+	width: 32px;
+	height: 32px;
+	/*border-bottom: solid 1px #eee;*/
+}
+
+#live-pattern ul li.title {
+	border-bottom: 1px solid #3a3a3a;
+	font-size: 15px;
+	text-align: center;
+	line-height: 32px;
+	font-weight: bold;
+	font-family: airal;
+}
+
+#live-pattern ul li.player {
+	color: #0080ff;
+}
+#live-pattern ul li.tie {
+	color: #00b300;
+}
+#live-pattern ul li.banker {
+	color: #ff0000;
+}
+
+#live-pattern ul li span {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 28px;
+	margin: 2px 0 0 2px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+#live-pattern ul li.w span {
+	background: #12406a;
+}
+#live-pattern ul li.t span {
+	background: #006700;
+}
+#live-pattern ul li.l span {
+	background: #8c1d04;
+}
+
+.btn_live_pattern {
+	background: #343434;
+	padding: 4px 6px;
+	text-shadow: 0 -1px #000;
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+	box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 0 inset,
+		rgba(255, 255, 255, 0.05) 0 1px 0 1px inset,
+		rgba(0, 0, 0, 0.7) 0 1px 2px 0, rgba(9, 9, 9, 0.6) 0 2px 3px 2px;
+}
+.btn_live_pattern:hover {
+	color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.05) 0 1px 0 0 inset,
+		rgba(0, 0, 0, 0.02) 0 1px 0 1px inset, rgba(9, 9, 9, 0.5) 0 2px 2px 1px;
+}
+#live-frame {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#live-frame iframe {
+	border: none;
+}
